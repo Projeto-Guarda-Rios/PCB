@@ -1,0 +1,477 @@
+KiCad 10.0.6 board review diagnostics. Canonical design unchanged.
+DRC run with zone refill in memory and schematic parity enabled.
+
+unconnected_items (2)
+ERROR unconnected_items: Missing connection between items
+  Zone [GND] on Front, Back and GND, priority 0 at {'x': 234.25, 'y': 100.375}
+  Zone [GND] on Front, Back and GND, priority 0 at {'x': 234.25, 'y': 100.375}
+ERROR unconnected_items: Missing connection between items
+  Zone [GND] on Front, Back and GND, priority 0 at {'x': 234.25, 'y': 100.375}
+  Pad 5 [GND] of U8 on Front at {'x': 206.5, 'y': 123.12}
+
+violations (133)
+ERROR hole_clearance: Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1944 mm)
+  Pad A1 [GND] of J9 on Front at {'x': 236.41, 'y': 129.445}
+  NPTH pad of J9 at {'x': 237.485, 'y': 129.135}
+ERROR hole_clearance: Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1944 mm)
+  Pad B12 [GND] of J9 on Front at {'x': 236.41, 'y': 129.445}
+  NPTH pad of J9 at {'x': 237.485, 'y': 129.135}
+ERROR hole_clearance: Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1944 mm)
+  Pad A12 [GND] of J9 on Front at {'x': 236.41, 'y': 123.045}
+  NPTH pad of J9 at {'x': 237.485, 'y': 123.355}
+ERROR hole_clearance: Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1944 mm)
+  Pad B1 [GND] of J9 on Front at {'x': 236.41, 'y': 123.045}
+  NPTH pad of J9 at {'x': 237.485, 'y': 123.355}
+ERROR courtyards_overlap: Courtyards overlap
+  Footprint REF** at {'x': 241.54, 'y': 103.33}
+  Footprint U5 at {'x': 223.575, 'y': 109.895}
+WARNING track_dangling: Track has unconnected end
+  Track [+5V] on Front, length 0.6473 mm at {'x': 211.7, 'y': 128.2}
+WARNING silk_edge_clearance: Silkscreen clipped by board edge
+  Segment on Edge.Cuts at {'x': 179.0, 'y': 100.375}
+  Segment of U5 on F.Silkscreen at {'x': 232.695, 'y': 94.035}
+WARNING silk_edge_clearance: Silkscreen clipped by board edge
+  Segment on Edge.Cuts at {'x': 179.0, 'y': 100.375}
+  Polygon of U5 on F.Silkscreen at {'x': 214.45, 'y': 100.92}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R6 at {'x': 227.865, 'y': 127.795}
+WARNING lib_footprint_mismatch: Footprint 'JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical' does not match copy in library 'Connector_JST'
+  Footprint BT1 at {'x': 204.6, 'y': 140.575}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R7 at {'x': 229.515, 'y': 126.645}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R13 at {'x': 183.65, 'y': 137.175}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R15 at {'x': 218.54, 'y': 127.795}
+WARNING lib_footprint_mismatch: Footprint 'C_0603_1608Metric' does not match copy in library 'Capacitor_SMD'
+  Footprint C1 at {'x': 235.59, 'y': 119.27}
+WARNING lib_footprint_mismatch: Footprint 'C_0603_1608Metric' does not match copy in library 'Capacitor_SMD'
+  Footprint C2 at {'x': 236.6, 'y': 109.925}
+WARNING lib_footprint_mismatch: Footprint 'USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal' does not match copy in library 'Connector_USB'
+  Footprint J9 at {'x': 240.09, 'y': 126.245}
+WARNING lib_footprint_mismatch: Footprint 'C_0603_1608Metric' does not match copy in library 'Capacitor_SMD'
+  Footprint C10 at {'x': 216.35, 'y': 137.1}
+WARNING lib_footprint_mismatch: Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'
+  Footprint C9 at {'x': 216.1, 'y': 133.7}
+WARNING lib_footprint_mismatch: Footprint 'VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm' does not match copy in library 'Package_DFN_QFN'
+  Footprint U1 at {'x': 233.0125, 'y': 138.55}
+WARNING lib_footprint_mismatch: Footprint 'JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical' does not match copy in library 'Connector_JST'
+  Footprint J11 at {'x': 180.05, 'y': 117.475}
+WARNING lib_footprint_mismatch: Footprint 'JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical' does not match copy in library 'Connector_JST'
+  Footprint J7 at {'x': 180.1, 'y': 125.6}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R16 at {'x': 218.54, 'y': 124.52}
+WARNING lib_footprint_mismatch: Footprint 'SOIC-8_3.9x4.9mm_P1.27mm' does not match copy in library 'Package_SO'
+  Footprint U8 at {'x': 208.975, 'y': 125.025}
+WARNING lib_footprint_mismatch: Footprint 'LED_0603_1608Metric' does not match copy in library 'LED_SMD'
+  Footprint D10 at {'x': 179.9875, 'y': 132.15}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R18 at {'x': 203.125, 'y': 123.075}
+WARNING lib_footprint_mismatch: Footprint 'C_0603_1608Metric' does not match copy in library 'Capacitor_SMD'
+  Footprint C15 at {'x': 219.075, 'y': 143.65}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R1 at {'x': 236.65, 'y': 136.525}
+WARNING lib_footprint_mismatch: Footprint 'SOT-23-6' does not match copy in library 'Package_TO_SOT_SMD'
+  Footprint U6 at {'x': 207.8625, 'y': 134.7}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R8 at {'x': 228.79, 'y': 123.47}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R14 at {'x': 183.65, 'y': 135.5}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R23 at {'x': 222.475, 'y': 143.65}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R10 at {'x': 239.475, 'y': 109.95}
+WARNING lib_footprint_mismatch: Footprint 'L_0805_2012Metric' does not match copy in library 'Inductor_SMD'
+  Footprint L1 at {'x': 214.5, 'y': 137.3}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R4 at {'x': 239.1, 'y': 132.4}
+WARNING lib_footprint_mismatch: Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'
+  Footprint C13 at {'x': 211.451429, 'y': 141.35}
+WARNING lib_footprint_mismatch: Footprint 'C_0603_1608Metric' does not match copy in library 'Capacitor_SMD'
+  Footprint C12 at {'x': 203.975, 'y': 135.6}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R5 at {'x': 238.565, 'y': 119.22}
+WARNING lib_footprint_mismatch: Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'
+  Footprint C11 at {'x': 229.45, 'y': 137.45}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R21 at {'x': 183.65, 'y': 133.825}
+WARNING lib_footprint_mismatch: Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'
+  Footprint C8 at {'x': 227.665, 'y': 133.595}
+WARNING lib_footprint_mismatch: Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'
+  Footprint C14 at {'x': 222.35, 'y': 141.05}
+WARNING lib_footprint_mismatch: Footprint 'LED_0603_1608Metric' does not match copy in library 'LED_SMD'
+  Footprint D7 at {'x': 180.013556, 'y': 137.175}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R22 at {'x': 220.5, 'y': 140.8}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R28 at {'x': 203.125, 'y': 126.975}
+WARNING lib_footprint_mismatch: Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'
+  Footprint C5 at {'x': 236.3, 'y': 140.1}
+WARNING lib_footprint_mismatch: Footprint 'JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical' does not match copy in library 'Connector_JST'
+  Footprint J10 at {'x': 240.375, 'y': 140.35}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R25 at {'x': 226.6, 'y': 121.35}
+WARNING lib_footprint_mismatch: Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'
+  Footprint C6 at {'x': 212.27, 'y': 106.33}
+WARNING lib_footprint_mismatch: Footprint 'C_0603_1608Metric' does not match copy in library 'Capacitor_SMD'
+  Footprint C3 at {'x': 220.915, 'y': 130.8}
+WARNING lib_footprint_mismatch: Footprint 'C_0805_2012Metric' does not match copy in library 'Capacitor_SMD'
+  Footprint C4 at {'x': 225.065, 'y': 130.6}
+WARNING lib_footprint_mismatch: Footprint 'LED_0603_1608Metric' does not match copy in library 'LED_SMD'
+  Footprint D8 at {'x': 180.013556, 'y': 135.5}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R3 at {'x': 196.9, 'y': 125.0}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R24 at {'x': 183.65, 'y': 132.15}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R29 at {'x': 210.25, 'y': 121.3}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R9 at {'x': 239.39, 'y': 114.27}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R19 at {'x': 234.8, 'y': 132.45}
+WARNING lib_footprint_mismatch: Footprint 'C_0603_1608Metric' does not match copy in library 'Capacitor_SMD'
+  Footprint C7 at {'x': 212.52, 'y': 102.655}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R20 at {'x': 234.8, 'y': 134.05}
+WARNING lib_footprint_mismatch: Footprint 'QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm' does not match copy in library 'Package_DFN_QFN'
+  Footprint U4 at {'x': 222.89, 'y': 125.645}
+WARNING lib_footprint_mismatch: Footprint 'LED_0603_1608Metric' does not match copy in library 'LED_SMD'
+  Footprint D9 at {'x': 179.9875, 'y': 133.825}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R11 at {'x': 203.975, 'y': 133.85}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R2 at {'x': 233.05, 'y': 142.1}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R12 at {'x': 234.55, 'y': 114.275}
+WARNING lib_footprint_mismatch: Footprint 'JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical' does not match copy in library 'Connector_JST'
+  Footprint J8 at {'x': 180.025, 'y': 109.2}
+WARNING lib_footprint_mismatch: Footprint 'R_0603_1608Metric' does not match copy in library 'Resistor_SMD'
+  Footprint R17 at {'x': 211.2, 'y': 133.85}
+WARNING lib_footprint_mismatch: Footprint 'C_0603_1608Metric' does not match copy in library 'Capacitor_SMD'
+  Footprint C17 at {'x': 206.75, 'y': 121.3}
+WARNING lib_footprint_mismatch: Footprint 'SOT-23' does not match copy in library 'Package_TO_SOT_SMD'
+  Footprint D6 at {'x': 200.425, 'y': 125.025}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5000 mm)
+  PCB text 'PG' on F.Silkscreen at {'x': 181.775, 'y': 132.15}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5000 mm)
+  PCB text 'CHG' on F.Silkscreen at {'x': 181.775, 'y': 133.825}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5000 mm)
+  PCB text 'PWR' on F.Silkscreen at {'x': 181.788556, 'y': 135.375}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5000 mm)
+  PCB text 'IO18' on F.Silkscreen at {'x': 181.788556, 'y': 137.225}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5000 mm)
+  PCB text 'ESP32' on F.Silkscreen at {'x': 186.338556, 'y': 136.325}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.5000 mm)
+  PCB text 'Battery' on F.Silkscreen at {'x': 186.4, 'y': 132.95}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+  PCB text 'Limit Switch' on F.Silkscreen at {'x': 183.7, 'y': 122.3}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+  PCB text 'NBIO-T' on F.Silkscreen at {'x': 183.8, 'y': 105.9}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+  PCB text 'AquaNode' on F.Silkscreen at {'x': 183.8, 'y': 114.1}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+  PCB text 'ON' on F.Silkscreen at {'x': 193.1, 'y': 134.45}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+  PCB text 'Thermistor' on F.Silkscreen at {'x': 198.05, 'y': 140.25}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+  PCB text 'Battery' on F.Silkscreen at {'x': 205.85, 'y': 137.4}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+  PCB text 'Solar Panel' on F.Silkscreen at {'x': 240.95, 'y': 134.4}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+  PCB text '34' on F.Silkscreen at {'x': 193.975, 'y': 102.5}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+  PCB text '35' on F.Silkscreen at {'x': 193.975, 'y': 104.5}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+  PCB text '32' on F.Silkscreen at {'x': 193.975, 'y': 106.5}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+  PCB text '33' on F.Silkscreen at {'x': 193.975, 'y': 108.525}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+  PCB text '25' on F.Silkscreen at {'x': 193.975, 'y': 110.5}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+  PCB text '26' on F.Silkscreen at {'x': 193.975, 'y': 112.5}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+  PCB text '27' on F.Silkscreen at {'x': 193.975, 'y': 114.5}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+  PCB text '12' on F.Silkscreen at {'x': 193.975, 'y': 118.5}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+  PCB text '13' on F.Silkscreen at {'x': 193.975, 'y': 120.5}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+  PCB text '3.3V' on F.Silkscreen at {'x': 193.975, 'y': 123.5}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+  PCB text '5V' on F.Silkscreen at {'x': 193.975, 'y': 127.55}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+  PCB text '14' on F.Silkscreen at {'x': 194.0, 'y': 116.5}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+  PCB text 'GND' on F.Silkscreen at {'x': 194.0, 'y': 131.5}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+  PCB text 'PRGRM' on F.Silkscreen at {'x': 235.1, 'y': 126.25}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+  PCB text 'Boot' on F.Silkscreen at {'x': 237.95, 'y': 115.07}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+  PCB text 'Reset' on F.Silkscreen at {'x': 238.0, 'y': 109.95}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.3200 mm)
+  Reference field of D5 at {'x': 233.815, 'y': 124.115}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.3200 mm)
+  Reference field of D4 at {'x': 233.815, 'y': 127.335}
+WARNING text_height: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.3200 mm)
+  Reference field of D3 at {'x': 235.5132, 'y': 130.281}
+WARNING silk_overlap: Silkscreen clearance
+  Circle of D5 on F.Silkscreen at {'x': 233.815, 'y': 125.615}
+  Circle of D4 on F.Silkscreen at {'x': 233.815, 'y': 125.835}
+WARNING silk_overlap: Silkscreen clearance
+  Segment of BT1 on F.Silkscreen at {'x': 209.66, 'y': 138.115}
+  PCB text 'Battery' on F.Silkscreen at {'x': 205.85, 'y': 137.4}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon on F.Silkscreen at {'x': 197.256723, 'y': 129.514372}
+  Polygon of G*** on F.Silkscreen at {'x': 197.976573, 'y': 128.886629}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon on F.Silkscreen at {'x': 197.256723, 'y': 129.514372}
+  Polygon of G*** on F.Silkscreen at {'x': 198.485709, 'y': 127.365219}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon on F.Silkscreen at {'x': 197.256723, 'y': 129.514372}
+  Polygon of G*** on F.Silkscreen at {'x': 197.634674, 'y': 129.434338}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon on F.Silkscreen at {'x': 197.256723, 'y': 129.514372}
+  Polygon of G*** on F.Silkscreen at {'x': 197.744216, 'y': 129.242639}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon on F.Silkscreen at {'x': 197.256723, 'y': 129.514372}
+  Polygon of G*** on F.Silkscreen at {'x': 197.411027, 'y': 129.70591}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon of G*** on F.Silkscreen at {'x': 197.616417, 'y': 129.459441}
+  Polygon on F.Silkscreen at {'x': 197.256723, 'y': 129.514372}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon on F.Silkscreen at {'x': 197.256723, 'y': 129.514372}
+  Polygon of G*** on F.Silkscreen at {'x': 197.698574, 'y': 129.295128}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon on F.Silkscreen at {'x': 197.256723, 'y': 129.514372}
+  Polygon of G*** on F.Silkscreen at {'x': 197.520952, 'y': 129.558002}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon on F.Silkscreen at {'x': 197.256723, 'y': 129.514372}
+  Polygon of G*** on F.Silkscreen at {'x': 197.616275, 'y': 129.408494}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon on F.Silkscreen at {'x': 197.256723, 'y': 129.514372}
+  Polygon of G*** on F.Silkscreen at {'x': 197.849194, 'y': 129.185586}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon on F.Silkscreen at {'x': 197.256723, 'y': 129.514372}
+  Polygon of G*** on F.Silkscreen at {'x': 197.728408, 'y': 129.268717}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon on F.Silkscreen at {'x': 197.256723, 'y': 129.514372}
+  Polygon of G*** on F.Silkscreen at {'x': 197.730125, 'y': 129.328369}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon on F.Silkscreen at {'x': 197.256723, 'y': 129.514372}
+  Polygon of G*** on F.Silkscreen at {'x': 197.9633, 'y': 129.023556}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon of G*** on F.Silkscreen at {'x': 197.849194, 'y': 129.089737}
+  Polygon on F.Silkscreen at {'x': 197.256723, 'y': 129.514372}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon of G*** on F.Silkscreen at {'x': 197.812282, 'y': 129.164057}
+  Polygon on F.Silkscreen at {'x': 197.256723, 'y': 129.514372}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon on F.Silkscreen at {'x': 197.256723, 'y': 129.514372}
+  Polygon of G*** on F.Silkscreen at {'x': 197.948612, 'y': 128.962511}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon on B.Silkscreen at {'x': 241.863277, 'y': 110.624372}
+  Polygon of G*** on B.Silkscreen at {'x': 241.143427, 'y': 109.996629}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon of G*** on B.Silkscreen at {'x': 241.171388, 'y': 110.072511}
+  Polygon on B.Silkscreen at {'x': 241.863277, 'y': 110.624372}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon of G*** on B.Silkscreen at {'x': 241.503725, 'y': 110.518494}
+  Polygon on B.Silkscreen at {'x': 241.863277, 'y': 110.624372}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon of G*** on B.Silkscreen at {'x': 241.708973, 'y': 110.81591}
+  Polygon on B.Silkscreen at {'x': 241.863277, 'y': 110.624372}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon of G*** on B.Silkscreen at {'x': 241.599048, 'y': 110.668002}
+  Polygon on B.Silkscreen at {'x': 241.863277, 'y': 110.624372}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon of G*** on B.Silkscreen at {'x': 241.375784, 'y': 110.352639}
+  Polygon on B.Silkscreen at {'x': 241.863277, 'y': 110.624372}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon of G*** on B.Silkscreen at {'x': 241.485326, 'y': 110.544338}
+  Polygon on B.Silkscreen at {'x': 241.863277, 'y': 110.624372}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon of G*** on B.Silkscreen at {'x': 241.421426, 'y': 110.405128}
+  Polygon on B.Silkscreen at {'x': 241.863277, 'y': 110.624372}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon of G*** on B.Silkscreen at {'x': 241.503583, 'y': 110.569441}
+  Polygon on B.Silkscreen at {'x': 241.863277, 'y': 110.624372}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon of G*** on B.Silkscreen at {'x': 241.391592, 'y': 110.378717}
+  Polygon on B.Silkscreen at {'x': 241.863277, 'y': 110.624372}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon of G*** on B.Silkscreen at {'x': 241.389875, 'y': 110.438369}
+  Polygon on B.Silkscreen at {'x': 241.863277, 'y': 110.624372}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon of G*** on B.Silkscreen at {'x': 240.634291, 'y': 108.475219}
+  Polygon on B.Silkscreen at {'x': 241.863277, 'y': 110.624372}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon of G*** on B.Silkscreen at {'x': 241.1567, 'y': 110.133556}
+  Polygon on B.Silkscreen at {'x': 241.863277, 'y': 110.624372}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon of G*** on B.Silkscreen at {'x': 241.270806, 'y': 110.199737}
+  Polygon on B.Silkscreen at {'x': 241.863277, 'y': 110.624372}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon of G*** on B.Silkscreen at {'x': 241.270806, 'y': 110.295586}
+  Polygon on B.Silkscreen at {'x': 241.863277, 'y': 110.624372}
+WARNING silk_overlap: Silkscreen clearance
+  Polygon of G*** on B.Silkscreen at {'x': 241.307718, 'y': 110.274057}
+  Polygon on B.Silkscreen at {'x': 241.863277, 'y': 110.624372}
+
+schematic_parity (77)
+WARNING duplicate_footprints: Duplicate footprints
+  Footprint REF** at {'x': 179.95, 'y': 141.8}
+  Footprint REF** at {'x': 241.54, 'y': 103.33}
+WARNING duplicate_footprints: Duplicate footprints
+  Footprint REF** at {'x': 179.95, 'y': 103.325}
+  Footprint REF** at {'x': 241.54, 'y': 103.33}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint BT1 at {'x': 204.6, 'y': 140.575}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint BZ1 at {'x': 203.775, 'y': 116.225}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint C1 at {'x': 235.59, 'y': 119.27}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint C2 at {'x': 236.6, 'y': 109.925}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint C3 at {'x': 220.915, 'y': 130.8}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint C4 at {'x': 225.065, 'y': 130.6}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint C5 at {'x': 236.3, 'y': 140.1}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint C6 at {'x': 212.27, 'y': 106.33}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint C7 at {'x': 212.52, 'y': 102.655}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint C8 at {'x': 227.665, 'y': 133.595}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint C9 at {'x': 216.1, 'y': 133.7}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint C10 at {'x': 216.35, 'y': 137.1}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint C11 at {'x': 229.45, 'y': 137.45}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint C12 at {'x': 203.975, 'y': 135.6}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint C13 at {'x': 211.451429, 'y': 141.35}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint C14 at {'x': 222.35, 'y': 141.05}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint C15 at {'x': 219.075, 'y': 143.65}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint C17 at {'x': 206.75, 'y': 121.3}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint D7 at {'x': 180.013556, 'y': 137.175}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint D8 at {'x': 180.013556, 'y': 135.5}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint D9 at {'x': 179.9875, 'y': 133.825}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint D10 at {'x': 179.9875, 'y': 132.15}
+WARNING footprint_symbol_mismatch: AP2114H-3.3TRG1:SOT230P700X180-4N doesn't match footprint given by symbol (SOT223)
+  Footprint IC1 at {'x': 222.29, 'y': 135.52}
+WARNING footprint_symbol_field_mismatch: Field 'Description' differs (PCB: '', Schematic: 'IC REG LINEAR 3.3V 1A SOT223')
+  Footprint IC1 at {'x': 222.29, 'y': 135.52}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint J1 at {'x': 192.125, 'y': 132.5}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint J7 at {'x': 180.1, 'y': 125.6}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint J8 at {'x': 180.025, 'y': 109.2}
+WARNING net_conflict: No pad found for pin B11 in schematic
+  Footprint J9 at {'x': 240.09, 'y': 126.245}
+WARNING net_conflict: No pad found for pin B10 in schematic
+  Footprint J9 at {'x': 240.09, 'y': 126.245}
+WARNING net_conflict: No pad found for pin A11 in schematic
+  Footprint J9 at {'x': 240.09, 'y': 126.245}
+WARNING net_conflict: No pad found for pin A10 in schematic
+  Footprint J9 at {'x': 240.09, 'y': 126.245}
+WARNING net_conflict: No pad found for pin A2 in schematic
+  Footprint J9 at {'x': 240.09, 'y': 126.245}
+WARNING net_conflict: No pad found for pin A3 in schematic
+  Footprint J9 at {'x': 240.09, 'y': 126.245}
+WARNING net_conflict: No pad found for pin B2 in schematic
+  Footprint J9 at {'x': 240.09, 'y': 126.245}
+WARNING net_conflict: No pad found for pin B3 in schematic
+  Footprint J9 at {'x': 240.09, 'y': 126.245}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint J10 at {'x': 240.375, 'y': 140.35}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint J11 at {'x': 180.05, 'y': 117.475}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint L1 at {'x': 214.5, 'y': 137.3}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R1 at {'x': 236.65, 'y': 136.525}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R2 at {'x': 233.05, 'y': 142.1}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R3 at {'x': 196.9, 'y': 125.0}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R4 at {'x': 239.1, 'y': 132.4}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R5 at {'x': 238.565, 'y': 119.22}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R6 at {'x': 227.865, 'y': 127.795}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R7 at {'x': 229.515, 'y': 126.645}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R8 at {'x': 228.79, 'y': 123.47}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R9 at {'x': 239.39, 'y': 114.27}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R10 at {'x': 239.475, 'y': 109.95}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R11 at {'x': 203.975, 'y': 133.85}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R12 at {'x': 234.55, 'y': 114.275}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R13 at {'x': 183.65, 'y': 137.175}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R14 at {'x': 183.65, 'y': 135.5}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R15 at {'x': 218.54, 'y': 127.795}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R16 at {'x': 218.54, 'y': 124.52}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R17 at {'x': 211.2, 'y': 133.85}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R18 at {'x': 203.125, 'y': 123.075}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R19 at {'x': 234.8, 'y': 132.45}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R20 at {'x': 234.8, 'y': 134.05}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R21 at {'x': 183.65, 'y': 133.825}
+WARNING footprint_symbol_mismatch: Value (R22) doesn't match symbol value (900K)
+  Footprint R22 at {'x': 220.5, 'y': 140.8}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R22 at {'x': 220.5, 'y': 140.8}
+WARNING footprint_symbol_mismatch: Value (R23) doesn't match symbol value (100K)
+  Footprint R23 at {'x': 222.475, 'y': 143.65}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R23 at {'x': 222.475, 'y': 143.65}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R24 at {'x': 183.65, 'y': 132.15}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R25 at {'x': 226.6, 'y': 121.35}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R28 at {'x': 203.125, 'y': 126.975}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint R29 at {'x': 210.25, 'y': 121.3}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint SW1 at {'x': 242.065, 'y': 115.9}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint SW2 at {'x': 242.075, 'y': 109.35}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint SW4 at {'x': 191.3, 'y': 139.715}
+WARNING net_conflict: No pad found for pin 3 in schematic
+  Footprint SW4 at {'x': 191.3, 'y': 139.715}
+WARNING footprint_symbol_field_mismatch: Field 'Datasheet' differs (PCB: '~', Schematic: '')
+  Footprint TH1 at {'x': 196.75, 'y': 142.6}
+WARNING extra_footprint: Extra footprint
+  Footprint REF** at {'x': 241.54, 'y': 103.33}
+WARNING extra_footprint: Extra footprint
+  Footprint REF** at {'x': 179.95, 'y': 141.8}
+WARNING extra_footprint: Extra footprint
+  Footprint REF** at {'x': 179.95, 'y': 103.325}

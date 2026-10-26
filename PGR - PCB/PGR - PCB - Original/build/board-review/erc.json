@@ -1,0 +1,2408 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T22:05:52",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/2a888306-90d9-48e5-ba43-e08ba2da2ab6",
+            "violations": [
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 0.3556,
+                                "y": 0.5461
+                            },
+                            "uuid": "cff2cbda-13b5-4a7f-b95f-c33a387d4255"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR03 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 0.3556,
+                                "y": 0.5969
+                            },
+                            "uuid": "e4c3bee3-e5ab-495d-8c1a-03e2f359a857"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR05 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 0.3556,
+                                "y": 0.6477
+                            },
+                            "uuid": "7afbd25a-7368-4b03-850f-1a0e7e82218f"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U4 Pin 7 [VREGIN, Power input, Line]",
+                            "pos": {
+                                "x": 1.4986,
+                                "y": -1.8034
+                            },
+                            "uuid": "29a3d7c6-682f-4f30-89f7-6ef0fa9fde47"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U5 Pin 4 [SENSOR_VP, Input, Line]",
+                            "pos": {
+                                "x": 2.0193,
+                                "y": -1.6256
+                            },
+                            "uuid": "85b1f450-b584-4ba2-a59f-3fc7dc6dc5d7"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U5 Pin 5 [SENSOR_VN, Input, Line]",
+                            "pos": {
+                                "x": 2.0193,
+                                "y": -1.6002
+                            },
+                            "uuid": "a80aad40-5eef-45ae-91a9-064092175a56"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U6 Pin 5 [VCC, Power input, Line]",
+                            "pos": {
+                                "x": 2.0828,
+                                "y": 1.2573
+                            },
+                            "uuid": "3e6ffd40-74d9-4bdf-929c-d59c94de7fad"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U6 Pin 6 [GND, Power input, Line]",
+                            "pos": {
+                                "x": 2.0828,
+                                "y": 1.3081
+                            },
+                            "uuid": "6afc00f6-b5ec-42fd-8239-ccdf3f25f90c"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 13 [IN, Power input, Line]",
+                            "pos": {
+                                "x": 2.2352,
+                                "y": 0.5207
+                            },
+                            "uuid": "0234ce61-dc10-4e71-bfce-5a6a94b1abf1"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol SW4 Pin 3 [C, Passive, Line]",
+                            "pos": {
+                                "x": 2.2987,
+                                "y": 1.3843
+                            },
+                            "uuid": "b6ffebee-9092-4045-bb8a-7be80f84cab3"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "The symbol library 'Connector_Generic' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Connector_Generic.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol J1 [Conn_01x16]",
+                            "pos": {
+                                "x": 0.2667,
+                                "y": 0.4953
+                            },
+                            "uuid": "e30da810-fc7f-4dcc-8d6b-18212b6f8293"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01 [+3.3V]",
+                            "pos": {
+                                "x": 0.3556,
+                                "y": 0.5461
+                            },
+                            "uuid": "1d5ab07e-4aad-4a90-8090-952aeefcb7a4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR02 [+3.3V]",
+                            "pos": {
+                                "x": 0.3556,
+                                "y": 0.5715
+                            },
+                            "uuid": "9a5c741a-0aec-431f-a7eb-fd68cb0a8092"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR03 [+5V]",
+                            "pos": {
+                                "x": 0.3556,
+                                "y": 0.5969
+                            },
+                            "uuid": "2c691e45-0ca8-47bb-9744-d2815090ba36"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR04 [+5V]",
+                            "pos": {
+                                "x": 0.3556,
+                                "y": 0.6223
+                            },
+                            "uuid": "e6a9a8f4-ccb3-4930-82d9-895c791c34f5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR05 [GND]",
+                            "pos": {
+                                "x": 0.3556,
+                                "y": 0.6477
+                            },
+                            "uuid": "4030eb59-4b37-4252-a964-9c5281b947f5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR06 [GND]",
+                            "pos": {
+                                "x": 0.3556,
+                                "y": 0.6731
+                            },
+                            "uuid": "237a17e6-af7c-4522-88f7-f6a9bbc98c3b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Connector_Generic' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Connector_Generic.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol J10 [Conn_01x02]",
+                            "pos": {
+                                "x": 0.3556,
+                                "y": 1.5875
+                            },
+                            "uuid": "0aff9071-0539-4cf2-a5f0-9e04d05b6638"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR013 [GND]",
+                            "pos": {
+                                "x": 0.3683,
+                                "y": 1.3208
+                            },
+                            "uuid": "ec002d2c-eda9-4eab-b8d7-71a3e29d0158"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR033 [GND]",
+                            "pos": {
+                                "x": 0.3937,
+                                "y": -1.0795
+                            },
+                            "uuid": "6df55d68-702f-4ae1-9a8b-d4f4a79f0bdb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR041 [GND]",
+                            "pos": {
+                                "x": 0.3937,
+                                "y": -0.7366
+                            },
+                            "uuid": "788067a7-f3c3-4f74-8fb6-7d7a4b2ea8a5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Connector_Generic' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Connector_Generic.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol J7 [Conn_01x03]",
+                            "pos": {
+                                "x": 0.4191,
+                                "y": 1.1176
+                            },
+                            "uuid": "993d6357-3123-4be6-986f-32f79536544c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol BZ1 [Buzzer]",
+                            "pos": {
+                                "x": 0.4191,
+                                "y": 1.2954
+                            },
+                            "uuid": "5df7f2cc-8c95-4309-94c5-313a64868fc7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR026 [GND]",
+                            "pos": {
+                                "x": 0.4318,
+                                "y": 1.5875
+                            },
+                            "uuid": "9f7cc5f5-e03a-4aa2-b02e-fe203196bca6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Connector' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Connector.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol J9 [USB_C_Receptacle]",
+                            "pos": {
+                                "x": 0.4699,
+                                "y": -1.4859
+                            },
+                            "uuid": "65881f40-e7eb-4909-a494-da1c4b2be411"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR034 [GND]",
+                            "pos": {
+                                "x": 0.4699,
+                                "y": -1.0795
+                            },
+                            "uuid": "ee734645-8e5b-4210-a53a-17f58c111989"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Switch' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Switch.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol SW1 [SW_Push]",
+                            "pos": {
+                                "x": 0.4699,
+                                "y": -0.7366
+                            },
+                            "uuid": "fe8e1be2-ac16-4091-bbdf-30c033f3437a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR025 [GND]",
+                            "pos": {
+                                "x": 0.4953,
+                                "y": 1.1176
+                            },
+                            "uuid": "5383c216-5fff-4e4d-9f74-e2c91047c908"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR024 [+3.3V]",
+                            "pos": {
+                                "x": 0.4953,
+                                "y": 1.143
+                            },
+                            "uuid": "8581c58f-37a5-4229-926f-f813488766f1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR045 [+3.3V]",
+                            "pos": {
+                                "x": 0.5588,
+                                "y": -0.8636
+                            },
+                            "uuid": "988a60c7-a9bf-4f53-ab15-96bd527dd18c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R9 [R]",
+                            "pos": {
+                                "x": 0.5588,
+                                "y": -0.8001
+                            },
+                            "uuid": "e854c611-0913-49aa-988c-1b813fb9ed28"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR035 [GND]",
+                            "pos": {
+                                "x": 0.635,
+                                "y": -1.8542
+                            },
+                            "uuid": "f7f0429b-fefc-4dac-9755-b33e35148eea"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol C1 [C]",
+                            "pos": {
+                                "x": 0.635,
+                                "y": -1.7907
+                            },
+                            "uuid": "11950e1a-ed24-45b5-921b-74363df0c916"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR036 [GND]",
+                            "pos": {
+                                "x": 0.6985,
+                                "y": -1.8923
+                            },
+                            "uuid": "3c6bc267-c22a-46f1-91ec-402097d05519"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'LESD5D5.0CT1G' doesn't match copy in library 'LESD5D5.0CT1G'",
+                    "items": [
+                        {
+                            "description": "Symbol D3 [LESD5D5.0CT1G]",
+                            "pos": {
+                                "x": 0.6985,
+                                "y": -1.8161
+                            },
+                            "uuid": "cd32e967-a229-4e48-87de-620969fe25cd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R4 [R]",
+                            "pos": {
+                                "x": 0.6985,
+                                "y": -1.6891
+                            },
+                            "uuid": "e6659194-ef76-498f-8b8b-80989f9303fd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R5 [R]",
+                            "pos": {
+                                "x": 0.6985,
+                                "y": -1.6637
+                            },
+                            "uuid": "8a73beca-f6a0-49da-9f86-48265cb17223"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'LESD5D5.0CT1G' doesn't match copy in library 'LESD5D5.0CT1G'",
+                    "items": [
+                        {
+                            "description": "Symbol D4 [LESD5D5.0CT1G]",
+                            "pos": {
+                                "x": 0.7112,
+                                "y": -1.4224
+                            },
+                            "uuid": "445c21f8-4fa7-439e-9e5e-8f7c42431890"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR037 [GND]",
+                            "pos": {
+                                "x": 0.7112,
+                                "y": -1.3462
+                            },
+                            "uuid": "a62021b4-3164-4870-af0b-9e708ed270e5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'LESD5D5.0CT1G' doesn't match copy in library 'LESD5D5.0CT1G'",
+                    "items": [
+                        {
+                            "description": "Symbol D5 [LESD5D5.0CT1G]",
+                            "pos": {
+                                "x": 0.7493,
+                                "y": -1.4224
+                            },
+                            "uuid": "94e94f5d-7782-48dd-b96d-a1a7cab9d2ba"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR038 [GND]",
+                            "pos": {
+                                "x": 0.7493,
+                                "y": -1.3462
+                            },
+                            "uuid": "79908522-dfca-46cd-becc-020deac73a07"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR039 [GND]",
+                            "pos": {
+                                "x": 0.7747,
+                                "y": -1.6891
+                            },
+                            "uuid": "35c8ed3f-2a60-4246-a07b-6d0a7ed488b9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR040 [GND]",
+                            "pos": {
+                                "x": 0.7747,
+                                "y": -1.6637
+                            },
+                            "uuid": "bfd09204-8d26-4905-adc2-76c20c412044"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR042 [GND]",
+                            "pos": {
+                                "x": 0.7874,
+                                "y": -0.5969
+                            },
+                            "uuid": "ace0b3f6-6c7c-40a5-ab25-65dbc9f15130"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol C2 [C]",
+                            "pos": {
+                                "x": 0.8509,
+                                "y": -0.6477
+                            },
+                            "uuid": "a8457f44-ac56-4167-9f54-de8b4ea6fdac"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R29 [R]",
+                            "pos": {
+                                "x": 0.889,
+                                "y": 0.4953
+                            },
+                            "uuid": "c77fe506-e932-4b3e-8ad0-e47b88a7e6f6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR079 [GND]",
+                            "pos": {
+                                "x": 0.889,
+                                "y": 0.5334
+                            },
+                            "uuid": "89291382-0ca4-4dcb-a3ed-5aa24ebaef38"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Switch' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Switch.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol SW2 [SW_Push]",
+                            "pos": {
+                                "x": 0.9017,
+                                "y": -0.7366
+                            },
+                            "uuid": "7f8a6d94-3195-48e5-82dd-7aaf90a998a8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Connector_Generic' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Connector_Generic.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol J8 [Conn_01x04]",
+                            "pos": {
+                                "x": 0.9017,
+                                "y": 1.1049
+                            },
+                            "uuid": "a0ea86f3-cd30-4028-984a-95f036ed8f9c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR08 [+5V]",
+                            "pos": {
+                                "x": 0.9525,
+                                "y": 1.1049
+                            },
+                            "uuid": "583ffc01-c4bc-44b4-89e0-b67b6cb8cea9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR07 [GND]",
+                            "pos": {
+                                "x": 0.9525,
+                                "y": 1.1303
+                            },
+                            "uuid": "0f46bb07-23ba-498c-a352-6aece6fbef0c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR014 [GND]",
+                            "pos": {
+                                "x": 0.9652,
+                                "y": 0.3175
+                            },
+                            "uuid": "4dfa1454-d82f-43be-93c5-9a9570e25d55"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR046 [+3.3V]",
+                            "pos": {
+                                "x": 0.9906,
+                                "y": -0.8509
+                            },
+                            "uuid": "2409df83-40d7-4be6-9e93-dbc934481dfe"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R10 [R]",
+                            "pos": {
+                                "x": 0.9906,
+                                "y": -0.8001
+                            },
+                            "uuid": "f2a20001-f8b0-4e69-805b-868f60e35741"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol C17 [C]",
+                            "pos": {
+                                "x": 1.016,
+                                "y": 0.3175
+                            },
+                            "uuid": "9659c84e-27bb-4034-8d2d-95feb0f48e14"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR021 [+3.3V]",
+                            "pos": {
+                                "x": 1.0668,
+                                "y": 0.2921
+                            },
+                            "uuid": "6fc01db6-b81e-4e93-b15c-2d08279d3214"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Interface_UART' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Interface_UART.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol U8 [MAX3485]",
+                            "pos": {
+                                "x": 1.0668,
+                                "y": 0.4826
+                            },
+                            "uuid": "e9a4a9e8-de56-4f84-ba12-c00c5c21cc69"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR022 [GND]",
+                            "pos": {
+                                "x": 1.0668,
+                                "y": 0.635
+                            },
+                            "uuid": "6bde037d-b668-44b4-80df-c4b80c24e0e7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR09 [GND]",
+                            "pos": {
+                                "x": 1.1049,
+                                "y": 1.5113
+                            },
+                            "uuid": "07113d09-4a51-42a9-a1a4-541fa74c91a4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol C13 [C]",
+                            "pos": {
+                                "x": 1.1049,
+                                "y": 1.5621
+                            },
+                            "uuid": "0e2f6de4-965a-4b66-9d12-5884dc7bd2b2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR056 [+5V]",
+                            "pos": {
+                                "x": 1.1811,
+                                "y": 0.3175
+                            },
+                            "uuid": "2905c439-f71e-45fe-9f5c-ec42d0fc2028"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R18 [R]",
+                            "pos": {
+                                "x": 1.1811,
+                                "y": 0.3556
+                            },
+                            "uuid": "530ced9a-c727-44fe-875d-99545b813d6d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R28 [R]",
+                            "pos": {
+                                "x": 1.1811,
+                                "y": 0.508
+                            },
+                            "uuid": "fb884edb-3156-49a8-b412-feac2fa9692b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR066 [GND]",
+                            "pos": {
+                                "x": 1.1811,
+                                "y": 0.5461
+                            },
+                            "uuid": "d02c143b-d239-4cd3-9627-3a6705dc3f63"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R3 [R]",
+                            "pos": {
+                                "x": 1.2065,
+                                "y": 0.4318
+                            },
+                            "uuid": "ef9cc46b-4ded-41e7-9523-8b1db9ecdff2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR070 [GND]",
+                            "pos": {
+                                "x": 1.2446,
+                                "y": 1.8034
+                            },
+                            "uuid": "7014ae1e-270b-4c32-ae93-e6074d2c4d49"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R6 [R]",
+                            "pos": {
+                                "x": 1.2573,
+                                "y": -1.6256
+                            },
+                            "uuid": "46cb0937-8518-4bab-9104-c37cd1b87082"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR043 [+3.3V]",
+                            "pos": {
+                                "x": 1.27,
+                                "y": -1.7526
+                            },
+                            "uuid": "62745e60-a30b-43cf-9c50-d414d27a7def"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol L1 [L]",
+                            "pos": {
+                                "x": 1.27,
+                                "y": 1.4859
+                            },
+                            "uuid": "8b484f88-499a-4662-96ea-2110da45f179"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Regulator_Switching' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Regulator_Switching.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol U3 [TPS61200DRC]",
+                            "pos": {
+                                "x": 1.27,
+                                "y": 1.651
+                            },
+                            "uuid": "75cce5b0-21e7-4327-922e-9fa2efc405cc"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Connector_Generic' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Connector_Generic.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol J11 [Conn_01x04]",
+                            "pos": {
+                                "x": 1.2827,
+                                "y": 1.1049
+                            },
+                            "uuid": "4004f953-fec0-44ee-8554-4871a3f1afe9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R7 [R]",
+                            "pos": {
+                                "x": 1.3208,
+                                "y": -1.5494
+                            },
+                            "uuid": "087ee53e-ded7-4e89-9366-71250d432eab"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR044 [GND]",
+                            "pos": {
+                                "x": 1.3208,
+                                "y": -1.4732
+                            },
+                            "uuid": "dbf68176-bfb3-4551-a324-ba48b21bc4c2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R8 [R]",
+                            "pos": {
+                                "x": 1.3335,
+                                "y": -1.7526
+                            },
+                            "uuid": "95a77749-988d-4a72-a80d-df548344d901"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR078 [GND]",
+                            "pos": {
+                                "x": 1.3335,
+                                "y": 1.0541
+                            },
+                            "uuid": "326ffd8f-8fa8-4634-8c78-9d25c761bf11"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR080 [+5V]",
+                            "pos": {
+                                "x": 1.3335,
+                                "y": 1.0795
+                            },
+                            "uuid": "8eac3eab-c5d0-4a77-8243-d52412977a74"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR058 [+3.3V]",
+                            "pos": {
+                                "x": 1.397,
+                                "y": -0.2921
+                            },
+                            "uuid": "f85562fb-c043-413f-a689-df8f0c1ccd64"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR059 [+3.3V]",
+                            "pos": {
+                                "x": 1.397,
+                                "y": -0.2286
+                            },
+                            "uuid": "f5407fcd-790b-4376-b607-41f0ca028e3b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol C15 [C]",
+                            "pos": {
+                                "x": 1.4097,
+                                "y": 1.6891
+                            },
+                            "uuid": "e5592dfc-33f6-43c6-acd0-42c4983bb626"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR073 [GND]",
+                            "pos": {
+                                "x": 1.4097,
+                                "y": 1.7526
+                            },
+                            "uuid": "e7071d2d-027e-4219-8bbb-5980af173b33"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Diode' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Diode.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol D6 [SM712_SOT23]",
+                            "pos": {
+                                "x": 1.4478,
+                                "y": 1.1176
+                            },
+                            "uuid": "eee1bcbe-2b07-412c-9959-a126d96ec557"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R13 [R]",
+                            "pos": {
+                                "x": 1.4605,
+                                "y": -0.2921
+                            },
+                            "uuid": "3a2750f5-8ca1-4dc4-add4-8bfd0912deb9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R14 [R]",
+                            "pos": {
+                                "x": 1.4605,
+                                "y": -0.2286
+                            },
+                            "uuid": "23e42572-3041-46f2-87d2-e7eb8a8d2be1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR081 [GND]",
+                            "pos": {
+                                "x": 1.4986,
+                                "y": 1.1176
+                            },
+                            "uuid": "12f48b64-12f0-48a2-a976-17f0dc692d8c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol C3 [C]",
+                            "pos": {
+                                "x": 1.524,
+                                "y": -1.8542
+                            },
+                            "uuid": "44457739-de7c-4b12-8fa1-6a812299d335"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Interface_USB' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Interface_USB.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol U4 [CP2102N-Axx-xQFN28]",
+                            "pos": {
+                                "x": 1.524,
+                                "y": -1.4732
+                            },
+                            "uuid": "c30770d8-cb15-4ebc-bfc9-1128312ba3a8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR047 [GND]",
+                            "pos": {
+                                "x": 1.524,
+                                "y": -1.143
+                            },
+                            "uuid": "d47ed9a7-6828-4f22-9b67-685d7b2fb035"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R22 [R]",
+                            "pos": {
+                                "x": 1.524,
+                                "y": 1.6764
+                            },
+                            "uuid": "2b4d4f8f-d9e2-4ec8-b583-0ae46914ca0e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R23 [R]",
+                            "pos": {
+                                "x": 1.524,
+                                "y": 1.778
+                            },
+                            "uuid": "b13fdc1a-0df0-49f9-8592-b00095a67cce"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR074 [GND]",
+                            "pos": {
+                                "x": 1.524,
+                                "y": 1.8288
+                            },
+                            "uuid": "3562827b-95c4-4ca1-a9ad-406f6423ecfc"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol D7 [LED]",
+                            "pos": {
+                                "x": 1.5621,
+                                "y": -0.2921
+                            },
+                            "uuid": "f2298791-8bb0-40b7-a9df-b79094648222"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol D8 [LED]",
+                            "pos": {
+                                "x": 1.5621,
+                                "y": -0.2286
+                            },
+                            "uuid": "4c3caca8-041b-4526-b31a-c76a91586c21"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR072 [GND]",
+                            "pos": {
+                                "x": 1.5875,
+                                "y": 1.5367
+                            },
+                            "uuid": "d86e3d0d-1d6c-4efa-9d35-1aae52856c7a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol C14 [C]",
+                            "pos": {
+                                "x": 1.5875,
+                                "y": 1.5875
+                            },
+                            "uuid": "140f3d5b-8925-4c0a-bb91-17d6482a723b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR060 [GND]",
+                            "pos": {
+                                "x": 1.6129,
+                                "y": -0.2286
+                            },
+                            "uuid": "86a344cd-bd63-4505-b9a0-621285c25a31"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR048 [GND]",
+                            "pos": {
+                                "x": 1.651,
+                                "y": -1.8923
+                            },
+                            "uuid": "e024b04f-acdf-4f2e-9b99-e18d7287aaaa"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol C4 [C]",
+                            "pos": {
+                                "x": 1.651,
+                                "y": -1.8542
+                            },
+                            "uuid": "361e437a-f6e3-41de-9605-ee5f5b7c7e5b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR049 [+3.3V]",
+                            "pos": {
+                                "x": 1.6891,
+                                "y": -1.8161
+                            },
+                            "uuid": "776d2eec-c840-4457-9702-d9182d4368df"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Diode' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Diode.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol D1 [SS14]",
+                            "pos": {
+                                "x": 1.7272,
+                                "y": 1.6256
+                            },
+                            "uuid": "71e8d6b3-99ca-4d19-a875-db94c94b274c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Diode' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Diode.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol D2 [SS14]",
+                            "pos": {
+                                "x": 1.7907,
+                                "y": -0.6731
+                            },
+                            "uuid": "64f027d9-1d47-44a6-ae30-cad6f8a67372"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR071 [+5V]",
+                            "pos": {
+                                "x": 1.8288,
+                                "y": 1.6256
+                            },
+                            "uuid": "4fd2a4d3-231d-4d01-a155-a02eecc9ee16"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR010 [+5V]",
+                            "pos": {
+                                "x": 1.8542,
+                                "y": -0.7239
+                            },
+                            "uuid": "2f347938-7196-4b57-a1af-11b99939535a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol C8 [C]",
+                            "pos": {
+                                "x": 1.9431,
+                                "y": -0.635
+                            },
+                            "uuid": "1559dd50-7661-4b12-a517-4170cf818e7f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol C12 [C]",
+                            "pos": {
+                                "x": 1.9431,
+                                "y": 1.27
+                            },
+                            "uuid": "7c5cbba9-f07a-4caa-8ec4-18a148934a49"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR050 [GND]",
+                            "pos": {
+                                "x": 1.9685,
+                                "y": 0.7493
+                            },
+                            "uuid": "8365cd9b-0570-46cf-82d2-1adb47ce0b4a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR032 [GND]",
+                            "pos": {
+                                "x": 1.9685,
+                                "y": 0.7747
+                            },
+                            "uuid": "fe5435f0-4100-453d-bd1b-50bcb09fffab"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR061 [GND]",
+                            "pos": {
+                                "x": 1.9939,
+                                "y": -0.5969
+                            },
+                            "uuid": "eb3ec072-e3fa-4e6c-b2c6-eeb414d35e0d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label 'SENSOR_VP'",
+                            "pos": {
+                                "x": 2.0193,
+                                "y": -1.6256
+                            },
+                            "uuid": "8f52354b-a437-49a4-81ad-0c8361c1b872"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label 'SENSOR_VN'",
+                            "pos": {
+                                "x": 2.0193,
+                                "y": -1.6002
+                            },
+                            "uuid": "3f6394cf-55df-4c4f-ba08-8457812cc600"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library ''",
+                    "items": [
+                        {
+                            "description": "Symbol IC1 [AP2114H-3.3TRG1]",
+                            "pos": {
+                                "x": 2.032,
+                                "y": -0.6731
+                            },
+                            "uuid": "fad31e15-5b29-4824-8dd9-a3959c923602"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "Symbol 'AP2114H-3.3TRG1' doesn't match copy in library 'AP2114H-3.3TRG1'",
+                    "items": [
+                        {
+                            "description": "Symbol IC1 [AP2114H-3.3TRG1]",
+                            "pos": {
+                                "x": 2.032,
+                                "y": -0.6731
+                            },
+                            "uuid": "fad31e15-5b29-4824-8dd9-a3959c923602"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R2 [R]",
+                            "pos": {
+                                "x": 2.032,
+                                "y": 0.7493
+                            },
+                            "uuid": "264915f5-7e80-41a0-ac90-d551228555b6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R1 [R]",
+                            "pos": {
+                                "x": 2.032,
+                                "y": 0.7747
+                            },
+                            "uuid": "f9b34480-f3b4-4294-b070-2822effaccb8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R11 [R]",
+                            "pos": {
+                                "x": 2.032,
+                                "y": 1.2319
+                            },
+                            "uuid": "797fa110-e87c-402a-977a-4342ceec6389"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR053 [GND]",
+                            "pos": {
+                                "x": 2.0447,
+                                "y": -1.7526
+                            },
+                            "uuid": "40e60312-e151-4b34-b1f0-9d0f2440a442"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR012 [GND]",
+                            "pos": {
+                                "x": 2.0701,
+                                "y": 0.6223
+                            },
+                            "uuid": "d9416efb-a7d6-4c9e-895d-e7837f1a4642"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR052 [GND]",
+                            "pos": {
+                                "x": 2.0701,
+                                "y": 0.6477
+                            },
+                            "uuid": "bab9fa41-d973-43b2-849b-8b5431c815dd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR051 [GND]",
+                            "pos": {
+                                "x": 2.0701,
+                                "y": 0.6731
+                            },
+                            "uuid": "c1b24def-3b34-4bd6-b805-b0e906eb7cff"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR011 [GND]",
+                            "pos": {
+                                "x": 2.0701,
+                                "y": 1.4732
+                            },
+                            "uuid": "3486b90b-4257-4a5d-9553-77b8b19daad7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol C6 [C]",
+                            "pos": {
+                                "x": 2.1336,
+                                "y": -1.8415
+                            },
+                            "uuid": "67e337e8-ebe0-4b4f-88b4-08e66a1b8f55"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol C7 [C]",
+                            "pos": {
+                                "x": 2.1336,
+                                "y": -1.7526
+                            },
+                            "uuid": "f35b342b-7a98-4622-b261-c1decbadc86b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR064 [GND]",
+                            "pos": {
+                                "x": 2.1336,
+                                "y": 0.4826
+                            },
+                            "uuid": "d956ce53-b772-4685-b98d-0efb63e29dab"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR054 [+3.3V]",
+                            "pos": {
+                                "x": 2.1717,
+                                "y": -1.905
+                            },
+                            "uuid": "b9d5a982-804c-467a-bd47-d4daba0d9ebe"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'RF_Module' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/RF_Module.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol U5 [ESP32-WROOM-32E]",
+                            "pos": {
+                                "x": 2.1717,
+                                "y": -1.3716
+                            },
+                            "uuid": "fbdda013-8a66-492d-9f41-50c7ca12f7d6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR055 [GND]",
+                            "pos": {
+                                "x": 2.1717,
+                                "y": -1.016
+                            },
+                            "uuid": "c3a72ab9-5883-4060-add8-1023e7a3ee88"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Battery_Management' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Battery_Management.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol U6 [DW01A]",
+                            "pos": {
+                                "x": 2.1844,
+                                "y": 1.2827
+                            },
+                            "uuid": "a00c9bd6-d58e-4998-bd85-f7ff9b6c1239"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol C5 [C]",
+                            "pos": {
+                                "x": 2.1971,
+                                "y": 0.4826
+                            },
+                            "uuid": "a676fbad-d38c-4859-bb58-963abe99b2d5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Battery_Management' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Battery_Management.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol U1 [BQ24074RGT]",
+                            "pos": {
+                                "x": 2.2352,
+                                "y": 0.6731
+                            },
+                            "uuid": "042393fe-a375-4261-b179-84eeb2319d41"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR057 [GND]",
+                            "pos": {
+                                "x": 2.2352,
+                                "y": 0.8509
+                            },
+                            "uuid": "cdf89f03-fdb3-4a61-9214-b3fd3aebf35c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R15 [R]",
+                            "pos": {
+                                "x": 2.2606,
+                                "y": -0.3048
+                            },
+                            "uuid": "0a1c01ce-1231-48b3-a2ae-aee9752f02c4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R16 [R]",
+                            "pos": {
+                                "x": 2.2606,
+                                "y": -0.1651
+                            },
+                            "uuid": "ac93f953-cd52-4be5-8b74-2b8e13cbd12c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR027 [GND]",
+                            "pos": {
+                                "x": 2.2987,
+                                "y": 1.2192
+                            },
+                            "uuid": "890f5f2d-e00f-445b-a0c1-a956dedca44e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R17 [R]",
+                            "pos": {
+                                "x": 2.2987,
+                                "y": 1.27
+                            },
+                            "uuid": "0da199e7-9562-4cae-91b6-28c591b66536"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "Symbol 'SS8050-G' doesn't match copy in library 'SS8050-G'",
+                    "items": [
+                        {
+                            "description": "Symbol Q1 [SS8050-G]",
+                            "pos": {
+                                "x": 2.3495,
+                                "y": -0.3048
+                            },
+                            "uuid": "e0795e57-486c-4688-9d57-312a9adbbbb6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'SS8050-G' doesn't match copy in library 'SS8050-G'",
+                    "items": [
+                        {
+                            "description": "Symbol Q2 [SS8050-G]",
+                            "pos": {
+                                "x": 2.3495,
+                                "y": -0.1651
+                            },
+                            "uuid": "0ef3abc4-ecf1-48c4-82fb-c4aa27f7a36e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "The symbol library 'Switch' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Switch.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol SW4 [SW_SPDT]",
+                            "pos": {
+                                "x": 2.3495,
+                                "y": 1.4097
+                            },
+                            "uuid": "c772dcd2-6432-413a-bf95-21c5b81a5da4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R19 [R]",
+                            "pos": {
+                                "x": 2.3749,
+                                "y": 0.8128
+                            },
+                            "uuid": "47b97b0b-dc55-4350-b585-f402347d3d07"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR023 [+3.3V]",
+                            "pos": {
+                                "x": 2.3749,
+                                "y": 0.8509
+                            },
+                            "uuid": "0f021359-b9b3-4ab4-a71a-5d3398964322"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R20 [R]",
+                            "pos": {
+                                "x": 2.4003,
+                                "y": 0.7874
+                            },
+                            "uuid": "40060c2a-5368-419e-8d7b-3530d087fb01"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR067 [+3.3V]",
+                            "pos": {
+                                "x": 2.4003,
+                                "y": 0.8255
+                            },
+                            "uuid": "0e0b4746-cbef-4216-9b34-99c1a43564e2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol BT1 [Battery]",
+                            "pos": {
+                                "x": 2.4003,
+                                "y": 1.27
+                            },
+                            "uuid": "dcfa1dd9-8c66-488e-91da-24c11b8ecdf0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol C9 [C]",
+                            "pos": {
+                                "x": 2.413,
+                                "y": -0.635
+                            },
+                            "uuid": "fe5db819-eecc-40d9-93b9-1ea9c8a7c569"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR062 [GND]",
+                            "pos": {
+                                "x": 2.413,
+                                "y": -0.5588
+                            },
+                            "uuid": "93743182-84a1-4373-b1ff-89842576dc06"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol TH1 [Thermistor_NTC]",
+                            "pos": {
+                                "x": 2.4257,
+                                "y": 0.6985
+                            },
+                            "uuid": "c1a9a4ed-e977-48da-92e6-90f1a16073bd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R21 [R]",
+                            "pos": {
+                                "x": 2.4511,
+                                "y": 0.8128
+                            },
+                            "uuid": "a5e0abf0-9cd3-475b-bcbd-4b4a664d2ae7"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol D9 [LED]",
+                            "pos": {
+                                "x": 2.4511,
+                                "y": 0.889
+                            },
+                            "uuid": "abce8491-c32d-4ef0-b6a6-a4f4782a1a8f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR068 [GND]",
+                            "pos": {
+                                "x": 2.4511,
+                                "y": 0.9271
+                            },
+                            "uuid": "e20ff762-b60e-4604-b8d7-9a7e6174ba86"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R12 [R]",
+                            "pos": {
+                                "x": 2.4638,
+                                "y": -1.6764
+                            },
+                            "uuid": "78097462-e285-45e2-b204-4fcef61a3536"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R25 [R]",
+                            "pos": {
+                                "x": 2.4638,
+                                "y": -1.5875
+                            },
+                            "uuid": "bf8b3bfc-7f92-4087-a052-79340f817252"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR016 [GND]",
+                            "pos": {
+                                "x": 2.4638,
+                                "y": -1.5494
+                            },
+                            "uuid": "e305cfb9-8615-4523-9582-0e9f21a4db2e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol C10 [C]",
+                            "pos": {
+                                "x": 2.4765,
+                                "y": -0.635
+                            },
+                            "uuid": "46262e9d-eb01-42a6-a368-a7248b59785a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR065 [GND]",
+                            "pos": {
+                                "x": 2.5019,
+                                "y": 0.5588
+                            },
+                            "uuid": "679b2004-0be3-4369-b55b-c85d7a0a6fd6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol C11 [C]",
+                            "pos": {
+                                "x": 2.5019,
+                                "y": 0.6096
+                            },
+                            "uuid": "b3d042df-65dc-4c4c-a669-d37bb2e7fbde"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR031 [GND]",
+                            "pos": {
+                                "x": 2.5019,
+                                "y": 0.6985
+                            },
+                            "uuid": "24faa414-45d3-45d9-9ff9-150198325912"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol R24 [R]",
+                            "pos": {
+                                "x": 2.5019,
+                                "y": 0.7874
+                            },
+                            "uuid": "18f2a104-78df-4668-b494-8bcb3275db8f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'Device' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/Device.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol D10 [LED]",
+                            "pos": {
+                                "x": 2.5019,
+                                "y": 0.8636
+                            },
+                            "uuid": "60eb6e0a-68d0-47d1-a6fa-d362bccc259e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR015 [GND]",
+                            "pos": {
+                                "x": 2.5019,
+                                "y": 0.9017
+                            },
+                            "uuid": "15e35e07-94be-4822-b509-14c6683d4082"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "The symbol library 'power' was not found at '/home/dauwt/.backplane-bend/kicad/10.0.6/share/kicad/symbols/power.kicad_sym'",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR063 [+3.3V]",
+                            "pos": {
+                                "x": 2.5146,
+                                "y": -0.6731
+                            },
+                            "uuid": "7b207fcc-89b5-4a19-afbf-6736dc6b3976"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                }
+            ]
+        }
+    ],
+    "source": "PGR.kicad_sch"
+}

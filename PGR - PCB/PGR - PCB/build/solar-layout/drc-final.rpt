@@ -1,0 +1,27 @@
+KiCad 10.0.6 DRC after solar / battery layout update
+Zero unconnected items. No new DRC errors or warnings compared with the starting board.
+
+Remaining existing errors:
+hole_clearance: Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1944 mm)
+  Pad A1 [GND] of J9 on Front
+  NPTH pad of J9
+hole_clearance: Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1944 mm)
+  Pad B12 [GND] of J9 on Front
+  NPTH pad of J9
+hole_clearance: Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1944 mm)
+  Pad A12 [GND] of J9 on Front
+  NPTH pad of J9
+hole_clearance: Hole clearance violation (board setup constraints hole clearance 0.2000 mm; actual 0.1944 mm)
+  Pad B1 [GND] of J9 on Front
+  NPTH pad of J9
+courtyards_overlap: Courtyards overlap
+  Footprint REF**
+  Footprint U5
+copper_edge_clearance: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3250 mm)
+  Segment on Edge.Cuts
+  Pad 1 [Net-(U3-FB)] of R23 on Front
+copper_edge_clearance: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3250 mm)
+  Segment on Edge.Cuts
+  Pad 2 [GND] of R23 on Front
+
+The complete diagnostic detail is in drc-final.json.

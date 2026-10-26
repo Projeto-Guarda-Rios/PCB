@@ -1,0 +1,21 @@
+{
+  "result": "PASS",
+  "footprints": 82,
+  "replaced_on_board_TH1_with": "J12 remote cell-temperature probe connector",
+  "added_timer": "R30 68kR",
+  "new_DRC_errors": 0,
+  "new_DRC_warnings": 0,
+  "remaining_existing_DRC_errors": 7,
+  "unconnected_items": 0,
+  "shorts": 0,
+  "schematic_unchanged": true,
+  "project_rules_unchanged": true,
+  "retained_component_pad_geometries_unchanged": true,
+  "all_charger_and_connector_pad_nets_match_schematic": true,
+  "save_reopen_check": "PASS",
+  "final_hashes": {
+    "PGR.kicad_pcb": "3afb538dbe2665a849b9f8325e9937beff644dedc35598c17c8595f1bd34d82d",
+    "PGR.kicad_sch": "3bc5e48bb88d19a90a768cc72720ffc3bc947a047ae53e03005b76cb12def210",
+    "PGR.kicad_pro": "ba4081926f9e4070c33e0cf5f84786c62544d99428e80bc674a5fa03b3898c2c"
+  }
+}

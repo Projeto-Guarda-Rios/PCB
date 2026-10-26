@@ -1,0 +1,2787 @@
+id {
+  value: "c1a9a4ed-e977-48da-92e6-90f1a16073bd"
+}
+path {
+  path {
+    value: "2a888306-90d9-48e5-ba43-e08ba2da2ab6"
+  }
+}
+position {
+  x_nm: 242570000
+  y_nm: 69850000
+}
+transform {
+  orientation: SSO_90
+}
+locked: LS_UNLOCKED
+definition {
+  id {
+    library_nickname: "Device"
+    entry_name: "Thermistor_NTC"
+  }
+  type: SST_NORMAL
+  reference_field {
+    name: "Reference"
+    text {
+      position {
+        x_nm: -4445000
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+          value_degrees: 90
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "TH"
+    }
+    visible: true
+    allow_auto_place: true
+  }
+  value_field {
+    name: "Value"
+    text {
+      position {
+        x_nm: 3175000
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+          value_degrees: 90
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "Thermistor_NTC"
+    }
+    visible: true
+    allow_auto_place: true
+  }
+  footprint_field {
+    name: "Footprint"
+    text {
+      position {
+        y_nm: -1270000
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+    }
+    allow_auto_place: true
+  }
+  datasheet_field {
+    name: "Datasheet"
+    text {
+      position {
+        y_nm: -1270000
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+    }
+    allow_auto_place: true
+  }
+  description_field {
+    name: "Description"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "Temperature dependent resistor, negative temperature coefficient"
+    }
+    allow_auto_place: true
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\nV\032\n\n\004\n\000\020\001\022\002\010\0012H\n\026\010\250\233\276\376\377\377\377\377\377\001\020\270\334\354\376\377\377\377\377\377\001\022\026\010\230\347\305\376\377\377\377\377\377\001\020\254\316\362\376\377\377\377\377\377\001\032\026\010\300\373\305\376\377\377\377\377\377\001\020\350\234\374\376\377\377\377\377\377\001\022&\n$f6b2434c-5d3d-43c9-b204-c6f08592f648\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\nV\032\n\n\004\n\000\020\001\022\002\010\0012H\n\026\010\300\373\305\376\377\377\377\377\377\001\020\360\273\325\376\377\377\377\377\377\001\022\026\010\340\300\312\376\377\377\377\377\377\001\020\340\300\312\376\377\377\377\377\377\001\032\026\010\360\273\325\376\377\377\377\377\377\001\020\300\373\305\376\377\377\377\377\377\001\022&\n$856ab2f9-20ef-49de-9679-824af38e9da6\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\nV\032\n\n\004\n\000\020\001\022\002\010\0012H\n\026\010\360\273\325\376\377\377\377\377\377\001\020\300\373\305\376\377\377\377\377\377\001\022\026\010\200\267\340\376\377\377\377\377\377\001\020\340\300\312\376\377\377\377\377\377\001\032\026\010\240\374\344\376\377\377\377\377\377\001\020\360\273\325\376\377\377\377\377\377\001\022&\n$ad1285af-a452-4ffa-ab64-8637073b2b67\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\nV\032\n\n\004\n\000\020\001\022\002\010\0012H\n\026\010\360\273\325\376\377\377\377\377\377\001\020\240\374\344\376\377\377\377\377\377\001\022\026\010\340\300\312\376\377\377\377\377\377\001\020\200\267\340\376\377\377\377\377\377\001\032\026\010\300\373\305\376\377\377\377\377\377\001\020\360\273\325\376\377\377\377\377\377\001\022&\n$8ac67197-e5ee-493f-afaf-217cf73cd4de\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\nV\032\n\n\004\n\000\020\001\022\002\010\0012H\n\026\010\360\273\325\376\377\377\377\377\377\001\020\230\335\213\377\377\377\377\377\377\001\022\026\010\340\300\312\376\377\377\377\377\377\001\020\370\227\207\377\377\377\377\377\377\001\032\026\010\300\373\305\376\377\377\377\377\377\001\020\350\234\374\376\377\377\377\377\377\001\022&\n$3ce4ab6c-4133-43f0-949a-3457dc8b4428\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\nV\032\n\n\004\n\000\020\001\022\002\010\0012H\n\026\010\240\374\344\376\377\377\377\377\377\001\020\350\234\374\376\377\377\377\377\377\001\022\026\010\200\267\340\376\377\377\377\377\377\001\020\370\227\207\377\377\377\377\377\377\001\032\026\010\360\273\325\376\377\377\377\377\377\001\020\230\335\213\377\377\377\377\377\377\001\022&\n$bb68757a-e28d-4159-89ed-0ccc6d9724b3\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\nV\032\n\n\004\n\000\020\001\022\002\010\0012H\n\026\010\350\234\374\376\377\377\377\377\377\001\020\360\273\325\376\377\377\377\377\377\001\022\026\010\260\270\353\376\377\377\377\377\377\001\020\340\331\343\376\377\377\377\377\377\001\032\026\010\360\273\325\376\377\377\377\377\377\001\020\240\374\344\376\377\377\377\377\377\001\022&\n$38205c55-2e29-4b1d-be37-c49e2881fe59\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n,\032\n\n\004\n\000\020\001\022\002\010\001B\036\n\034\n\032\n\030\n\026\010\240\374\344\376\377\377\377\377\377\001\020\350\234\374\376\377\377\377\377\377\001\022&\n$ab93b09f-5112-4266-96de-f7157fb0faf7\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\nt\032\n\n\004\n\000\020\001\022\002\010\002Bf\nd\nb\n\022\n\020\010\240\374\344\376\377\377\377\377\377\001\020\270\345\340\001\n\021\n\017\010\240\374\344\376\377\377\377\377\377\001\020\210\242U\n\022\n\020\010\360\273\325\376\377\377\377\377\377\001\020\230\343\203\001\n\022\n\020\010\320\274\364\376\377\377\377\377\377\001\020\230\343\203\001\n\021\n\017\010\240\374\344\376\377\377\377\377\377\001\020\210\242U\022&\n$ac6b3d95-347f-43e9-9d4c-ba37063e7e54\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\nR\032\n\n\004\n\000\020\001\022\002\010\001BD\nB\n@\n\030\n\026\010\260\275\223\377\377\377\377\377\377\001\020\240\374\344\376\377\377\377\377\377\001\n\030\n\026\010\260\275\223\377\377\377\377\377\377\001\020\340\375\242\377\377\377\377\377\377\001\n\n\n\010\010\320\302l\020\240\202]\022&\n$908c64c0-aa37-48b8-baae-5aa19beb5ef7\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\nu\032\n\n\004\n\000\020\001\022\002\010\002Bg\ne\nc\n\021\n\017\010\260\275\223\377\377\377\377\377\377\001\020\210\242U\n\022\n\020\010\260\275\223\377\377\377\377\377\377\001\020\270\345\340\001\n\022\n\020\010\200\375\203\377\377\377\377\377\377\001\020\250\244\262\001\n\022\n\020\010\340\375\242\377\377\377\377\377\377\001\020\250\244\262\001\n\022\n\020\010\260\275\223\377\377\377\377\377\377\001\020\270\345\340\001\022&\n$b3be5f9a-1721-48c5-b2e6-e898746fbe68\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n7\032\016\n\010\n\004\010\260\300\017\020\001\022\002\010\001*%\n\026\010\300\376\301\377\377\377\377\377\377\001\020\240\374\344\376\377\377\377\377\377\001\022\t\010\300\201>\020\340\203\233\001\032\000\022&\n$9e213c6b-46be-4a69-926a-eeff199d500f\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$49867f4b-b544-40d6-9d69-a64c8edb59a7\032\0012"\n\010\340\353\275u\020\220\247\247!*\004\010\360\301M0\0038\005@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$db3181c8-3f4b-4626-9a29-e57af2070bb5\032\0011"\n\010\300\340\354q\020\220\247\247!*\004\010\360\301M0\0048\005@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  unit_count: 1
+  body_style {
+    name: "?"
+  }
+  keywords: "thermistor NTC resistor sensor RTD"
+  footprint_filters: "*NTC*"
+  footprint_filters: "*Thermistor*"
+  footprint_filters: "PIN?ARRAY*"
+  footprint_filters: "bornier*"
+  footprint_filters: "*Terminal?Block*"
+  footprint_filters: "R_*"
+  jumpers {
+  }
+  show_pin_names: true
+  pin_name_offset {
+  }
+}
+reference_field {
+  name: "Reference"
+  text {
+    position {
+      x_nm: 242570000
+      y_nm: 70104000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+        value_degrees: 90
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "TH1"
+  }
+  visible: true
+  allow_auto_place: true
+}
+value_field {
+  name: "Value"
+  text {
+    position {
+      x_nm: 245618000
+      y_nm: 74422000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+        value_degrees: 90
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Thermistor_NTC 10 kΩ 25 °C"
+  }
+  visible: true
+  allow_auto_place: true
+}
+footprint_field {
+  name: "Footprint"
+  text {
+    position {
+      x_nm: 242570000
+      y_nm: 68580000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical"
+  }
+  allow_auto_place: true
+}
+datasheet_field {
+  name: "Datasheet"
+  text {
+    position {
+      x_nm: 242570000
+      y_nm: 68580000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+  }
+  allow_auto_place: true
+}
+description_field {
+  name: "Description"
+  text {
+    position {
+      x_nm: 242570000
+      y_nm: 69850000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Temperature dependent resistor, negative temperature coefficient"
+  }
+  allow_auto_place: true
+}
+attributes {
+}
+unit {
+  unit: 1
+}
+show_pin_names: true
+pin_name_offset {
+}
+
+id {
+  value: "0aff9071-0539-4cf2-a5f0-9e04d05b6638"
+}
+path {
+  path {
+    value: "2a888306-90d9-48e5-ba43-e08ba2da2ab6"
+  }
+}
+position {
+  x_nm: 35560000
+  y_nm: 158750000
+}
+transform {
+  orientation: SSO_180
+}
+locked: LS_UNLOCKED
+definition {
+  id {
+    library_nickname: "Connector_Generic"
+    entry_name: "Conn_01x02"
+  }
+  type: SST_NORMAL
+  reference_field {
+    name: "Reference"
+    text {
+      position {
+        y_nm: -2540000
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "J"
+    }
+    visible: true
+    allow_auto_place: true
+  }
+  value_field {
+    name: "Value"
+    text {
+      position {
+        y_nm: 5080000
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "Conn_01x02"
+    }
+    visible: true
+    allow_auto_place: true
+  }
+  footprint_field {
+    name: "Footprint"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+    }
+    allow_auto_place: true
+  }
+  datasheet_field {
+    name: "Datasheet"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+    }
+    allow_auto_place: true
+  }
+  description_field {
+    name: "Description"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+    }
+    allow_auto_place: true
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n7\032\016\n\010\n\004\010\260\300\017\020\001\022\002\010\004*%\n\026\010\220\276\262\377\377\377\377\377\377\001\020\220\276\262\377\377\377\377\377\377\001\022\t\010\360\301M\020\320\305\350\001\032\000\022&\n$29c5dd57-5ada-47b0-8c45-4f961692279b\030\001"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n2\032\016\n\010\n\004\010\320\246\t\020\001\022\002\010\001* \n\026\010\220\276\262\377\377\377\377\377\377\001\020\350\237\370\377\377\377\377\377\377\001\022\004\020\230\340\007\032\000\022&\n$43bc5af9-97d5-44f4-92f2-af11713e4c9f\030\001"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n-\032\016\n\010\n\004\010\320\246\t\020\001\022\002\010\001*\033\n\020\010\220\276\262\377\377\377\377\377\377\001\020\310\243\223\001\022\005\020\370\343\242\001\032\000\022&\n$29b9f8e9-4a7f-48f2-9d48-c470fd50c870\030\001"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$50b130cd-0c3d-49a0-8d3f-a57f71cf10a3\022\005Pin_2\032\0012"\n\010\200\274\260\023\020\320\246\276J*\005\010\320\305\350\0010\0018\005@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$f41c5840-cc37-41a1-be63-6cec4669f819\022\005Pin_1\032\0011"\n\010\200\274\260\023\020\260\252\331K*\005\010\320\305\350\0010\0018\005@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  unit_count: 1
+  body_style {
+    name: "?"
+  }
+  keywords: "connector"
+  footprint_filters: "Connector*:*_1x??_*"
+  jumpers {
+  }
+  show_pin_numbers: true
+  pin_name_offset {
+    value_nm: 1016000
+  }
+}
+reference_field {
+  name: "Reference"
+  text {
+    position {
+      x_nm: 35560000
+      y_nm: 167640000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "J10"
+  }
+  visible: true
+  allow_auto_place: true
+}
+value_field {
+  name: "Value"
+  text {
+    position {
+      x_nm: 35560000
+      y_nm: 165100000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Conn_01x02"
+  }
+  visible: true
+  allow_auto_place: true
+}
+footprint_field {
+  name: "Footprint"
+  text {
+    position {
+      x_nm: 35560000
+      y_nm: 158750000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+  }
+  allow_auto_place: true
+}
+datasheet_field {
+  name: "Datasheet"
+  text {
+    position {
+      x_nm: 35560000
+      y_nm: 158750000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+  }
+  allow_auto_place: true
+}
+description_field {
+  name: "Description"
+  text {
+    position {
+      x_nm: 35560000
+      y_nm: 158750000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+  }
+  allow_auto_place: true
+}
+attributes {
+}
+unit {
+  unit: 1
+}
+show_pin_numbers: true
+pin_name_offset {
+}
+fields_autoplaced: true
+
+id {
+  value: "042393fe-a375-4261-b179-84eeb2319d41"
+}
+path {
+  path {
+    value: "2a888306-90d9-48e5-ba43-e08ba2da2ab6"
+  }
+}
+position {
+  x_nm: 223520000
+  y_nm: 67310000
+}
+transform {
+  orientation: SSO_0
+}
+locked: LS_UNLOCKED
+definition {
+  id {
+    library_nickname: "Battery_Management"
+    entry_name: "BQ24074RGT"
+  }
+  type: SST_NORMAL
+  reference_field {
+    name: "Reference"
+    text {
+      position {
+        x_nm: -8890000
+        y_nm: -13970000
+      }
+      attributes {
+        horizontal_alignment: HA_RIGHT
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "U"
+    }
+    visible: true
+    allow_auto_place: true
+  }
+  value_field {
+    name: "Value"
+    text {
+      position {
+        x_nm: 16510000
+        y_nm: -13970000
+      }
+      attributes {
+        horizontal_alignment: HA_RIGHT
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "BQ24074RGT"
+    }
+    visible: true
+    allow_auto_place: true
+  }
+  footprint_field {
+    name: "Footprint"
+    text {
+      position {
+        x_nm: 7620000
+        y_nm: 13970000
+      }
+      attributes {
+        horizontal_alignment: HA_LEFT
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm"
+    }
+    allow_auto_place: true
+  }
+  datasheet_field {
+    name: "Datasheet"
+    text {
+      position {
+        x_nm: 7620000
+        y_nm: -5080000
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "http://www.ti.com/lit/ds/symlink/bq24074.pdf"
+    }
+    allow_auto_place: true
+  }
+  description_field {
+    name: "Description"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "USB-Friendly Li-Ion Battery Charger and Power-Path Management, VQFN-16"
+    }
+    allow_auto_place: true
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n8\032\016\n\010\n\004\010\260\300\017\020\001\022\002\010\004*&\n\026\010\200\361\223\373\377\377\377\377\377\001\020\240\355\370\371\377\377\377\377\377\001\022\n\010\200\217\354\004\020\340\222\207\006\032\000\022&\n$c2aa3e48-1bf2-4203-a8ee-fce61ef219e9\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$0234ce61-dc10-4e71-bfce-5a6a94b1abf1\022\002IN\032\00213"\n\010\200\312\312j\020\360\214\352\030*\005\010\340\203\233\0010\0048\010@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$15fb7b71-d2a9-4d60-b832-3031c0f48aeb\022\003OUT\032\00210"\n\010\340\334\321p\020\260\224\240\033*\005\010\340\203\233\0010\0028\t@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$1854dfd6-bde4-42e3-810b-3eb6884b5715\022\003TMR\032\00214"\n\010\240\267\303d\020\320\237\361\036*\005\010\340\203\233\0010\0018\001@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$404c3951-78c7-4c73-a19b-fac3db9f5948\022\005ITERM\032\00215"\n\010\240\267\303d\020\260\224\240\033*\005\010\340\203\233\0010\0018\001@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$524bb85f-334a-4df2-97ea-777c183ab67a\022\004ISET\032\00216"\n\010\240\267\303d\020\260\262\370$*\005\010\340\203\233\0010\0018\005@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$72c94653-1c98-418f-bd16-15505296372e\022\003VSS\032\0018"\n\010\200\312\312j\020\360\271\256'*\005\010\340\203\233\0010\0038\010@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$8314b12d-4768-44e1-a4e3-6ba9307cd728\022\005~{CE}\032\0014"\n\010\240\267\303d\020\360\233\326\035*\005\010\340\203\233\0010\0018\001@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$936c6966-c578-4603-8d62-0a58fcd035ba\022\003OUT\032\00211"\n\010\340\334\321p\020\260\224\240\033*\005\010\340\203\233\0010\0028\005@\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$96ed92ae-e27a-461d-9588-6be41dfcd47c\022\003VSS\032\00217"\n\010\200\312\312j\020\360\271\256'*\005\010\340\203\233\0010\0038\005@\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$9df77c6e-f03f-4a3f-87ef-fd82948d11ba\022\002TS\032\0011"\n\010\340\334\321p\020\220\247\247!*\005\010\340\203\233\0010\0028\005@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$b10ceea6-cade-4af0-8222-544d24e9533a\022\003BAT\032\0013"\n\010\340\334\321p\020\320\237\361\036*\005\010\340\203\233\0010\0028\005@\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$b575eb9e-8f17-4df6-a73f-d60892628de9\022\003EN2\032\0015"\n\010\240\267\303d\020\220\247\247!*\005\010\340\203\233\0010\0018\001@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$cd2d7512-703a-48cf-a767-9573c545b029\022\003EN1\032\0016"\n\010\240\267\303d\020\260\243\214 *\005\010\340\203\233\0010\0018\001@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$d1a3372a-8590-48d7-9ac4-1964797369b7\022\010~{PGOOD}\032\0017"\n\010\340\334\321p\020\320\256\335#*\005\010\340\203\233\0010\0028\n@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$e09909e8-7241-434e-b206-0127f356b58b\022\004ILIM\032\00212"\n\010\240\267\303d\020\320\256\335#*\005\010\340\203\233\0010\0018\005@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$e5600a1d-ca1e-4bbb-b523-26e1edf3ba63\022\006~{CHG}\032\0019"\n\010\340\334\321p\020\260\262\370$*\005\010\340\203\233\0010\0028\n@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$f9365df0-2fbb-4174-83df-cb4caa243505\022\003BAT\032\0012"\n\010\340\334\321p\020\320\237\361\036*\005\010\340\203\233\0010\0028\t@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  unit_count: 1
+  body_style {
+    name: "?"
+  }
+  keywords: "USB Charger"
+  footprint_filters: "VQFN*1EP*3x3mm*P0.5mm*"
+  jumpers {
+  }
+  show_pin_numbers: true
+  show_pin_names: true
+  pin_name_offset {
+    value_nm: 508000
+  }
+}
+reference_field {
+  name: "Reference"
+  text {
+    position {
+      x_nm: 225663300
+      y_nm: 49530000
+    }
+    attributes {
+      horizontal_alignment: HA_LEFT
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "U1"
+  }
+  visible: true
+  allow_auto_place: true
+}
+value_field {
+  name: "Value"
+  text {
+    position {
+      x_nm: 225663300
+      y_nm: 52070000
+    }
+    attributes {
+      horizontal_alignment: HA_LEFT
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "BQ24074RGT"
+  }
+  visible: true
+  allow_auto_place: true
+}
+footprint_field {
+  name: "Footprint"
+  text {
+    position {
+      x_nm: 231140000
+      y_nm: 81280000
+    }
+    attributes {
+      horizontal_alignment: HA_LEFT
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm"
+  }
+  allow_auto_place: true
+}
+datasheet_field {
+  name: "Datasheet"
+  text {
+    position {
+      x_nm: 231140000
+      y_nm: 62230000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "http://www.ti.com/lit/ds/symlink/bq24074.pdf"
+  }
+  allow_auto_place: true
+}
+description_field {
+  name: "Description"
+  text {
+    position {
+      x_nm: 223520000
+      y_nm: 67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "USB-Friendly Li-Ion Battery Charger and Power-Path Management, VQFN-16"
+  }
+  allow_auto_place: true
+}
+attributes {
+}
+unit {
+  unit: 1
+}
+show_pin_names: true
+show_pin_numbers: true
+pin_name_offset {
+}
+fields_autoplaced: true
+
+id {
+  value: "264915f5-7e80-41a0-ac90-d551228555b6"
+}
+path {
+  path {
+    value: "2a888306-90d9-48e5-ba43-e08ba2da2ab6"
+  }
+}
+position {
+  x_nm: 203200000
+  y_nm: 74930000
+}
+transform {
+  orientation: SSO_90
+}
+locked: LS_UNLOCKED
+definition {
+  id {
+    library_nickname: "Device"
+    entry_name: "R"
+  }
+  type: SST_NORMAL
+  reference_field {
+    name: "Reference"
+    text {
+      position {
+        x_nm: 2032000
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+          value_degrees: 90
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "R"
+    }
+    visible: true
+    allow_auto_place: true
+  }
+  value_field {
+    name: "Value"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+          value_degrees: 90
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "R"
+    }
+    visible: true
+    allow_auto_place: true
+  }
+  footprint_field {
+    name: "Footprint"
+    text {
+      position {
+        x_nm: -1778000
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+          value_degrees: 90
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+    }
+    allow_auto_place: true
+  }
+  datasheet_field {
+    name: "Datasheet"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+    }
+    allow_auto_place: true
+  }
+  description_field {
+    name: "Description"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "Resistor"
+    }
+    allow_auto_place: true
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n7\032\016\n\010\n\004\010\260\300\017\020\001\022\002\010\001*%\n\020\010\300\376\301\377\377\377\377\377\377\001\020\340\203\233\001\022\017\010\300\201>\020\240\374\344\376\377\377\377\377\377\001\032\000\022&\n$306fd75d-d833-481f-b6fb-86322d62c067\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$7cc88b59-eb3b-49c0-8017-07ae507dc32e\032\0011"\n\010\260\346\211_\020\320\256\335#*\004\010\360\301M0\0048\005@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$808aa982-25a4-4559-a1e2-b3bae9777392\032\0012"\n\010\320\361\332b\020\320\256\335#*\004\010\360\301M0\0038\005@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  unit_count: 1
+  body_style {
+    name: "?"
+  }
+  keywords: "R res resistor"
+  footprint_filters: "R_*"
+  jumpers {
+  }
+  show_pin_names: true
+  pin_name_offset {
+  }
+}
+reference_field {
+  name: "Reference"
+  text {
+    position {
+      x_nm: 205232000
+      y_nm: 74930000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+        value_degrees: 90
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "R2"
+  }
+  visible: true
+  allow_auto_place: true
+}
+value_field {
+  name: "Value"
+  text {
+    position {
+      x_nm: 207010000
+      y_nm: 74930000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+        value_degrees: 90
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "2K"
+  }
+  visible: true
+  allow_auto_place: true
+}
+footprint_field {
+  name: "Footprint"
+  text {
+    position {
+      x_nm: 201422000
+      y_nm: 74930000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+        value_degrees: 90
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Resistor_SMD:R_0603_1608Metric"
+  }
+  allow_auto_place: true
+}
+datasheet_field {
+  name: "Datasheet"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: 74930000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+  }
+  allow_auto_place: true
+}
+description_field {
+  name: "Description"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: 74930000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Resistor"
+  }
+  allow_auto_place: true
+}
+attributes {
+}
+unit {
+  unit: 1
+}
+show_pin_names: true
+pin_name_offset {
+}
+
+id {
+  value: "f9b34480-f3b4-4294-b070-2822effaccb8"
+}
+path {
+  path {
+    value: "2a888306-90d9-48e5-ba43-e08ba2da2ab6"
+  }
+}
+position {
+  x_nm: 203200000
+  y_nm: 77470000
+}
+transform {
+  orientation: SSO_90
+}
+locked: LS_UNLOCKED
+definition {
+  id {
+    library_nickname: "Device"
+    entry_name: "R"
+  }
+  type: SST_NORMAL
+  reference_field {
+    name: "Reference"
+    text {
+      position {
+        x_nm: 2032000
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+          value_degrees: 90
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "R"
+    }
+    visible: true
+    allow_auto_place: true
+  }
+  value_field {
+    name: "Value"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+          value_degrees: 90
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "R"
+    }
+    visible: true
+    allow_auto_place: true
+  }
+  footprint_field {
+    name: "Footprint"
+    text {
+      position {
+        x_nm: -1778000
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+          value_degrees: 90
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+    }
+    allow_auto_place: true
+  }
+  datasheet_field {
+    name: "Datasheet"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+    }
+    allow_auto_place: true
+  }
+  description_field {
+    name: "Description"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "Resistor"
+    }
+    allow_auto_place: true
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n7\032\016\n\010\n\004\010\260\300\017\020\001\022\002\010\001*%\n\020\010\300\376\301\377\377\377\377\377\377\001\020\340\203\233\001\022\017\010\300\201>\020\240\374\344\376\377\377\377\377\377\001\032\000\022&\n$306fd75d-d833-481f-b6fb-86322d62c067\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$68e00776-e4fc-4f9d-a17b-2ae54c05ed70\032\0012"\n\010\320\361\332b\020\260\262\370$*\004\010\360\301M0\0038\005@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$991e3e89-99c8-443c-a500-d4645ca5fb71\032\0011"\n\010\260\346\211_\020\260\262\370$*\004\010\360\301M0\0048\005@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  unit_count: 1
+  body_style {
+    name: "?"
+  }
+  keywords: "R res resistor"
+  footprint_filters: "R_*"
+  jumpers {
+  }
+  show_pin_names: true
+  pin_name_offset {
+  }
+}
+reference_field {
+  name: "Reference"
+  text {
+    position {
+      x_nm: 199136000
+      y_nm: 77724000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+        value_degrees: 90
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "R1"
+  }
+  visible: true
+  allow_auto_place: true
+}
+value_field {
+  name: "Value"
+  text {
+    position {
+      x_nm: 200914000
+      y_nm: 77470000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+        value_degrees: 90
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "1.5K"
+  }
+  visible: true
+  allow_auto_place: true
+}
+footprint_field {
+  name: "Footprint"
+  text {
+    position {
+      x_nm: 201422000
+      y_nm: 77470000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+        value_degrees: 90
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Resistor_SMD:R_0603_1608Metric"
+  }
+  allow_auto_place: true
+}
+datasheet_field {
+  name: "Datasheet"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: 77470000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+  }
+  allow_auto_place: true
+}
+description_field {
+  name: "Description"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: 77470000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Resistor"
+  }
+  allow_auto_place: true
+}
+attributes {
+}
+unit {
+  unit: 1
+}
+show_pin_names: true
+pin_name_offset {
+}
+
+id {
+  value: "fad31e15-5b29-4824-8dd9-a3959c923602"
+}
+path {
+  path {
+    value: "2a888306-90d9-48e5-ba43-e08ba2da2ab6"
+  }
+}
+position {
+  x_nm: 203200000
+  y_nm: -67310000
+}
+transform {
+  orientation: SSO_0
+}
+locked: LS_UNLOCKED
+definition {
+  id {
+    library_nickname: "AP2114H-3.3TRG1"
+    entry_name: "AP2114H-3.3TRG1"
+  }
+  type: SST_NORMAL
+  reference_field {
+    name: "Reference"
+    text {
+      position {
+        x_nm: 6096000
+        y_nm: -6096000
+      }
+      attributes {
+        horizontal_alignment: HA_LEFT
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "IC"
+    }
+    visible: true
+    allow_auto_place: true
+  }
+  value_field {
+    name: "Value"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_BOTTOM
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "AP2114H-3.3TRG1"
+    }
+    allow_auto_place: true
+  }
+  footprint_field {
+    name: "Footprint"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_BOTTOM
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "SOT223"
+    }
+    allow_auto_place: true
+  }
+  datasheet_field {
+    name: "Datasheet"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+    }
+    allow_auto_place: true
+  }
+  description_field {
+    name: "Description"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_BOTTOM
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "IC REG LINEAR 3.3V 1A SOT223"
+    }
+    allow_auto_place: true
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n2\032\016\n\010\n\004\010\260\300\017\020\001\022\002\010\004* \n\n\010\300\207\266\002\020\240\213\321\003\022\020\010\240\251\251\r\020\240\374\344\376\377\377\377\377\377\001\032\000\022&\n$1e4b5c8d-2b51-4742-a5d0-0215de08baca\030\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\030MANUFACTURER_PART_NUMBER\0324\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\017AP2114H-3.3TRG10\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\002MP\0324\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\017AP2114H-3.3TRG10\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\024SUPPLIER_PART_NUMBER\032;\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\026AP2114H-3.3TRG1DICT-ND0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\010SUPPLIER\032,\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\007Digikey0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\002MF\0320\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\013Diodes Inc.0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\014Availability\032-\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\010In Stock0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\005Price\032)\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\004None0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\007Package\0328\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\023SOT-223 Diodes Inc.0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\rDescription_1\032{\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*VVoltage Regulators, LDO, 1.5MHz CMOS LDO 2.5V to 5V 600mV | Diodes Inc AP2114H-3.3TRG10\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\014Check_prices\032q\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*Lhttps://www.snapeda.com/parts/AP2114H-3.3TRG1/Diodes+Inc./view-part/?ref=eda0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\014SnapEDA_Link\032r\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*Mhttps://www.snapeda.com/parts/AP2114H-3.3TRG1/Diodes+Inc./view-part/?ref=snap0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$2077ea77-edbd-479e-9536-f30e8a41a5f3\022\006VOUT_2\032\0014"\020\010\340\334\321p\020\320\334\363\337\377\377\377\377\377\001*\005\010\300\207\266\0020\0028\003@\001H\001R\004\010\300\201>Z\004\010\300\201>"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$6302a82b-c31b-4bf6-88ce-0b6d61332051\022\003VIN\032\0013"\020\010\200\254\362`\020\320\334\363\337\377\377\377\377\377\001*\005\010\300\207\266\0020\0018\003@\001H\001R\004\010\300\201>Z\004\010\300\201>"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$66ca5f93-5534-4a72-97cc-7bbad9dbffbd\022\006VOUT_1\032\0012"\020\010\340\334\321p\020\260\340\216\341\377\377\377\377\377\001*\005\010\300\207\266\0020\0028\003@\001H\001R\004\010\300\201>Z\004\010\300\201>"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$f028d357-5b9d-4fd8-bdfe-6d9f74d6e6b8\022\003GND\032\0011"\020\010\200\254\362`\020\220\344\251\342\377\377\377\377\377\001*\005\010\300\207\266\0020\0018\003@\001H\001R\004\010\300\201>Z\004\010\300\201>"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  unit_count: 1
+  body_style {
+    name: "?"
+  }
+  jumpers {
+  }
+  show_pin_numbers: true
+  show_pin_names: true
+  pin_name_offset {
+    value_nm: 1016000
+  }
+}
+reference_field {
+  name: "Reference"
+  text {
+    position {
+      x_nm: 219710000
+      y_nm: -74930000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "IC1"
+  }
+  visible: true
+  allow_auto_place: true
+}
+value_field {
+  name: "Value"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "AP2114H-3.3TRG1"
+  }
+  allow_auto_place: true
+}
+footprint_field {
+  name: "Footprint"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "SOT223"
+  }
+  allow_auto_place: true
+}
+datasheet_field {
+  name: "Datasheet"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+  }
+  allow_auto_place: true
+}
+description_field {
+  name: "Description"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "IC REG LINEAR 3.3V 1A SOT223"
+  }
+  allow_auto_place: true
+}
+attributes {
+}
+unit {
+  unit: 1
+}
+show_pin_names: true
+show_pin_numbers: true
+pin_name_offset {
+}
+user_fields {
+  name: "MF"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Diodes Inc."
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "Package"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "SOT-223 Diodes Inc."
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "SUPPLIER_PART_NUMBER"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "AP2114H-3.3TRG1DICT-ND"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "Price"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "None"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "Check_prices"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "https://www.snapeda.com/parts/AP2114H-3.3TRG1/Diodes+Inc./view-part/?ref=eda"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "SUPPLIER"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Digikey"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "SnapEDA_Link"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "https://www.snapeda.com/parts/AP2114H-3.3TRG1/Diodes+Inc./view-part/?ref=snap"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "MP"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "AP2114H-3.3TRG1"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "Description_1"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Voltage Regulators, LDO, 1.5MHz CMOS LDO 2.5V to 5V 600mV | Diodes Inc AP2114H-3.3TRG1"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "Availability"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "In Stock"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "MANUFACTURER_PART_NUMBER"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "AP2114H-3.3TRG1"
+  }
+  allow_auto_place: true
+}
+fields_autoplaced: true
+
+LINE 07499b14-839d-4993-b6bd-ab7aa3642c11 (250.19, 74.93) (252.73, 74.93)
+LINE 4c9f9fe2-cbdc-4e42-9b54-9aa5bb609161 (250.19, 69.85) (246.38, 69.85)
+LINE 903f6e14-f513-4e14-b5b9-15fa113458b6 (245.11, 77.47) (254.0, 77.47)
+LINE 6be36e4e-c803-4fbc-ba4f-00b8f9f73d70 (236.22, 57.15) (237.49, 57.15)
+LINE a7a36f13-0fd2-469b-88fe-c0e60a0eb9d7 (236.22, 69.85) (238.76, 69.85)
+LINE b956e7e4-dcec-4bec-b8a5-ab26e53e449a (236.22, 64.77) (250.19, 64.77)
+LINE 99fb051b-b6f7-41b1-a099-4ab6cb4c5d4d (236.22, 74.93) (240.03, 74.93)
+LINE aa4c98ae-9f92-4dcd-9c49-525b7cfeb521 (237.49, 77.47) (245.11, 77.47)
+LINE 0a26e505-e041-48c0-8920-e0b197f58e6c (223.52, 82.55) (223.52, 85.09)
+LINE 51f5a6f6-e0d5-4e28-8608-cd857477283d (259.08, 64.77) (259.08, 107.95)
+LINE 0038885f-59df-4a92-903f-206e24601e3d (240.03, 74.93) (250.19, 74.93)
+LINE b042afdb-be18-4651-bfce-e6294b6debeb (250.19, 64.77) (259.08, 64.77)
+LINE 745edaee-20f3-4062-b62d-6d9558ffb62d (250.19, 55.88) (250.19, 57.15)
+LINE 93b58bde-0bfe-4703-b29a-9b5ac22ca256 (236.22, 77.47) (237.49, 77.47)
+LINE bf87429a-40f6-4f9d-bcdb-e3c54272deda (223.52, 64.77) (236.22, 64.77)
+LINE c1e7329c-a86e-4db2-9fc0-c9c8fb1a4a39 (223.52, 64.77) (223.52, 72.39)
+LINE 59a59303-9b45-44dc-9535-6e8097f59aeb (210.82, 72.39) (210.82, 69.85)
+LINE aa00b675-163e-4bd4-898a-b8b46a9da023 (207.01, 77.47) (210.82, 77.47)
+LINE bc5491fb-9102-438e-95b4-930a1f58c393 (207.01, 74.93) (210.82, 74.93)
+LINE e3f34a59-7f97-4606-9b7e-ae80386b68b5 (223.52, 72.39) (210.82, 72.39)
+LINE 2766ef62-d42c-450f-adf5-7b6fbef26f3e (207.01, 67.31) (210.82, 67.31)
+LINE d33a1f40-f888-4e56-83bf-de62f2d75b24 (207.01, 64.77) (210.82, 64.77)
+LINE 0b840820-e0df-4168-8cfe-97f6c2d3c08e (207.01, 62.23) (210.82, 62.23)
+LINE 0c409198-04af-482e-b5af-8374b45d253a (196.85, 77.47) (199.39, 77.47)
+LINE 760dd389-e2f0-4811-b0cb-6b6dbc852505 (196.85, 74.93) (199.39, 74.93)
