@@ -1,0 +1,156 @@
+{
+  "result": "PASS",
+  "schematic_pin_net_changes": {
+    "U3.10": [
+      "GND",
+      "Net-(U3-FB)"
+    ],
+    "R22.2": [
+      "GND",
+      "Net-(U3-FB)"
+    ],
+    "R23.1": [
+      "GND",
+      "Net-(U3-FB)"
+    ],
+    "U3.11": [
+      "unconnected-(U3-PAD-Pad11)",
+      "GND"
+    ],
+    "U4.7": [
+      "+5V_PROGRAM",
+      "+3.3V"
+    ]
+  },
+  "all_other_schematic_pin_nets_unchanged": true,
+  "all_81_footprint_positions_and_all_pad_geometries_unchanged": true,
+  "board_pad_net_changes": [
+    [
+      "U3.10",
+      "GND",
+      "Net-(U3-FB)"
+    ],
+    [
+      "U3.10",
+      "GND",
+      "Net-(U3-FB)"
+    ],
+    [
+      "U3.11",
+      "unconnected-(U3-PAD-Pad11)_10",
+      "GND"
+    ],
+    [
+      "U3.11",
+      "unconnected-(U3-PAD-Pad11)_13",
+      "GND"
+    ],
+    [
+      "U3.11",
+      "unconnected-(U3-PAD-Pad11)_5",
+      "GND"
+    ],
+    [
+      "U3.11",
+      "unconnected-(U3-PAD-Pad11)_3",
+      "GND"
+    ],
+    [
+      "U3.11",
+      "unconnected-(U3-PAD-Pad11)_9",
+      "GND"
+    ],
+    [
+      "U3.11",
+      "unconnected-(U3-PAD-Pad11)_12",
+      "GND"
+    ],
+    [
+      "U3.11",
+      "unconnected-(U3-PAD-Pad11)_11",
+      "GND"
+    ],
+    [
+      "U3.11",
+      "unconnected-(U3-PAD-Pad11)",
+      "GND"
+    ],
+    [
+      "U3.11",
+      "unconnected-(U3-PAD-Pad11)_14",
+      "GND"
+    ],
+    [
+      "U3.11",
+      "unconnected-(U3-PAD-Pad11)_16",
+      "GND"
+    ],
+    [
+      "U3.11",
+      "unconnected-(U3-PAD-Pad11)_4",
+      "GND"
+    ],
+    [
+      "U3.11",
+      "unconnected-(U3-PAD-Pad11)_1",
+      "GND"
+    ],
+    [
+      "U3.11",
+      "unconnected-(U3-PAD-Pad11)_18",
+      "GND"
+    ],
+    [
+      "U3.11",
+      "unconnected-(U3-PAD-Pad11)_8",
+      "GND"
+    ],
+    [
+      "U3.11",
+      "unconnected-(U3-PAD-Pad11)_7",
+      "GND"
+    ],
+    [
+      "U3.11",
+      "unconnected-(U3-PAD-Pad11)_2",
+      "GND"
+    ],
+    [
+      "U3.11",
+      "unconnected-(U3-PAD-Pad11)_17",
+      "GND"
+    ],
+    [
+      "U3.11",
+      "unconnected-(U3-PAD-Pad11)_6",
+      "GND"
+    ],
+    [
+      "U3.11",
+      "unconnected-(U3-PAD-Pad11)_15",
+      "GND"
+    ],
+    [
+      "R23.1",
+      "GND",
+      "Net-(U3-FB)"
+    ],
+    [
+      "R22.2",
+      "GND",
+      "Net-(U3-FB)"
+    ],
+    [
+      "U4.7",
+      "+5V_PROGRAM",
+      "+3.3V"
+    ]
+  ],
+  "nominal_boost_output_before_D1_volts": 5.0054945054945055,
+  "unconnected_items": 0,
+  "new_DRC_errors": 0,
+  "remaining_preexisting_DRC_errors": 5,
+  "new_ERC_errors": 0,
+  "remaining_preexisting_ERC_errors": 9,
+  "ground_copper_connected_components": 1
+}

@@ -1,0 +1,46 @@
+KiCad 10.0.6 ERC after reliability fixes
+
+ERROR power_pin_not_driven: Input Power pin not driven by any Output Power pins
+  Symbol #PWR01 Pin 1 [Power input, Line]
+ERROR power_pin_not_driven: Input Power pin not driven by any Output Power pins
+  Symbol #PWR03 Pin 1 [Power input, Line]
+ERROR power_pin_not_driven: Input Power pin not driven by any Output Power pins
+  Symbol #PWR05 Pin 1 [Power input, Line]
+ERROR pin_not_driven: Input pin not driven by any Output pins
+  Symbol U5 Pin 4 [SENSOR_VP, Input, Line]
+ERROR pin_not_driven: Input pin not driven by any Output pins
+  Symbol U5 Pin 5 [SENSOR_VN, Input, Line]
+ERROR power_pin_not_driven: Input Power pin not driven by any Output Power pins
+  Symbol U6 Pin 5 [VCC, Power input, Line]
+ERROR power_pin_not_driven: Input Power pin not driven by any Output Power pins
+  Symbol U6 Pin 6 [GND, Power input, Line]
+ERROR power_pin_not_driven: Input Power pin not driven by any Output Power pins
+  Symbol U1 Pin 13 [IN, Power input, Line]
+ERROR pin_not_connected: Pin not connected
+  Symbol SW4 Pin 3 [C, Passive, Line]
+WARNING lib_symbol_mismatch: Symbol 'USB_C_Receptacle' doesn't match copy in library 'Connector'
+  Symbol J9 [USB_C_Receptacle]
+WARNING lib_symbol_mismatch: Symbol 'LESD5D5.0CT1G' doesn't match copy in library 'LESD5D5.0CT1G'
+  Symbol D3 [LESD5D5.0CT1G]
+WARNING lib_symbol_mismatch: Symbol 'LESD5D5.0CT1G' doesn't match copy in library 'LESD5D5.0CT1G'
+  Symbol D4 [LESD5D5.0CT1G]
+WARNING lib_symbol_mismatch: Symbol 'LESD5D5.0CT1G' doesn't match copy in library 'LESD5D5.0CT1G'
+  Symbol D5 [LESD5D5.0CT1G]
+WARNING isolated_pin_label: Label connected to only one pin
+  Global Label 'SENSOR_VP'
+WARNING isolated_pin_label: Label connected to only one pin
+  Global Label 'SENSOR_VN'
+WARNING footprint_link_issues: The current configuration does not include the footprint library ''
+  Symbol IC1 [AP2114H-3.3TRG1]
+WARNING lib_symbol_mismatch: Symbol 'AP2114H-3.3TRG1' doesn't match copy in library 'AP2114H-3.3TRG1'
+  Symbol IC1 [AP2114H-3.3TRG1]
+WARNING lib_symbol_mismatch: Symbol 'ESP32-WROOM-32E' doesn't match copy in library 'RF_Module'
+  Symbol U5 [ESP32-WROOM-32E]
+WARNING lib_symbol_mismatch: Symbol 'SS8050-G' doesn't match copy in library 'SS8050-G'
+  Symbol Q1 [SS8050-G]
+WARNING lib_symbol_mismatch: Symbol 'SS8050-G' doesn't match copy in library 'SS8050-G'
+  Symbol Q2 [SS8050-G]
+WARNING lib_symbol_mismatch: Symbol 'Battery' doesn't match copy in library 'Device'
+  Symbol BT1 [Battery]
+WARNING lib_symbol_mismatch: Symbol 'Thermistor_NTC' doesn't match copy in library 'Device'
+  Symbol TH1 [Thermistor_NTC]

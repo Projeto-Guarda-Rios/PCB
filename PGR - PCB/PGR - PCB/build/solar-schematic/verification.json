@@ -1,0 +1,23 @@
+{
+  "result": "PASS",
+  "new_ERC_findings": 0,
+  "existing_ERC_errors": 9,
+  "PCB_byte_identical": true,
+  "project_byte_identical": true,
+  "all_unrelated_circuit_node_relationships_unchanged": true,
+  "added_board_parts": [
+    "R30 68kR timer",
+    "J12 remote NTC connector"
+  ],
+  "TH1_off_board": true,
+  "input_limit_max_A": 0.5,
+  "input_DPM_typ_V": 4.5,
+  "charge_target_typ_A": 0.445,
+  "fast_charge_timer_typ_hours": 9.066666666666666,
+  "precharge_timer_typ_minutes": 54.4,
+  "final_hashes": {
+    "PGR.kicad_sch": "3bc5e48bb88d19a90a768cc72720ffc3bc947a047ae53e03005b76cb12def210",
+    "PGR.kicad_pcb": "d8530efea9b1d23882a6120c908ab526334138a3952fc1d22a48fa50a766422c",
+    "PGR.kicad_pro": "ba4081926f9e4070c33e0cf5f84786c62544d99428e80bc674a5fa03b3898c2c"
+  }
+}

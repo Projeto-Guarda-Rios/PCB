@@ -1,0 +1,383 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-25T22:09:05",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/2a888306-90d9-48e5-ba43-e08ba2da2ab6",
+            "violations": [
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR01 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 0.3556,
+                                "y": 0.5461
+                            },
+                            "uuid": "cff2cbda-13b5-4a7f-b95f-c33a387d4255"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR03 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 0.3556,
+                                "y": 0.5969
+                            },
+                            "uuid": "e4c3bee3-e5ab-495d-8c1a-03e2f359a857"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR05 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 0.3556,
+                                "y": 0.6477
+                            },
+                            "uuid": "7afbd25a-7368-4b03-850f-1a0e7e82218f"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U4 Pin 7 [VREGIN, Power input, Line]",
+                            "pos": {
+                                "x": 1.4986,
+                                "y": -1.8034
+                            },
+                            "uuid": "29a3d7c6-682f-4f30-89f7-6ef0fa9fde47"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U5 Pin 4 [SENSOR_VP, Input, Line]",
+                            "pos": {
+                                "x": 2.0193,
+                                "y": -1.6256
+                            },
+                            "uuid": "85b1f450-b584-4ba2-a59f-3fc7dc6dc5d7"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U5 Pin 5 [SENSOR_VN, Input, Line]",
+                            "pos": {
+                                "x": 2.0193,
+                                "y": -1.6002
+                            },
+                            "uuid": "a80aad40-5eef-45ae-91a9-064092175a56"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U6 Pin 5 [VCC, Power input, Line]",
+                            "pos": {
+                                "x": 2.0828,
+                                "y": 1.2573
+                            },
+                            "uuid": "3e6ffd40-74d9-4bdf-929c-d59c94de7fad"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U6 Pin 6 [GND, Power input, Line]",
+                            "pos": {
+                                "x": 2.0828,
+                                "y": 1.3081
+                            },
+                            "uuid": "6afc00f6-b5ec-42fd-8239-ccdf3f25f90c"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 13 [IN, Power input, Line]",
+                            "pos": {
+                                "x": 2.2352,
+                                "y": 0.5207
+                            },
+                            "uuid": "0234ce61-dc10-4e71-bfce-5a6a94b1abf1"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol SW4 Pin 3 [C, Passive, Line]",
+                            "pos": {
+                                "x": 2.2987,
+                                "y": 1.3843
+                            },
+                            "uuid": "b6ffebee-9092-4045-bb8a-7be80f84cab3"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Symbol 'USB_C_Receptacle' doesn't match copy in library 'Connector'",
+                    "items": [
+                        {
+                            "description": "Symbol J9 [USB_C_Receptacle]",
+                            "pos": {
+                                "x": 0.4699,
+                                "y": -1.4859
+                            },
+                            "uuid": "65881f40-e7eb-4909-a494-da1c4b2be411"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'LESD5D5.0CT1G' doesn't match copy in library 'LESD5D5.0CT1G'",
+                    "items": [
+                        {
+                            "description": "Symbol D3 [LESD5D5.0CT1G]",
+                            "pos": {
+                                "x": 0.6985,
+                                "y": -1.8161
+                            },
+                            "uuid": "cd32e967-a229-4e48-87de-620969fe25cd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'LESD5D5.0CT1G' doesn't match copy in library 'LESD5D5.0CT1G'",
+                    "items": [
+                        {
+                            "description": "Symbol D4 [LESD5D5.0CT1G]",
+                            "pos": {
+                                "x": 0.7112,
+                                "y": -1.4224
+                            },
+                            "uuid": "445c21f8-4fa7-439e-9e5e-8f7c42431890"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'LESD5D5.0CT1G' doesn't match copy in library 'LESD5D5.0CT1G'",
+                    "items": [
+                        {
+                            "description": "Symbol D5 [LESD5D5.0CT1G]",
+                            "pos": {
+                                "x": 0.7493,
+                                "y": -1.4224
+                            },
+                            "uuid": "94e94f5d-7782-48dd-b96d-a1a7cab9d2ba"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label 'SENSOR_VP'",
+                            "pos": {
+                                "x": 2.0193,
+                                "y": -1.6256
+                            },
+                            "uuid": "8f52354b-a437-49a4-81ad-0c8361c1b872"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "Label connected to only one pin",
+                    "items": [
+                        {
+                            "description": "Global Label 'SENSOR_VN'",
+                            "pos": {
+                                "x": 2.0193,
+                                "y": -1.6002
+                            },
+                            "uuid": "3f6394cf-55df-4c4f-ba08-8457812cc600"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "isolated_pin_label"
+                },
+                {
+                    "description": "The current configuration does not include the footprint library ''",
+                    "items": [
+                        {
+                            "description": "Symbol IC1 [AP2114H-3.3TRG1]",
+                            "pos": {
+                                "x": 2.032,
+                                "y": -0.6731
+                            },
+                            "uuid": "fad31e15-5b29-4824-8dd9-a3959c923602"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "Symbol 'AP2114H-3.3TRG1' doesn't match copy in library 'AP2114H-3.3TRG1'",
+                    "items": [
+                        {
+                            "description": "Symbol IC1 [AP2114H-3.3TRG1]",
+                            "pos": {
+                                "x": 2.032,
+                                "y": -0.6731
+                            },
+                            "uuid": "fad31e15-5b29-4824-8dd9-a3959c923602"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'ESP32-WROOM-32E' doesn't match copy in library 'RF_Module'",
+                    "items": [
+                        {
+                            "description": "Symbol U5 [ESP32-WROOM-32E]",
+                            "pos": {
+                                "x": 2.1717,
+                                "y": -1.3716
+                            },
+                            "uuid": "fbdda013-8a66-492d-9f41-50c7ca12f7d6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'SS8050-G' doesn't match copy in library 'SS8050-G'",
+                    "items": [
+                        {
+                            "description": "Symbol Q1 [SS8050-G]",
+                            "pos": {
+                                "x": 2.3495,
+                                "y": -0.3048
+                            },
+                            "uuid": "e0795e57-486c-4688-9d57-312a9adbbbb6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'SS8050-G' doesn't match copy in library 'SS8050-G'",
+                    "items": [
+                        {
+                            "description": "Symbol Q2 [SS8050-G]",
+                            "pos": {
+                                "x": 2.3495,
+                                "y": -0.1651
+                            },
+                            "uuid": "0ef3abc4-ecf1-48c4-82fb-c4aa27f7a36e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Battery' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol BT1 [Battery]",
+                            "pos": {
+                                "x": 2.4003,
+                                "y": 1.27
+                            },
+                            "uuid": "dcfa1dd9-8c66-488e-91da-24c11b8ecdf0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "Symbol 'Thermistor_NTC' doesn't match copy in library 'Device'",
+                    "items": [
+                        {
+                            "description": "Symbol TH1 [Thermistor_NTC]",
+                            "pos": {
+                                "x": 2.4257,
+                                "y": 0.6985
+                            },
+                            "uuid": "c1a9a4ed-e977-48da-92e6-90f1a16073bd"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                }
+            ]
+        }
+    ],
+    "source": "PGR.kicad_sch"
+}
