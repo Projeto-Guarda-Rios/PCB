@@ -1,0 +1,181 @@
+stackup {
+  finish {
+    type_name: "None"
+  }
+  impedance {
+  }
+  edge {
+    connector {
+      type: BECT_NONE
+    }
+    plating {
+    }
+  }
+  layers {
+    thickness {
+    }
+    layer: BL_F_SilkS
+    enabled: true
+    type: BSLT_SILKSCREEN
+    user_name: "F.Silkscreen"
+    silkscreen {
+      material_name: "Not specified"
+    }
+  }
+  layers {
+    thickness {
+    }
+    layer: BL_F_Paste
+    enabled: true
+    type: BSLT_SOLDERPASTE
+    user_name: "F.Paste"
+  }
+  layers {
+    thickness {
+      value_nm: 10000
+    }
+    layer: BL_F_Mask
+    enabled: true
+    type: BSLT_SOLDERMASK
+    user_name: "F.Mask"
+    soldermask {
+      epsilon_r: 3.3
+      material_name: "Not specified"
+      thickness {
+        value_nm: 10000
+      }
+    }
+  }
+  layers {
+    thickness {
+      value_nm: 35000
+    }
+    layer: BL_F_Cu
+    enabled: true
+    type: BSLT_COPPER
+    material_name: "copper"
+    user_name: "Front"
+  }
+  layers {
+    thickness {
+      value_nm: 99400
+    }
+    layer: BL_UNDEFINED
+    enabled: true
+    type: BSLT_DIELECTRIC
+    dielectric {
+      layer {
+        epsilon_r: 4.1
+        loss_tangent: 0.02
+        material_name: "FR4 3313"
+        thickness {
+          value_nm: 99400
+        }
+      }
+      type: BSDT_PREPREG
+    }
+  }
+  layers {
+    thickness {
+      value_nm: 15200
+    }
+    layer: BL_In1_Cu
+    enabled: true
+    type: BSLT_COPPER
+    material_name: "copper"
+    user_name: "GND"
+  }
+  layers {
+    thickness {
+      value_nm: 1265000
+    }
+    layer: BL_UNDEFINED
+    enabled: true
+    type: BSLT_DIELECTRIC
+    dielectric {
+      layer {
+        epsilon_r: 4.6
+        loss_tangent: 0.02
+        material_name: "FR4"
+        thickness {
+          value_nm: 1265000
+        }
+      }
+      type: BSDT_CORE
+    }
+  }
+  layers {
+    thickness {
+      value_nm: 15200
+    }
+    layer: BL_In2_Cu
+    enabled: true
+    type: BSLT_COPPER
+    material_name: "copper"
+    user_name: "PWR"
+  }
+  layers {
+    thickness {
+      value_nm: 99400
+    }
+    layer: BL_UNDEFINED
+    enabled: true
+    type: BSLT_DIELECTRIC
+    dielectric {
+      layer {
+        epsilon_r: 4.1
+        loss_tangent: 0.02
+        material_name: "FR4 3313"
+        thickness {
+          value_nm: 99400
+        }
+      }
+      type: BSDT_PREPREG
+    }
+  }
+  layers {
+    thickness {
+      value_nm: 35000
+    }
+    layer: BL_B_Cu
+    enabled: true
+    type: BSLT_COPPER
+    material_name: "copper"
+    user_name: "Back"
+  }
+  layers {
+    thickness {
+      value_nm: 10000
+    }
+    layer: BL_B_Mask
+    enabled: true
+    type: BSLT_SOLDERMASK
+    user_name: "B.Mask"
+    soldermask {
+      epsilon_r: 3.3
+      material_name: "Not specified"
+      thickness {
+        value_nm: 10000
+      }
+    }
+  }
+  layers {
+    thickness {
+    }
+    layer: BL_B_Paste
+    enabled: true
+    type: BSLT_SOLDERPASTE
+    user_name: "B.Paste"
+  }
+  layers {
+    thickness {
+    }
+    layer: BL_B_SilkS
+    enabled: true
+    type: BSLT_SILKSCREEN
+    user_name: "B.Silkscreen"
+    silkscreen {
+      material_name: "Not specified"
+    }
+  }
+}

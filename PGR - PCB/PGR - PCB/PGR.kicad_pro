@@ -76,9 +76,9 @@
           "width": 0.0
         },
         {
-          "gap": 0.2,
-          "via_gap": 0.2,
-          "width": 0.2507
+          "gap": 0.1524,
+          "via_gap": 0.25,
+          "width": 0.135636
         }
       ],
       "drc_exclusions": [],
@@ -165,7 +165,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.2,
-        "min_track_width": 0.16,
+        "min_track_width": 0.127,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.15,
         "solder_mask_to_copper_clearance": 0.005,
@@ -564,7 +564,14 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "tuning_profile": ""
+        "tuning_profile": "",
+        "clearance": 0.127,
+        "track_width": 0.135636,
+        "diff_pair_width": 0.135636,
+        "diff_pair_gap": 0.1524,
+        "diff_pair_via_gap": 0.25,
+        "via_diameter": 0.5,
+        "via_drill": 0.3
       }
     ],
     "meta": {
@@ -580,18 +587,6 @@
       {
         "netclass": "90R_diff",
         "pattern": "D-"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "RXD0-"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "TXD0+"
-      },
-      {
-        "netclass": "90R_diff",
-        "pattern": "D(+|-)"
       }
     ]
   },

@@ -1,0 +1,131 @@
+{
+  "design": "PGR USB-C J9 to CP2102N U4",
+  "recorded_date": "2026-10-27",
+  "sources": {
+    "stackup": "https://jlcpcb.com/impedance",
+    "geometry": "https://jlcpcb.com/pcb-impedance-calculator",
+    "device": "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf",
+    "routing_guideline": "https://www.silabs.com/documents/public/application-notes/an0046-efm32-usb-hardware-design-guidelines.pdf"
+  },
+  "order": {
+    "manufacturer": "JLCPCB",
+    "stackup": "JLC04161H-3313",
+    "layer_count": 4,
+    "nominal_order_thickness_mm": 1.6,
+    "calculator_finished_thickness_mm": 1.56,
+    "calculator_finished_thickness_tolerance_percent": 10,
+    "outer_copper_oz": 1,
+    "inner_copper_oz": 0.5,
+    "requested_differential_impedance_ohm": 90,
+    "instruction": "Explicitly select this stackup and ask JLCPCB to confirm 90 ohm differential impedance and geometry. Finished board thickness tolerance is not an impedance tolerance."
+  },
+  "physical_stackup_top_to_bottom": [
+    {
+      "layer": "F.Cu",
+      "thickness_mm": 0.035
+    },
+    {
+      "layer": "dielectric 1",
+      "type": "prepreg",
+      "material": "3313 RC57% 4.2mil",
+      "pressed_thickness_mm": 0.0994,
+      "relative_permittivity": 4.1
+    },
+    {
+      "layer": "In1.Cu",
+      "thickness_mm": 0.0152,
+      "assignment": "GND reference plane"
+    },
+    {
+      "layer": "dielectric 2",
+      "type": "core",
+      "thickness_mm": 1.265,
+      "relative_permittivity": 4.6,
+      "description": "1.3mm H/HOZ including copper"
+    },
+    {
+      "layer": "In2.Cu",
+      "thickness_mm": 0.0152,
+      "assignment": "power"
+    },
+    {
+      "layer": "dielectric 3",
+      "type": "prepreg",
+      "material": "3313 RC57% 4.2mil",
+      "pressed_thickness_mm": 0.0994,
+      "relative_permittivity": 4.1
+    },
+    {
+      "layer": "B.Cu",
+      "thickness_mm": 0.035
+    }
+  ],
+  "kicad_model_assumptions": {
+    "solder_mask_each_side_mm": 0.01,
+    "solder_mask_note": "Retained KiCad model approximation, not a JLCPCB process requirement. Manufacturer calculator uses its own solder mask model.",
+    "dielectric_loss_tangent": 0.02,
+    "loss_tangent_note": "Retained project approximation, not a measured material specification.",
+    "total_with_model_mask_mm": 1.5542,
+    "total_copper_and_dielectric_mm": 1.5342
+  },
+  "usb_routing": {
+    "nets": [
+      "D+",
+      "D-"
+    ],
+    "netclass": "90R_diff",
+    "usb_speed_mbps": 12,
+    "structure": "Differential pair, non-coplanar, with solder mask",
+    "signal_layer": "F.Cu",
+    "reference_layer": "In1.Cu GND",
+    "trace_width_mil": 5.34,
+    "trace_width_mm": 0.135636,
+    "edge_gap_mil": 6,
+    "edge_gap_mm": 0.1524,
+    "netclass_clearance_mm": 0.127,
+    "via_diameter_mm": 0.5,
+    "via_drill_mm": 0.3,
+    "via_edge_gap_mm": 0.25,
+    "board_min_track_width_mm": 0.127,
+    "drc_track_width_mm": {
+      "min": 0.127,
+      "opt": 0.135636,
+      "max": 0.145
+    },
+    "drc_pair_gap_mm": {
+      "min": 0.14,
+      "opt": 0.1524,
+      "max": 0.17
+    },
+    "drc_max_length_mismatch_mm": 1,
+    "drc_max_uncoupled_length_mm": 5,
+    "limits_note": "Mismatch and uncoupled limits are conservative project targets, not manufacturer limits."
+  },
+  "delay_estimate": {
+    "stackup": "JLC04161H-3313",
+    "reference": "F.Cu over In1.Cu GND",
+    "target_ohms": 90,
+    "calculator_width_mil": 5.34,
+    "width_mm": 0.135636,
+    "gap_mm": 0.1524,
+    "er_prepreg": 4.1,
+    "h_mm": 0.0994,
+    "effective_er_approx": 3.0452778056655423,
+    "delay_ps_per_mm_approx": 5.820935080528391,
+    "max_length_mismatch_mm": 1,
+    "max_skew_ps_approx": 5.820935080528391,
+    "bulk_er_upper_delay_ps_per_mm": 6.754158148740548,
+    "source": "https://jlcpcb.com/pcb-impedance-calculator",
+    "date": "2026-10-27",
+    "caution": "Delay estimate uses simple microstrip effective permittivity, not coupled-line field solution. Geometry comes from manufacturer calculator. Existing routing is incomplete."
+  },
+  "remaining_layout_actions": [
+    "Move D4 and D5 next to J9 and finish both ESD signal connections with short ground paths.",
+    "Join J9 A6/B6 to D+ and A7/B7 to D- immediately at the connector.",
+    "Reroute existing USB copper using the new netclass dimensions.",
+    "Keep both signals on F.Cu above continuous In1.Cu GND. Avoid layer changes and ground plane gaps.",
+    "Keep unrelated routing at least 0.3 mm away where practical and top copper pours about 0.5 mm away; closer coplanar copper requires impedance recalculation.",
+    "Tune pair skew only if mismatch exceeds 1 mm, refill planes, run DRC, and validate enumeration and sustained transfers in both plug orientations."
+  ],
+  "validation_status": "KiCad 10.0.6 reopened the class and accepted custom rules. Existing USB copper violates new geometry constraints and ESD connections are incomplete. Board is not fabrication-ready."
+}
