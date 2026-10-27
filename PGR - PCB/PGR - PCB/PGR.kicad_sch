@@ -26152,7 +26152,9 @@
 			)
 			(embedded_fonts no)
 		)
-	)
+	
+(symbol "PGR_Validated:Connector_Generic_Conn_01x08" (pin_names (offset 1.016) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property "Reference" "J" (at 0 10.16 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "Conn_01x08" (at 0 -12.7 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "ki_keywords" "connector" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol "Connector_Generic_Conn_01x08_1_1" (rectangle (start -1.27 8.89) (end 1.27 -11.43) (stroke (width 0.254) (type default)) (fill (type background))) (rectangle (start -1.27 7.747) (end 0 7.493) (stroke (width 0.1524) (type default)) (fill (type none))) (rectangle (start -1.27 5.207) (end 0 4.953) (stroke (width 0.1524) (type default)) (fill (type none))) (rectangle (start -1.27 2.667) (end 0 2.413) (stroke (width 0.1524) (type default)) (fill (type none))) (rectangle (start -1.27 0.127) (end 0 -0.127) (stroke (width 0.1524) (type default)) (fill (type none))) (rectangle (start -1.27 -2.413) (end 0 -2.667) (stroke (width 0.1524) (type default)) (fill (type none))) (rectangle (start -1.27 -4.953) (end 0 -5.207) (stroke (width 0.1524) (type default)) (fill (type none))) (rectangle (start -1.27 -7.493) (end 0 -7.747) (stroke (width 0.1524) (type default)) (fill (type none))) (rectangle (start -1.27 -10.033) (end 0 -10.287) (stroke (width 0.1524) (type default)) (fill (type none))) (pin passive line (at -5.08 7.62 0) (length 3.81) (name "Pin_1" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 5.08 0) (length 3.81) (name "Pin_2" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 2.54 0) (length 3.81) (name "Pin_3" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 0 0) (length 3.81) (name "Pin_4" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -2.54 0) (length 3.81) (name "Pin_5" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -5.08 0) (length 3.81) (name "Pin_6" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -7.62 0) (length 3.81) (name "Pin_7" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -10.16 0) (length 3.81) (name "Pin_8" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))) (embedded_fonts no))
+)
 	(rectangle
 		(start 30.48 12.065)
 		(end 266.065 249.555)
@@ -26857,17 +26859,7 @@
 		)
 		(uuid "ec59192a-cde9-48d7-977c-83d085f2fa24")
 	)
-	(text "J1 spare GPIO: 1 GND, 2 3V3, 3 GPIO2, 4 GPIO32.\nGPIO12-15 are on J13. All other GPIOs serve onboard functions."
-		(exclude_from_sim no)
-		(at 173.482 178.816 0)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify left)
-		)
-		(uuid "edd73233-8d9f-4d8d-b6be-395e20288937")
-	)
+	(text "J1: 1 GND, 2 3V3, 3 GPIO2, 4 GPIO32, 5 GPIO12,\n6 GPIO13, 7 GPIO14, 8 GPIO15. GPIO12-15 shared with J13." (exclude_from_sim no) (at 173.482 178.816 0) (effects (font (size 1.016 1.016)) (justify left)) (uuid "edd73233-8d9f-4d8d-b6be-395e20288937"))
 	(text "AquaNode"
 		(exclude_from_sim no)
 		(at 422.91 113.792 0)
@@ -58692,7 +58684,7 @@
 			)
 		)
 	)
-	(symbol (lib_id "PGR_Validated:Connector_Generic_Conn_01x04_1") (at 306.07 60.96 180) (unit 1) (body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (fields_autoplaced yes) (uuid "e30da810-fc7f-4dcc-8d6b-18212b6f8293") (property "Reference" "J1" (at 306.07 47.0 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "SPARE GPIO" (at 306.07 50.0 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" (at 306.07 60.96 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 306.07 60.96 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Description" "Spare ESP32 GPIO header: 1 GND, 2 3V3, 3 GPIO2, 4 GPIO32" (at 306.07 60.96 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (pin "1" (uuid "04c025c8-8be1-4310-85fd-f99d5c130431")) (pin "2" (uuid "735b3f7b-3bee-4a02-a342-77e02fb2c266")) (pin "3" (uuid "c4957dc6-ba07-4d32-8734-1233f11a96de")) (pin "4" (uuid "9ff39f81-7614-4e0a-afb9-b850a755a91a")) (instances (project "PGR" (path "/2a888306-90d9-48e5-ba43-e08ba2da2ab6" (reference "J1") (unit 1)))))
+	(symbol (lib_id "PGR_Validated:Connector_Generic_Conn_01x08") (at 306.07 66.04 180) (unit 1) (body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (fields_autoplaced yes) (uuid "e30da810-fc7f-4dcc-8d6b-18212b6f8293") (property "Reference" "J1" (at 306.07 47.0 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "SPARE GPIO" (at 306.07 50.0 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" (at 306.07 60.96 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 306.07 60.96 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Description" "User GPIO expansion, shared with J13 when JTAG is unused" (at 306.07 60.96 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (pin "1" (uuid "04c025c8-8be1-4310-85fd-f99d5c130431")) (pin "2" (uuid "735b3f7b-3bee-4a02-a342-77e02fb2c266")) (pin "3" (uuid "c4957dc6-ba07-4d32-8734-1233f11a96de")) (pin "4" (uuid "9ff39f81-7614-4e0a-afb9-b850a755a91a")) (instances (project "PGR" (path "/2a888306-90d9-48e5-ba43-e08ba2da2ab6" (reference "J1") (unit 1)))) (pin "5" (uuid "ebf5bb2c-152a-4e00-b0d1-790d32bf6526")) (pin "6" (uuid "459ef1d4-0f99-4302-b6e6-693f32ca796c")) (pin "7" (uuid "c19b463c-a267-4003-83b1-5bd6d74849fa")) (pin "8" (uuid "3af73ac4-2b0c-4c2c-80c8-0db449b8003d")))
 	(symbol
 		(lib_id "PGR_Validated:C_12")
 		(at 345.44 238.76 0)
@@ -62392,102 +62384,18 @@
 	)
 	(embedded_fonts no)
 
-(global_label "IO2"
-		(shape input)
-		(at 311.15 58.42 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "74951392-4d1a-4021-8183-e983f3fa7e7c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 311.15 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-(global_label "IO32"
-		(shape input)
-		(at 311.15 55.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2c2e4dc9-1e9a-4255-ab61-a6b0879294aa")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 311.15 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-(wire
-		(pts
-			(xy 311.15 60.96) (xy 332.74 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b8601b0-6a08-414c-8cf8-f7c216d5417c")
-	)
-(symbol (lib_id "PGR_Validated:power_+3_3V") (at 332.74 58.42 0) (unit 1) (body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (fields_autoplaced yes) (uuid "58921a26-5788-4137-858f-5a531b16d209") (property "Reference" "#PWR02" (at 332.74 62.23 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "+3.3V" (at 332.74 53.34 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 332.74 58.42 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 332.74 58.42 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Description" "Power symbol creates a global label with name \"+3.3V\"" (at 332.74 58.42 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (pin "1" (uuid "ae281489-c408-4460-9677-72a66d4838be")) (instances (project "PGR" (path "/2a888306-90d9-48e5-ba43-e08ba2da2ab6" (reference "#PWR02") (unit 1)))))
-(wire
-		(pts
-			(xy 311.15 63.5) (xy 326.39 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f93d3c2b-4da6-4973-8d25-a37fd64032f2")
-	)
-(wire
-		(pts
-			(xy 326.39 63.5) (xy 326.39 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a98a6f57-eeb2-4b42-8858-d950050a1ef5")
-	)
-(symbol (lib_id "PGR_Validated:GND_53") (at 326.39 66.04 0) (unit 1) (body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "06304228-e16d-41d3-9d8a-0b0fea1d8967") (property "Reference" "#PWR06" (at 326.39 55.88 0) (hide yes) (show_name no) (do_not_autoplace yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 326.39 69.85 0) (show_name no) (do_not_autoplace yes) (effects (font (size 1 1)))) (property "Footprint" "" (at 326.39 66.04 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 326.39 66.04 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 326.39 66.04 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (pin "1" (uuid "ecaf674a-86fc-4fa4-82d3-34e5307c9dbd")) (instances (project "PGR" (path "/2a888306-90d9-48e5-ba43-e08ba2da2ab6" (reference "#PWR06") (unit 1)))))
-(text "J1 exposes spare GPIOs only. Logic level: 3.3 V.\nGPIO2 has R25 pulldown. Keep low or floating during download boot.\nGPIO32 is unrestricted and supports ADC1 / RTC wake.\nGPIO12-15 remain on J13; available when JTAG is unused.\nGPIO12 must stay low at reset; GPIO15 is also a strapping pin."
-		(exclude_from_sim no)
-		(at 290.83 73.66 0)
-		(effects
-			(font
-				(size 1 1)
-				(line_spacing 1.2)
-			)
-			(justify left top)
-		)
-		(uuid "3939bce1-b7da-4e41-a1ac-f07ce5e2c81e")
-	)
-(wire
-		(pts
-			(xy 332.74 60.96) (xy 332.74 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4db0d1dd-78e4-44ef-89fa-00c01ba20e93")
-	)
+(global_label "IO2" (shape input) (at 311.15 68.58 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "74951392-4d1a-4021-8183-e983f3fa7e7c") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 311.15 58.42 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))))
+(global_label "IO32" (shape input) (at 311.15 66.04 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "2c2e4dc9-1e9a-4255-ab61-a6b0879294aa") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 311.15 55.88 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))))
+(wire (pts (xy 311.15 71.12) (xy 332.74 71.12)) (stroke (width 0) (type default)) (uuid "6b8601b0-6a08-414c-8cf8-f7c216d5417c"))
+(symbol (lib_id "PGR_Validated:power_+3_3V") (at 332.74 68.58 0) (unit 1) (body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (fields_autoplaced yes) (uuid "58921a26-5788-4137-858f-5a531b16d209") (property "Reference" "#PWR02" (at 332.74 72.39 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "+3.3V" (at 332.74 63.5 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 332.74 68.58 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 332.74 68.58 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Description" "Power symbol creates a global label with name \"+3.3V\"" (at 332.74 68.58 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (pin "1" (uuid "ae281489-c408-4460-9677-72a66d4838be")) (instances (project "PGR" (path "/2a888306-90d9-48e5-ba43-e08ba2da2ab6" (reference "#PWR02") (unit 1)))))
+(wire (pts (xy 311.15 73.66) (xy 326.39 73.66)) (stroke (width 0) (type default)) (uuid "f93d3c2b-4da6-4973-8d25-a37fd64032f2"))
+(wire (pts (xy 326.39 73.66) (xy 326.39 76.2)) (stroke (width 0) (type default)) (uuid "a98a6f57-eeb2-4b42-8858-d950050a1ef5"))
+(symbol (lib_id "PGR_Validated:GND_53") (at 326.39 76.2 0) (unit 1) (body_style 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (dnp no) (uuid "06304228-e16d-41d3-9d8a-0b0fea1d8967") (property "Reference" "#PWR06" (at 326.39 66.04 0) (hide yes) (show_name no) (do_not_autoplace yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 326.39 80.01 0) (show_name no) (do_not_autoplace yes) (effects (font (size 1 1)))) (property "Footprint" "" (at 326.39 76.2 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 326.39 76.2 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 326.39 76.2 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (pin "1" (uuid "ecaf674a-86fc-4fa4-82d3-34e5307c9dbd")) (instances (project "PGR" (path "/2a888306-90d9-48e5-ba43-e08ba2da2ab6" (reference "#PWR06") (unit 1)))))
+(text "J1 user GPIOs: GPIO2, 12, 13, 14, 15 and 32. Logic: 3.3 V.\nGPIO12-15 are shared with J13; disconnect JTAG for GPIO use.\nKeep GPIO2 low or floating during download boot.\nKeep GPIO12 low at reset for 3.3 V flash; GPIO15 is also a strap." (exclude_from_sim no) (at 290.83 83.82 0) (effects (font (size 1 1) (line_spacing 1.2)) (justify left top)) (uuid "3939bce1-b7da-4e41-a1ac-f07ce5e2c81e"))
+(wire (pts (xy 332.74 71.12) (xy 332.74 68.58)) (stroke (width 0) (type default)) (uuid "4db0d1dd-78e4-44ef-89fa-00c01ba20e93"))
+
+(global_label "IO12" (shape input) (at 311.15 63.5 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "8578cff6-c23d-4535-9907-a36ed682b422") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 311.15 55.88 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))))
+(global_label "IO13" (shape input) (at 311.15 60.96 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "0ad17fe2-4602-4e52-8bb8-0ed4d3fee685") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 311.15 55.88 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))))
+(global_label "IO14" (shape input) (at 311.15 58.42 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "5228633d-354c-4a81-873a-627f77e60fef") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 311.15 55.88 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))))
+(global_label "IO15" (shape input) (at 311.15 55.88 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "db152a45-6a36-4b8b-96dc-c1ff29bac97b") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 311.15 55.88 0) (hide yes) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))))
 )
