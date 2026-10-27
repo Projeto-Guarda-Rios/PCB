@@ -1,0 +1,68 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T03:36:09",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/2a888306-90d9-48e5-ba43-e08ba2da2ab6",
+            "violations": [
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR124 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 4.6736,
+                                "y": 3.1115
+                            },
+                            "uuid": "5e9e1a81-7dfb-431b-904f-c4f80fef8189"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR127 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 5.334,
+                                "y": 3.1115
+                            },
+                            "uuid": "669e54b1-6c96-49f3-8f55-2581fbbfc7af"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                }
+            ]
+        }
+    ],
+    "source": "PGR.kicad_sch"
+}

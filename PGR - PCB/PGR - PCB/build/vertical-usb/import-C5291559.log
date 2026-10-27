@@ -1,0 +1,16 @@
+[DEBUG] certifi package not available
+[DEBUG] Using system default SSL certificates
+[DEBUG] Created symbol lib: /home/dauwt/Projects/Guarda Rios/PCB/.backplane/worktrees/backplane-38d7e810/PGR - PCB/PGR - PCB/build/vertical-usb/C5291559.kicad_sym
+[INFO] Created Kicad symbol for ID : C5291559
+       Symbol name : USB4145-03-0230-C_C5291559
+       Library path : /home/dauwt/Projects/Guarda Rios/PCB/.backplane/worktrees/backplane-38d7e810/PGR - PCB/PGR - PCB/build/vertical-usb/C5291559.kicad_sym
+[INFO] Created Kicad footprint for ID: C5291559
+       Footprint name: USB-C-SMD_USB4145-03-0230-C
+       Footprint path: /home/dauwt/Projects/Guarda Rios/PCB/.backplane/worktrees/backplane-38d7e810/PGR - PCB/PGR - PCB/build/vertical-usb/C5291559.pretty/USB-C-SMD_USB4145-03-0230-C.kicad_mod
+[DEBUG] 3D OBJ bbox: X [-4.47501 .. 4.47] Y [-0.535159 .. 3.15484] Z [-0.700005 .. 7.46]
+[DEBUG] 3D centering offset: X=0.00 Y=-1.31 Z=0.00
+[INFO] Created 3D model for ID: C5291559
+       3D model name: USB-C-SMD_USB4145-03-0230-C
+       3D model path (wrl): /home/dauwt/Projects/Guarda Rios/PCB/.backplane/worktrees/backplane-38d7e810/PGR - PCB/PGR - PCB/build/vertical-usb/C5291559.3dshapes/USB-C-SMD_USB4145-03-0230-C.wrl
+       3D model path (step): /home/dauwt/Projects/Guarda Rios/PCB/.backplane/worktrees/backplane-38d7e810/PGR - PCB/PGR - PCB/build/vertical-usb/C5291559.3dshapes/USB-C-SMD_USB4145-03-0230-C.step
+-- easyeda2kicad.py v1.0.1 --

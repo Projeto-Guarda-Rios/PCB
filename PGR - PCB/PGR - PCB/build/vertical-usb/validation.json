@@ -1,0 +1,13 @@
+{
+  "non_J9_footprints_unchanged": 160,
+  "J9_anchor_unchanged": true,
+  "schematic_connectivity_unchanged": true,
+  "physical_pad_mapping_verified": true,
+  "J9_signal_pads": 16,
+  "J9_shell_stakes": 4,
+  "J9_locating_holes": 2,
+  "erc_violations": 0,
+  "J9_drc_violations": [],
+  "preexisting_missing_USB3_pads": 8,
+  "remaining_board_drc_count": 10
+}

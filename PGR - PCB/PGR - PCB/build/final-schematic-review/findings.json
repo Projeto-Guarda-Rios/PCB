@@ -1,0 +1,74 @@
+{
+  "decision": "HOLD_LAYOUT_SIGNOFF",
+  "schematic_sha256": "9171ae1f951194cd7c9c857f1a5149a863ecc7488243a839d11951fbe294ac64",
+  "read_only": true,
+  "component_count": 159,
+  "net_count": 133,
+  "erc_violations": 0,
+  "electrical_partition_matches_previous_review": true,
+  "findings": [
+    {
+      "id": "SW4_CURRENT_RATING",
+      "priority": "high",
+      "status": "unresolved part selection",
+      "evidence": "SW4 is in series with the battery negative terminal. Its selected generic DIP-switch footprint references CTS219, rated only 100mA. No exact SW4 MPN is specified. Estimated current at 5.02V/1A load, 3.21V input and 85% efficiency is 1.84A.",
+      "action": "Specify a suitably DC-rated battery disconnect, preferably 3A for the current design, and its matching footprint; alternatively move the small switch into a low-current control circuit.",
+      "source": "https://www.ctscorp.com/Files/DataSheets/Switches/DIP-Switches/CTS-Switches-DIP-219-Series-Datasheet.pdf"
+    },
+    {
+      "id": "UART_DEBUG_CONTENTION",
+      "priority": "medium",
+      "status": "confirmed conditional-use issue",
+      "evidence": "J14.4, U4.26 TXD and U5.34 RXD0 share the same net. An external USB-UART adapter driving J14.4 can contend with the powered CP2102N transmitter. USB absence does not establish TXD high impedance.",
+      "action": "Add a disconnect/jumper or mux for the CP2102N TXD path if external bidirectional UART programming/debug is required. Otherwise explicitly restrict J14 to receive-only monitoring of ESP TX and leave adapter TX disconnected.",
+      "source": "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf"
+    },
+    {
+      "id": "OFFBOARD_PROBE_FLAG",
+      "priority": "low",
+      "status": "confirmed import metadata issue",
+      "evidence": "TH1 has no footprint and is the remote NTC probe, but the native schematic instance has on_board yes.",
+      "action": "Exclude TH1 from the PCB while retaining its probe BOM/harness documentation."
+    },
+    {
+      "id": "USB_SHIELD_LIBRARY_RENUMBERING",
+      "priority": "low",
+      "status": "library refresh compatibility issue",
+      "evidence": "Schematic J9 shield pin is S1. Existing board J9 shell pads are S1 and connected to GND. The currently installed library footprint uses SH instead.",
+      "action": "Preserve the existing matching footprint in a project library or normalize symbol/footprint shield numbering together before library-refresh operations. Existing board shell grounding is correct."
+    }
+  ],
+  "remaining_validation": [
+    "Prototype regulator startup and supply switching under actual modem bursts.",
+    "Measure AquaNode supply at the far end of the real cable, including sensor startup current. U10 current limit minimum is approximately 143mA.",
+    "Confirm actual solar-panel output and winter energy balance for one cell.",
+    "Verify mounted NTC trip temperatures and open/short probe fault response.",
+    "USB-only operation is a limited-current programming fallback; do not assume full radio operation."
+  ],
+  "reviewed_subsystems": [
+    "Solar BQ24074 power path, source priority and single-cell charging",
+    "DW01A/FS8205A and added reverse-polarity/fuse protection",
+    "TPS61230 boost feedback, hysteresis, inductor and capacitor choices",
+    "TLV62568 buck and TPS3808 reset supervisor including R10 pull-up",
+    "MIC2007 load switches, current settings, slew-capacitor connection and default enables",
+    "MCP6566 temperature window and charge-disable polarity",
+    "ESP32 supply, boot straps, programming transistor logic, RTC wake and ADC scaling",
+    "CP2102N supply and VBUS divider",
+    "M5Stack SIM7028 cable mapping, UART buffering and power sequencing",
+    "RS485 A/B pinout, bias margin and separate /RE/DE control",
+    "Buzzer driver, flyback diode, LEDs and connectors",
+    "All assigned footprint files and used pin-number/pad-number compatibility"
+  ],
+  "automated_check_count": 333,
+  "exact_switch_part_number": "Not provided; clarification requested.",
+  "additional_confirmed_sources": {
+    "SS8050_pinout": "https://www.comchiptech.com/admin/files/product/SS8050-G%20RevA181526.pdf",
+    "M5Stack_module": "https://docs.m5stack.com/en/unit/Unit_NBIoT2",
+    "bulk_capacitor": "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3225X7R1C226M250AC"
+  },
+  "file_hashes": {
+    "PGR.kicad_sch": "9171ae1f951194cd7c9c857f1a5149a863ecc7488243a839d11951fbe294ac64",
+    "PGR.kicad_pro": "953bfff4e8264a61e6f6f234150556953670f2d145937485915e3c365617ae35",
+    "PGR.kicad_pcb": "dd5d88f68b248d52062d8613e7030891c3c5f75433eb0c659304ebabbd9b1b1e"
+  }
+}

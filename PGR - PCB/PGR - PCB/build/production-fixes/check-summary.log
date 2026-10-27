@@ -1,0 +1,30 @@
+{
+  "result": "PASS",
+  "check_count": 335,
+  "components": 159,
+  "nets": 133,
+  "calculations": {
+    "boost_output_nominal_V": 5.02,
+    "boost_output_max_PFM_V": 5.139193050150149,
+    "boost_shutdown_min_V": 3.1241494868767603,
+    "boost_shutdown_nominal_V": 3.2127272727272724,
+    "boost_restart_nominal_V": 3.57,
+    "usb_limit_max_A": 0.48712935809710006,
+    "modem_limit_min_A": 0.504050405040504,
+    "node_limit_min_A": 0.14257425742574256,
+    "mux_priority_threshold_max_V": 4.456345945945945,
+    "charge_current_nominal_A": 0.445,
+    "charge_current_max_A": 0.49242424242424243,
+    "termination_current_nominal_A": 0.024,
+    "battery_adc_max_V": 0.9135352815395582,
+    "rs485_idle_min_differential_V": 0.2666386191398962,
+    "ntc_hot_estimated_trip_range_C": [
+      39.70661472309013,
+      41.73655367865467
+    ],
+    "ntc_cold_estimated_trip_range_C": [
+      3.85561294536285,
+      5.634799824859897
+    ]
+  }
+}

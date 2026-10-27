@@ -1,0 +1,24 @@
+Collecting protobuf==5.29.6
+  Using cached protobuf-5.29.6-cp38-abi3-manylinux2014_x86_64.whl.metadata (592 bytes)
+Collecting pynng==0.9.0
+  Using cached pynng-0.9.0-cp314-cp314-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl.metadata (7.0 kB)
+Collecting sexpdata
+  Using cached sexpdata-1.0.2-py3-none-any.whl.metadata (3.6 kB)
+Collecting cffi (from pynng==0.9.0)
+  Using cached cffi-2.1.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+Collecting sniffio (from pynng==0.9.0)
+  Using cached sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting pycparser (from cffi->pynng==0.9.0)
+  Using cached pycparser-3.12-py3-none-any.whl.metadata (9.7 kB)
+Using cached protobuf-5.29.6-cp38-abi3-manylinux2014_x86_64.whl (320 kB)
+Using cached pynng-0.9.0-cp314-cp314-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (1.0 MB)
+Using cached sexpdata-1.0.2-py3-none-any.whl (10 kB)
+Using cached cffi-2.1.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (221 kB)
+Using cached pycparser-3.12-py3-none-any.whl (62 kB)
+Using cached sniffio-1.3.1-py3-none-any.whl (10 kB)
+Installing collected packages: sniffio, sexpdata, pycparser, protobuf, cffi, pynng
+
+Successfully installed cffi-2.1.1 protobuf-5.29.6 pycparser-3.12 pynng-0.9.0 sexpdata-1.0.2 sniffio-1.3.1
+
+[notice] A new release of pip is available: 26.2.1 -> 26.2.2
+[notice] To update, run: /home/dauwt/Projects/Guarda Rios/PCB/.backplane/worktrees/backplane-8ba8b17b/PGR - PCB/PGR - PCB/build/production-fixes/venv/bin/python -m pip install --upgrade pip

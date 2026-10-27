@@ -1,0 +1,27 @@
+# C&K 1000-series datasheet, C terminals: 3 x 1.85 mm finished holes,
+# 4.70 mm pitch. Body 12.70 x 6.60 x 6.35 mm; S3 actuator 5.08 mm.
+library: PGR-FootPrints
+positions: [3]
+fp_name: SW_Slide_CK_1101M2S3CBE2
+pad_pitch: 4.7
+num_rows: 1
+first_pin:
+  position: top
+  marker:
+    shape: triangle
+    size: 0.6
+    offset: 0.7
+pads:
+  size: [2.8, 2.8]
+  drill: 1.85
+  shape: circ
+body_size: [12.7, 6.6]
+description: 'C&K 1101M2S3CBE2 top-actuated SPDT slide switch, gold dry-circuit contacts, body 12.7x6.6mm, S3 5.08mm actuator'
+tags: 'switch slide SPDT gold top actuated THT'
+source: 'https://www.littelfuse.com/assetdocs/littelfuse-ck-slide-1000-series-datasheet?assetguid=68a2b41e-19a4-4cf4-821b-aca78a430f00'
+additional_drawings:
+  actuator:
+    type: rect
+    layer: F.Fab
+    center: [-1.195, 0]
+    size: [3.86, 3.86]

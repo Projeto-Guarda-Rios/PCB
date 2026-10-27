@@ -1,0 +1,21 @@
+{
+  "replaced": [
+    "SW1",
+    "SW2",
+    "SW4"
+  ],
+  "other_footprints_unchanged": 158,
+  "original_electrical_connections_unchanged": true,
+  "new_unused_SW4_terminal": 3,
+  "ERC_violations": 0,
+  "DRC_violations_before": 10,
+  "DRC_violations_after": 10,
+  "new_DRC_violations": 0,
+  "unconnected_items_before": 379,
+  "unconnected_items_after": 383,
+  "unconnected_increase": "Four additional pads from four-terminal tactile switches; PCB still unrouted",
+  "sha256": {
+    "PGR.kicad_sch": "8648ecba96988fcf62f8d9908b0fba7a1530766c80dbece2fce504bb18861e74",
+    "PGR.kicad_pcb": "02c959a8c18b83544a42b0dc0b990075a4835615e42657ca70415ac151a0dd63"
+  }
+}

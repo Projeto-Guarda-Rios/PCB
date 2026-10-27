@@ -1,0 +1,9 @@
+{
+  "BT1_center_mm": [
+    80.0,
+    253.0
+  ],
+  "other_footprints_unchanged": 160,
+  "positive_net": "CELL_P",
+  "negative_net": "BMS_NEG"
+}

@@ -1,0 +1,708 @@
+report: "Processing symbol \'TP1:TestPoint:TestPoint_Pad_D1.0mm\'.\nProcessing symbol \'TP2:TestPoint:TestPoint_Pad_D1.0mm\'.\nProcessing symbol \'TP3:TestPoint:TestPoint_Pad_D1.0mm\'.\nProcessing symbol \'TP4:TestPoint:TestPoint_Pad_D1.0mm\'.\nProcessing symbol \'TP5:TestPoint:TestPoint_Pad_D1.0mm\'.\nProcessing symbol \'TP6:TestPoint:TestPoint_Pad_D1.0mm\'.\nProcessing symbol \'TP8:TestPoint:TestPoint_Pad_D1.0mm\'.\nProcessing symbol \'TP7:TestPoint:TestPoint_Pad_D1.0mm\'.\nProcessing symbol \'Q7:SS8050-G:TRANS_SS8050-G\'.\nProcessing symbol \'Q6:SS8050-G:TRANS_SS8050-G\'.\nProcessing symbol \'Q2:SS8050-G:TRANS_SS8050-G\'.\nProcessing symbol \'Q1:SS8050-G:TRANS_SS8050-G\'.\nProcessing symbol \'R25:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R28:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R3:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R24:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R1:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R2:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R8:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R29:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R30:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R31:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R32:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R33:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R34:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R35:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R36:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R37:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R38:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R14:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R23:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R22:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R21:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R20:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R19:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R18:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R17:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R16:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R15:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R4:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R13:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R12:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R11:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R10:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R9:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R40:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R7:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R6:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R5:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R39:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R73:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R72:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R71:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R70:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R69:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R68:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R67:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R66:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R65:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R64:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R63:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R62:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R61:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R60:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R54:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R41:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R53:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R51:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R42:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R43:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R50:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R49:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R48:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R47:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R46:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R44:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'R45:Resistor_SMD:R_0603_1608Metric\'.\nProcessing symbol \'U5:RF_Module:ESP32-WROOM-32D\'.\nProcessing symbol \'U7:Package_TO_SOT_SMD:SOT-583-8\'.\nProcessing symbol \'U10:Package_TO_SOT_SMD:SOT-23-6\'.\nProcessing symbol \'U11:Package_TO_SOT_SMD:SOT-23-6\'.\nProcessing symbol \'U12:Package_TO_SOT_SMD:SOT-23-6\'.\nProcessing symbol \'U9:Package_TO_SOT_SMD:SOT-23-6\'.\nProcessing symbol \'U6:Package_TO_SOT_SMD:SOT-23-6\'.\nProcessing symbol \'U13:Package_TO_SOT_SMD:SOT-23-5\'.\nProcessing symbol \'U14:Package_TO_SOT_SMD:SOT-23-5\'.\nProcessing symbol \'IC1:Package_TO_SOT_SMD:SOT-23-5\'.\nProcessing symbol \'D6:Package_TO_SOT_SMD:SOT-23\'.\nProcessing symbol \'Q9:Package_TO_SOT_SMD:SOT-23\'.\nProcessing symbol \'Q8:Package_TO_SOT_SMD:SOT-23\'.\nProcessing symbol \'Q5:Package_TO_SOT_SMD:SOT-23\'.\nProcessing symbol \'Q4:Package_TO_SOT_SMD:SOT-23\'.\nProcessing symbol \'U3:Package_SON:Texas_S-PVSON-N10_ThermalVias\'.\nProcessing symbol \'U15:Package_SO:VSSOP-8_2.3x2mm_P0.5mm\'.\nProcessing symbol \'U8:Package_SO:SOIC-8_3.9x4.9mm_P1.27mm\'.\nProcessing symbol \'U1:Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm\'.\nProcessing symbol \'U4:Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm\'.\nProcessing symbol \'J9:PGR-FootPrints:USB_C_GCT_USB4105_PGR\'.\nProcessing symbol \'D3:LESD5D5.0CT1G:TVS_LESD5D5.0CT1G\'.\nProcessing symbol \'D4:LESD5D5.0CT1G:TVS_LESD5D5.0CT1G\'.\nProcessing symbol \'D5:LESD5D5.0CT1G:TVS_LESD5D5.0CT1G\'.\nProcessing symbol \'D7:LED_SMD:LED_0603_1608Metric\'.\nProcessing symbol \'D8:LED_SMD:LED_0603_1608Metric\'.\nProcessing symbol \'D9:LED_SMD:LED_0603_1608Metric\'.\nProcessing symbol \'D10:LED_SMD:LED_0603_1608Metric\'.\nProcessing symbol \'L2:Inductor_SMD:L_Coilcraft_XAL4020-XXX\'.\nProcessing symbol \'L1:Inductor_SMD:L_Coilcraft_XAL4020-XXX\'.\nProcessing symbol \'F1:Fuse:Fuse_Littelfuse-NANO2-451_453\'.\nProcessing symbol \'Q3:FS8205A:SOP65P640X120-8N\'.\nProcessing symbol \'D13:Diode_SMD:D_SOD-123\'.\nProcessing symbol \'D14:Diode_SMD:D_SMA\'.\nProcessing symbol \'J1:Connector_PinSocket_2.00mm:PinSocket_1x16_P2.00mm_Vertical\'.\nProcessing symbol \'J13:Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical\'.\nProcessing symbol \'J14:Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical\'.\nProcessing symbol \'JP1:Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical\'.\nProcessing symbol \'J8:Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical\'.\nProcessing symbol \'J11:Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical\'.\nProcessing symbol \'J7:Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical\'.\nProcessing symbol \'BT1:Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical\'.\nProcessing symbol \'J12:Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical\'.\nProcessing symbol \'J10:Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical\'.\nProcessing symbol \'C34:Capacitor_SMD:C_1210_3225Metric\'.\nProcessing symbol \'C5:Capacitor_SMD:C_1210_3225Metric\'.\nProcessing symbol \'C8:Capacitor_SMD:C_1210_3225Metric\'.\nProcessing symbol \'C9:Capacitor_SMD:C_1210_3225Metric\'.\nProcessing symbol \'C11:Capacitor_SMD:C_1210_3225Metric\'.\nProcessing symbol \'C13:Capacitor_SMD:C_1210_3225Metric\'.\nProcessing symbol \'C14:Capacitor_SMD:C_1210_3225Metric\'.\nProcessing symbol \'C18:Capacitor_SMD:C_1210_3225Metric\'.\nProcessing symbol \'C19:Capacitor_SMD:C_1210_3225Metric\'.\nProcessing symbol \'C22:Capacitor_SMD:C_1210_3225Metric\'.\nProcessing symbol \'C33:Capacitor_SMD:C_1210_3225Metric\'.\nProcessing symbol \'C32:Capacitor_SMD:C_1210_3225Metric\'.\nProcessing symbol \'C1:Capacitor_SMD:C_0805_2012Metric\'.\nProcessing symbol \'C4:Capacitor_SMD:C_0805_2012Metric\'.\nProcessing symbol \'C6:Capacitor_SMD:C_0805_2012Metric\'.\nProcessing symbol \'C10:Capacitor_SMD:C_0603_1608Metric\'.\nProcessing symbol \'C35:Capacitor_SMD:C_0603_1608Metric\'.\nProcessing symbol \'C2:Capacitor_SMD:C_0603_1608Metric\'.\nProcessing symbol \'C3:Capacitor_SMD:C_0603_1608Metric\'.\nProcessing symbol \'C7:Capacitor_SMD:C_0603_1608Metric\'.\nProcessing symbol \'C31:Capacitor_SMD:C_0603_1608Metric\'.\nProcessing symbol \'C37:Capacitor_SMD:C_0603_1608Metric\'.\nProcessing symbol \'C30:Capacitor_SMD:C_0603_1608Metric\'.\nProcessing symbol \'C36:Capacitor_SMD:C_0603_1608Metric\'.\nProcessing symbol \'C23:Capacitor_SMD:C_0603_1608Metric\'.\nProcessing symbol \'C29:Capacitor_SMD:C_0603_1608Metric\'.\nProcessing symbol \'C12:Capacitor_SMD:C_0603_1608Metric\'.\nProcessing symbol \'C28:Capacitor_SMD:C_0603_1608Metric\'.\nProcessing symbol \'C27:Capacitor_SMD:C_0603_1608Metric\'.\nProcessing symbol \'C15:Capacitor_SMD:C_0603_1608Metric\'.\nProcessing symbol \'C17:Capacitor_SMD:C_0603_1608Metric\'.\nProcessing symbol \'C26:Capacitor_SMD:C_0603_1608Metric\'.\nProcessing symbol \'C25:Capacitor_SMD:C_0603_1608Metric\'.\nProcessing symbol \'C20:Capacitor_SMD:C_0603_1608Metric\'.\nProcessing symbol \'C21:Capacitor_SMD:C_0603_1608Metric\'.\nProcessing symbol \'C24:Capacitor_SMD:C_0603_1608Metric\'.\nProcessing symbol \'BZ1:Buzzer_Beeper:Buzzer_12x9.5RM7.6\'.\nProcessing symbol \'SW2:Button_Switch_SMD:SW_SPST_B3U-1000P\'.\nProcessing symbol \'SW1:Button_Switch_SMD:SW_SPST_B3U-1000P\'.\nProcessing symbol \'SW4:Button_Switch_SMD:SW_DIP_SPSTx01_Slide_Copal_CHS-01A_W5.08mm_P1.27mm_JPin\'.\n\n\nTotal warnings: 0, errors: 0.\n"
+
+id {
+  value: "0036e584-3630-4ea5-9c88-7e4a49ba67ab"
+}
+position {
+  x_nm: 219540000
+  y_nm: 128965000
+}
+orientation {
+}
+layer: BL_F_Cu
+locked: LS_UNLOCKED
+definition {
+  id {
+    library_nickname: "Buzzer_Beeper"
+    entry_name: "Buzzer_12x9.5RM7.6"
+  }
+  attributes {
+    description: "Generic Buzzer, D12mm height 9.5mm with RM7.6mm"
+    keywords: "buzzer"
+  }
+  items {
+    type_url: "type.googleapis.com/kiapi.board.types.Field"
+    value: "\n\000\022\003MPN\032\233\001\n&\n$8f9a6b4b-1526-4ed9-b124-945ef12bbfc5\022E\022\n\010\240\324\327h\020\210\263\277=\032#\020\002\030\002"\000)\000\000\000\000\000\000\360?2\004\010\360\223\tP\001`\001r\010\010\300\204=\020\300\204=*\022AI-1223-TWT-5V-2-R\0304(\0012&\n$0036e584-3630-4ea5-9c88-7e4a49ba67ab"
+  }
+  items {
+    type_url: "type.googleapis.com/kiapi.board.types.Field"
+    value: "\n\000\022\014Manufacturer\032\222\001\n&\n$7cf9d465-6a1b-42d2-900e-1fea320073f1\022<\022\n\010\240\324\327h\020\210\263\277=\032#\020\002\030\002"\000)\000\000\000\000\000\000\360?2\004\010\360\223\tP\001`\001r\010\010\300\204=\020\300\204=*\tPUI Audio\0304(\0012&\n$0036e584-3630-4ea5-9c88-7e4a49ba67ab"
+  }
+  items {
+    type_url: "type.googleapis.com/kiapi.board.types.Field"
+    value: "\n\000\022\006Rating\032\301\001\n&\n$fbfd9978-384f-404c-a26f-bbd31a7ef0ac\022k\022\n\010\240\324\327h\020\210\263\277=\032#\020\002\030\002"\000)\000\000\000\000\000\000\360?2\004\010\360\223\tP\001`\001r\010\010\300\204=\020\300\204=*85V active magnetic indicator, 30mA max; lead pitch 7.6mm\0304(\0012&\n$0036e584-3630-4ea5-9c88-7e4a49ba67ab"
+  }
+  items {
+    type_url: "type.googleapis.com/kiapi.board.types.Pad"
+    value: "\n&\n$b5531322-1b28-4008-9449-b583c0ac8dc7\020\001\032\0011"\005\022\003+5V(\0012s\010\001\022"\003*")\004\005\006\007\010\t\n\013\014\r\016\017\020\021\022\023\024\025\026\027\030\031\032\033\034\035\036\037 !\032\020\010\003\020"\032\010\010\300\204=\020\300\204= \001 \001*$\010\003\020\002\032\010\010\200\211z\020\200\211z!\000\000\000\000\000\000\320?)\232\231\231\231\231\231\311?@\001Z\0002\000J\017\010\001\022\013\022\t\t\000\000\000\000\000\200V@:\n\010\240\324\327h\020\210\263\277=J\000R\007\n\003+_1\020\005Z\000j&\n$0036e584-3630-4ea5-9c88-7e4a49ba67ab"
+  }
+  items {
+    type_url: "type.googleapis.com/kiapi.board.types.Pad"
+    value: "\n&\n$2480a1f2-e1c5-4d53-8a2c-81f7400834e5\020\001\032\0012"\t\022\007BUZZ_SW(\0012s\010\001\022"\003*")\004\005\006\007\010\t\n\013\014\r\016\017\020\021\022\023\024\025\026\027\030\031\032\033\034\035\036\037 !\032\020\010\003\020"\032\010\010\300\204=\020\300\204= \001 \001*$\010\003\020\001\032\010\010\200\211z\020\200\211z!\000\000\000\000\000\000\320?)\232\231\231\231\231\231\311?@\001Z\0002\000J\017\010\001\022\013\022\t\t\000\000\000\000\000\200F@:\n\010\240\303\247l\020\210\263\277=J\000R\007\n\003-_2\020\005Z\000j&\n$0036e584-3630-4ea5-9c88-7e4a49ba67ab"
+  }
+  items {
+    type_url: "type.googleapis.com/kiapi.board.types.BoardGraphicShape"
+    value: "\n*\032\016\n\010\n\004\010\300\251\007\020\002\022\002\010\001:\030\n\n\010\340\313\277j\020\210\263\277=\022\n\010\200\364\263m\020\210\263\277=\020(\032\000"&\n$179e6123-daca-4180-a92f-adeaf2986ddb(\0012&\n$0036e584-3630-4ea5-9c88-7e4a49ba67ab"
+  }
+  items {
+    type_url: "type.googleapis.com/kiapi.board.types.BoardGraphicShape"
+    value: "\n*\032\016\n\010\n\004\010\320\206\003\020\002\022\002\010\001:\030\n\n\010\340\313\277j\020\210\263\277=\022\n\010\360\207\275m\020\210\263\277=\0202\032\000"&\n$4f1362cc-2d5a-480c-ae9e-9d2d4b1d67b8(\0012&\n$0036e584-3630-4ea5-9c88-7e4a49ba67ab"
+  }
+  items {
+    type_url: "type.googleapis.com/kiapi.board.types.BoardGraphicShape"
+    value: "\n*\032\016\n\010\n\004\010\240\215\006\020\002\022\002\010\001:\030\n\n\010\340\313\277j\020\210\263\277=\022\n\010\240\320\374j\020\210\263\277=\0204\032\000"&\n$edae508c-d35e-40cf-ad07-f9fc1d7df27a(\0012&\n$0036e584-3630-4ea5-9c88-7e4a49ba67ab"
+  }
+  items {
+    type_url: "type.googleapis.com/kiapi.board.types.BoardGraphicShape"
+    value: "\n*\032\016\n\010\n\004\010\240\215\006\020\002\022\002\010\001:\030\n\n\010\340\313\277j\020\210\263\277=\022\n\010\340\346\255m\020\210\263\277=\0204\032\000"&\n$ca5daa00-40f9-46e5-9ab1-11eb039db733(\0012&\n$0036e584-3630-4ea5-9c88-7e4a49ba67ab"
+  }
+  items {
+    type_url: "type.googleapis.com/kiapi.board.types.BoardText"
+    value: "\n&\n$5534c339-5c1e-41d2-8603-66599ea48e0b\0226\022\n\010\220\206\327h\020\250\257\244<\032%\020\002\030\002"\000)\000\000\000\000\000\000\360?2\004\010\360\223\tP\001`\001h\001r\010\010\300\204=\020\300\204=*\001+\030((\0012&\n$0036e584-3630-4ea5-9c88-7e4a49ba67ab"
+  }
+  items {
+    type_url: "type.googleapis.com/kiapi.board.types.BoardText"
+    value: "\n&\n$9f1487c9-ad49-4165-bc6b-3a13d67bce56\0226\022\n\010\220\206\327h\020\250\257\244<\032%\020\002\030\002"\000)\000\000\000\000\000\000\360?2\004\010\360\223\tP\001`\001h\001r\010\010\300\204=\020\300\204=*\001+\0304(\0012&\n$0036e584-3630-4ea5-9c88-7e4a49ba67ab"
+  }
+  items {
+    type_url: "type.googleapis.com/kiapi.board.types.BoardText"
+    value: "\n&\n$f94b881a-dd42-4668-9a60-8bacf3a0508a\022A\022\n\010\340\313\277j\020\210\241\313;\032%\020\002\030\002"\000)\000\000\000\000\000\000\360?2\004\010\360\223\tP\001`\001h\001r\010\010\300\204=\020\300\204=*\014${REFERENCE}\0304(\0012&\n$0036e584-3630-4ea5-9c88-7e4a49ba67ab"
+  }
+  items {
+    type_url: "type.googleapis.com/kiapi.board.types.Footprint3DModel"
+    value: "\nE${KICAD10_3DMODEL_DIR}/Buzzer_Beeper.3dshapes/Buzzer_12x9.5RM7.6.step\022\033\t\000\000\000\000\000\000\360?\021\000\000\000\000\000\000\360?\031\000\000\000\000\000\000\360?\032\000"\000(\0011\000\000\000\000\000\000\360?"
+  }
+  jumpers {
+  }
+}
+reference_field {
+  id {
+    id: 1
+  }
+  name: "Reference"
+  text {
+    id {
+      value: "4a7a6e01-781f-46dd-8db7-36ddaeb2bd09"
+    }
+    text {
+      position {
+        x_nm: 223340000
+        y_nm: 121765000
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+          value_nm: 150000
+        }
+        visible: true
+        multiline: true
+        keep_upright: true
+        size {
+          x_nm: 1000000
+          y_nm: 1000000
+        }
+      }
+      text: "BZ1"
+    }
+    layer: BL_F_SilkS
+    locked: LS_UNLOCKED
+    parent {
+      value: "0036e584-3630-4ea5-9c88-7e4a49ba67ab"
+    }
+  }
+  visible: true
+}
+value_field {
+  id {
+    id: 2
+  }
+  name: "Value"
+  text {
+    id {
+      value: "87f065ee-5ee1-4e48-b7ec-d32c2939222c"
+    }
+    text {
+      position {
+        x_nm: 223340000
+        y_nm: 136365000
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+          value_nm: 150000
+        }
+        visible: true
+        multiline: true
+        keep_upright: true
+        size {
+          x_nm: 1000000
+          y_nm: 1000000
+        }
+      }
+      text: "AI-1223-TWT-5V-2-R"
+    }
+    layer: BL_F_Fab
+    locked: LS_UNLOCKED
+    parent {
+      value: "0036e584-3630-4ea5-9c88-7e4a49ba67ab"
+    }
+  }
+  visible: true
+}
+datasheet_field {
+  id {
+    id: 4
+  }
+  name: "Datasheet"
+  text {
+    id {
+      value: "6d9e9c44-a61f-4813-a402-fb6fa0e1d60a"
+    }
+    text {
+      position {
+        x_nm: 219540000
+        y_nm: 128965000
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+          value_nm: 150000
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "https://puiaudio.com/product/indicators/ai-1223-twt-5v-2-r"
+    }
+    layer: BL_F_Fab
+    locked: LS_UNLOCKED
+    parent {
+      value: "0036e584-3630-4ea5-9c88-7e4a49ba67ab"
+    }
+  }
+}
+description_field {
+  id {
+    id: 5
+  }
+  name: "Description"
+  text {
+    id {
+      value: "14a61ece-9415-4497-ae26-7b9172164ceb"
+    }
+    text {
+      position {
+        x_nm: 219540000
+        y_nm: 128965000
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+          value_nm: 150000
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "Buzzer, polarized"
+    }
+    layer: BL_F_Fab
+    locked: LS_UNLOCKED
+    parent {
+      value: "0036e584-3630-4ea5-9c88-7e4a49ba67ab"
+    }
+  }
+}
+attributes {
+  mounting_style: FMS_THROUGH_HOLE
+}
+overrides {
+  zone_connection: ZCS_INHERITED
+}
+symbol_path {
+  path {
+    value: "5df7f2cc-8c95-4309-94c5-313a64868fc7"
+  }
+}
+symbol_sheet_name: "/"
+symbol_sheet_filename: "PGR.kicad_sch"
+symbol_footprint_filters: "*Buzzer*"
+parent {
+  value: "f89876b9-7044-4982-b6b6-161854b9a1a2"
+}
+embedded_files {
+}
+
+rules {
+  constraints {
+    min_clearance {
+      value_nm: 100000
+    }
+    min_groove_width {
+    }
+    min_connection_width {
+    }
+    min_track_width {
+      value_nm: 160000
+    }
+    min_via_annular_width {
+      value_nm: 100000
+    }
+    min_via_size {
+      value_nm: 150000
+    }
+    min_through_drill {
+      value_nm: 200000
+    }
+    min_microvia_size {
+    }
+    min_microvia_drill {
+    }
+    copper_edge_clearance {
+      value_nm: 500000
+    }
+    hole_clearance {
+      value_nm: 200000
+    }
+    hole_to_hole_min {
+      value_nm: 200000
+    }
+    silk_clearance {
+    }
+    min_resolved_spokes: 2
+    min_silk_text_height {
+      value_nm: 800000
+    }
+    min_silk_text_thickness {
+      value_nm: 80000
+    }
+  }
+  predefined_sizes {
+    tracks {
+      width {
+        value_nm: 127000
+      }
+    }
+    tracks {
+      width {
+        value_nm: 200000
+      }
+    }
+    tracks {
+      width {
+        value_nm: 254000
+      }
+    }
+    tracks {
+      width {
+        value_nm: 300000
+      }
+    }
+    tracks {
+      width {
+        value_nm: 508000
+      }
+    }
+    tracks {
+      width {
+        value_nm: 762000
+      }
+    }
+    vias {
+      diameter {
+        value_nm: 300000
+      }
+      drill {
+        value_nm: 150000
+      }
+    }
+    vias {
+      diameter {
+        value_nm: 500000
+      }
+      drill {
+        value_nm: 200000
+      }
+    }
+    vias {
+      diameter {
+        value_nm: 685800
+      }
+      drill {
+        value_nm: 330200
+      }
+    }
+    vias {
+      diameter {
+        value_nm: 889000
+      }
+      drill {
+        value_nm: 381000
+      }
+    }
+    diff_pairs {
+      width {
+        value_nm: 250700
+      }
+      gap {
+        value_nm: 200000
+      }
+      via_gap {
+        value_nm: 200000
+      }
+    }
+  }
+  solder_mask_paste {
+    mask_expansion {
+    }
+    mask_min_width {
+    }
+    mask_to_copper_clearance {
+      value_nm: 5000
+    }
+    paste_margin {
+    }
+  }
+  teardrops {
+    target_vias: true
+    target_pth_pads: true
+    target_smd_pads: true
+    target_params {
+      target: TDT_ROUND
+      params {
+        max_length {
+          value_nm: 1000000
+        }
+        max_width {
+          value_nm: 2000000
+        }
+        best_length_ratio: 0.5
+        best_width_ratio: 1
+        width_to_size_filter_ratio: 0.9
+        allow_two_tracks: true
+      }
+    }
+    target_params {
+      target: TDT_RECT
+      params {
+        max_length {
+          value_nm: 1000000
+        }
+        max_width {
+          value_nm: 2000000
+        }
+        best_length_ratio: 0.5
+        best_width_ratio: 1
+        width_to_size_filter_ratio: 0.9
+        allow_two_tracks: true
+      }
+    }
+    target_params {
+      target: TDT_TRACK
+      params {
+        max_length {
+          value_nm: 1000000
+        }
+        max_width {
+          value_nm: 2000000
+        }
+        best_length_ratio: 0.5
+        best_width_ratio: 1
+        width_to_size_filter_ratio: 0.9
+        allow_two_tracks: true
+      }
+    }
+  }
+  via_protection {
+    tent_front: true
+    tent_back: true
+  }
+  severities {
+    error_key: "unconnected_items"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "shorting_items"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "items_not_allowed"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "text_on_edge_cuts"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "clearance"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "creepage"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "tracks_crossing"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "copper_edge_clearance"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "zones_intersect"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "isolated_copper"
+    severity: RS_WARNING
+  }
+  severities {
+    error_key: "starved_thermal"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "via_dangling"
+    severity: RS_WARNING
+  }
+  severities {
+    error_key: "track_dangling"
+    severity: RS_WARNING
+  }
+  severities {
+    error_key: "hole_to_hole"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "holes_co_located"
+    severity: RS_WARNING
+  }
+  severities {
+    error_key: "hole_clearance"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "track_width"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "track_angle"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "track_segment_length"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "annular_width"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "connection_width"
+    severity: RS_WARNING
+  }
+  severities {
+    error_key: "drill_out_of_range"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "via_diameter"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "padstack"
+    severity: RS_WARNING
+  }
+  severities {
+    error_key: "padstack_invalid"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "microvia_drill_out_of_range"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "courtyards_overlap"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "missing_courtyard"
+    severity: RS_IGNORE
+  }
+  severities {
+    error_key: "malformed_courtyard"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "pth_inside_courtyard"
+    severity: RS_IGNORE
+  }
+  severities {
+    error_key: "npth_inside_courtyard"
+    severity: RS_IGNORE
+  }
+  severities {
+    error_key: "item_on_disabled_layer"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "invalid_outline"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "missing_footprint"
+    severity: RS_WARNING
+  }
+  severities {
+    error_key: "duplicate_footprints"
+    severity: RS_WARNING
+  }
+  severities {
+    error_key: "extra_footprint"
+    severity: RS_WARNING
+  }
+  severities {
+    error_key: "net_conflict"
+    severity: RS_WARNING
+  }
+  severities {
+    error_key: "footprint_symbol_mismatch"
+    severity: RS_WARNING
+  }
+  severities {
+    error_key: "footprint_filters_mismatch"
+    severity: RS_IGNORE
+  }
+  severities {
+    error_key: "footprint_type_mismatch"
+    severity: RS_IGNORE
+  }
+  severities {
+    error_key: "lib_footprint_issues"
+    severity: RS_WARNING
+  }
+  severities {
+    error_key: "lib_footprint_mismatch"
+    severity: RS_WARNING
+  }
+  severities {
+    error_key: "through_hole_pad_without_hole"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "footprint"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "unresolved_variable"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "assertion_failure"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "generic_warning"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "generic_error"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "copper_sliver"
+    severity: RS_WARNING
+  }
+  severities {
+    error_key: "solder_mask_bridge"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "silk_over_copper"
+    severity: RS_WARNING
+  }
+  severities {
+    error_key: "silk_edge_clearance"
+    severity: RS_WARNING
+  }
+  severities {
+    error_key: "silk_overlap"
+    severity: RS_WARNING
+  }
+  severities {
+    error_key: "text_height"
+    severity: RS_WARNING
+  }
+  severities {
+    error_key: "text_thickness"
+    severity: RS_WARNING
+  }
+  severities {
+    error_key: "length_out_of_range"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "skew_out_of_range"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "too_many_vias"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "diff_pair_gap_out_of_range"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "diff_pair_uncoupled_length_too_long"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "mirrored_text_on_front_layer"
+    severity: RS_WARNING
+  }
+  severities {
+    error_key: "nonmirrored_text_on_back_layer"
+    severity: RS_WARNING
+  }
+  severities {
+    error_key: "missing_tuning_profile"
+    severity: RS_WARNING
+  }
+  severities {
+    error_key: "track_on_post_machined_layer"
+    severity: RS_ERROR
+  }
+  severities {
+    error_key: "track_not_centered_on_via"
+    severity: RS_IGNORE
+  }
+  severities {
+    error_key: "footprint_symbol_field_mismatch"
+    severity: RS_WARNING
+  }
+}
+custom_rules_status: CRS_NONE
+

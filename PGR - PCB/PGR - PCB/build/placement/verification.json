@@ -1,0 +1,101 @@
+{
+  "board_size_mm": [
+    110,
+    85
+  ],
+  "hole_pattern_mm": [
+    100,
+    75
+  ],
+  "component_count": 161,
+  "mounting_holes": [
+    {
+      "reference": "H1",
+      "center_from_board_origin_mm": [
+        5.0,
+        5.0
+      ],
+      "drill_mm": 3.2,
+      "hardware_clear_diameter_mm": 9
+    },
+    {
+      "reference": "H2",
+      "center_from_board_origin_mm": [
+        105.0,
+        5.0
+      ],
+      "drill_mm": 3.2,
+      "hardware_clear_diameter_mm": 9
+    },
+    {
+      "reference": "H3",
+      "center_from_board_origin_mm": [
+        5.0,
+        80.0
+      ],
+      "drill_mm": 3.2,
+      "hardware_clear_diameter_mm": 9
+    },
+    {
+      "reference": "H4",
+      "center_from_board_origin_mm": [
+        105.0,
+        80.0
+      ],
+      "drill_mm": 3.2,
+      "hardware_clear_diameter_mm": 9
+    }
+  ],
+  "all_components_front": true,
+  "schematic_unchanged": true,
+  "active_pad_nets_verified": 474,
+  "tracks": 0,
+  "vias": 0,
+  "probe_access": {
+    "TP1": {
+      "nearest_other_courtyard_distance_mm": 6.0,
+      "nearest_component": "TP5"
+    },
+    "TP2": {
+      "nearest_other_courtyard_distance_mm": 6.0,
+      "nearest_component": "TP6"
+    },
+    "TP3": {
+      "nearest_other_courtyard_distance_mm": 6.0,
+      "nearest_component": "TP7"
+    },
+    "TP4": {
+      "nearest_other_courtyard_distance_mm": 6.0,
+      "nearest_component": "TP8"
+    },
+    "TP5": {
+      "nearest_other_courtyard_distance_mm": 6.0,
+      "nearest_component": "TP1"
+    },
+    "TP6": {
+      "nearest_other_courtyard_distance_mm": 6.0,
+      "nearest_component": "TP2"
+    },
+    "TP7": {
+      "nearest_other_courtyard_distance_mm": 6.0,
+      "nearest_component": "TP3"
+    },
+    "TP8": {
+      "nearest_other_courtyard_distance_mm": 6.0,
+      "nearest_component": "TP4"
+    }
+  },
+  "critical_power_pad_distances": {
+    "charger_OUT_to_C13_PWR_mm": 3.022,
+    "boost_VIN_to_C13_PWR_mm": 2.427,
+    "boost_SW_to_inductor_mm": 2.055,
+    "buck_SW_to_inductor_mm": 2.378
+  },
+  "remaining_drc": {
+    "hole_clearance": 4,
+    "solder_mask_bridge": 4,
+    "lib_footprint_mismatch": 6
+  },
+  "unconnected_items": 375,
+  "board_sha256": "04291f232e2aa623c3d88aa7d73ded833a1caa7da91fb0e653ba458bd473dbf0"
+}

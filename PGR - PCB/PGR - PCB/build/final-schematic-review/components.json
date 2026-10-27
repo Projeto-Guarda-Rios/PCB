@@ -1,0 +1,2632 @@
+[
+  {
+    "ref": "BT1",
+    "value": "1S Li-ion 4.2V",
+    "footprint": "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical",
+    "fields": {
+      "Footprint": "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical",
+      "Datasheet": null,
+      "Description": "Multiple-cell battery"
+    },
+    "pins": {
+      "2": "CELL_N",
+      "1": "CELL_P"
+    }
+  },
+  {
+    "ref": "BZ1",
+    "value": "AI-1223-TWT-5V-2-R",
+    "footprint": "Buzzer_Beeper:Buzzer_12x9.5RM7.6",
+    "fields": {
+      "MPN": "AI-1223-TWT-5V-2-R",
+      "Manufacturer": "PUI Audio",
+      "Rating": "5V active magnetic indicator, 30mA max; lead pitch 7.6mm",
+      "Footprint": "Buzzer_Beeper:Buzzer_12x9.5RM7.6",
+      "Datasheet": "https://puiaudio.com/product/indicators/ai-1223-twt-5v-2-r",
+      "Description": "Buzzer, polarized"
+    },
+    "pins": {
+      "1": "+5V",
+      "2": "BUZZ_SW"
+    }
+  },
+  {
+    "ref": "C1",
+    "value": "4.7uF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "fields": {
+      "Rating": ">=10V X7R; effective >=1uF at 5V",
+      "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "2": "+5V_PROGRAM",
+      "1": "GND"
+    }
+  },
+  {
+    "ref": "C2",
+    "value": "1uF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "fields": {
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "1": "EN",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C3",
+    "value": "0.1uF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "fields": {
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "2": "+3.3V",
+      "1": "GND"
+    }
+  },
+  {
+    "ref": "C4",
+    "value": "10uF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "fields": {
+      "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "2": "+3.3V",
+      "1": "GND"
+    }
+  },
+  {
+    "ref": "C5",
+    "value": "22uF",
+    "footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "fields": {
+      "MPN": "C3225X7R1C226M250AC",
+      "Manufacturer": "TDK",
+      "Rating": "16V X7R +/-20%; verify effective C >=4.7uF",
+      "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "1": "GND",
+      "2": "VBUS"
+    }
+  },
+  {
+    "ref": "C6",
+    "value": "10uF",
+    "footprint": "Capacitor_SMD:C_0805_2012Metric",
+    "fields": {
+      "Footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "2": "+3.3V",
+      "1": "GND"
+    }
+  },
+  {
+    "ref": "C7",
+    "value": "0.1uF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "fields": {
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "2": "+3.3V",
+      "1": "GND"
+    }
+  },
+  {
+    "ref": "C8",
+    "value": "22uF",
+    "footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "fields": {
+      "MPN": "C3225X7R1C226M250AC",
+      "Manufacturer": "TDK",
+      "Rating": "22uF 16V X7R +/-20%; 1210; DC bias evaluated",
+      "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "1": "+5V",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C9",
+    "value": "22uF",
+    "footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "fields": {
+      "MPN": "C3225X7R1C226M250AC",
+      "Manufacturer": "TDK",
+      "Rating": "22uF 16V X7R +/-20%; 1210; DC bias evaluated",
+      "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "1": "+3.3V",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C10",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "fields": {
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "1": "+3.3V",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C11",
+    "value": "22uF",
+    "footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "fields": {
+      "MPN": "C3225X7R1C226M250AC",
+      "Manufacturer": "TDK",
+      "Rating": "16V X7R +/-20%; verify effective C >=4.7uF",
+      "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "2": "BAT_PROTECTED",
+      "1": "GND"
+    }
+  },
+  {
+    "ref": "C12",
+    "value": "0.1uF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "fields": {
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "1": "BAT_PROTECTED",
+      "2": "BMS_NEG"
+    }
+  },
+  {
+    "ref": "C13",
+    "value": "22uF",
+    "footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "fields": {
+      "MPN": "C3225X7R1C226M250AC",
+      "Manufacturer": "TDK",
+      "Rating": "22uF 16V X7R +/-20%; 1210; DC bias evaluated",
+      "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "2": "GND",
+      "1": "PWR_OUT"
+    }
+  },
+  {
+    "ref": "C14",
+    "value": "22uF",
+    "footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "fields": {
+      "MPN": "C3225X7R1C226M250AC",
+      "Rating": "22uF 16V X7R +/-20%; 1210; DC bias evaluated",
+      "Manufacturer": "TDK",
+      "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "1": "BOOST_5V",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C15",
+    "value": "10nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "fields": {
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "1": "BOOST_SS",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C17",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "fields": {
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "2": "+3.3V",
+      "1": "GND"
+    }
+  },
+  {
+    "ref": "C18",
+    "value": "22uF",
+    "footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "fields": {
+      "MPN": "C3225X7R1C226M250AC",
+      "Rating": "22uF 16V X7R +/-20%; 1210; DC bias evaluated",
+      "Manufacturer": "TDK",
+      "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "1": "BOOST_5V",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C19",
+    "value": "22uF",
+    "footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "fields": {
+      "MPN": "C3225X7R1C226M250AC",
+      "Rating": "22uF 16V X7R +/-20%; 1210; DC bias evaluated",
+      "Manufacturer": "TDK",
+      "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "1": "BOOST_5V",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C20",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "fields": {
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "1": "+3.3V",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C21",
+    "value": "1nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "fields": {
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "2": "+5V_PROGRAM",
+      "1": "USB_SLEW"
+    }
+  },
+  {
+    "ref": "C22",
+    "value": "22uF",
+    "footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "fields": {
+      "MPN": "C3225X7R1C226M250AC",
+      "Manufacturer": "TDK",
+      "Rating": "22uF 16V X7R +/-20%; 1210; DC bias evaluated",
+      "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "1": "+5V",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C23",
+    "value": "1nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "fields": {
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "2": "+5V",
+      "1": "U9_SLEW"
+    }
+  },
+  {
+    "ref": "C24",
+    "value": "1nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "fields": {
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "2": "+5V",
+      "1": "U10_SLEW"
+    }
+  },
+  {
+    "ref": "C25",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "fields": {
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "1": "BAT_NTC",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C26",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "fields": {
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "1": "+3.3V",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C27",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "fields": {
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "1": "+3.3V",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C28",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "fields": {
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "1": "+3.3V",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C29",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "fields": {
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "1": "BATT_ADC",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C30",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "fields": {
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "2": "GND",
+      "1": "NTC_ADC"
+    }
+  },
+  {
+    "ref": "C31",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "fields": {
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "2": "GND",
+      "1": "IO33"
+    }
+  },
+  {
+    "ref": "C32",
+    "value": "22uF",
+    "footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "fields": {
+      "MPN": "C3225X7R1C226M250AC",
+      "Manufacturer": "TDK",
+      "Rating": "16V X7R +/-20%",
+      "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "2": "GND",
+      "1": "MODEM_5V"
+    }
+  },
+  {
+    "ref": "C33",
+    "value": "22uF",
+    "footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "fields": {
+      "MPN": "C3225X7R1C226M250AC",
+      "Manufacturer": "TDK",
+      "Rating": "16V X7R +/-20%",
+      "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "2": "GND",
+      "1": "MODEM_5V"
+    }
+  },
+  {
+    "ref": "C34",
+    "value": "22uF",
+    "footprint": "Capacitor_SMD:C_1210_3225Metric",
+    "fields": {
+      "MPN": "C3225X7R1C226M250AC",
+      "Manufacturer": "TDK",
+      "Rating": "16V X7R +/-20%",
+      "Footprint": "Capacitor_SMD:C_1210_3225Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "2": "GND",
+      "1": "NODE_5V"
+    }
+  },
+  {
+    "ref": "C35",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "fields": {
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "1": "+5V_PROGRAM",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C36",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "fields": {
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "1": "+5V",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "C37",
+    "value": "100nF",
+    "footprint": "Capacitor_SMD:C_0603_1608Metric",
+    "fields": {
+      "Footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Unpolarized capacitor"
+    },
+    "pins": {
+      "1": "+5V",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "D3",
+    "value": "LESD5D5.0CT1G",
+    "footprint": "LESD5D5.0CT1G:TVS_LESD5D5.0CT1G",
+    "fields": {
+      "MF": "Leshan Radio Co.",
+      "MAXIMUM_PACKAGE_HEIGHT": "0.7 mm",
+      "Package": "None",
+      "Price": "None",
+      "Check_prices": "https://www.snapeda.com/parts/LESD5D5.0CT1G/Leshan+Radio/view-part/?ref=eda",
+      "STANDARD": "Manufacturer Recommendations",
+      "PARTREV": "O",
+      "SnapEDA_Link": "https://www.snapeda.com/parts/LESD5D5.0CT1G/Leshan+Radio/view-part/?ref=snap",
+      "MP": "LESD5D5.0CT1G",
+      "Description_1": "Transient Voltage Suppressors for ESD Protection",
+      "Availability": "In Stock",
+      "MANUFACTURER": "LRC",
+      "Footprint": "LESD5D5.0CT1G:TVS_LESD5D5.0CT1G",
+      "Datasheet": null,
+      "Description": null
+    },
+    "pins": {
+      "1": "+5V_PROGRAM",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "D4",
+    "value": "LESD5D5.0CT1G",
+    "footprint": "LESD5D5.0CT1G:TVS_LESD5D5.0CT1G",
+    "fields": {
+      "MF": "Leshan Radio Co.",
+      "MAXIMUM_PACKAGE_HEIGHT": "0.7 mm",
+      "Package": "None",
+      "Price": "None",
+      "Check_prices": "https://www.snapeda.com/parts/LESD5D5.0CT1G/Leshan+Radio/view-part/?ref=eda",
+      "STANDARD": "Manufacturer Recommendations",
+      "PARTREV": "O",
+      "SnapEDA_Link": "https://www.snapeda.com/parts/LESD5D5.0CT1G/Leshan+Radio/view-part/?ref=snap",
+      "MP": "LESD5D5.0CT1G",
+      "Description_1": "Transient Voltage Suppressors for ESD Protection",
+      "Availability": "In Stock",
+      "MANUFACTURER": "LRC",
+      "Footprint": "LESD5D5.0CT1G:TVS_LESD5D5.0CT1G",
+      "Datasheet": null,
+      "Description": null
+    },
+    "pins": {
+      "1": "D-",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "D5",
+    "value": "LESD5D5.0CT1G",
+    "footprint": "LESD5D5.0CT1G:TVS_LESD5D5.0CT1G",
+    "fields": {
+      "MF": "Leshan Radio Co.",
+      "MAXIMUM_PACKAGE_HEIGHT": "0.7 mm",
+      "Package": "None",
+      "Price": "None",
+      "Check_prices": "https://www.snapeda.com/parts/LESD5D5.0CT1G/Leshan+Radio/view-part/?ref=eda",
+      "STANDARD": "Manufacturer Recommendations",
+      "PARTREV": "O",
+      "SnapEDA_Link": "https://www.snapeda.com/parts/LESD5D5.0CT1G/Leshan+Radio/view-part/?ref=snap",
+      "MP": "LESD5D5.0CT1G",
+      "Description_1": "Transient Voltage Suppressors for ESD Protection",
+      "Availability": "In Stock",
+      "MANUFACTURER": "LRC",
+      "Footprint": "LESD5D5.0CT1G:TVS_LESD5D5.0CT1G",
+      "Datasheet": null,
+      "Description": null
+    },
+    "pins": {
+      "1": "D+",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "D6",
+    "value": "SM712_SOT23",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "fields": {
+      "Footprint": "Package_TO_SOT_SMD:SOT-23",
+      "Datasheet": "https://www.littelfuse.com/~/media/electronics/datasheets/tvs_diode_arrays/littelfuse_tvs_diode_array_sm712_datasheet.pdf.pdf",
+      "Description": "7V/12V, 600W Asymmetrical TVS Diode Array, SOT-23"
+    },
+    "pins": {
+      "3": "GND",
+      "1": "RS-485-A",
+      "2": "RS-485-B"
+    }
+  },
+  {
+    "ref": "D7",
+    "value": "BLUE",
+    "footprint": "LED_SMD:LED_0603_1608Metric",
+    "fields": {
+      "Sim.Pins": "1=K 2=A",
+      "Footprint": "LED_SMD:LED_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Light emitting diode"
+    },
+    "pins": {
+      "1": "IO18",
+      "2": "Net-(D7-A)"
+    }
+  },
+  {
+    "ref": "D8",
+    "value": "RED",
+    "footprint": "LED_SMD:LED_0603_1608Metric",
+    "fields": {
+      "Sim.Pins": "1=K 2=A",
+      "Footprint": "LED_SMD:LED_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Light emitting diode"
+    },
+    "pins": {
+      "1": "GND",
+      "2": "Net-(D8-A)"
+    }
+  },
+  {
+    "ref": "D9",
+    "value": "BLUE",
+    "footprint": "LED_SMD:LED_0603_1608Metric",
+    "fields": {
+      "Sim.Pins": "1=K 2=A",
+      "Footprint": "LED_SMD:LED_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Light emitting diode"
+    },
+    "pins": {
+      "1": "IO21",
+      "2": "Net-(D9-A)"
+    }
+  },
+  {
+    "ref": "D10",
+    "value": "BLUE",
+    "footprint": "LED_SMD:LED_0603_1608Metric",
+    "fields": {
+      "Sim.Pins": "1=K 2=A",
+      "Footprint": "LED_SMD:LED_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Light emitting diode"
+    },
+    "pins": {
+      "1": "IO34",
+      "2": "Net-(D10-A)"
+    }
+  },
+  {
+    "ref": "D13",
+    "value": "1N4148W",
+    "footprint": "Diode_SMD:D_SOD-123",
+    "fields": {
+      "MPN": "1N4148W-7-F",
+      "Manufacturer": "Diodes Incorporated",
+      "Footprint": "Diode_SMD:D_SOD-123",
+      "Datasheet": "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf",
+      "Description": "100V 0.15A standard switching diode, DO-35"
+    },
+    "pins": {
+      "1": "BAT_DETECT",
+      "2": "BMS_NEG"
+    }
+  },
+  {
+    "ref": "D14",
+    "value": "SS14",
+    "footprint": "Diode_SMD:D_SMA",
+    "fields": {
+      "MPN": "SS14",
+      "Manufacturer": "Vishay",
+      "Footprint": "Diode_SMD:D_SMA",
+      "Datasheet": "https://www.vishay.com/docs/88746/ss12.pdf",
+      "Description": "40V 1A Schottky Diode, SMA"
+    },
+    "pins": {
+      "1": "+5V",
+      "2": "BUZZ_SW"
+    }
+  },
+  {
+    "ref": "F1",
+    "value": "3A fast",
+    "footprint": "Fuse:Fuse_Littelfuse-NANO2-451_453",
+    "fields": {
+      "MPN": "0451003.MRL",
+      "Manufacturer": "Littelfuse",
+      "Rating": "3A very fast; 300A breaking at 32VDC",
+      "Footprint": "Fuse:Fuse_Littelfuse-NANO2-451_453",
+      "Datasheet": "https://www.littelfuse.com/assetdocs/fuse-451-and-453-datasheet?assetguid=533cd5cc-956c-4243-867f-6ab5a62f6ba1",
+      "Description": "Fuse"
+    },
+    "pins": {
+      "2": "CELL_FUSED",
+      "1": "CELL_P"
+    }
+  },
+  {
+    "ref": "IC1",
+    "value": "TLV62568",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+    "fields": {
+      "MPN": "TLV62568DBVR",
+      "Manufacturer": "Texas Instruments",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "Datasheet": "https://www.ti.com/lit/ds/symlink/tlv62568.pdf",
+      "Description": "High Efficiency Synchronous Buck Converter, Adjustable Output 0.6V-5.5V, 1A, SOT-23-5"
+    },
+    "pins": {
+      "1": "+5V",
+      "4": "+5V",
+      "5": "BUCK_FB",
+      "3": "BUCK_SW",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "J1",
+    "value": "Conn_01x16",
+    "footprint": "Connector_PinSocket_2.00mm:PinSocket_1x16_P2.00mm_Vertical",
+    "fields": {
+      "Footprint": "Connector_PinSocket_2.00mm:PinSocket_1x16_P2.00mm_Vertical",
+      "Datasheet": null,
+      "Description": "Generic connector, single row, 01x16, script generated (kicad-library-utils/schlib/autogen/connector/)"
+    },
+    "pins": {
+      "5": "+3.3V",
+      "6": "+3.3V",
+      "3": "+5V",
+      "4": "+5V",
+      "15": "BOOST_ACTIVE",
+      "1": "GND",
+      "2": "GND",
+      "8": "IO12",
+      "7": "IO13",
+      "9": "IO14",
+      "12": "IO25",
+      "11": "IO26",
+      "10": "IO27",
+      "14": "IO32",
+      "13": "IO33",
+      "16": "IO34"
+    }
+  },
+  {
+    "ref": "J7",
+    "value": "Conn_01x03",
+    "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+    "fields": {
+      "Footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "Datasheet": null,
+      "Description": "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+    },
+    "pins": {
+      "1": "+3.3V",
+      "2": "GND",
+      "3": "TAMPER_EXT"
+    }
+  },
+  {
+    "ref": "J8",
+    "value": "Conn_01x04",
+    "footprint": "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical",
+    "fields": {
+      "Connected_device": "M5Stack Unit NB-IoT2 U111-B / SIM7028",
+      "Cable": "PGR J8.1 GND -> M5 J1.4 black; .2 MODEM_5V -> J1.3 red; .3 RX_module -> J1.2 yellow; .4 TX_module -> J1.1 white",
+      "Footprint": "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical",
+      "Datasheet": null,
+      "Description": "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+    },
+    "pins": {
+      "1": "GND",
+      "2": "MODEM_5V",
+      "3": "MODEM_RX",
+      "4": "MODEM_TX"
+    }
+  },
+  {
+    "ref": "J9",
+    "value": "USB_C_Receptacle",
+    "footprint": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+    "fields": {
+      "Footprint": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+      "Datasheet": "https://www.usb.org/sites/default/files/documents/usb_type-c.zip",
+      "Description": "USB Full-Featured Type-C Receptacle connector"
+    },
+    "pins": {
+      "A4": "+5V_PROGRAM",
+      "A9": "+5V_PROGRAM",
+      "B4": "+5V_PROGRAM",
+      "B9": "+5V_PROGRAM",
+      "A6": "D+",
+      "B6": "D+",
+      "A7": "D-",
+      "B7": "D-",
+      "A1": "GND",
+      "A12": "GND",
+      "B1": "GND",
+      "B12": "GND",
+      "S1": "GND",
+      "A5": "Net-(J9-CC1)",
+      "B5": "Net-(J9-CC2)",
+      "B11": "unconnected-(J9-RX1+-PadB11)",
+      "B10": "unconnected-(J9-RX1--PadB10)",
+      "A11": "unconnected-(J9-RX2+-PadA11)",
+      "A10": "unconnected-(J9-RX2--PadA10)",
+      "A8": "unconnected-(J9-SBU1-PadA8)",
+      "B8": "unconnected-(J9-SBU2-PadB8)",
+      "A2": "unconnected-(J9-TX1+-PadA2)",
+      "A3": "unconnected-(J9-TX1--PadA3)",
+      "B2": "unconnected-(J9-TX2+-PadB2)",
+      "B3": "unconnected-(J9-TX2--PadB3)"
+    }
+  },
+  {
+    "ref": "J10",
+    "value": "Conn_01x02",
+    "footprint": "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical",
+    "fields": {
+      "Footprint": "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical",
+      "Datasheet": null,
+      "Description": "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+    },
+    "pins": {
+      "1": "GND",
+      "2": "SOLAR_RAW"
+    }
+  },
+  {
+    "ref": "J11",
+    "value": "Conn_01x04",
+    "footprint": "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical",
+    "fields": {
+      "Connected_device": "AquaNode J3: 1=A, 2=B, 3=5V, 4=GND; verify connector family and cable gauge",
+      "Footprint": "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical",
+      "Datasheet": null,
+      "Description": "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+    },
+    "pins": {
+      "4": "GND",
+      "3": "NODE_5V",
+      "1": "RS-485-A",
+      "2": "RS-485-B"
+    }
+  },
+  {
+    "ref": "J12",
+    "value": "BATTERY_NTC",
+    "footprint": "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical",
+    "fields": {
+      "Footprint": "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical",
+      "Datasheet": null,
+      "Description": "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+    },
+    "pins": {
+      "1": "BAT_NTC",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "J13",
+    "value": "JTAG",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+    "fields": {
+      "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical",
+      "Datasheet": null,
+      "Description": "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+    },
+    "pins": {
+      "1": "+3.3V",
+      "2": "GND",
+      "5": "IO12",
+      "3": "IO13",
+      "4": "IO14",
+      "6": "IO15"
+    }
+  },
+  {
+    "ref": "J14",
+    "value": "UART0 DEBUG",
+    "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+    "fields": {
+      "Connected_device": "AquaNode J3: 1=A, 2=B, 3=5V, 4=GND; verify connector family and cable gauge",
+      "Footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+      "Datasheet": null,
+      "Description": "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+    },
+    "pins": {
+      "2": "+3.3V",
+      "1": "GND",
+      "3": "RXD0",
+      "4": "TXD0"
+    }
+  },
+  {
+    "ref": "L1",
+    "value": "1uH",
+    "footprint": "Inductor_SMD:L_Coilcraft_XAL4020-XXX",
+    "fields": {
+      "MPN": "XAL4020-102MEC",
+      "Manufacturer": "Coilcraft",
+      "Current_rating": "Isat 8.7A; Irms 6.7A at 20C rise; DCR max 14.6mR",
+      "Footprint": "Inductor_SMD:L_Coilcraft_XAL4020-XXX",
+      "Datasheet": null,
+      "Description": "Inductor"
+    },
+    "pins": {
+      "2": "BOOST_SW",
+      "1": "PWR_OUT"
+    }
+  },
+  {
+    "ref": "L2",
+    "value": "2.2uH",
+    "footprint": "Inductor_SMD:L_Coilcraft_XAL4020-XXX",
+    "fields": {
+      "MPN": "XAL4020-222MEC",
+      "Manufacturer": "Coilcraft",
+      "Footprint": "Inductor_SMD:L_Coilcraft_XAL4020-XXX",
+      "Datasheet": null,
+      "Description": "Inductor"
+    },
+    "pins": {
+      "2": "+3.3V",
+      "1": "BUCK_SW"
+    }
+  },
+  {
+    "ref": "Q1",
+    "value": "SS8050-G",
+    "footprint": "SS8050-G:TRANS_SS8050-G",
+    "fields": {
+      "MF": "Comchip Technology",
+      "MAXIMUM_PACKAGE_HEIGHT": "1.05 mm",
+      "Package": "TO-236 Comchip",
+      "Price": "None",
+      "Check_prices": "https://www.snapeda.com/parts/SS8050-G/Comchip/view-part/?ref=eda",
+      "STANDARD": "Manufacturer Recommendations",
+      "PARTREV": "A",
+      "SnapEDA_Link": "https://www.snapeda.com/parts/SS8050-G/Comchip/view-part/?ref=snap",
+      "MP": "SS8050-G",
+      "Description_1": "Bipolar (BJT) Transistor NPN 25 V 1.5 A 100MHz 300 mW Surface Mount SOT-23-3",
+      "Availability": "In Stock",
+      "MANUFACTURER": "Comchip",
+      "Footprint": "SS8050-G:TRANS_SS8050-G",
+      "Datasheet": null,
+      "Description": null
+    },
+    "pins": {
+      "3": "EN",
+      "1": "Net-(Q1-Pad1)",
+      "2": "USB_RTS"
+    }
+  },
+  {
+    "ref": "Q2",
+    "value": "SS8050-G",
+    "footprint": "SS8050-G:TRANS_SS8050-G",
+    "fields": {
+      "MF": "Comchip Technology",
+      "MAXIMUM_PACKAGE_HEIGHT": "1.05 mm",
+      "Package": "TO-236 Comchip",
+      "Price": "None",
+      "Check_prices": "https://www.snapeda.com/parts/SS8050-G/Comchip/view-part/?ref=eda",
+      "STANDARD": "Manufacturer Recommendations",
+      "PARTREV": "A",
+      "SnapEDA_Link": "https://www.snapeda.com/parts/SS8050-G/Comchip/view-part/?ref=snap",
+      "MP": "SS8050-G",
+      "Description_1": "Bipolar (BJT) Transistor NPN 25 V 1.5 A 100MHz 300 mW Surface Mount SOT-23-3",
+      "Availability": "In Stock",
+      "MANUFACTURER": "Comchip",
+      "Footprint": "SS8050-G:TRANS_SS8050-G",
+      "Datasheet": null,
+      "Description": null
+    },
+    "pins": {
+      "3": "IO0_BTN",
+      "1": "Net-(Q2-Pad1)",
+      "2": "USB_DTR"
+    }
+  },
+  {
+    "ref": "Q3",
+    "value": "FS8205A",
+    "footprint": "FS8205A:SOP65P640X120-8N",
+    "fields": {
+      "MF": "Fortune Semiconductor",
+      "MAXIMUM_PACKAGE_HEIGHT": "1.2mm",
+      "Package": "Package",
+      "Price": "None",
+      "Check_prices": "https://www.snapeda.com/parts/FS8205A/Fortune+Semiconductor/view-part/?ref=eda",
+      "STANDARD": "IPC 7351B",
+      "PARTREV": "1.7",
+      "SnapEDA_Link": "https://www.snapeda.com/parts/FS8205A/Fortune+Semiconductor/view-part/?ref=snap",
+      "MP": "FS8205A",
+      "Description_1": null,
+      "Availability": "In Stock",
+      "MANUFACTURER": "Fortune Semiconductor",
+      "Footprint": "FS8205A:SOP65P640X120-8N",
+      "Datasheet": null,
+      "Description": null
+    },
+    "pins": {
+      "6": "BMS_NEG",
+      "7": "BMS_NEG",
+      "2": "GND",
+      "3": "GND",
+      "4": "Net-(U6-OC)",
+      "5": "Net-(U6-OD)",
+      "1": "unconnected-(Q3-Pad1)",
+      "8": "unconnected-(Q3-Pad1)"
+    }
+  },
+  {
+    "ref": "Q4",
+    "value": "AO3401A",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "fields": {
+      "MPN": "AO3401A",
+      "Manufacturer": "Alpha & Omega Semiconductor",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23",
+      "Datasheet": "https://www.aosmd.com/sites/default/files/res/datasheets/AO3401A.pdf",
+      "Description": "-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"
+    },
+    "pins": {
+      "1": "BAT_GATE",
+      "2": "BAT_PROTECTED",
+      "3": "CELL_FUSED"
+    }
+  },
+  {
+    "ref": "Q5",
+    "value": "AO3401A",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "fields": {
+      "MPN": "AO3401A",
+      "Manufacturer": "Alpha & Omega Semiconductor",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23",
+      "Datasheet": "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf",
+      "Description": "-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"
+    },
+    "pins": {
+      "1": "GND",
+      "3": "SOLAR_RAW",
+      "2": "VBUS"
+    }
+  },
+  {
+    "ref": "Q6",
+    "value": "SS8050-G",
+    "footprint": "SS8050-G:TRANS_SS8050-G",
+    "fields": {
+      "MF": "Comchip Technology",
+      "MAXIMUM_PACKAGE_HEIGHT": "1.05 mm",
+      "Package": "TO-236 Comchip",
+      "Price": "None",
+      "Check_prices": "https://www.snapeda.com/parts/SS8050-G/Comchip/view-part/?ref=eda",
+      "STANDARD": "Manufacturer Recommendations",
+      "PARTREV": "A",
+      "SnapEDA_Link": "https://www.snapeda.com/parts/SS8050-G/Comchip/view-part/?ref=snap",
+      "MP": "SS8050-G",
+      "Description_1": "Bipolar (BJT) Transistor NPN 25 V 1.5 A 100MHz 300 mW Surface Mount SOT-23-3",
+      "Availability": "In Stock",
+      "MANUFACTURER": "Comchip",
+      "MPN": "SS8050-G",
+      "Manufacturer": "Comchip",
+      "Footprint": "SS8050-G:TRANS_SS8050-G",
+      "Datasheet": null,
+      "Description": null
+    },
+    "pins": {
+      "1": "BUZZ_B",
+      "3": "BUZZ_SW",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "Q7",
+    "value": "SS8050-G",
+    "footprint": "SS8050-G:TRANS_SS8050-G",
+    "fields": {
+      "MF": "Comchip Technology",
+      "MAXIMUM_PACKAGE_HEIGHT": "1.05 mm",
+      "Package": "TO-236 Comchip",
+      "Price": "None",
+      "Check_prices": "https://www.snapeda.com/parts/SS8050-G/Comchip/view-part/?ref=eda",
+      "STANDARD": "Manufacturer Recommendations",
+      "PARTREV": "A",
+      "SnapEDA_Link": "https://www.snapeda.com/parts/SS8050-G/Comchip/view-part/?ref=snap",
+      "MP": "SS8050-G",
+      "Description_1": "Bipolar (BJT) Transistor NPN 25 V 1.5 A 100MHz 300 mW Surface Mount SOT-23-3",
+      "Availability": "In Stock",
+      "MANUFACTURER": "Comchip",
+      "MPN": "SS8050-G",
+      "Manufacturer": "Comchip",
+      "Footprint": "SS8050-G:TRANS_SS8050-G",
+      "Datasheet": null,
+      "Description": null
+    },
+    "pins": {
+      "1": "BAT_DETECT",
+      "3": "BAT_GATE",
+      "2": "BMS_NEG"
+    }
+  },
+  {
+    "ref": "Q8",
+    "value": "2N7002",
+    "footprint": "Package_TO_SOT_SMD:SOT-23",
+    "fields": {
+      "MPN": "2N7002-7-F",
+      "Manufacturer": "Diodes Incorporated",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23",
+      "Datasheet": "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF",
+      "Description": "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+    },
+    "pins": {
+      "3": "CHG_CE",
+      "2": "GND",
+      "1": "TEMP_OK"
+    }
+  },
+  {
+    "ref": "R1",
+    "value": "2kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "GND",
+      "2": "Net-(U1-ISET)"
+    }
+  },
+  {
+    "ref": "R2",
+    "value": "2K",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "GND",
+      "2": "Net-(U1-ILIM)"
+    }
+  },
+  {
+    "ref": "R3",
+    "value": "120R",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "RS-485-A",
+      "2": "RS-485-B"
+    }
+  },
+  {
+    "ref": "R4",
+    "value": "5.1K",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "GND",
+      "1": "Net-(J9-CC1)"
+    }
+  },
+  {
+    "ref": "R5",
+    "value": "5.1K",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "GND",
+      "1": "Net-(J9-CC2)"
+    }
+  },
+  {
+    "ref": "R6",
+    "value": "22.1K",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "+5V_PROGRAM",
+      "2": "Net-(U4-VBUS)"
+    }
+  },
+  {
+    "ref": "R7",
+    "value": "47.5K",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "GND",
+      "1": "Net-(U4-VBUS)"
+    }
+  },
+  {
+    "ref": "R8",
+    "value": "2K",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "+3.3V",
+      "2": "Net-(U4-~{RST})"
+    }
+  },
+  {
+    "ref": "R9",
+    "value": "10K",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "+3.3V",
+      "2": "IO0_BTN"
+    }
+  },
+  {
+    "ref": "R10",
+    "value": "10K",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "+3.3V",
+      "2": "EN"
+    }
+  },
+  {
+    "ref": "R11",
+    "value": "100R",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "BAT_PROTECTED",
+      "2": "BMS_VCC"
+    }
+  },
+  {
+    "ref": "R12",
+    "value": "22R",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "IO0_BTN",
+      "1": "Net-(U5-IO0)"
+    }
+  },
+  {
+    "ref": "R13",
+    "value": "2.2kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "+3.3V",
+      "2": "Net-(D7-A)"
+    }
+  },
+  {
+    "ref": "R14",
+    "value": "10kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "+3.3V",
+      "1": "Net-(D8-A)"
+    }
+  },
+  {
+    "ref": "R15",
+    "value": "10K",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "Net-(Q1-Pad1)",
+      "1": "USB_DTR"
+    }
+  },
+  {
+    "ref": "R16",
+    "value": "10K",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "Net-(Q2-Pad1)",
+      "1": "USB_RTS"
+    }
+  },
+  {
+    "ref": "R17",
+    "value": "2K",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "GND",
+      "1": "Net-(U6-CS)"
+    }
+  },
+  {
+    "ref": "R18",
+    "value": "470R",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Tolerance": "1%",
+      "Power_rating": "0.1W",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "+5V",
+      "2": "RS-485-A"
+    }
+  },
+  {
+    "ref": "R19",
+    "value": "10K",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "+3.3V",
+      "1": "IO21"
+    }
+  },
+  {
+    "ref": "R20",
+    "value": "10K",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "+3.3V",
+      "1": "IO34"
+    }
+  },
+  {
+    "ref": "R21",
+    "value": "4.7kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "+3.3V",
+      "2": "Net-(D9-A)"
+    }
+  },
+  {
+    "ref": "R22",
+    "value": "402kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "MPN": "RT0603BRD07402KL",
+      "Tolerance": "0.1%",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "BOOST_5V",
+      "2": "BOOST_FB"
+    }
+  },
+  {
+    "ref": "R23",
+    "value": "100kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "MPN": "RT0603BRD07100KL",
+      "Tolerance": "0.1%",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "BOOST_FB",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "R24",
+    "value": "4.7kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "+3.3V",
+      "2": "Net-(D10-A)"
+    }
+  },
+  {
+    "ref": "R25",
+    "value": "10K",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "GND",
+      "1": "IO2"
+    }
+  },
+  {
+    "ref": "R28",
+    "value": "470R",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Tolerance": "1%",
+      "Power_rating": "0.1W",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "GND",
+      "1": "RS-485-B"
+    }
+  },
+  {
+    "ref": "R29",
+    "value": "10K",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "GND",
+      "1": "IO22"
+    }
+  },
+  {
+    "ref": "R30",
+    "value": "68kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "GND",
+      "2": "Net-(U1-TMR)"
+    }
+  },
+  {
+    "ref": "R31",
+    "value": "10kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "GND",
+      "1": "TS_FIXED"
+    }
+  },
+  {
+    "ref": "R32",
+    "value": "200kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Tolerance": "0.1%",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "BOOST_EN",
+      "1": "PWR_OUT"
+    }
+  },
+  {
+    "ref": "R33",
+    "value": "100kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Tolerance": "0.1%",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "BOOST_EN",
+      "2": "BOOST_HYS"
+    }
+  },
+  {
+    "ref": "R34",
+    "value": "10kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Tolerance": "0.1%",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "BOOST_HYS",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "R35",
+    "value": "450kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Tolerance": "0.1%",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "+3.3V",
+      "2": "BUCK_FB"
+    }
+  },
+  {
+    "ref": "R36",
+    "value": "100kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Tolerance": "0.1%",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "BUCK_FB",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "R37",
+    "value": "620R",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "GND",
+      "1": "USB_ILIM"
+    }
+  },
+  {
+    "ref": "R38",
+    "value": "312kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Tolerance": "0.1%",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "BOOST_5V",
+      "2": "BOOST_PR"
+    }
+  },
+  {
+    "ref": "R39",
+    "value": "100kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Tolerance": "0.1%",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "BOOST_PR",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "R40",
+    "value": "100kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "+3.3V",
+      "2": "BOOST_ACTIVE"
+    }
+  },
+  {
+    "ref": "R41",
+    "value": "330R",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "GND",
+      "1": "U9_ILIM"
+    }
+  },
+  {
+    "ref": "R42",
+    "value": "1kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "GND",
+      "1": "U10_ILIM"
+    }
+  },
+  {
+    "ref": "R43",
+    "value": "100kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "GND",
+      "1": "IO25"
+    }
+  },
+  {
+    "ref": "R44",
+    "value": "100kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "+3.3V",
+      "2": "IO26"
+    }
+  },
+  {
+    "ref": "R45",
+    "value": "10kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Tolerance": "0.1%",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "+3.3V",
+      "2": "BAT_NTC"
+    }
+  },
+  {
+    "ref": "R46",
+    "value": "178kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Tolerance": "0.1%",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "+3.3V",
+      "2": "NTC_HOT"
+    }
+  },
+  {
+    "ref": "R47",
+    "value": "100kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Tolerance": "0.1%",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "GND",
+      "1": "NTC_HOT"
+    }
+  },
+  {
+    "ref": "R48",
+    "value": "43.2kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Tolerance": "0.1%",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "+3.3V",
+      "2": "NTC_COLD"
+    }
+  },
+  {
+    "ref": "R49",
+    "value": "100kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Tolerance": "0.1%",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "GND",
+      "1": "NTC_COLD"
+    }
+  },
+  {
+    "ref": "R50",
+    "value": "100kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Tolerance": "0.1%",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "+3.3V",
+      "2": "TEMP_OK"
+    }
+  },
+  {
+    "ref": "R51",
+    "value": "100kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Tolerance": "0.1%",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "CHG_CE",
+      "1": "PWR_OUT"
+    }
+  },
+  {
+    "ref": "R53",
+    "value": "100kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "BAT_GATE",
+      "1": "BAT_PROTECTED"
+    }
+  },
+  {
+    "ref": "R54",
+    "value": "100kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "BAT_DETECT",
+      "1": "CELL_FUSED"
+    }
+  },
+  {
+    "ref": "R60",
+    "value": "100kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "GND",
+      "1": "IO27"
+    }
+  },
+  {
+    "ref": "R61",
+    "value": "100kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "GND",
+      "1": "MODEM_TX"
+    }
+  },
+  {
+    "ref": "R62",
+    "value": "100kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "+3.3V",
+      "2": "IO16"
+    }
+  },
+  {
+    "ref": "R63",
+    "value": "100kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "+3.3V",
+      "2": "IO17"
+    }
+  },
+  {
+    "ref": "R64",
+    "value": "1kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "BUZZ_B",
+      "1": "IO19"
+    }
+  },
+  {
+    "ref": "R65",
+    "value": "100kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "BUZZ_B",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "R66",
+    "value": "1MR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Tolerance": "0.1%",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "BATT_ADC",
+      "1": "BAT_PROTECTED"
+    }
+  },
+  {
+    "ref": "R67",
+    "value": "270kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Tolerance": "0.1%",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "BATT_ADC",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "R68",
+    "value": "100kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "BAT_NTC",
+      "2": "NTC_ADC"
+    }
+  },
+  {
+    "ref": "R69",
+    "value": "100kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "1": "+3.3V",
+      "2": "TAMPER_EXT"
+    }
+  },
+  {
+    "ref": "R70",
+    "value": "1kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "IO33",
+      "1": "TAMPER_EXT"
+    }
+  },
+  {
+    "ref": "R71",
+    "value": "100kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "GND",
+      "1": "IO12"
+    }
+  },
+  {
+    "ref": "R72",
+    "value": "1.6kR",
+    "footprint": "Resistor_SMD:R_0603_1608Metric",
+    "fields": {
+      "Tolerance": "1%",
+      "Footprint": "Resistor_SMD:R_0603_1608Metric",
+      "Datasheet": null,
+      "Description": "Resistor"
+    },
+    "pins": {
+      "2": "GND",
+      "1": "ITERM_SET"
+    }
+  },
+  {
+    "ref": "SW1",
+    "value": "BOOT",
+    "footprint": "Button_Switch_SMD:SW_SPST_B3U-1000P",
+    "fields": {
+      "Footprint": "Button_Switch_SMD:SW_SPST_B3U-1000P",
+      "Datasheet": null,
+      "Description": "Push button switch, generic, two pins"
+    },
+    "pins": {
+      "1": "GND",
+      "2": "IO0_BTN"
+    }
+  },
+  {
+    "ref": "SW2",
+    "value": "RESET",
+    "footprint": "Button_Switch_SMD:SW_SPST_B3U-1000P",
+    "fields": {
+      "Footprint": "Button_Switch_SMD:SW_SPST_B3U-1000P",
+      "Datasheet": null,
+      "Description": "Push button switch, generic, two pins"
+    },
+    "pins": {
+      "2": "EN",
+      "1": "GND"
+    }
+  },
+  {
+    "ref": "SW4",
+    "value": "BATTERY DISCONNECT",
+    "footprint": "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin",
+    "fields": {
+      "Footprint": "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin",
+      "Datasheet": null,
+      "Description": "Single Pole Single Throw (SPST) switch"
+    },
+    "pins": {
+      "1": "BMS_NEG",
+      "2": "CELL_N"
+    }
+  },
+  {
+    "ref": "TH1",
+    "value": "103AT-2 10kR",
+    "footprint": null,
+    "fields": {
+      "MPN": "103AT-2",
+      "Manufacturer": "Semitec",
+      "Specification": "R25 10k +/-1%; B25/85 3435K +/-1%; insulated and thermally bonded to cell",
+      "Footprint": null,
+      "Datasheet": null,
+      "Description": "Temperature dependent resistor, negative temperature coefficient"
+    },
+    "pins": {
+      "1": "BAT_NTC",
+      "2": "GND"
+    }
+  },
+  {
+    "ref": "TP1",
+    "value": "TP",
+    "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+    "fields": {
+      "Footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "Datasheet": null,
+      "Description": "test point"
+    },
+    "pins": {
+      "1": "GND"
+    }
+  },
+  {
+    "ref": "TP2",
+    "value": "TP",
+    "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+    "fields": {
+      "Footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "Datasheet": null,
+      "Description": "test point"
+    },
+    "pins": {
+      "1": "+3.3V"
+    }
+  },
+  {
+    "ref": "TP3",
+    "value": "TP",
+    "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+    "fields": {
+      "Footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "Datasheet": null,
+      "Description": "test point"
+    },
+    "pins": {
+      "1": "+5V"
+    }
+  },
+  {
+    "ref": "TP4",
+    "value": "TP",
+    "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+    "fields": {
+      "Footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "Datasheet": null,
+      "Description": "test point"
+    },
+    "pins": {
+      "1": "PWR_OUT"
+    }
+  },
+  {
+    "ref": "TP5",
+    "value": "TP",
+    "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+    "fields": {
+      "Footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "Datasheet": null,
+      "Description": "test point"
+    },
+    "pins": {
+      "1": "BAT_PROTECTED"
+    }
+  },
+  {
+    "ref": "TP6",
+    "value": "TP",
+    "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+    "fields": {
+      "Footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "Datasheet": null,
+      "Description": "test point"
+    },
+    "pins": {
+      "1": "MODEM_5V"
+    }
+  },
+  {
+    "ref": "TP7",
+    "value": "TP",
+    "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+    "fields": {
+      "Footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "Datasheet": null,
+      "Description": "test point"
+    },
+    "pins": {
+      "1": "NODE_5V"
+    }
+  },
+  {
+    "ref": "TP8",
+    "value": "TP",
+    "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+    "fields": {
+      "Footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "Datasheet": null,
+      "Description": "test point"
+    },
+    "pins": {
+      "1": "EN"
+    }
+  },
+  {
+    "ref": "U1",
+    "value": "BQ24074RGT",
+    "footprint": "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm",
+    "fields": {
+      "Footprint": "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm",
+      "Datasheet": "http://www.ti.com/lit/ds/symlink/bq24074.pdf",
+      "Description": "USB-Friendly Li-Ion Battery Charger and Power-Path Management, VQFN-16"
+    },
+    "pins": {
+      "2": "BAT_PROTECTED",
+      "3": "BAT_PROTECTED",
+      "4": "CHG_CE",
+      "17": "GND",
+      "5": "GND",
+      "8": "GND",
+      "9": "IO21",
+      "7": "IO34",
+      "15": "ITERM_SET",
+      "12": "Net-(U1-ILIM)",
+      "16": "Net-(U1-ISET)",
+      "14": "Net-(U1-TMR)",
+      "10": "PWR_OUT",
+      "11": "PWR_OUT",
+      "6": "PWR_OUT",
+      "1": "TS_FIXED",
+      "13": "VBUS"
+    }
+  },
+  {
+    "ref": "U3",
+    "value": "TPS61230",
+    "footprint": "Package_SON:Texas_S-PVSON-N10_ThermalVias",
+    "fields": {
+      "MPN": "TPS61230DRCR",
+      "Manufacturer": "Texas Instruments",
+      "Footprint": "Package_SON:Texas_S-PVSON-N10_ThermalVias",
+      "Datasheet": "https://www.ti.com/lit/ds/symlink/tps61230.pdf",
+      "Description": "High Efficiency Synchronous Step Up Converters with 5-A Switches, 2.3-5.5V Input Voltage, VSON-10"
+    },
+    "pins": {
+      "3": "BOOST_5V",
+      "4": "BOOST_5V",
+      "9": "BOOST_EN",
+      "7": "BOOST_FB",
+      "8": "BOOST_HYS",
+      "6": "BOOST_SS",
+      "1": "BOOST_SW",
+      "2": "BOOST_SW",
+      "11": "GND",
+      "10": "PWR_OUT",
+      "5": "unconnected-(U3-PG-Pad5)"
+    }
+  },
+  {
+    "ref": "U4",
+    "value": "CP2102N-A02-GQFN28",
+    "footprint": "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm",
+    "fields": {
+      "Footprint": "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm",
+      "Datasheet": "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf",
+      "Description": "USB to UART master bridge, QFN-28"
+    },
+    "pins": {
+      "6": "+3.3V",
+      "7": "+3.3V",
+      "4": "D+",
+      "5": "D-",
+      "29": "GND",
+      "3": "GND",
+      "8": "Net-(U4-VBUS)",
+      "9": "Net-(U4-~{RST})",
+      "25": "RXD0",
+      "26": "TXD0",
+      "28": "USB_DTR",
+      "24": "USB_RTS",
+      "15": "unconnected-(U4-CHR0-Pad15)",
+      "14": "unconnected-(U4-CHR1-Pad14)",
+      "13": "unconnected-(U4-CHREN-Pad13)",
+      "22": "unconnected-(U4-GPIO.4-Pad22)",
+      "21": "unconnected-(U4-GPIO.5-Pad21)",
+      "20": "unconnected-(U4-GPIO.6-Pad20)",
+      "10": "unconnected-(U4-NC-Pad10)",
+      "17": "unconnected-(U4-RS485/GPIO.2-Pad17)",
+      "12": "unconnected-(U4-SUSPEND-Pad12)",
+      "23": "unconnected-(U4-~{CTS}-Pad23)",
+      "1": "unconnected-(U4-~{DCD}-Pad1)",
+      "27": "unconnected-(U4-~{DSR}-Pad27)",
+      "2": "unconnected-(U4-~{RI}/CLK-Pad2)",
+      "18": "unconnected-(U4-~{RXT}/GPIO.1-Pad18)",
+      "11": "unconnected-(U4-~{SUSPEND}-Pad11)",
+      "19": "unconnected-(U4-~{TXT}/GPIO.0-Pad19)",
+      "16": "unconnected-(U4-~{WAKEUP}/GPIO.3-Pad16)"
+    }
+  },
+  {
+    "ref": "U5",
+    "value": "ESP32-WROOM-32E",
+    "footprint": "RF_Module:ESP32-WROOM-32D",
+    "fields": {
+      "Firmware_pin_contract": "RS485 RX4 TX5 DE22 /RE23; modem TX17 RX16 EN25 UART_OE27; AquaNode EN26 default ON; tamper RTC33; battery ADC36; NTC ADC39; boost selected35; solar /PGOOD34; CHG21; JTAG12/13/14/15. USB-only budget <=0.49A: keep modem off.",
+      "Footprint": "RF_Module:ESP32-WROOM-32D",
+      "Datasheet": "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf",
+      "Description": "RF Module, ESP32-D0WD-V3 SoC, without PSRAM, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 2.7-3.6V, onboard antenna, SMD"
+    },
+    "pins": {
+      "2": "+3.3V",
+      "4": "BATT_ADC",
+      "7": "BOOST_ACTIVE",
+      "3": "EN",
+      "1": "GND",
+      "15": "GND",
+      "38": "GND",
+      "39": "GND",
+      "24": "IO2",
+      "26": "IO4",
+      "29": "IO5",
+      "14": "IO12",
+      "16": "IO13",
+      "13": "IO14",
+      "23": "IO15",
+      "27": "IO16",
+      "28": "IO17",
+      "30": "IO18",
+      "31": "IO19",
+      "33": "IO21",
+      "36": "IO22",
+      "37": "IO23",
+      "10": "IO25",
+      "11": "IO26",
+      "12": "IO27",
+      "8": "IO32",
+      "9": "IO33",
+      "6": "IO34",
+      "5": "NTC_ADC",
+      "25": "Net-(U5-IO0)",
+      "35": "RXD0",
+      "34": "TXD0",
+      "17": "unconnected-(U5-NC-Pad17)",
+      "18": "unconnected-(U5-NC-Pad18)",
+      "19": "unconnected-(U5-NC-Pad19)",
+      "20": "unconnected-(U5-NC-Pad20)",
+      "21": "unconnected-(U5-NC-Pad21)",
+      "22": "unconnected-(U5-NC-Pad22)",
+      "32": "unconnected-(U5-NC-Pad32)"
+    }
+  },
+  {
+    "ref": "U6",
+    "value": "DW01A",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "fields": {
+      "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "Datasheet": "https://hmsemi.com/downfile/DW01A.PDF",
+      "Description": "Overcharge, overcurrent and overdischarge protection IC for single cell lithium-ion/polymer battery"
+    },
+    "pins": {
+      "6": "BMS_NEG",
+      "5": "BMS_VCC",
+      "2": "Net-(U6-CS)",
+      "3": "Net-(U6-OC)",
+      "1": "Net-(U6-OD)",
+      "4": "unconnected-(U6-TD-Pad4)"
+    }
+  },
+  {
+    "ref": "U7",
+    "value": "TPS2116",
+    "footprint": "Package_TO_SOT_SMD:SOT-583-8",
+    "fields": {
+      "MPN": "TPS2116DRLR",
+      "Manufacturer": "Texas Instruments",
+      "Footprint": "Package_TO_SOT_SMD:SOT-583-8",
+      "Datasheet": "https://www.ti.com/lit/ds/symlink/tps2116.pdf",
+      "Description": "2 Channnels Power Mux with Manual and Priority Switchover, 1.6-5.5V Input Voltage, 2.5A Output Current, Ron 40 mOhm, SOT-583-8"
+    },
+    "pins": {
+      "2": "+5V",
+      "7": "+5V",
+      "3": "BOOST_5V",
+      "5": "BOOST_5V",
+      "8": "BOOST_ACTIVE",
+      "4": "BOOST_PR",
+      "1": "GND",
+      "6": "USB_LIMIT"
+    }
+  },
+  {
+    "ref": "U8",
+    "value": "MAX3485",
+    "footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+    "fields": {
+      "Footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+      "Datasheet": "https://datasheets.maximintegrated.com/en/ds/MAX3483-MAX3491.pdf",
+      "Description": "True RS-485/RS-422, 10Mbps, Slew-Rate Limited, with low-power shutdown, with receiver/driver enable, 32 receiver drive capacitity, DIP-8 and SOIC-8"
+    },
+    "pins": {
+      "8": "+3.3V",
+      "5": "GND",
+      "1": "IO4",
+      "4": "IO5",
+      "3": "IO22",
+      "2": "IO23",
+      "6": "RS-485-A",
+      "7": "RS-485-B"
+    }
+  },
+  {
+    "ref": "U9",
+    "value": "MIC2007",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "fields": {
+      "MPN": "MIC2007YM6-TR",
+      "Manufacturer": "Microchip",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "Datasheet": "https://www.microchip.com/en-us/product/MIC2007",
+      "Description": "5.5V, 2.1A, Adjustable Current Limiting Power Distribution Switch, SOT-23-6"
+    },
+    "pins": {
+      "1": "+5V",
+      "2": "GND",
+      "3": "IO25",
+      "6": "MODEM_5V",
+      "4": "U9_ILIM",
+      "5": "U9_SLEW"
+    }
+  },
+  {
+    "ref": "U10",
+    "value": "MIC2007",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "fields": {
+      "MPN": "MIC2007YM6-TR",
+      "Manufacturer": "Microchip",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "Datasheet": "https://www.microchip.com/en-us/product/MIC2007",
+      "Description": "5.5V, 2.1A, Adjustable Current Limiting Power Distribution Switch, SOT-23-6"
+    },
+    "pins": {
+      "1": "+5V",
+      "2": "GND",
+      "3": "IO26",
+      "6": "NODE_5V",
+      "4": "U10_ILIM",
+      "5": "U10_SLEW"
+    }
+  },
+  {
+    "ref": "U11",
+    "value": "MIC2007",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "fields": {
+      "MPN": "MIC2007YM6-TR",
+      "Manufacturer": "Microchip",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "Datasheet": "https://www.microchip.com/en-us/product/MIC2007",
+      "Description": "5.5V, 2.1A, Adjustable Current Limiting Power Distribution Switch, SOT-23-6"
+    },
+    "pins": {
+      "1": "+5V_PROGRAM",
+      "3": "+5V_PROGRAM",
+      "2": "GND",
+      "4": "USB_ILIM",
+      "6": "USB_LIMIT",
+      "5": "USB_SLEW"
+    }
+  },
+  {
+    "ref": "U12",
+    "value": "TPS3808G33",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+    "fields": {
+      "MPN": "TPS3808G33DBVR",
+      "Manufacturer": "Texas Instruments",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "Datasheet": "https://www.ti.com/lit/ds/symlink/tps3808.pdf",
+      "Description": "Low-Quiescent-Current, Programmable-Delay Supervisory Circuit, SOT-23-6"
+    },
+    "pins": {
+      "3": "+3.3V",
+      "5": "+3.3V",
+      "6": "+3.3V",
+      "1": "EN",
+      "2": "GND",
+      "4": "unconnected-(U12-CT-Pad4)"
+    }
+  },
+  {
+    "ref": "U13",
+    "value": "MCP6566",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+    "fields": {
+      "MPN": "MCP6566T-E/OT",
+      "Manufacturer": "Microchip",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "Datasheet": "https://ww1.microchip.com/downloads/aemDocuments/documents/MSLD/ProductDocuments/DataSheets/MCP6566-6R-6U-7-9-1.8V-Low-Power-Open-Drain-Output-Comparator-DS20002143G.pdf",
+      "Description": "Single 1.8V Low-Power Open-Drain Output Comparator, SOT-23-5/SC-70"
+    },
+    "pins": {
+      "5": "+3.3V",
+      "3": "BAT_NTC",
+      "2": "GND",
+      "4": "NTC_HOT",
+      "1": "TEMP_OK"
+    }
+  },
+  {
+    "ref": "U14",
+    "value": "MCP6566",
+    "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+    "fields": {
+      "MPN": "MCP6566T-E/OT",
+      "Manufacturer": "Microchip",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "Datasheet": "https://ww1.microchip.com/downloads/aemDocuments/documents/MSLD/ProductDocuments/DataSheets/MCP6566-6R-6U-7-9-1.8V-Low-Power-Open-Drain-Output-Comparator-DS20002143G.pdf",
+      "Description": "Single 1.8V Low-Power Open-Drain Output Comparator, SOT-23-5/SC-70"
+    },
+    "pins": {
+      "5": "+3.3V",
+      "4": "BAT_NTC",
+      "2": "GND",
+      "3": "NTC_COLD",
+      "1": "TEMP_OK"
+    }
+  },
+  {
+    "ref": "U15",
+    "value": "74LVC2G126",
+    "footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+    "fields": {
+      "MPN": "SN74LVC2G126DCUR",
+      "Manufacturer": "Texas Instruments",
+      "Footprint": "Package_SO:VSSOP-8_2.3x2mm_P0.5mm",
+      "Datasheet": "https://www.ti.com/lit/ds/symlink/sn74lvc2g126.pdf",
+      "Description": "Dual Buffer Tri-State, Low-Voltage CMOS"
+    },
+    "pins": {
+      "8": "+3.3V",
+      "4": "GND",
+      "3": "IO16",
+      "2": "IO17",
+      "1": "IO27",
+      "7": "IO27",
+      "6": "MODEM_RX",
+      "5": "MODEM_TX"
+    }
+  }
+]

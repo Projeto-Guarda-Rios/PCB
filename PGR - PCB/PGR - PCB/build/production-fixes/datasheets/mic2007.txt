@@ -1,0 +1,1937 @@
+                                                                    MIC20XX
+       Fixed and Adjustable Current Limiting Power Distribution Switches
+
+Features                                            General Description
+MIC20X3 - MIC20X9                                   MIC20XX family of switches are current limiting,
+  - 70 mΩ Typical On-Resistance @ 5V                high-side power switches, designed for general
+                                                    purpose power distribution and control in digital
+MIC2005A/20X9A                                      televisions (DTV), printers, set top boxes (STB), PCs,
+  - 170 mΩ Typical On-Resistance @ 5V               PDAs, and other peripheral devices (see MIC20XX
+• Enable Active-High or Active-Low                  Family Package Types and Table 0-1).
+• 2.5V - 5.5V Operating Range                       MIC20XX family’s primary functions are current limiting
+• Pre-Set Current Limit Values of 0.5A, 0.8A, and   and power switching. They are thermally protected and
+  1.2A*                                             will shutdown should their internal temperature reach
+                                                    unsafe levels, protecting both the device and the load,
+• Adjustable Current Limit 0.2A to 2.0A*
+                                                    under high-current or fault conditions.
+  (MIC20X7-MIC20X9)
+• Adjustable Current Limit 0.1A to 0.9A*            Features include fault reporting, fault blanking to
+  (MIC20X9A)                                        eliminate noise-induced false alarms, output slew rate
+                                                    limiting, under voltage detection, automatic-on output,
+• Undervoltage Lockout (UVLO)
+                                                    and enable pin with choice of either active low or active
+• Variable UVLO Allows Adjustable UVLO              high enable. The FET is self-contained, with a fixed- or
+  Thresholds*                                       user-adjustable current limit. The MIC20XX family is
+• Automatic Load Discharge for Capacitive Loads*    ideal for any system where current limiting and power
+• Soft-Start Prevents Large Current Inrush          control are desired.
+• Adjustable Slew Rate Allows Custom Slew Rates*    The MIC201X (3 ≤ X ≤ 9) and MIC2019A switches offer
+• Automatic-On Output After Fault                   a unique new patented feature: Kickstart which allows
+• Thermal Protection                                momentary high-current surges up to the secondary
+                                                    current limit (ILIMIT_2nd) without sacrificing overall
+* Available on some family members
+                                                    system safety.
+
+Applications                                        The MIC20XX family is offered, depending on the
+                                                    desired features, in a space-saving 5-pin SOT-23, 6-pin
+• Digital Televisions (DTV)                         SOT-23, and 2 mm x 2 mm DFN packages.
+• Set Top Boxes
+• PDAs
+• Printers
+• USB / IEEE 1394 Power Distribution
+• Desktop and Laptop PCs
+• Game Consoles
+• Docking Stations
+
+
+
+
+ 2021 Microchip Technology Inc.                                                       DS20006486B-page 1
+MIC20XX
+MIC20XX Family Package Types
+Fixed Current Limit (MIC20X3)
+
+                                                                      6-Pin DFN (ML)
+              5-Pin SOT-23 (M5)
+                                                                        Top View
+
+
+           VIN 1            5 VOUT
+
+          GND 2
+
+            NC 3            4 NC
+
+
+
+Fixed Current Limit (MIC20X4)
+
+                                                                      6-Pin DFN (ML)
+              5-Pin SOT-23 (M5)
+                                                                        Top View
+
+
+              VIN 1          5 VOUT
+
+              GND 2
+
+         ENABLE 3            4 NC
+
+
+
+
+Fixed Current Limit (MIC20X5)
+
+
+                                          6-Pin SOT-23 (M6)                6-Pin DFN (ML)
+        5-Pin SOT-23 (M5)
+                                                 MIC20X5                      MIC20X5
+          MIC2005-X.XL
+                                                                              Top View
+
+
+      VIN 1           5 VOUT             VIN 1             6 VOUT
+
+     GND 2                              GND 2              5 CSLEW
+
+  ENABLE 3            4 FAULT/        ENABLE 3             4 FAULT/
+
+
+
+
+Fixed Current Limit (MIC20X6)
+
+                                                                      6-Pin DFN (ML)
+              6-Pin SOT-23 (M6)
+                                                                        Top View
+
+
+           VIN 1            6 VOUT
+
+          GND 2             5 CSLEW
+
+       ENABLE 3             4 VUVLO
+
+
+
+
+DS20006486B-page 2                                                         2021 Microchip Technology Inc.
+                                                                                             MIC20XX
+MIC20XX Family Package Types (Continued)
+Adjustable Current Limit (MIC20X7/MIC20X8)
+
+                                                                                   6-Pin DFN (ML)
+               6-Pin SOT-23 (M6)
+                                                                                     Top View
+
+
+              VIN 1                6 VOUT
+
+             GND 2                 5 CSLEW
+
+         ENABLE 3                  4 ILIMIT
+
+
+
+
+Adjustable Current Limit (MIC20X9)
+
+                                                                                   6-Pin DFN (ML)
+               6-Pin SOT-23 (M6)
+                                                                                     Top View
+
+             VIN 1             6 VOUT
+
+           GND 2               5 ILIMIT
+
+        ENABLE 3               4 FAULT/
+
+
+
+
+Adjustable Current Limit (MIC2005A)
+
+
+             5-Pin SOT-23 (M5)                                              6-Pin SOT-23 (M6)
+
+
+
+           VIN 1             5 VOUT                                        VIN 1           6 VOUT
+
+          GND 2                                                          GND 2             5 CSLEW
+
+      ENABLE 3               4 FAULT/                                  ENABLE 3            4 FAULT/
+
+
+
+
+Adjustable Current Limit (MIC2009A)
+
+
+                                                   6-Pin SOT-23 (M6)
+
+
+
+                                                 VIN 1          6 VOUT
+
+                                                GND 2          5 ILIMIT
+
+                                              ENABLE 3          4 FAULT/
+
+
+
+
+ 2021 Microchip Technology Inc.                                                                DS20006486B-page 3
+MIC20XX
+Typical Application Circuit
+
+
+              5V Supply
+
+                                                       MIC2005A
+                                Logic
+                              Controller                                 VBUS
+                                                  VIN        VOUT
+                                                                                     USB
+                          VIN                     GND                120μF           Port
+                                   ON/OFF         EN        FAULT/
+                                            1μF
+                          OVERCURRENT/
+
+
+
+
+Functional Block Diagram
+
+
+
+
+DS20006486B-page 4                                                            2021 Microchip Technology Inc.
+                                                                                                                                              MIC20XX
+1.0          ELECTRICAL CHARACTERISTICS
+Absolute Maximum Ratings †
+VIN, VOUT ..................................................................................................................................................... –0.3V to +6V
+All Other Pins ...............................................................................................................................................–0.3 to +5.5V
+Power Dissipation (PD) .......................................................................................................................... Internally Limited
+Continuous Output Current
+All except MIC2005A / MIC20X9A ...........................................................................................................................2.25A
+MIC2005A / 20X9A..................................................................................................................................................... 1.0A
+ESD (HBM) Note 1
+VOUT and GND......................................................................................................................................................... ±4 kV
+All Other Pins ........................................................................................................................................................... ±2 kV
+ESD (MM) Note 1
+All Pins ....................................................................................................................................................................±200V
+
+Operating Ratings ††
+Supply Voltage .......................................................................................................................................... +2.5V to +5.5V
+Continuous Output Current
+All except MIC2005A / MIC20X9A ....................................................................................................................0A to 2.1A
+MIC2005A / 20X9A............................................................................................................................................0A to 0.9A
+
+† Notice: Stresses above those listed under “Absolute Maximum Ratings” may cause permanent damage to the device.
+This is a stress rating only and functional operation of the device at those or any other conditions above those indicated
+in the operational sections of this specification is not intended. Exposure to maximum rating conditions for extended
+periods may affect device reliability.
+†† Notice: The device is not guaranteed to function outside its operating ratings.
+
+
+   Note 1: Devices are ESD sensitive. Handling precautions recommended. Human body model, 1.5k in series with
+           100pF.
+
+ELECTRICAL CHARACTERISTICS
+ Electrical Characteristics: VIN = 5V; CIN = 1 µF; TA = +25°C, unless otherwise noted. Bold indicates specifications
+ over the full operating temperature range of –40°C to +85°C. (Note 1)
+
+               Parameter                           Symbol              Min.          Typ.         Max.         Units                         Conditions
+
+ Switch Input Voltage                                  VIN              2.5           —            5.5            V         —
+                                                                                                                            Switch = OFF, VOUT = 0V
+ Output Leakage Current
+                                                     ILEAK               —            12           100           µA         Active-Low Enable, VEN = 1.5V
+ (Note 2)
+                                                                                                                            Active-High Enable, VEN = 0V
+ MIC2005A, MIC2009A, MIC2019A
+                                                                                                                            Switch = ON
+                                                                         —            80           300                      Active-Low Enable, VEN = 0V
+                                                                                                                            Active-High Enable, VEN = 1.5V
+ Supply Current (Note 2)                               IIN                                                       µA         Switch = OFF
+                                                                         —             8            15
+                                                                                                                            Active-Low Enable, VEN = 1.5V
+                                                                                                                            Switch = OFF
+                                                                         —             1             5
+                                                                                                                            Active-High Enable, VEN = 0V
+                                                                         —           170           220           mΩ
+ Power Switch Resistance                           RDS(ON)                                                                  VIN = 5V, IOUT = 100 mA
+                                                                         —            —            275
+ MIC2005A
+ Fixed Current Limit                                 ILIMIT             0.5           0.7          0.9            A         VOUT = 0.8 × VIN
+
+
+
+ 2021 Microchip Technology Inc.                                                                                                                   DS20006486B-page 5
+MIC20XX
+ELECTRICAL CHARACTERISTICS (CONTINUED)
+Electrical Characteristics: VIN = 5V; CIN = 1 µF; TA = +25°C, unless otherwise noted. Bold indicates specifications
+over the full operating temperature range of –40°C to +85°C. (Note 1)
+
+         Parameter               Symbol       Min.     Typ.    Max.     Units               Conditions
+
+MIC2009A, MIC2019A
+                                              172      211      263             IOUT = 0.9A, VOUT = 0.8 × VIN
+                                              152      206      263             IOUT = 0.5A, VOUT = 0.8 × VIN
+Variable Current Limit Factors     CLF                                    V
+                                              138      200      263             IOUT = 0.2A, VOUT = 0.8 × VIN
+                                              121      192      263             IOUT = 0.1A, VOUT = 0.8 × VIN
+MIC2019A
+Secondary Current Limit          ILIMIT_2nd    1        2        3        A     VIN = 2.5V, VOUT = 0V
+MIC2003-MIC2009, MIC2013-MIC2019, MIC2005-X.XL
+                                                                                Switch = ON
+                                               —        80      330             Active-Low Enable, VEN = 0V
+                                                                                Active-High Enable, VEN = 1.5V
+Supply Current (Note 2)             IIN                                  µA     Switch = OFF
+                                               —        8        15
+                                                                                Active-Low Enable, VEN = 1.5V
+                                                                                Switch = OFF
+                                               —        1        5
+                                                                                Active-High Enable, VEN = 0V
+                                               —        70      100
+Power Switch Resistance          RDS(ON)                                 mΩ     VIN = 5V, IOUT = 100 mA
+                                               —                125
+MIC2003-X.X, MIC2004-X.X, MIC2005-X.X, MIC2005-X.XL, MIC2006-X.X, MIC2013-X.X, MIC2014-X.X,
+MIC2015-X.X MIC2016-X.X
+                                              0.5      0.7      0.9             –0.5, VOUT = 0.8 × VIN
+Fixed Current Limit                ILIMIT     0.8      1.1      1.5       A     –0.8, VOUT = 0.8 × VIN
+                                              1.2      1.6      2.1             –1.2, VOUT = 0.8 × VIN
+MIC2005-0.5
+Fixed Current Limit                ILIMIT     0.5      0.7      0.9       A     VOUT = 0.8 × VIN
+MIC2007, MIC2008, MIC2009, MIC2017, MIC2018, MIC2019
+                                              210      250      286             IOUT = 2.0A, VOUT = 0.8 × VIN
+                                              190      243      293             IOUT = 1.0A, VOUT = 0.8 × VIN
+Variable Current Limit Factors     CLF                                    V
+                                              168      235      298             IOUT = 0.5A, VOUT = 0.8 × VIN
+                                              144      225      299             IOUT = 0.2A, VOUT = 0.8 × VIN
+MIC2013, MIC2014, MIC2015, MIC2016, MIC2017, MIC2018, MIC2019
+Secondary Current Limit          ILIMIT_2nd   2.2       4        6        A     VIN = 2.5V, VOUT = 0V
+MIC2006, MIC2016
+Variable UVLO Threshold          VUVLO_TH     225      250      275      mV     —
+MIC20x4, MIC20x7
+Load Discharge Resistance        RDSCHG        70      126      200       Ω     VIN = 5V, ISINK = 5 mA
+MIC20X5, MIC20X6, MIC20X7, MIC20X8
+CSLEW Input Current               ICSLEW       —      0.175      —       µA     0V ≤ VOUT ≤ 0.8 VIN
+
+
+
+
+DS20006486B-page 6                                                                    2021 Microchip Technology Inc.
+                                                                                                              MIC20XX
+ELECTRICAL CHARACTERISTICS (CONTINUED)
+Electrical Characteristics: VIN = 5V; CIN = 1 µF; TA = +25°C, unless otherwise noted. Bold indicates specifications
+over the full operating temperature range of –40°C to +85°C. (Note 1)
+
+            Parameter                 Symbol            Min.       Typ.       Max.      Units                 Conditions
+
+All Parts
+                                                        —          —          0.5               VIL (MAX)
+Enable Input Voltage (Note 3)              VEN                                           V
+                                                        1.5        —           —                VIH (MIN)
+Enable Input Current                       IEN          —           1          5         µA     0V ≤ VEN ≤ 5V
+
+Undervoltage Lock-Out                                    2         2.25       2.5               VIN Rising
+                                     UVLO_TH                                             V
+Threshold                                               1.9        2.15       2.4               VIN Falling
+Undervoltage Lock-Out
+                                    UVLO_HYS            —          0.1         —         V      —
+Hysteresis
+Fault Status Output Voltage           VFAULT            —          0.25       0.4        V      IOL = 10 mA
+                                                        —          145         —                TJ Increasing
+Overtemperature Threshold             OT_TH                                              °C
+                                                        —          135         —                TJ Decreasing
+
+AC ELECTRICAL CHARACTERISTICS
+        Parameters            Symbol             Min.     Typ.       Max.      Units                    Conditions
+                                                                                         RL = 10Ω, CLOAD = 1 µF,
+Output Turn-On Rise Time           tRISE         500      1000       1500          µs    VOUT = 10% to 90%
+                                                                                         CSLEW = Open (Note 4)
+Delay before asserting or
+releasing FAULT/                                                                         Time from current limiting to FAULT/
+                                                 20          32         49
+MIC2003 - MIC2009                                                                        state change
+MIC2009A, MIC2005A
+                              tD_FAULT                                             ms
+Delay before asserting or
+                                                                                         Time from IOUT continuously exceeding
+releasing FAULT/
+                                                 77          128        192              primary current limit condition to FAULT/
+MIC2013 - MIC2019
+                                                                                         state change
+MIC2019A
+Delay before current
+limiting
+                              tD_LIMIT           77          128        192        ms    —
+MIC2013 - MIC2019
+MIC2019A
+Delay before resetting
+Kickstart current limit
+                                                                                         Out of current limit following a current
+delay, tD_LIMIT                tRESET            77          128        192        ms
+                                                                                         limit event.
+MIC2013 - MIC2019
+MIC2019A
+                                                                                         RL = 43Ω, CL = 120 µF,
+Output Turn-On Delay          tON_DLY            —        1000       1500          µs    VEN = 50% to VOUT = 10%
+                                                                                         *CSLEW = Open
+                                                                                         RL = 43Ω, CL = 120 µF,
+Output Turn-Off Delay         tOFF_DLY           —            —         700        µs    VEN = 50% to VOUT = 90%
+                                                                                         *CSLEW = Open
+Note 1:      Specification for packaged product only.
+     2:      Check the Ordering Information section to determine which parts are Active-High or Active-Low.
+     3:      VIL(MAX) = Maximum positive voltage applied to the input which will be accepted by the device as a logic
+             low. VIH(MAX) = Maximum positive voltage applied to the input which will be accepted by the device as a
+             logic high.
+       4:    Whenever CSLEW is present.
+
+
+ 2021 Microchip Technology Inc.                                                                                 DS20006486B-page 7
+MIC20XX
+
+TEMPERATURE SPECIFICATIONS (Note 1)
+             Parameters                  Symbol       Min.   Typ.        Max.        Units            Conditions
+Temperature Ranges
+Maximum Junction Temperature               TJ          —      —          +150           °C     —
+Storage Temperature                        TS         –65     —          +150           °C     —
+Ambient Temperature Range                  TA         –40     —          +85            °C     —
+Lead Temperature                           —           —      —          260            °C     Soldering, 10 sec.
+Package Thermal Resistances (Note 2)
+Thermal Resistance, SOT-23-5/6            JA                230
+                                          JA          —      90          —          °C/W      —
+Thermal Resistance, 6-Lead DFN
+                                          JC                 45
+Note 1:    The maximum allowable power dissipation is a function of ambient temperature, the maximum allowable
+           junction temperature and the thermal resistance from junction to air (i.e., TA, TJ, JA). Exceeding the
+           maximum allowable power dissipation will cause the device operating junction temperature to exceed the
+           maximum +150°C rating. Sustained junction temperatures above +150°C can impact the device reliability.
+      2:   Requires proper thermal mounting to achieve this performance.
+
+
+
+Timing Diagrams
+
+
+
+                                tRISE                                           tFALL
+
+                                                90%          90%
+
+
+                                           10%                     10%
+
+
+
+FIGURE 1-1:           Rise and Fall Times.
+
+
+
+                      ENABLE      50%                                     50%
+
+
+                               tON_DLY                                          tOFF_DLY
+
+                                                                               90%
+                      VOUT
+                                                10%
+
+
+FIGURE 1-2:           Switching Delay Times.
+
+
+
+
+DS20006486B-page 8                                                                          2021 Microchip Technology Inc.
+                                                                                                                                    MIC20XX
+2.0       TYPICAL PERFORMANCE CURVES
+  Note:            The graphs and tables provided following this note are a statistical summary based on a limited number of
+                   samples and are provided for informational purposes only. The performance characteristics listed herein
+                   are not tested or guaranteed. In some graphs or tables, the data presented may be outside the specified
+                   operating range (e.g., outside specified power supply range) and therefore outside the warranted range.
+
+                                   100                                                                            1.0
+                                                                                                                  0.9
+
+
+
+
+                  SUPPLY CURRENT (μA)
+                                                                                                                      5V
+                                        80                                                                        0.8
+                                             85°C                                                                 0.7
+                                        60
+                                                                                                     ILIMIT (A)
+                                                                                                                  0.6
+                                             25°C     -40°C                                                       0.5
+                                        40                                                                        0.4
+                                                                                                                  0.3
+                                        20                                                                        0.2
+                                                                                                                  0.1
+                                        0                                                                           0
+                                        2.5     3.0    3.5     4.0 4.5    5.0    5.5                                -40    -15  10  35    60   85
+                                                             VIN (V)                                                        TEMPERATURE (°C)
+
+
+FIGURE 2-1:      Supply Current Output                                                     FIGURE 2-4:                       ILIMT vs. Temperature
+Enabled (MIC20XX).                                                                         (MIC20XX-0.5).
+
+                                 0.10                                                                             1.5
+                                 0.09                                                                             1.4
+
+
+
+
+          SUPPLY CURRENT (μA)
+                                 0.08                                                                                 5V
+                                                                                                                  1.3
+                                 0.07                                                                             1.2
+                                 0.06
+                                                                                                     ILIMIT (A)
+                                                                                                                  1.1
+                                 0.05                                                                             1.0
+                                 0.04                                                                             0.9
+                                 0.03                                                                             0.8
+                                 0.02                                 85°C
+                                                                                                                  0.7
+                                 0.01                 -40°C 25°C
+                                                                                                                  0.6
+                                         0                                                                        0.5
+                                         2.5    3.0     3.5     4.0 4.5   5.0        5.5                            -40    -15  10  35    60   85
+                                                              VIN (V)                                                       TEMPERATURE (°C)
+
+
+FIGURE 2-2:       Supply Current Output                                                    FIGURE 2-5:                       ILIMT vs. Temperature
+Disnabled (MIC20XX).                                                                       (MIC20XX-0.8).
+
+                                 0.10                                                                           2.00
+                                 0.09                                                                           1.90
+
+
+
+
+          LEAKAGE CURRENT (μA)
+                                                                                                                     5V
+                                 0.08                                                                           1.80
+                                 0.07                                                                           1.70
+
+                                                                                                   ILIMIT (A)
+                                 0.06                                                                           1.60
+                                 0.05                                                                           1.50
+                                 0.04                                                                           1.40
+                                 0.03                                                                           1.30
+                                 0.02                                           5V                              1.20
+                                 0.01                                                                           1.10
+                                         0                                                                      1.00
+                                          -40       -15  10   35   60                85                            -40     -15  10  35    60   85
+                                                     TEMPERATURE (°C)                                                       TEMPERATURE (°C)
+
+
+FIGURE 2-3:                                           Switch Leakage Current               FIGURE 2-6:                       ILIMT vs. Temperature
+(MIC20XX).                                                                                 (MIC20XX-1.2).
+
+
+
+
+ 2021 Microchip Technology Inc.                                                                                                        DS20006486B-page 9
+MIC20XX
+
+                                        200                                                                 160
+                                                                                                                   V        = 5.0V
+                                        180                                                                            IN
+                                                                                                            140
+                                        160
+                                                                                                            120
+
+
+         RDS(ON) (mOhm)                                                                   VIN – VOUT (mV)
+                                        140
+                                                                                                                                                          85°C
+                                        120 25°C                                                            100
+                                                    85°C                                                                                         25°C
+                                        100                                                                  80
+                                         80                                                                  60
+                                         60
+                                            -40°C                                                            40                                         -40°C
+                                         40
+                                         20                                                                  20
+                                          0                                                                   0
+                                           2 2.5    3   3.5 4 4.5     5   5.5                                  0            0.2    0.4     0.6 0.8        1     1.2
+                                                         VIN (V)                                                                         IOUT (A)
+
+FIGURE 2-7:                                         RDS(ON) vs. VIN (MIC20XX).    FIGURE 2-10:                                    VDROP vs. Temperature
+                                                                                  (MIC20XX-1.2).
+
+                                                                                                            160
+                                        200                                                                        V        = 3.3V
+                                                                                                                       IN
+                                        180                                                                 140
+                                        160                                                                 120                                           85°C
+
+
+                                                                                          VIN – VOUT (mV)
+           RDS(ON) (mOhm)
+                                        140
+                                                                                                            100                                  25°C
+                                        120
+                                                               2.5V   3.3V                                   80
+                                        100
+                                         80                                                                  60
+                                         60                           5.0V                                   40                                         -40°C
+                                         40
+                                                                                                             20
+                                         20
+                                                                                                              0
+                                          0                                                                    0            0.2    0.4     0.6 0.8        1     1.2
+                                          -40    -15  10   35   60           85
+                                                                                                                                         IOUT (A)
+                                                  TEMPERATURE (°C)
+
+FIGURE 2-8:                                         RDS(ON) vs. Temperature       FIGURE 2-11:                                    VDROP vs. Temperature
+(MIC20XX).                                                                        (MIC20XX-1.2).
+
+                                                                                                            1200
+
+
+
+
+         CURRENT-LIMIT THRESHOLD (mA)
+                                    1200
+                                              RSET = 267Ohms                                                                                     242.62
+                                                                                                                                   RSET =
+                                                                                                            1000                             I       0.9538
+                                    1000                                                                                                     LIMIT
+
+
+
+
+                                                                                          RSET (Ohms)
+                                                                                                             800
+                                        800
+                                                                                                             600
+                                        600
+                                                                                                             400
+                                        400
+                                                                                                             200
+                                        200
+                                                                                                                  0
+                                          0                                                                        0        0.2 0.4 0.6 0.8 1           1.2 1.4
+                                          -40    -15  10   35   60           85
+                                                                                                                                    ILIMIT (A)
+                                                  TEMPERATURE (°C)
+
+FIGURE 2-9:                                         ILIMIT vs. Temperature        FIGURE 2-12:                                    RSET vs ILIMIT (MIC20X9).
+(MIC20X9-0.9A).
+
+
+
+
+DS20006486B-page 10                                                                                                                2021 Microchip Technology Inc.
+                                                                                                                                 MIC20XX
+
+                                   100
+                                    90                            -40°C                                   0.9
+                                                                                                                5V
+
+
+
+
+             SUPPLY CURRENT (μA)
+                                    80                                                                    0.8
+                                    70                                                                    0.7
+                                                         25°C     85°C
+                                                                                             ILIMIT (A)
+                                    60                                                                    0.6
+                                    50                                                                    0.5
+                                    40                                                                    0.4
+                                    30                                                                    0.3
+                                    20                                                                    0.2
+                                    10                                                                    0.1
+                                    0                                                                      0
+                                    2.5   3   3.5      4    4.5    5      5.5                              -40       -15  10  35    60                 85
+                                                    VIN (V)                                                           TEMPERATURE (°C)
+
+
+FIGURE 2-13:     Supply Current Output                                            FIGURE 2-16:                         ILIMT vs. Temperature
+Enabled (MIC20XXA).                                                               (MIC20X5A).
+
+                              0.10                                                                     1000
+                                                                                                             R   = 267Ohms
+                              0.09                                                                      900 SET
+
+
+
+
+           SUPPLY CURRENT (μA)
+                              0.08                                                                      800
+                              0.07                                                                      700
+                              0.06
+                                                                                          ILIMIT (A)
+                                                                                                        600
+                              0.05                                                                      500
+                              0.04                                                                      400
+                              0.03                                                                      300
+                              0.02                                 85°C                                 200
+                                              -40°C     25°C
+                              0.01                                                                      100
+                                 0                                                                        0
+                                 2.5      3   3.5      4    4.5    5        5.5                           -40  -15    10   35 60                       85
+                                                    VIN (V)                                                     TEMPERATURE (°C)
+
+
+FIGURE 2-14:     Supply Current Output                                            FIGURE 2-17:     ILIMT vs. Temperature
+Disabled (MIC20XXA).                                                              (MIC20X9A-0.8A).
+
+                                 0.10                                                                    2500
+                                 0.09                                                                                                     212.23
+
+
+
+
+            LEAKAGE CURRENT (μA)
+                                                                                                                            R       =
+                                 0.08                                                                    2000                 SET       ILIMIT0.9587
+                                 0.07
+
+
+                                                                                           RSET (Ohms)
+                                 0.06                                                                    1500
+                                 0.05
+                                 0.04                                                                    1000
+                                 0.03
+                                 0.02                                                                     500
+                                 0.01                                  5V
+                                    0                                                                       0
+                                    -40   -15  10   35   60                 85                               0       0.2   0.4     0.6       0.8        1
+                                           TEMPERATURE (°C)                                                                ILIMIT (A)
+
+
+FIGURE 2-15:                                  Switch Leakage Current              FIGURE 2-18:                         RSET vs ILIMIT (MIC20X9A).
+(MIC20XXA).
+
+
+
+
+ 2021 Microchip Technology Inc.                                                                                                        DS20006486B-page 11
+MIC20XX
+
+                                                                                                       160
+                       250                                                                                    V        = 5.0V
+                                                                                                                  IN
+                                                                                                       140
+                                                       25°C     85°C
+                       200                                                                             120
+
+
+                                                                                     VIN - VOUT (mV)
+                                                                                                                                               85°C
+                                                                                                       100                             25°C
+                       150
+                                                                                                        80
+
+          DS(ON)       100                                     -40°C                                    60
+                                                                                                                                              -40°C
+                                                                                                        40
+                                50
+                                                                                                        20
+                                0                                                                        0
+                                2.5    3   3.5      4    4.5    5      5.5                                0        0.1     0.2     0.3 0.4    0.5   0.6
+                                                 VIN (V)                                                                         IOUT (A)
+
+FIGURE 2-19:                               RDS(ON) vs. VIN                   FIGURE 2-22:                                 VDROP vs. Temperature
+(MIC20XXA).                                                                  (MIC20XXA).
+
+                                                                                                       160
+                                                        2.5V    3.3V                                          V        = 3.3V
+                           250                                                                                IN
+                                                                                                       140
+                                                                                                       120                                     85°C
+
+
+
+         RDS(ON) (mOhms)
+                           200                                                                                                        25°C
+
+
+                                                                                     VIN - VOUT (mV)
+                                                                                                       100
+                           150                                 5.0V
+                                                                                                        80
+
+                           100                                                                          60                                    -40°C
+                                                                                                        40
+                                50
+                                                                                                        20
+                                 0                                                                       0
+                                 -40   -15  10   35   60               85                                 0        0.1     0.2     0.3 0.4    0.5   0.6
+                                        TEMPERATURE (°C)                                                                         IOUT (A)
+
+FIGURE 2-20:                               RDS(ON) vs. Temperature           FIGURE 2-23:                                 VDROP vs. Temperature
+(MIC20XXA).                                                                  (MIC20XXA).
+
+                            40                                                                         2.3
+                            35
+                                                               5.0V                              2.25                                 V RISING
+
+
+
+
+              FLAG DELAY (ms)
+                            30
+
+
+
+                                                                                     THRESHOLD (V)
+                            25                         3.3V    2.5V                                    2.2
+                            20
+                                                                                                                                     V FALLING
+                            15                                                                   2.15
+
+                            10
+                                                                                                       2.1
+                                5
+                                0                                                                2.05
+                                -40    -15  10   35   60              85                            -50                  0    50   100              150
+                                        TEMPERATURE (°C)                                                                TEMPERATURE (°C)
+
+FIGURE 2-21:                               Flag Delay vs. Temperature.       FIGURE 2-24:                                 UVLO Threshold vs.
+                                                                             Temperature.
+
+
+
+
+DS20006486B-page 12                                                                                                         2021 Microchip Technology Inc.
+                                                                         MIC20XX
+
+
+
+
+FIGURE 2-25:           VIN Soft Turn-On.          FIGURE 2-28:   Turn-Off VIN.
+
+
+
+
+FIGURE 2-26:           Enable Turn-On Delay and   FIGURE 2-29:   Enable Turn-Off Delay and
+Rise Time.                                        Fall Time.
+
+
+
+
+FIGURE 2-27:           Enable Turn-On/Turn-Off.   FIGURE 2-30:   UVLO.
+
+
+
+
+ 2021 Microchip Technology Inc.                                          DS20006486B-page 13
+MIC20XX
+
+
+
+
+FIGURE 2-31:          Enabled Into Short.       FIGURE 2-34:      Power Up Into Short Circuit.
+
+
+
+
+FIGURE 2-32:          Current Limit Response,   FIGURE 2-35:      Current Limit Response
+Stepped Short.                                  Time, Stepped Short.
+
+
+
+
+FIGURE 2-33:          Output Recovery From      FIGURE 2-36:      Output Recovery From
+Short Circuit.                                  Thermal Shutdown.
+
+
+
+
+DS20006486B-page 14                                                 2021 Microchip Technology Inc.
+                                                                           MIC20XX
+
+
+
+
+FIGURE 2-37:           Current-Limit Threshold.   FIGURE 2-40:      Current Inrush Current
+                                                  Response.
+
+
+
+
+FIGURE 2-38:      Kickstart Response              FIGURE 2-41:      Kickstart Response
+77 ms/2.2A Load Step.                             150 ms/2.2A Load Step
+
+
+
+
+FIGURE 2-39:      Kickstart Response              FIGURE 2-42:      Kickstart Response Time
+Recovery From Thermal Shutdown.                   5A Over Load.
+
+
+
+
+ 2021 Microchip Technology Inc.                                             DS20006486B-page 15
+MIC20XX
+3.0       PIN DESCRIPTIONS
+These pin and signal descriptions aid in the differentiation of a pin from electrical signals and components connected to
+that pin. For example, VOUT is the switch’s output pin, while VOUT is the electrical signal output voltage present at the
+VOUT pin. The descriptions of the pins are listed in Table 3-1.
+
+
+TABLE 3-1:        PIN FUNCTION TABLE
+   Pin Name           Type                                              Description
+
+                                  Supply input. This pin provides power to both the output switch and the switch’s
+       VIN            Input
+                                  internal control circuitry.
+       GND              —         Ground
+        EN            Input       Switch Enable (Input):
+                                  Fault status. A logic low on this pin indicates the switch is in current limiting, or has
+      FAULT/          Output      been shut down by the thermal protection circuit. This is an open-drain output
+                                  allowing logical OR’ing of multiple switches.
+                                  Slew rate control. Adding a small value capacitor between this pin and VIN slows
+      CSLEW           Input
+                                  turn-on of the power FET.
+      VOUT            Output      Switch output. The load being driven by the switch is connected to this pin.
+                                  Variable Under Voltage Lockout (VUVLO): Monitors the input voltage through a
+      VUVLO           Input       resistor divider between VIN and GND. Shuts the switch off if voltage falls below the
+                                  threshold set by the resistor divider. Previously called VUVLO.
+      ILIMIT          Input       Set current limit threshold via a resistor connected from ILIMIT to GND.
+        EP           Thermal      On DFN packages connect EP to GND.
+
+
+TABLE 3-2:        SIGNAL DESCRIPTION TABLE
+ Signal Name          Type                                              Description
+
+        VIN           Input       Electrical signal input voltage present at the VIN pin.
+       GND              —         Ground
+       VEN            Input       Electrical signal input voltage present at the ENABLE pin.
+      VFAULT/         Output      Electrical signal output voltage present at the FAULT/ pin.
+      CSLEW        Component      Capacitance value connected to the CSLEW pin.
+       VOUT           Output      Electrical signal output voltage present at the VOUT pin.
+                                  VUVLO internal reference threshold voltage. This voltage is compared to the
+  VVUVLO_TH          Internal     VUVLO pin input voltage to determine if the switch should be disabled. Reference
+                                  threshold voltage has a typical value of 250 mV.
+      CLOAD        Component      Capacitance value connected in parallel with the load. Load capacitance.
+       IOUT           Output      Electrical signal output current present at the VOUT pin.
+       ILIMIT        Internal     Switch’s current limit. Fixed at factory or user adjustable.
+
+
+
+
+DS20006486B-page 16                                                                          2021 Microchip Technology Inc.
+                                                                                               MIC20XX
+4.0       FUNCTIONAL DESCRIPTION                              During this delay period, typically 128 ms, a secondary
+                                                              current limit is in effect. If the load demands a current in
+                                                              excess the secondary limit, MIC201X acts immediately
+4.1       VIN and VOUT
+                                                              to restrict output current to the secondary limit for the
+VIN is both the power supply connection for the internal      duration of the Kickstart period. After this time the
+circuitry driving the switch and the input (Source            MIC201X reverts to its normal current limit. An example
+connection) of the power MOSFET switch. VOUT is the           of Kickstart operation is shown in Figure 4-1:
+Drain connection of the power MOSFET and supplies
+power to the load. In a typical circuit, current flows from
+VIN to VOUT toward the load. Since the switch is
+bi-directional when enabled, if VOUT is greater than VIN,
+current will flow from VOUT to VIN.
+When the switch is disabled, current will not flow to the
+load, except for a small unavoidable leakage current of
+a few microamps. However, should VOUT exceed VIN
+by more than a diode drop (~0.6 V), while the switch is
+disabled, current will flow from output to input via the
+power MOSFET’s body diode.
+If discharging CLOAD is required by your application,
+consider using MIC20X4 or MIC20X7; these MIC20XX
+family members are equipped with a discharge FET to           FIGURE 4-1:             Kickstart Operation.
+be ensured complete discharge of CLOAD.
+                                                              Figure 4-1 Label Key:
+4.2       Current Sensing and Limiting                        A. MIC201X is enabled into an excessive load (slew
+                                                              rate limiting not visible at this time scale). The initial
+MIC20XX protects the system power supply and load             current surge is limited by either the overall circuit
+from damage by continuously monitoring current                resistance and power supply compliance, or the
+through the on-chip power MOSFET. Load current is             secondary current limit, whichever is less.
+monitored by means of a current mirror in parallel with
+the power MOSFET switch. Current limiting is invoked          B. RON of the power FET increases due to internal
+when the load exceeds the set over current threshold.         heating (effect exaggerated for emphasis).
+When current limiting is activated the output current is      C. Kickstart period.
+constrained to the limit value, and remains at this level     D. Current limiting initiated. FAULT/ goes LOW.
+until either the load/fault is removed, the load’s current
+requirement drops below the limiting value, or the            E. VOUT is non-zero (load is heavy, but not a dead short
+switch goes into thermal shutdown.                            where VOUT = 0V. Limiting response will be the same
+                                                              for dead shorts).
+4.3       Kickstart                                           F. Thermal shutdown followed by thermal cycling.
+                                                              G. Excessive load released, normal load remains.
+                                                              MIC201X drops out of current limiting.
+TABLE 4-1:         KICKSTART
+                                                              H. FAULT/ delay period followed by FAULT/ going
+ 2003     2004   2005X    2006     2007    2008    2009X
+                                                              HIGH.
+ 2013     2014    2015    2016     2017    2018    2019X
+  Note:     Only parts in bold have Kickstart                 4.4      Undervoltage Lockout
+            (Not available in 5-pin SOT-23 packages).
+                                                              Undervoltage lock-out should be ensured no
+The MIC201X is designed to allow momentary current            anomalous operation occurs before the device’s
+surges (Kickstart) before the onset of current limiting,      minimum input voltage of UVLOTHRESHOLD which is 2V
+which permits dynamic loads, such as small disk drives        minimum, 2.25V typical, and 2.5V maximum had been
+or portable printers to draw the energy needed to             achieved. Prior to reaching this voltage, the output
+overcome inertial loads without sacrificing system            switch (power MOSFET) is OFF and no circuit
+safety. In this respect, the Kickstart parts (MIC201X)        functions, such as FAULT/ or ENABLE, are considered
+differs markedly from the non-Kickstart parts                 to be valid or operative.
+(MIC200X) which immediately limit load current,
+potentially starving the motor and causing the
+appliance to stall or stutter.
+
+
+
+
+ 2021 Microchip Technology Inc.                                                                  DS20006486B-page 17
+MIC20XX
+4.5       Variable Undervoltage Lockout                    MIC201X’s FAULT/ asserts at the end of the Kickstart
+                                                           period which is 128 ms typical. This masks initial
+                                                           current surges, such as would be seen by a motor load
+TABLE 4-2:         VARIABLE UNDERVOLTAGE                   starting up. If the load current remains above the
+                   LOCKOUT (VUVLO)                         current limit threshold after the Kickstart has timed out,
+ 2003     2004   2005X    2006   2007    2008    2009X     then the FAULT/ will be asserted. After a fault clears,
+                                                           FAULT/ remains asserted for the delay of 128 ms.
+ 2013     2014     2015   2016   2017    2018    2019X
+                                                           Because FAULT/ is an open-drain it must be pulled
+  Note:     Only parts in bold have UVLO.
+                                                           HIGH with an external resistor and it may be wire-OR’d
+VUVLO functions as an input voltage monitor when the       with other similar outputs, sharing a single pull-up
+switch in enabled. The VIN pin is monitored for a drop     resistor. FAULT/ may be tied to a pull-up voltage source
+in voltage, indicating excessive loading of the VIN        which is higher than VIN, but no greater than 5.5V.
+supply. When VIN is less than the VULVO threshold
+voltage (VVUVLO_TH) for 32 ms or more, the MIC20XX         4.8       Soft-Start Control
+disables the switch to protect the supply and allow VIN
+to recover. After 128 ms has elapsed, the MIC20X6          Large capacitive loads can create significant inrush
+enables switch. This disable and enable cycling will       current surges when charged through the switch. For
+continue as long as VIN deceases below the VUVLO           this reason, the MIC20XX family of switches provides a
+threshold voltage (VVUVLO_TH) which has a typical          built-in soft-start control to limit the initial inrush
+value of 250 mV. The VUVLO voltage is commonly             currents.
+established by a voltage divider from VIN-to-GND.          Soft-start is accomplished by controlling the power
+                                                           MOSFET when the ENABLE pin enables the switch.
+4.6       Enable
+                                                           4.9       CSLEW
+TABLE 4-3:         ENABLE
+ 2003     2004   2005X    2006   2007    2008    2009X     TABLE 4-5:         CSLEW
+ 2013     2014     2015   2016   2017    2018    2019X      2003     2004   2005X    2006    2007    2008    2009X
+  Note:     Only parts in bold have ENABLE pin.             2013     2014    2015    2016    2017    2018    2019X
+
+ENABLE pin is a logic compatible input which activates       Note:     Only parts in bold have CSLEW pin. (Not
+the main MOSFET switch thereby providing power to                      available in 5-pin SOT-23 packages).
+the VOUT pin. ENABLE is either an active HIGH or           The CSLEW pin is provided to increase control of the
+active LOW control signal. The MIC20XX can operate         output voltage ramp at turn-on. This input allows
+with logic running from supply voltages as low as 1.5 V.   designers the option of decreasing the output’s slew
+ENABLE may be driven higher than VIN, but no higher        rate (slowing the voltage rise) by adding an external
+than 5.5V and not less than –0.3V.                         capacitance between the CSLEW and VIN pins.
+
+4.7       Fault/
+
+TABLE 4-4:         FAULT/
+ 2003     2004   2005X    2006   2007    2008    2009X
+ 2013     2014     2015   2016   2017    2018    2019X
+  Note:     Only parts in bold have FAULT/ pin.
+FAULT/ is an N-channel open-drain output, which is
+asserted (LOW true) when switch either begins current
+limiting or enters thermal shutdown.
+FAULT/ asserts after a brief delay when events occur
+that may be considered possible faults. This delay
+insures that FAULT/ is asserted only upon valid,
+enduring, over-current conditions and that transitory
+event error reports are filtered out.
+In MIC200X FAULT/ asserts after a brief delay period,
+of 32 ms typical. After a fault clears, FAULT/ remains
+asserted for the delay period of 32 ms.
+
+
+
+
+DS20006486B-page 18                                                                  2021 Microchip Technology Inc.
+                                                            MIC20XX
+4.10     Thermal Shutdown
+Thermal shutdown is employed to protect the MIC20XX
+family of switches from damage should the die
+temperature exceed safe operating levels. Thermal
+shutdown shuts off the output MOSFET and asserts the
+FAULT/ output if the die temperature reaches 145°C.
+The switch will automatically resume operation when
+the die temperature cools down to 135°C. If resumed
+operation results in reheating of the die, another
+shutdown cycle will occur and the switch will continue
+cycling between ON and OFF states until the
+overcurrent condition has been resolved.
+Depending on PCB layout, package type, ambient
+temperature, etc., hundreds of milliseconds may
+elapse from the incidence of a fault to the output
+MOSFET being shut off. This delay is due to thermal
+time constants within the system itself. In no event will
+the device be damaged due to thermal overload
+because die temperature is monitored continuously by
+on-chip circuitry.
+
+
+
+
+ 2021 Microchip Technology Inc.                            DS20006486B-page 19
+MIC20XX
+5.0         APPLICATION INFORMATION                                                                EQUATION 5-4:
+
+5.1         Setting ILIMIT
+                                                                                                                                190V
+                                                                                                              I LIMIT  MIN  = ------------- = 0.97A
+The MIC2009/2019’s current limit is user                                                                                        196
+programmable and controlled by a resistor connected
+between the ILIMIT pin and GND. The value of this
+resistor is determined by Equation 5-1:                                                                                         293V
+                                                                                                              I LIMIT  MAX  = ------------- = 1.5A
+                                                                                                                                196
+EQUATION 5-1:
+
+                                                                                                   Giving us a maximum ILIMIT variation over temperature
+                  CurrentLimitFactor  CLF                                                        of:
+        I LIMIT = ----------------------------------------------------------------------
+                                               R SET
+                                                                                                   • ILIMIT_MIN = 0.97A (−22%)
+                                                                                                   • ILIMIT_TYP =1.25A
+                                                                                                   • ILIMIT_MAX = 1.5A (+20%)
+or
+                                                                                                   TABLE 5-2:          MIC20X9A RSET TABLE
+EQUATION 5-2:
+                                                                                                       IOUT           RSET           ILIMIT_MIN         ILIMIT_MAX
+                                                                                                       0.1A         1928Ω             0.063A             0.136A
+                 CurrentLimitFactor  CLF                                                             0.2A          993Ω             0.137A             0.265A
+         R SET = ----------------------------------------------------------------------
+                                        I LIMIT  A 
+                                                                                                       0.3A          673Ω             0.216A             0.391A
+                                                                                                       0.4A          511Ω             0.296A             0.515A
+                                                                                                       0.5A          413Ω             0.379A             0.637A
+For example: Set ILIMIT = 1.25A
+                                                                                                       0.6A          346Ω             0.463A             0.759A
+Please see Electrical Characteristics to find CLF at                                                   0.7A          299Ω             0.548A             0.880A
+ILIMIT = 1A.
+                                                                                                       0.8A          263Ω             0.634A             1.001A
+                                                                                                       0.9A          235Ω             0.722A             1.121A
+TABLE 5-1:                     CLF AT ILIMIT = 1A
+      Min                       Typ.                            Max                        Units
+                                                                                                   TABLE 5-3:          MIC20X9 RSET TABLE
+      190                        243                             293                        V
+                                                                                                       IOUT           RSET           ILIMIT_MIN         ILIMIT_MAX
+For the sake of this example, we will say the typical
+                                                                                                       0.2A          1125Ω            0.127A             0.267A
+value of CLF at an IOUT of 1A is 243V. Applying
+Equation 5-2:                                                                                          0.3A          765Ω             0.202A             0.390A
+                                                                                                       0.4A          582Ω             0.281A             0.510A
+EQUATION 5-3:                                                                                          0.5A          470Ω             0.361A             0.629A
+                                                                                                       0.6A          395Ω             0.443A             0.746A
+                                243V                                                                   0.7A          341Ω             0.526A             0.861A
+                 R SET    = ------------- = 194.4
+                               1.25A                                                                   0.8A          300Ω             0.610A             0.976A
+                                                                                                       0.9A          268Ω             0.695A             1.089A
+Where:
+                                                                                                        1A           243Ω             0.781A             1.202A
+RSET = 196Ω (the closest standard 1% value)
+                                                                                                       1.1A          222Ω             0.868A             1.314A
+                                                                                                       1.2A          204Ω             0.956A             1.426A
+Designers should be aware that variations in the
+measured ILIMIT for a given RSET resistor, will occur                                                  1.3A          189Ω             1.044A             1.537A
+because of small differences between individual ICs                                                    1.4A          176Ω             1.133A             1.647A
+(inherent in silicon processing) resulting in a spread of                                              1.5A          165Ω             1.222A             1.757A
+ILIMIT values. In the example above we used the typical
+value of CLF to calculate RSET. We can determine
+ILIMIT’s spread by using the minimum and maximum
+values of CLF and the calculated value of RSET.
+
+
+
+
+DS20006486B-page 20                                                                                                             2021 Microchip Technology Inc.
+                                                                                                                             MIC20XX
+5.2      ILIMIT vs. IOUT Measured
+The MIC20XX’s current-limiting circuitry, during current
+limiting, is designed to act as a constant current source
+to the load. As the load tries to pull more than the
+allotted current, VOUT drops and the input to output
+voltage differential increases. When VIN - VOUT
+exceeds 1V, IOUT drops below ILIMIT to reduce the drain
+of fault current on the system’s power supply and to
+limit internal heating of the switch.
+When measuring IOUT it is important to bear this
+voltage dependence in mind, otherwise the
+measurement data may appear to indicate a problem
+when none really exists. This voltage dependence is
+illustrated in Figure 5-1 and Figure 5-2.                    FIGURE 5-2:                                              IOUT in Current Limiting for
+                                                             VIN - VOUT > 1V.
+In Figure 5-1, output current is measured as VOUT is
+pulled below VIN, with the test terminating when VOUT        This folding back of ILIMIT can be generalized by
+is 1V below VIN. Observe that once ILIMIT is reached         plotting ILIMIT as a function of VOUT, as shown below in
+IOUT remains constant throughout the remainder of the        Figure 5-3 and Figure 5-4. The slope of VOUT between
+test. In Figure 5-2 this test is repeated but with VIN -     IOUT = 0V and IOUT = ILIMIT (where ILIMIT = 1A) is
+VOUT exceeding 1V.                                           determined by RON of the switch and ILIMIT.
+When VIN - VOUT > 1V, switch’s current limiting circuitry
+
+
+
+
+                                                                         NORMALIZED OUTPUT CURRENT (A)
+responds by decreasing IOUT, as can be seen in                                                           1.2
+Figure 5-2. In this demonstration, VOUT is being
+controlled and IOUT is the measured quantity. In real life                                               1.0
+
+applications VOUT is determined in accordance with                                                       0.8
+ohm’s law by the load and the limiting current.
+                                                                                                         0.6
+
+                                                                                                         0.4
+
+                                                                                                         0.2
+
+                                                                                                          0
+                                                                                                               0    1   2   3   4    5    6
+                                                                                                                    OUTPUT VOLTAGE (V)
+                                                             FIGURE 5-3:         Normalized Output Current
+                                                             vs. Output Voltage (5V).
+
+
+
+
+                                                                       NORMALIZED OUTPUT CURRENT (A)
+                                                                                                       1.2
+
+                                                                                                       1.0
+FIGURE 5-1:             IOUT in Current Limiting for
+                                                                                                       0.8
+VIN - VOUT < 1V.
+                                                                                                       0.6
+
+                                                                                                       0.4
+
+                                                                                                       0.2
+
+                                                                                                         0
+                                                                                                             0     0.5 1.0 1.5 2.0 2.5   3.0
+                                                                                                                    OUTPUT VOLTAGE (V)
+                                                             FIGURE 5-4:         Normalized Output Current
+                                                             vs. Output Voltage (2.5V).
+
+
+
+
+ 2021 Microchip Technology Inc.                                                                                                DS20006486B-page 21
+MIC20XX
+ 5.3       CSLEW                                                        Power-conscious       systems,      such      as     those
+                                                                        implementing ACPI, will remain active even in their
+                                                                        low-power states and may require the support of
+ TABLE 5-4:                    CSLEW                                    external devices through both phases of operation.
+  2003     2004               2005X    2006   2007       2008   2009X   Under these conditions, the current allowed these
+  2013     2014               2015     2016   2017       2018   2019X
+                                                                        external devices may vary according to the system’s
+                                                                        operating state and as such require dual current limits
+   Note:        Only parts in bold have CSLEW pin. (Not                 on their peripheral ports. The MIC20X6 is designed for
+                available in 5-pin SOT-23 packages).                    systems demanding two primary current limiting levels
+ The CSLEW pin is provided to increase control of the                   but without the use of a control signal to select between
+ output voltage ramp at turn-on. This input allows                      current limits.
+ designers the option of decreasing the output’s slew                   To better understand how the MIC20X6 provides this,
+ rate (slowing the voltage rise) by adding an external                  imagine a system whose main power supply supports
+ capacitance between the CSLEW and VIN pins. This                       heavy loads during normal operation, but in sleep
+ capacitance slows the rate at which the pass FET gate                  mode is reduced to only few hundred milliamps of
+ voltage increases and thus, slows both the response to                 output current. In addition, this system has several
+ an enable command as well as VOUT’s ascent to its                      USB ports which must remain active during sleep.
+ final value.                                                           During normal operation, each port can support a
+ Figure 5-5 illustrates effect of CSLEW on turn-on delay                500 mA peripheral, but in sleep mode their combined
+ and output rise time.                                                  output current is limited to what the power supply can
+                                                                        deliver minus whatever the system itself is drawing.
+            0.014                                                       If a peripheral device is plugged in which demands
+                                                   TON
+                                                                        more current than is available, the system power
+            0.012
+                                                     TDELAY             supply will sag, or crash. The MIC20X6 prevents this by
+                10
+              0.01                                                      monitoring both the load current and VIN. During
+
+            TIME (mS)
+            0.0088                                                      normal operation, when the power supply can source
+                6
+                                                                        plenty of current, the MIC20X6 will support any load up
+            0.006
+                                                                        to its factory programmed current limit. When the
+                4
+            0.004                                    TRISE              weaker, standby supply is in operation, the MIC20X6
+            0.002
+                                                                        monitors VIN and will shut off its output should VIN dip
+                                                                        below a predetermined value. This predetermined
+                        0
+                          0   0.5 1 1.5 2 2.5 3 3.5 4 4.5               voltage is user programmable and set by the selection
+                                      CSLEW (nF)                        of the resistor divider driving the VUVLO pin.
+                                                                        To prevent false triggering of the VUVLO feature, the
+ FIGURE 5-5:                          CSLEW vs. Turn-On, Delay
+                                                                        MIC20X6 includes a delay timer to blank out
+ and Rise Times.                                                        momentary excursions below the VUVLO trip point. If
+                                                                        VIN stays below the VUVLO trip point for longer than
+ 5.3.1          CSLEW’S EFFECT ON ILIMIT
+                                                                        32 ms (typical), then the load is disengaged and the
+ An unavoidable consequence of adding CSLEW                             MIC20X6 will wait 128 ms before reapplying power to
+ capacitance is a reduction in the MIC20X5 - 20X8’s                     the load. If VIN remains below the VUVLO trip point,
+ ability to quickly limit current transients or surges. A               then the load will be powered for the 32 ms blanking
+ sufficiently large capacitance can prevent both the                    period and then again disengaged. This is illustrated in
+ primary and secondary current limits from acting in time               the scope plot below. If VIN remains above the VUVLO
+ to prevent damage to the MIC20X5 - 20X8 or the                         trip point MIC20X6 resumes normal operation.
+ system from a short circuit fault. For this reason, the
+ upper limit on the value of CSLEW is 4 nF.
+
+ 5.4       Variable Undervoltage Lockout
+           (VUVLO)
+
+ TABLE 5-5:                    VARIABLE UNDERVOLTAGE
+                               LOCKOUT (VUVLO)
+  2003     2004               2005X    2006   2007       2008   2009X
+  2013     2014               2015     2016   2017       2018   2019X
+   Note:        Only parts in bold have VUVLO pin and
+                functionility.                                          FIGURE 5-6:             VUVLO Operation.
+
+
+
+DS20006486B-page 22                                                                             2021 Microchip Technology Inc.
+                                                                                                           MIC20XX
+VUVLO and Kickstart operate independently in the                     EQUATION 5-7:
+MIC2016. If the high current surge allowed by Kickstart
+causes VIN to dip below the VUVLO trip point for more
+than 32 ms, VUVLO will disengage the load, even                                             0.25V
+though the Kickstart timer has not timed out.                                         R2 = ---------------- = 2.5k
+                                                                                           100A
+
+
+        IIN_LOAD
+
+                                                                     Now the value of R1 can be calculated by:
+  Input
+                                            VIN           VOUT
+ Supply
+               +                R1                MIC20X6        +   EQUATION 5-8:
+                                            VUVLO
+                                R2
+                                                                                              4.75V
+                                                                               R1 = 2.5k   ------------- – 1 = 45k
+                                                                                             0.25V 
+FIGURE 5-7:                      VUVLO Application Circuit.          Where:
+
+5.4.1          CALCULATING VUVLO RESISTOR                            VTRIP =             4.75V (for a 5V supply)
+               DIVIDER VALUES                                        VVUVLO =            0.25V
+The VUVLO feature is designed to keep the internal
+switch off until the voltage on the VUVLO pin is greater             The VUVLO comparator uses no hysteresis. This is
+than 0.25V. A resistor divider network connected to the              because the VUVLO blanking timer prevents any
+VUVLO and VIN pins is used to set the input trip                     chattering that might otherwise occur if VIN varies about
+voltage VTRIP (see Figure 5-7). The value of R2 is                   the trigger point. The timer is reset by upward crossings
+chosen to minimize the load on the input supply IDIV                 of the trip point such that VIN must remain below the trip
+and the value of R1 sets the trip voltage VTRIP.                     point for the full 32 ms period for load disengagement
+The value of R2 is calculated using:                                 to occur.
+                                                                     In selecting a VTRIP voltage, the designer is cautioned
+EQUATION 5-5:                                                        to not make this value less than 2.5V. A minimum of
+                                                                     2.5V is required for the MIC20X6’s internal circuitry to
+                                                                     operate properly. VUVLO trip points below 2.5V will
+                               V VUVLO                               result in erratic or unpredictable operation.
+                          R2 = -------------------
+                                    I DIV
+                                                                     5.5       Kickstart
+
+The value of R1 is calculated using:                                 TABLE 5-6:           KICKSTART
+                                                                      2003     2004     2005X      2006      2007     2008   2009X
+EQUATION 5-6:                                                         2013     2014      2015      2016      2017     2018   2019X
+                                                                     Only parts in bold have Kickstart
+                                  V TRIP                             (Not available in 5-pin SOT-23 packages).
+                   R1 = R2   ------------------- – 1
+                              V VUVLO                              Kickstart allows brief current surges to pass to the load
+                                                                     before the onset of normal current limiting, which
+                                                                     permits dynamic loads to draw bursts of energy without
+                                                                     sacrificing system safety.
+Where for Equation 5-5 and Equation 5-6: VVUVLO =
+                                                                     Functionally, Kickstart is a forced override of the normal
+0.25V
+                                                                     current limiting function provided by the switch. The
+When working with large value resistors, a small                     Kickstart period is governed by an internal timer which
+amount of leakage current from the VUVLO terminal                    allows current to pass up to the secondary current limit
+can cause voltage offsets that degrade system                        (ILIMIT_2nd) to the load for 128 ms and then normal
+accuracy. Therefore, the maximum recommended                         (primary) current limiting goes into action.
+resistor value for R2 is 100 kΩ.
+                                                                     During Kickstart, a secondary current-limiting circuit is
+Using the divider loading current IDIV of 100 µA, the                monitoring output current to prevent damage to the
+value of R2 can be estimated by:                                     switch, as a hard short combined with a robust power
+                                                                     supply can result in currents of many tens of amperes.
+
+
+
+ 2021 Microchip Technology Inc.                                                                              DS20006486B-page 23
+MIC20XX
+This secondary current limit is nominally set at 4A and        5.7      Supply Filtering
+reacts immediately and independently of the Kickstart
+period. Once the Kickstart timer has finished its count        A minimum 1 μF bypass capacitor positioned close to
+the primary current limiting circuit takes over and holds      the VIN and GND pins of the switch is both good design
+IOUT to its programmed limit for as long as the                practice and required for proper operation of the switch.
+excessive load persists.                                       This will control supply transients and ringing. Without
+                                                               a bypass capacitor, large current surges or a short may
+Once the switch drops out of current limiting the              cause sufficient ringing on VIN (from supply lead
+Kickstart timer initiates a lock-out period of 128 ms          inductance) to cause erratic operation of the switch’s
+such that no further bursts of current above the primary       control circuitry. For best-performance good quality,
+current limit, will be allowed until the lock-out period       low-ESR capacitors are recommended, preferably
+has expired.                                                   ceramic.
+Kickstart may be over-ridden by the thermal protection         When bypassing with capacitors of 10 μF and up, it is
+circuit and if sufficient internal heating occurs, Kickstart   good practice to place a smaller value capacitor in
+will be terminated and IOUT → 0A. Upon cooling, if the         parallel with the larger to handle the high frequency
+load is still present IOUT → ILIMIT, not ILIMIT_2nd.           components of any line transients. Values in the range
+                                                               of 0.01 μF to 0.1 μF are recommended. Again, good
+                                                               quality, low-ESR capacitors should be chosen.
+
+                                                               5.8      Power Dissipation
+                                                               Power dissipation depends on several factors such as
+                                                               the load, PCB layout, ambient temperature, and supply
+                                                               voltage. Calculation of power dissipation can be
+                                                               accomplished by the following equation:
+
+                                                               EQUATION 5-9:
+
+
+                                                                                                             2
+FIGURE 5-8:               Kickstart.                                         P D = R DS  ON    I OUT 
+
+5.6      Automatic Load Discharge
+
+                                                               To relate this to junction temperature, the following
+TABLE 5-7:         AUTOMATIC LOAD                              equation can be used:
+                   DISCHARGE
+ 2003    2004     2005X     2006   2007     2008    2009X      EQUATION 5-10:
+ 2013    2014     2015      2016   2017     2018    2019X
+Only parts in bold have automatic load discharge.
+Automatic discharge is a valuable feature when it is                          T J = P D  R   J-A  + T A
+desirable to quickly remove charge from the VOUT pin.
+                                                               Where:
+This allows for a quicker power-down of the load. This
+also prevents any charge from being presented to a             TJ =          Junction temperature
+device being connected to the VOUT pin, for example,           TA =          Ambient temperature
+USB, 1394, PCMCIA, and CableCARD.
+                                                               Rθ(J-A) =     The thermal resistance of the package
+Automatic discharge is performed by a shunt MOSFET
+from VOUT pin to GND. When the switch is disabled, a
+break before make action is performed turning off the          In normal operation the switch’s RON is low enough that
+main power MOSFET and then enabling the shunt                  no significant I2R heating occurs. Device heating is
+MOSFET. The total resistance of the MOSFET and                 most often caused by a short circuit, or very heavy load,
+internal resistances is typically 126Ω.                        when a significant portion of the input supply voltage
+                                                               appears across the switch’s power MOSFET. Under
+                                                               these conditions the heat generated will exceed the
+                                                               package and PCB’s ability to cool the device and
+                                                               thermal limiting will be invoked.
+
+
+
+
+DS20006486B-page 24                                                                        2021 Microchip Technology Inc.
+                                                           MIC20XX
+In Figure 5-9, die temperature is plotted against IOUT
+assuming a constant case temperature of 85°C. The
+plots also assume a worst case RON of 140 mΩ at a die
+temperature of 135°C. Under these conditions it is clear
+that an SOT-23 packaged device will be on the verge of
+thermal shutdown, typically 140°C die temperature,
+when operating at a load current of 1.25A. For this
+reason we recommend using DFN packaged switches
+for any design intending to supply continuous currents
+of 1A or more.
+
+
+             160
+             140
+             120      SOT-23
+
+             100                         DFN
+              80
+              60
+              40
+              20
+               0
+               0.2 0.4 0.6 0.8 1.0 1.2 1.4 1.6 1.8 2.0
+                     OUTPUT CURRENT (A)
+
+FIGURE 5-9:              Die Temperature vs. IOUT
+(TCASE = 85°C).
+
+
+
+
+ 2021 Microchip Technology Inc.                           DS20006486B-page 25
+MIC20XX
+6.0     PACKAGING INFORMATION
+6.1     Package Marking Information
+
+                                     5-Lead SOT-23*                Example
+
+
+                                         XXXX                        FD08
+
+
+
+
+                                     6-Lead SOT-23*                Example
+
+
+                                         XXXX                       FD08
+
+
+
+
+                                   6-Lead DFN*                      Example
+
+                                      XX                            __
+                                      XXX                           QAA
+                                      NNN                           608
+
+
+
+
+             Legend: XX...X      Product code or customer-specific information
+                     Y           Year code (last digit of calendar year)
+                     YY          Year code (last 2 digits of calendar year)
+                     WW          Week code (week of January 1 is week ‘01’)
+                     NNN         Alphanumeric traceability code
+                         e3      Pb-free JEDEC® designator for Matte Tin (Sn)
+                        *        This package is Pb-free. The Pb-free JEDEC designator ( e3 )
+                                 can be found on the outer packaging for this package.
+                        ●, ▲, ▼ Pin one index is identified by a dot, delta up, or delta down (triangle
+                        mark).
+
+             Note:    In the event the full Microchip part number cannot be marked on one line, it will
+                      be carried over to the next line, thus limiting the number of available
+                      characters for customer-specific information. Package may or may not include
+                      the corporate logo.
+                      Underbar (_) and/or Overbar (‾) symbol may not be to scale.
+
+
+
+
+DS20006486B-page 26                                                                     2021 Microchip Technology Inc.
+                                                                                                  MIC20XX
+5-Lead SOT-23 (M5) Package Outline & Recommended Land Pattern
+
+
+
+
+         Note:   For the most current package drawings, please see the Microchip Packaging Specification located at
+                 http://www.microchip.com/packaging.
+
+
+
+
+ 2021 Microchip Technology Inc.                                                                     DS20006486B-page 27
+MIC20XX
+6-Lead SOT-23 (M6) Package Outline & Recommended Land Pattern
+
+
+
+
+       Note:   For the most current package drawings, please see the Microchip Packaging Specification located at
+               http://www.microchip.com/packaging.
+
+
+
+
+DS20006486B-page 28                                                                       2021 Microchip Technology Inc.
+                                                                                                  MIC20XX
+6-Lead DFN 2 MM x 2 MM (ML) Package Outline & Recommended Land Pattern
+
+
+
+
+        Note:   For the most current package drawings, please see the Microchip Packaging Specification located at
+                http://www.microchip.com/packaging.
+
+
+
+
+ 2021 Microchip Technology Inc.                                                                    DS20006486B-page 29
+MIC20XX
+6-Lead SOT-23 (M6) Recommended Land Pattern
+
+
+
+
+       Note:   For the most current package drawings, please see the Microchip Packaging Specification located at
+               http://www.microchip.com/packaging.
+
+
+
+
+DS20006486B-page 30                                                                        2021 Microchip Technology Inc.
+                                                       MIC20XX
+APPENDIX A:            REVISION HISTORY
+
+Revision A (January 2021)
+• Converted Micrel document MIC20XX to Micro-
+  chip data sheet template DS20006486A.
+• Minor grammatical text changes throughout.
+
+Revision B (February 2021)
+• Figure 2-23 (VIN = 3.3V) was a repeat of Figure 2-
+  22 (VIN = 5.0) by mistake and is the corrected
+  graph now.
+
+
+
+
+ 2021 Microchip Technology Inc.                       DS20006486B-page 31
+                                                                                                               MIC20XX
+PRODUCT IDENTIFICATION SYSTEM
+To order or obtain information, e.g., on pricing or delivery, contact your local Microchip representative or sales office.
+
+ MIC2003/MIC2013
+                                  Marking          Current
+     Full Part No. (Note 1)                                          Kickstart                   Package                     Media Type
+                                  (Note 2)          Limit
+     MIC2003-0.5YM5-TR              FD05             0.5A
+     MIC2003-0.8YM5-TR              FD08             0.8A                                    5-Lead SOT-23                   3,000/Reel
+     MIC2003-1.2YM5-TR              FD12             1.2A
+                                                                         No
+     MIC2003-0.5YML-TR               D05             0.5A
+     MIC2003-0.8YML-TR               D08             0.8A                                6-Pin 2 mm x 2 mm DFN               5,000/Reel
+     MIC2003-1.2YML-TR               D12             1.2A
+     MIC2013-0.5YM5-TR              FL05             0.5A
+     MIC2013-0.8YM5-TR              FL08             0.8A                                    5-Lead SOT-23                   3,000/Reel
+     MIC2013-1.2YM5-TR              FL12             1.2A
+                                                                        Yes
+     MIC2013-0.5YML-TR               L05             0.5A
+     MIC2013-0.8YML-TR               L08             0.8A                                6-Pin 2 mm x 2 mm DFN               5,000/Reel
+     MIC2013-1.2YML-TR               L12             1.2A
+  MIC2004/MIC2014
+     MIC2004-0.5YM5-TR              FE05             0.5A
+     MIC2004-0.8YM5-TR              FE08             0.8A                                    5-Lead SOT-23                   3,000/Reel
+     MIC2004-1.2YM5-TR              FE12             1.2A
+                                                                         No
+     MIC2004-0.5YML-TR               E05             0.5A
+     MIC2004-0.8YML-TR               E08             0.8A                                6-Pin 2 mm x 2 mm DFN               5,000/Reel
+     MIC2004-1.2YML-TR               E12             1.2A
+     MIC2014-0.5YM5-TR              FM05             0.5A
+     MIC2014-0.8YM5-TR              FM08             0.8A                                    5-Lead SOT-23                   3,000/Reel
+     MIC2014-1.2YM5-TR              FM12             1.2A
+                                                                        Yes
+     MIC2014-0.5YML-TR               M05             0.5A
+     MIC2014-0.8YML-TR               M08             0.8A                                6-Pin 2 mm x 2 mm DFN               5,000/Reel
+     MIC2014-1.2YML-TR               M12             1.2A
+  MIC2005/MIC2015
+     MIC2005-0.5YM6-TR              FF05             0.5A
+     MIC2005-0.8YM6-TR              FF08             0.8A                                    6-Lead SOT-23                   3,000/Reel
+     MIC2005-1.2YM6-TR              FF12             1.2A
+                                                                         No
+     MIC2005-0.5YML-TR               F05             0.5A
+     MIC2005-0.8YML-TR               F08             0.8A                                6-Pin 2 mm x 2 mm DFN               5,000/Reel
+     MIC2005-1.2YML-TR               F12             1.2A
+     MIC2015-0.5YM6-TR              FN05             0.5A
+     MIC2015-0.8YM6-TR              FN08             0.8A                                    6-Lead SOT-23                   3,000/Reel
+     MIC2015-1.2YM6-TR              FN12             1.2A
+                                                                        Yes
+     MIC2015-0.5YML-TR               N05             0.5A
+     MIC2015-0.8YML-TR               N08             0.8A                                6-Pin 2 mm x 2 mm DFN               5,000/Reel
+     MIC2015-1.2YML-TR               N12             1.2A
+
+
+
+
+ 2021 Microchip Technology Inc.                                                                                  DS20006486B-page 33
+MIC20XX
+PRODUCT IDENTIFICATION SYSTEM (CONTINUED)
+To order or obtain information, e.g., on pricing or delivery, contact your local Microchip representative or sales office.
+
+
+
+                                                   Current
+         Full Part No.            Marking                            Kickstart                   Package                     Media Type
+                                                    Limit
+
+  MIC2005A
+     MIC2005A-1YM5-TR               FA51             0.5A
+                                                                                              5-Lead SOT-23
+     MIC2005A-2YM5-TR               FA52             0.5A
+                                                                         No                                                  3,000/Reel
+     MIC2005A-1YM6-TR               FA53             0.5A
+                                                                                              6-Lead SOT-23
+     MIC2005A-2YM6-TR               FA54             0.5A
+  MIC2005L
+      MIC2005-0.5LYM5               5LFF             0.5A
+      MIC2005-0.8LYM5               8LFF             0.8A                No                   5-Lead SOT-23                  3,000/Reel
+      MIC2005-1.2LYM5               4LFF             1.2A
+  MIC2006/MIC2016
+     MIC2006-0.5YM6-TR              FG05             0.5A
+     MIC2006-0.8YM6-TR              FG08             0.8A                                     6-Lead SOT-23                  3,000/Reel
+     MIC2006-1.2YM6-TR              FG12             1.2A
+                                                                         No
+     MIC2006-0.5YML-TR               G05             0.5A
+     MIC2006-0.8YML-TR               G08             0.8A                                6-Pin 2 mm x 2 mm DFN               5,000/Reel
+     MIC2006-1.2YML-TR               G12             1.2A
+     MIC2016-0.5YM6-TR              FP05             0.5A
+     MIC2016-0.8YM6-TR              FP08             0.8A                                     6-Lead SOT-23                  3,000/Reel
+     MIC2016-1.2YM6-TR              FP12             1.2A
+                                                                        Yes
+     MIC2016-0.5YML-TR               P05             0.5A
+     MIC2016-0.8YML-TR               P08             0.8A                                6-Pin 2 mm x 2 mm DFN               5,000/Reel
+     MIC2016-1.2YML-TR               P12             1.2A
+  MIC2007/MIC2017
+       MIC2007YM6-TR                FHAA                                                      6-Lead SOT-23                  3,000/Reel
+                                                                         No
+       MIC2007YML-TR                HAA                                                  6-Pin 2 mm x 2 mm DFN               5,000/Reel
+                                                  0.2A - 2.0A
+       MIC2017YM6-TR                FQAA                                                      6-Lead SOT-23                  3,000/Reel
+                                                                        Yes
+       MIC2017YML-TR                QAA                                                  6-Pin 2 mm x 2 mm DFN               5,000/Reel
+  MIC2008/MIC2018
+       MIC2008YM6-TR                FJAA                                                      6-Lead SOT-23                  3,000/Reel
+                                                                         No
+       MIC2008YML-TR                 JAA                                                 6-Pin 2 mm x 2 mm DFN               5,000/Reel
+                                                  0.2A - 2.0A
+       MIC2018YM6-TR                FRAA                                                      6-Lead SOT-23                  3,000/Reel
+                                                                        Yes
+       MIC2018YML-TR                RAA                                                  6-Pin 2 mm x 2 mm DFN               5,000/Reel
+  MIC2009/MIC2019
+       MIC2009YM6-TR                FKAA                                                      6-Lead SOT-23                  3,000/Reel
+                                                                         No
+       MIC2009YML-TR                 KAA                                                 6-Pin 2 mm x 2 mm DFN               5,000/Reel
+                                                  0.2A - 2.0A
+       MIC2019YM6-TR                FSAA                                                      6-Lead SOT-23                  3,000/Reel
+                                                                        Yes
+       MIC2019YML-TR                 SAA                                                 6-Pin 2 mm x 2 mm DFN               5,000/Reel
+
+
+
+
+DS20006486B-page 34                                                                                     2021 Microchip Technology Inc.
+                                                                                                               MIC20XX
+PRODUCT IDENTIFICATION SYSTEM (CONTINUED)
+To order or obtain information, e.g., on pricing or delivery, contact your local Microchip representative or sales office.
+
+
+
+                                                      Current
+         Full Part No.            Marking                            Kickstart                   Package                     Media Type
+                                                       Limit
+
+  MIC2009A/MIC2019A
+     MIC2009A-1YM6-TR                FK1                                                                                     3,000/Reel
+                                                                         No
+     MIC2009A-2YM6-TR                FK2                                                                                     3,000/Reel
+                                                   0.1A - 0.9A                                6-Lead SOT-23
+     MIC2019A-1YM6-TR                FS1                                                                                     3,000/Reel
+                                                                        Yes
+     MIC2019A-2YM6-TR                FS2                                                                                     3,000/Reel
+  Note 1:     All MIC20XX Family parts are RoHS-compliant lead .
+       2:     Over/Under-bar symbol ( ¯ / _ ) may not be to scale. On the package the over/under symbol begins
+              above/below the first character of the marking.
+
+
+
+ TABLE 0-1:           MIC20XX FAMILY MEMBER FUNCTIONALITY
+      Part Number                                                                Pin Function
+
+  Normal Kickstart                                        ENABLE ENABLE                                        VUVLO            Load
+                               ILIMIT        ILIMIT                                CSLEW         FAULT/
+  Limiting Note 1                                          High    Low                                         Note 4         Discharge
+    2003          2013                         —                —        —             —            —             —               —
+    2004         20014                         —                ▲        —             —            —             —               ▲
+    2005          2015                         —                ▲         —            ▲             ▲            —               —
+                              Fixed
+    2005L           —                          —                —         ▲            —             ▲            —               —
+                              Note 2
+  2005A-1           —                          —                ▲         —         Note 5           ▲            —               —
+  2005A-2           —                          —                —         ▲         Note 5           ▲            —               —
+    2006          2016                         —                ▲         —            ▲            —             ▲               —
+    2007          2017                         ▲                ▲         —            ▲             —            —               ▲
+    2008          2018                         ▲                ▲         —            ▲             —            —               —
+                               Adj.
+    2009          2019                         ▲                ▲         —            —             ▲            —               —
+                              Note 3
+  2009A-1       2019A-1                        ▲                ▲         —            —             ▲            —               —
+  2009A-2       2019A-2                        ▲                —         ▲            —             ▲            —               —
+  Note 1:     Kickstart provides an alternate start-up behavior; however, pin-outs are identical.
+       2:     Fixed = Factory programmed current limit.
+       3:     Adjustable = User adjustable current limit.
+       4:     VUVLO = Variable UVLO (previously called DML).
+       5:     CSLEW, while available in 6-pin package, not available in 5-pin package.
+
+
+
+
+ 2021 Microchip Technology Inc.                                                                                  DS20006486B-page 35
+MIC20XX
+NOTES:
+
+
+
+
+DS20006486B-page 36    2021 Microchip Technology Inc.
+Note the following details of the code protection feature on Microchip devices:
+•    Microchip products meet the specifications contained in their particular Microchip Data Sheet.
+
+•    Microchip believes that its family of products is secure when used in the intended manner and under normal conditions.
+
+•    There are dishonest and possibly illegal methods being used in attempts to breach the code protection features of the Microchip
+     devices. We believe that these methods require using the Microchip products in a manner outside the operating specifications
+     contained in Microchip's Data Sheets. Attempts to breach these code protection features, most likely, cannot be accomplished
+     without violating Microchip's intellectual property rights.
+
+•    Microchip is willing to work with any customer who is concerned about the integrity of its code.
+
+•    Neither Microchip nor any other semiconductor manufacturer can guarantee the security of its code. Code protection does not
+     mean that we are guaranteeing the product is "unbreakable." Code protection is constantly evolving. We at Microchip are
+     committed to continuously improving the code protection features of our products. Attempts to break Microchip's code protection
+     feature may be a violation of the Digital Millennium Copyright Act. If such acts allow unauthorized access to your software or
+     other copyrighted work, you may have a right to sue for relief under that Act.
+
+
+
+Information contained in this publication is provided for the sole      Trademarks
+purpose of designing with and using Microchip products. Infor-          The Microchip name and logo, the Microchip logo, Adaptec,
+mation regarding device applications and the like is provided           AnyRate, AVR, AVR logo, AVR Freaks, BesTime, BitCloud, chipKIT,
+only for your convenience and may be superseded by updates.             chipKIT logo, CryptoMemory, CryptoRF, dsPIC, FlashFlex,
+                                                                        flexPWR, HELDO, IGLOO, JukeBlox, KeeLoq, Kleer, LANCheck,
+It is your responsibility to ensure that your application meets         LinkMD, maXStylus, maXTouch, MediaLB, megaAVR, Microsemi,
+with your specifications.                                               Microsemi logo, MOST, MOST logo, MPLAB, OptoLyzer,
+                                                                        PackeTime, PIC, picoPower, PICSTART, PIC32 logo, PolarFire,
+THIS INFORMATION IS PROVIDED BY MICROCHIP "AS IS".                      Prochip Designer, QTouch, SAM-BA, SenGenuity, SpyNIC, SST,
+MICROCHIP MAKES NO REPRESENTATIONS OR WAR-                              SST Logo, SuperFlash, Symmetricom, SyncServer, Tachyon,
+RANTIES OF ANY KIND WHETHER EXPRESS OR IMPLIED,                         TimeSource, tinyAVR, UNI/O, Vectron, and XMEGA are registered
+                                                                        trademarks of Microchip Technology Incorporated in the U.S.A. and
+WRITTEN OR ORAL, STATUTORY OR OTHERWISE,                                other countries.
+RELATED TO THE INFORMATION INCLUDING BUT NOT
+LIMITED TO ANY IMPLIED WARRANTIES OF NON-                               AgileSwitch, APT, ClockWorks, The Embedded Control Solutions
+INFRINGEMENT, MERCHANTABILITY, AND FITNESS FOR A                        Company, EtherSynch, FlashTec, Hyper Speed Control, HyperLight
+PARTICULAR PURPOSE OR WARRANTIES RELATED TO                             Load, IntelliMOS, Libero, motorBench, mTouch, Powermite 3,
+                                                                        Precision Edge, ProASIC, ProASIC Plus, ProASIC Plus logo, Quiet-
+ITS CONDITION, QUALITY, OR PERFORMANCE.                                 Wire, SmartFusion, SyncWorld, Temux, TimeCesium, TimeHub,
+                                                                        TimePictra, TimeProvider, WinPath, and ZL are registered
+IN NO EVENT WILL MICROCHIP BE LIABLE FOR ANY INDI-                      trademarks of Microchip Technology Incorporated in the U.S.A.
+RECT, SPECIAL, PUNITIVE, INCIDENTAL OR CONSEQUEN-
+TIAL LOSS, DAMAGE, COST OR EXPENSE OF ANY KIND                          Adjacent Key Suppression, AKS, Analog-for-the-Digital Age, Any
+WHATSOEVER RELATED TO THE INFORMATION OR ITS                            Capacitor, AnyIn, AnyOut, Augmented Switching, BlueSky,
+                                                                        BodyCom, CodeGuard, CryptoAuthentication, CryptoAutomotive,
+USE, HOWEVER CAUSED, EVEN IF MICROCHIP HAS
+                                                                        CryptoCompanion, CryptoController, dsPICDEM, dsPICDEM.net,
+BEEN ADVISED OF THE POSSIBILITY OR THE DAMAGES                          Dynamic Average Matching, DAM, ECAN, Espresso T1S,
+ARE FORESEEABLE. TO THE FULLEST EXTENT                                  EtherGREEN, IdealBridge, In-Circuit Serial Programming, ICSP,
+ALLOWED BY LAW, MICROCHIP'S TOTAL LIABILITY ON                          INICnet, Intelligent Paralleling, Inter-Chip Connectivity,
+ALL CLAIMS IN ANY WAY RELATED TO THE INFORMATION                        JitterBlocker, maxCrypto, maxView, memBrain, Mindi, MiWi,
+                                                                        MPASM, MPF, MPLAB Certified logo, MPLIB, MPLINK, MultiTRAK,
+OR ITS USE WILL NOT EXCEED THE AMOUNT OF FEES, IF                       NetDetach, Omniscient Code Generation, PICDEM, PICDEM.net,
+ANY, THAT YOU HAVE PAID DIRECTLY TO MICROCHIP                           PICkit, PICtail, PowerSmart, PureSilicon, QMatrix, REAL ICE,
+FOR THE INFORMATION. Use of Microchip devices in life sup-              Ripple Blocker, RTAX, RTG4, SAM-ICE, Serial Quad I/O,
+port and/or safety applications is entirely at the buyer's risk, and    simpleMAP, SimpliPHY, SmartBuffer, SMART-I.S., storClad, SQI,
+the buyer agrees to defend, indemnify and hold harmless                 SuperSwitcher, SuperSwitcher II, Switchtec, SynchroPHY, Total
+                                                                        Endurance, TSHARC, USBCheck, VariSense, VectorBlox, VeriPHY,
+Microchip from any and all damages, claims, suits, or expenses          ViewSpan, WiperLock, XpressConnect, and ZENA are trademarks
+resulting from such use. No licenses are conveyed, implicitly or        of Microchip Technology Incorporated in the U.S.A. and other
+otherwise, under any Microchip intellectual property rights             countries.
+unless otherwise stated.
+                                                                        SQTP is a service mark of Microchip Technology Incorporated in
+                                                                        the U.S.A.
+                                                                        The Adaptec logo, Frequency on Demand, Silicon Storage
+                                                                        Technology, and Symmcom are registered trademarks of Microchip
+                                                                        Technology Inc. in other countries.
+                                                                        GestIC is a registered trademark of Microchip Technology Germany
+                                                                        II GmbH & Co. KG, a subsidiary of Microchip Technology Inc., in
+                                                                        other countries.
+                                                                        All other trademarks mentioned herein are property of their
+                                                                        respective companies.
+
+                                                                        © 2021, Microchip Technology Incorporated, All Rights Reserved.
+
+For information regarding Microchip’s Quality Management Systems,       ISBN: 978-1-5224-7721-1
+please visit www.microchip.com/quality.
+
+
+
+
+ 2021 Microchip Technology Inc.                                                                               DS20006486B-page 37
+                            Worldwide Sales and Service
+AMERICAS                    ASIA/PACIFIC            ASIA/PACIFIC                  EUROPE
+Corporate Office            Australia - Sydney      India - Bangalore             Austria - Wels
+2355 West Chandler Blvd.    Tel: 61-2-9868-6733     Tel: 91-80-3090-4444          Tel: 43-7242-2244-39
+Chandler, AZ 85224-6199     China - Beijing         India - New Delhi             Fax: 43-7242-2244-393
+Tel: 480-792-7200           Tel: 86-10-8569-7000    Tel: 91-11-4160-8631          Denmark - Copenhagen
+Fax: 480-792-7277                                                                 Tel: 45-4485-5910
+                            China - Chengdu         India - Pune
+Technical Support:                                                                Fax: 45-4485-2829
+                            Tel: 86-28-8665-5511    Tel: 91-20-4121-0141
+http://www.microchip.com/
+                            China - Chongqing       Japan - Osaka                 Finland - Espoo
+support
+                            Tel: 86-23-8980-9588    Tel: 81-6-6152-7160           Tel: 358-9-4520-820
+Web Address:
+www.microchip.com           China - Dongguan        Japan - Tokyo                 France - Paris
+                            Tel: 86-769-8702-9880   Tel: 81-3-6880- 3770          Tel: 33-1-69-53-63-20
+Atlanta                                                                           Fax: 33-1-69-30-90-79
+Duluth, GA                  China - Guangzhou       Korea - Daegu
+Tel: 678-957-9614           Tel: 86-20-8755-8029    Tel: 82-53-744-4301           Germany - Garching
+                                                                                  Tel: 49-8931-9700
+Fax: 678-957-1455           China - Hangzhou        Korea - Seoul
+                            Tel: 86-571-8792-8115   Tel: 82-2-554-7200            Germany - Haan
+Austin, TX
+                                                                                  Tel: 49-2129-3766400
+Tel: 512-257-3370           China - Hong Kong SAR   Malaysia - Kuala Lumpur
+                            Tel: 852-2943-5100      Tel: 60-3-7651-7906           Germany - Heilbronn
+Boston
+                                                                                  Tel: 49-7131-72400
+Westborough, MA             China - Nanjing         Malaysia - Penang
+Tel: 774-760-0087           Tel: 86-25-8473-2460    Tel: 60-4-227-8870            Germany - Karlsruhe
+Fax: 774-760-0088                                                                 Tel: 49-721-625370
+                            China - Qingdao         Philippines - Manila
+Chicago                     Tel: 86-532-8502-7355   Tel: 63-2-634-9065            Germany - Munich
+Itasca, IL                                                                        Tel: 49-89-627-144-0
+                            China - Shanghai        Singapore
+Tel: 630-285-0071                                                                 Fax: 49-89-627-144-44
+                            Tel: 86-21-3326-8000    Tel: 65-6334-8870
+Fax: 630-285-0075                                                                 Germany - Rosenheim
+                            China - Shenyang        Taiwan - Hsin Chu
+Dallas                                                                            Tel: 49-8031-354-560
+                            Tel: 86-24-2334-2829    Tel: 886-3-577-8366
+Addison, TX                                                                       Israel - Ra’anana
+                            China - Shenzhen        Taiwan - Kaohsiung
+Tel: 972-818-7423                                                                 Tel: 972-9-744-7705
+                            Tel: 86-755-8864-2200   Tel: 886-7-213-7830
+Fax: 972-818-2924                                                                 Italy - Milan
+                            China - Suzhou          Taiwan - Taipei
+Detroit                                                                           Tel: 39-0331-742611
+                            Tel: 86-186-6233-1526   Tel: 886-2-2508-8600
+Novi, MI                                                                          Fax: 39-0331-466781
+Tel: 248-848-4000           China - Wuhan           Thailand - Bangkok
+                            Tel: 86-27-5980-5300    Tel: 66-2-694-1351            Italy - Padova
+Houston, TX                                                                       Tel: 39-049-7625286
+Tel: 281-894-5983           China - Xian            Vietnam - Ho Chi Minh
+                            Tel: 86-29-8833-7252    Tel: 84-28-5448-2100          Netherlands - Drunen
+Indianapolis                                                                      Tel: 31-416-690399
+Noblesville, IN             China - Xiamen                                        Fax: 31-416-690340
+                            Tel: 86-592-2388138
+Tel: 317-773-8323                                                                 Norway - Trondheim
+Fax: 317-773-5453           China - Zhuhai                                        Tel: 47-7288-4388
+Tel: 317-536-2380           Tel: 86-756-3210040
+                                                                                  Poland - Warsaw
+Los Angeles                                                                       Tel: 48-22-3325737
+Mission Viejo, CA
+                                                                                  Romania - Bucharest
+Tel: 949-462-9523                                                                 Tel: 40-21-407-87-50
+Fax: 949-462-9608
+Tel: 951-273-7800                                                                 Spain - Madrid
+                                                                                  Tel: 34-91-708-08-90
+Raleigh, NC                                                                       Fax: 34-91-708-08-91
+Tel: 919-844-7510
+                                                                                  Sweden - Gothenberg
+New York, NY                                                                      Tel: 46-31-704-60-40
+Tel: 631-435-6000
+                                                                                  Sweden - Stockholm
+San Jose, CA                                                                      Tel: 46-8-5090-4654
+Tel: 408-735-9110
+Tel: 408-436-4270                                                                 UK - Wokingham
+                                                                                  Tel: 44-118-921-5800
+Canada - Toronto                                                                  Fax: 44-118-921-5820
+Tel: 905-695-1980
+Fax: 905-695-2078
+
+
+
+
+DS20006486B-page 38                                                            2021 Microchip Technology Inc.
+                                                                                                        02/28/20
+

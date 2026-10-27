@@ -1,0 +1,2273 @@
+                                                                                            Data Sheet
+
+ 1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                    AP2114
+
+General Description                                          Features
+The AP2114 is CMOS process low dropout linear                •   Output Voltage Accuracy: ±1.5%
+regulator with enable function, the regulator delivers       •   Output Current: 1A (Min)
+a guaranteed 1A (Min) continuous load current.               •   Fold-back Short Current Protection: 50mA
+                                                             •   Low Dropout Voltage (3.3V): 450mV (Typ)
+The AP2114 features low power consumption.                       @IOUT=1A
+                                                             •   Stable with 4.7μF Flexible Cap: Ceramic,
+The AP2114 is available in 1.2V, 1.5V, 1.8V, 2.5V                Tantalum and Aluminum Electrolytic
+and 3.3V regulator output and 0.8V to 5V adjustable          •   Excellent Line Regulation: 0.02%/V (Typ),
+output, and available in excellent output accuracy               0.1%/V (Max) @ IOUT=30mA
+±1.5%, it is also available in an excellent load             •   Excellent Load Regulation: 0.2%A (Typ) @
+regulation and line regulation performance.                      IOUT=1mA to 1A
+                                                             •   Low Quiescent Current: 60μA (1.2V/1.5V/1.8V
+The AP2114 is available in standard packages of                  /2.5V/ADJ)
+SOT-223, TO-252-2 (1), TO-252-2 (3), TO-252-2 (4),           •   Low Output Noise: 30μVRMS
+TO-263-3, SOIC-8 and PSOP-8.                                 •   PSRR: 68dB @ Freq=1KHz (1.2V/1.5V/1.8V
+                                                                 /ADJ)
+                                                             •   OTSD Protection
+                                                             •   Operating Temperature Range: -40°C to 85°C
+                                                             •   ESD: MM 400V, HBM 4000V
+
+
+
+                                                             Applications
+                                                             •   LCD Monitor
+                                                             •   LCD TV
+                                                             •   STB
+
+
+
+
+            SOT-223                              TO-263-3                         TO-252-2 (1)
+
+
+
+
+     TO-252-2 (3)             TO-252-2 (4)                   SOIC-8                PSOP-8
+
+                                       Figure 1. Package Types of AP2114
+
+
+
+Jan. 2013   Rev. 2. 2                                                  BCD Semiconductor Manufacturing Limited
+
+                                                         1
+                                                                                                                                    Data Sheet
+
+  1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                                                         AP2114
+
+Pin Configuration
+
+                                      H/HA Package                                                            S Package
+                                        (SOT-223)                                                            (TO-263-3)
+                    H                                         HA
+
+
+
+
+                                                                  D/DA Package
+
+                                        D                                                                           DA
+            (TO-252-2 (1))                          (TO-252-2 (3))                       (TO-252-2 (1))                        (TO-252-2 (3))
+
+
+                       3       VIN                            3          VIN                             3    VOUT                           3         VOUT
+
+
+VOUT                   2       VOUT VOUT                      2          VOUT GND                    2       GND     GND                     2             GND
+
+
+                       1       GND                            1          GND                             1    VIN                            1             VIN
+
+
+
+
+                           (TO-252-2 (4))                                                                (TO-252-2 (4))
+
+                                                3       VIN                                                                     3     VOUT
+
+
+                VOUT                            2      VOUT                                    GND                              2     GND
+
+
+                                                1       GND                                                                     1     VIN
+
+
+
+
+                           M Package                                                                 MP Package
+                           (SOIC-8)                                                                  (PSOP-8)
+
+GND     1                  8    EN    VIN   1                 8               GND    1               8       EN      VIN   1                     8   VOUT
+                                                                   VOUT
+
+VOUT    2                  7    GND GND     2                 7    GND     VOUT      2               7       GND    GND    2                     7   GND
+
+GND     3                  6    GND GND     3                 6    ADJ         GND   3               6       GND    GND    3                     6   ADJ
+
+ VIN    4                  5    GND   EN    4                 5   GND          VIN   4               5       GND     EN    4                     5   GND
+
+
+
+
+       For Fixed Versions               For Adjustable Version                       For Fixed Versions                For Adjustable Version
+
+
+                                            Figure 2. Pin Configuration of AP2114 (Top View)
+
+
+
+
+Jan. 2013     Rev. 2. 2                                                                        BCD Semiconductor Manufacturing Limited
+
+                                                                          2
+                                                                                                          Data Sheet
+
+ 1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                                  AP2114
+
+Pin Descriptions
+
+                                         Pin Number
+ SOT-223 (H),                                                                                          Function
+                             SOT-223 (HA),                                            Pin
+ TO-263-3,                                            SOIC-8,           SOIC-8,
+                             TO-252-2 (1) (DA)
+ TO-252-2 (1) (D)                                     PSOP-8            PSOP-8       Name
+                             TO-252-2 (3) (DA)
+ TO-252-2 (3) (D)                                     (Fixed)            (ADJ)
+                             TO-252-2 (4) (DA)
+ TO-252-2 (4) (D)
+        1                                 2         1, 3, 5, 6, 7       2, 3, 5, 7    GND       Ground
+        2                                 3               2                 8         VOUT      Regulated Output
+        3                                 1               4                 1          VIN      Input Voltage Pin
+                                                                                                Chip Enable, H–Normal
+                                                         8                  4          EN
+                                                                                                Work, L– Shutdown Output
+                                                                            6          ADJ      Adjust Output
+
+
+
+
+Functional Block Diagram
+
+
+               (8)                                                                                            3 (4) {1}
+      EN                                         Shutdown                                                                  VIN
+                                                   Logic
+
+
+
+
+                                      Thermal                                          Foldback
+                                     Shutdown                                         Current Limit
+
+
+
+
+                                                                                                               2 (2) {3}
+                                                                                                                           VOUT
+                          3MΩ
+
+
+
+
+                                                        VREF
+
+    GND      1 (1 , 3 , 5 , 6 , 7) {2}
+
+
+
+
+            A (B) {C}
+            A : SOT- 223 (H) , TO-263-3 , TO- 252- 2 (1)/(3)/(4)(D)
+            B : SOIC-8 , PSOP-8
+            C: SOT- 223 (HA) , TO- 252- 2 (1)/(3)/(4) (DA)
+
+
+
+                                                       For Fixed Versions
+
+Jan. 2013   Rev. 2. 2                                                                BCD Semiconductor Manufacturing Limited
+
+                                                                    3
+                                                                                               Data Sheet
+
+ 1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                       AP2114
+
+Functional Block Diagram (Continued)
+
+
+
+
+               4                                                                                     1
+       EN                                     Shutdown                                                    VIN
+                                                Logic
+
+
+
+
+                                   Thermal                                   Foldback
+                                  Shutdown                                 Current Limit
+
+
+
+
+                           3 MΩ
+                                                                                                     8
+                                                                                                          VOUT
+
+
+                                                   VREF
+                                                                                                     6
+              2, 3, 5, 7                                                                                 ADJ
+     GND
+
+
+
+                   SOIC-8 , PSOP-8
+
+
+
+                                                   For ADJ Version
+
+
+                                      Figure 3. Functional Block Diagram of AP2114
+
+
+
+
+Jan. 2013   Rev. 2. 2                                                     BCD Semiconductor Manufacturing Limited
+
+                                                          4
+                                                                                          Data Sheet
+
+ 1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                  AP2114
+
+Ordering Information
+
+                                         AP2114       -
+
+                  Circuit Type                                              G1: Green
+
+                  Package                                                   Blank: Tube
+                  H/HA: SOT-223                                             TR: Tape & Reel
+                  D/DA: TO-252-2 (1)/(3)/(4)                                1.2: Fixed Output 1.2V
+                  S: TO-263-3                                               1.5: Fixed Output 1.5V
+                  M: SOIC-8                                                 1.8: Fixed Output 1.8V
+                  MP: PSOP-8                                                2.5: Fixed Output 2.5V
+                                                                            3.3: Fixed Output 3.3V
+                                                                            ADJ: ADJ Output
+
+                    Temperature       Output                                                  Packing
+    Package                                         Part Number          Marking ID
+                      Range           Voltage                                                  Type
+                                       1.2V (H)   AP2114H-1.2TRG1      GH12C                 Tape & Reel
+                                       1.5V (H)   AP2114H-1.5TRG1      GH16G                 Tape & Reel
+    SOT-223             -40 to 85°C    1.8V (H)   AP2114H-1.8TRG1      GH12D                 Tape & Reel
+                                       2.5V (H)   AP2114H-2.5TRG1      GH14C                 Tape & Reel
+                                       3.3V (H)   AP2114H-3.3TRG1      GH12E                 Tape & Reel
+                                      1.2V (HA)   AP2114HA-1.2TRG1     GH13B                 Tape & Reel
+                                      1.5V (HA)   AP2114HA-1.5TRG1     GH16H                 Tape & Reel
+    SOT-223             -40 to 85°C   1.8V (HA)   AP2114HA-1.8TRG1     GH14D                 Tape & Reel
+                                      2.5V (HA)   AP2114HA-2.5TRG1     GH14E                 Tape & Reel
+                                      3.3V (HA)   AP2114HA-3.3TRG1     GH14F                 Tape & Reel
+                                       1.2V (D)   AP2114D-1.2TRG1      AP2114D-1.2G1         Tape & Reel
+  TO-252-2 (1)/                        1.5V (D)   AP2114D-1.5TRG1      AP2114D-1.5G1         Tape & Reel
+  TO-252-2 (3)/         -40 to 85°C    1.8V (D)   AP2114D-1.8TRG1      AP2114D-1.8G1         Tape & Reel
+  TO-252-2 (4)                         2.5V (D)   AP2114D-2.5TRG1      AP2114D-2.5G1         Tape & Reel
+                                       3.3V (D)   AP2114D-3.3TRG1      AP2114D-3.3G1         Tape & Reel
+                                      1.2V (DA)   AP2114DA-1.2TRG1     AP2114DA-1.2G1        Tape & Reel
+  TO-252-2 (1)/                       1.5V (DA)   AP2114DA-1.5TRG1     AP2114DA-1.5G1        Tape & Reel
+  TO-252-2 (3)/         -40 to 85°C   1.8V (DA)   AP2114DA-1.8TRG1     AP2114DA-1.8G1        Tape & Reel
+  TO-252-2 (4)                        2.5V (DA)   AP2114DA-2.5TRG1     AP2114DA-2.5G1        Tape & Reel
+                                      3.3V (DA)   AP2114DA-3.3TRG1     AP2114DA-3.3G1        Tape & Reel
+                                         1.2V     AP2114S-1.2TRG1      AP2114S-1.2G1         Tape & Reel
+                                         1.5V     AP2114S-1.5TRG1      AP2114S-1.5G1         Tape & Reel
+    TO-263-3            -40 to 85°C      1.8V     AP2114S-1.8TRG1      AP2114S-1.8G1         Tape & Reel
+                                         2.5V     AP2114S-2.5TRG1      AP2114S-2.5G1         Tape & Reel
+                                         3.3V     AP2114S-3.3TRG1      AP2114S-3.3G1         Tape & Reel
+                                         1.2V     AP2114M-1.2TRG1      2114M-1.2G1           Tape & Reel
+                                         1.5V     AP2114M-1.5TRG1      2114M-1.5G1           Tape & Reel
+                                         1.8V     AP2114M-1.8TRG1      2114M-1.8G1           Tape & Reel
+     SOIC-8             -40 to 85°C      2.5V     AP2114M-2.5TRG1      2114M-2.5G1           Tape & Reel
+                                         3.3V     AP2114M-3.3TRG1      2114M-3.3G1           Tape & Reel
+                                                  AP2114M-ADJG1        2114M-ADJG1              Tube
+                                        ADJ
+                                                  AP2114M-ADJTRG1      2114M-ADJG1           Tape & Reel
+
+
+
+Jan. 2013   Rev. 2. 2                                                BCD Semiconductor Manufacturing Limited
+
+                                                     5
+                                                                                           Data Sheet
+
+ 1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                  AP2114
+
+Ordering Information (Continued)
+
+                     Temperature       Output                                                 Packing
+    Package                                         Part Number           Marking ID
+                       Range           Voltage                                                 Type
+                                        1.2V     AP2114MP-1.2TRG1       2114MP-1.2G1         Tape & Reel
+                                        1.5V     AP2114MP-1.5TRG1       2114MP-1.5G1         Tape & Reel
+                                        1.8V     AP2114MP-1.8TRG1       2114MP-1.8G1         Tape & Reel
+     PSOP-8              -40 to 85°C    2.5V     AP2114MP-2.5TRG1       2114MP-2.5G1         Tape & Reel
+                                        3.3V     AP2114MP-3.3TRG1       2114MP-3.3G1         Tape & Reel
+                                                 AP2114MP-ADJG1         2114MP-ADJG1            Tube
+                                        ADJ
+                                                 AP2114MP-ADJTRG1       2114MP-ADJG1         Tape & Reel
+
+BCD Semiconductor's Pb-free products, as designated with "G1" suffix in the part number, are RoHS compliant
+and Green.
+
+
+
+
+Jan. 2013    Rev. 2. 2                                               BCD Semiconductor Manufacturing Limited
+
+                                                     6
+                                                                                                 Data Sheet
+
+ 1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                       AP2114
+
+Absolute Maximum Ratings (Note 1)
+
+ Parameter                                    Symbol                          Value                      Unit
+ Power Supply Voltage                            VIN                            6.5                        V
+ Operating Junction Temperature
+                                                 TJ                            150                        ºC
+ Range
+ Storage Temperature Range                      TSTG                        -65 to 150                    ºC
+ Lead Temperature (Soldering, 10sec)           TLEAD                           260                        ºC
+                                                                   SOIC-8                  144
+                                                                  PSOP-8                   143
+ Thermal Resistance （Junction to                                 SOT-223                   128
+                                                 θJA                                                     °C/W
+ Ambient）(No Heatsink)                                         TO-252-2 (1)/
+                                                               TO-252-2 (3)/               90
+                                                               TO-252-2 (4)
+                                                                TO-263-3                   73
+ ESD (Machine Model)                                                           400                         V
+ ESD (Human Body Model)                                                        4000                        V
+
+Note 1: Stresses greater than those listed under “Absolute Maximum Ratings” may cause permanent damage to
+the device. These are stress ratings only, and functional operation of the device at these or any other conditions
+beyond those indicated under “Recommended Operating Conditions” is not implied. Exposure to “Absolute
+Maximum Ratings” for extended periods may affect device reliability.
+
+
+Recommended Operating Conditions
+
+ Parameter                                    Symbol               Min                   Max             Unit
+ Supply Voltage                                  VIN                2.5                   6.0              V
+ Operating Ambient         Temperature
+                                                 TA                 -40                   85              °C
+ Range
+
+
+
+
+Jan. 2013   Rev. 2. 2                                                     BCD Semiconductor Manufacturing Limited
+
+                                                        7
+                                                                                                   Data Sheet
+
+ 1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                         AP2114
+
+Electrical Characteristics
+AP2114-1.2 Electrical Characteristics (Note 2)
+(VIN=2.5V, CIN=4.7μF (Ceramic), COUT=4.7μF (Ceramic), Typical TA= 25°C, Bold typeface applies over -40OC≤TA≤85OC
+ranges, unless otherwise specified (Note 3))
+
+Parameter                        Symbol                Test Conditions             Min      Typ      Max      Unit
+                                                                                   VOUT              VOUT
+Output Voltage                     VOUT      VIN =2.5V, 1mA ≤ IOUT ≤ 30mA                   1.2                 V
+                                                                                  ×98.5%            ×101.5%
+Input Voltage                      VIN                                                                6.0       V
+
+Maximum Output Current           IOUT(MAX)   VIN=2.5V, VOUT=1.182V to 1.218V         1                          A
+                                △VOUT/VOUT
+Load Regulation                   △IOUT      VIN=2.5V, 1mA ≤ IOUT ≤1A                       0.2        1       %/A
+
+                                △VOUT/VOUT
+Line Regulation                              2.5V≤VIN≤6V, IOUT=30mA                 -0.1    0.02      0.1      %/V
+                                  △VIN
+Dropout Voltage                   VDROP      IOUT=1.0A                                      1200     1300      mV
+
+Quiescent Current                   IQ       VIN=2.5V, IOUT=0mA                              60       75       μA
+
+                                             Ripple 1Vp-p     f=100Hz                        68
+Power    Supply     Rejection
+                                  PSRR       VIN=2.5V,                                                         dB
+Ratio
+                                             IOUT=100mA       f=1KHz                         68
+Output Voltage                  △VOUT/VOUT
+Temperature Coefficient                      IOUT=30mA, TA =-40°C to 85°C                   ±30               ppm/°C
+                                    △T
+Short Current Limit               ISHORT     VOUT=0V                                         50                mA
+RMS Output Noise                  VNOISE     10Hz ≤ f ≤100kHz (No Load)                      30               μVRMS
+
+VEN High Voltage                   VIH       Enable logic high, regulator on        1.5
+                                                                                                                V
+VEN Low Voltage                    VIL       Enable logic low, regulator off                          0.4
+
+Standby Current                    ISTD      VIN=2.5V, VEN in OFF mode                      0.01      1.0      μA
+
+Start-up Time                       tS       No Load                                         20                 μs
+EN Pull Down Resistor              RPD                                                      3.0                MΩ
+VOUT Discharge Resistor           RDCHG      Set EN pin at Low                               60                 Ω
+Thermal             Shutdown
+                                  TOTSD                                                     160
+Temperature
+                                                                                                               °C
+Thermal             Shutdown
+                                 THYOTSD                                                     25
+Hysteresis
+                                             SOIC-8                                         74.6
+                                             PSOP-8                                         43.7
+Thermal Resistance
+                                    θJC      SOT-223                                        50.9              °C/W
+(Junction to Case)
+                                             TO-252-2 (1) /(3) /(4)                          35
+                                             TO-263-3                                        22
+
+Note 2: To prevent the Short Circuit Current protection feature from being prematurely activated, the input
+voltage must be applied before a current source load is applied.
+Note 3: Production testing at TA=25°C. Over temperature specifications guaranteed by design only.
+
+
+
+Jan. 2013   Rev. 2. 2                                                      BCD Semiconductor Manufacturing Limited
+
+                                                         8
+                                                                                                   Data Sheet
+
+ 1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                         AP2114
+
+Electrical Characteristics (Continued)
+AP2114-1.5 Electrical Characteristics (Note 2)
+(VIN=2.5V, CIN=4.7μF (Ceramic), COUT=4.7μF (Ceramic), Typical TA= 25°C, Bold typeface applies over -40OC≤TA≤85OC
+ranges, unless otherwise specified (Note 3))
+
+Parameter                        Symbol                Test Conditions             Min      Typ      Max      Unit
+                                                                                   VOUT              VOUT
+Output Voltage                     VOUT      VIN =2.5V, 1mA ≤ IOUT ≤ 30mA                   1.5                 V
+                                                                                  ×98.5%            ×101.5%
+Input Voltage                      VIN                                                                6.0       V
+
+Maximum Output Current           IOUT(MAX)   VIN=2.5V, VOUT=1.478V to 1.523V         1                          A
+                                △VOUT/VOUT
+Load Regulation                   △IOUT      VIN=2.5V, 1mA ≤ IOUT ≤1A                       0.2        1       %/A
+
+                                △VOUT/VOUT
+Line Regulation                              2.5V≤VIN≤6V, IOUT=30mA                 -0.1    0.02      0.1      %/V
+                                  △VIN
+Dropout Voltage                   VDROP      IOUT=1.0A                                      800      1000      mV
+
+Quiescent Current                   IQ       VIN=2.5V, IOUT=0mA                              60       75       μA
+
+                                             Ripple 1Vp-p     f=100Hz                        68
+Power    Supply     Rejection
+                                  PSRR       VIN=2.5V,                                                         dB
+Ratio
+                                             IOUT=100mA       f=1KHz                         68
+Output Voltage                  △VOUT/VOUT
+Temperature Coefficient                      IOUT=30mA, TA =-40°C to 85°C                   ±30               ppm/°C
+                                    △T
+Short Current Limit               ISHORT     VOUT=0V                                         50                mA
+RMS Output Noise                  VNOISE     10Hz ≤ f ≤100kHz (No Load)                      30               μVRMS
+
+VEN High Voltage                   VIH       Enable logic high, regulator on        1.5
+                                                                                                                V
+VEN Low Voltage                    VIL       Enable logic low, regulator off                          0.4
+
+Standby Current                    ISTD      VIN=2.5V, VEN in OFF mode                      0.01      1.0      μA
+
+Start-up Time                       tS       No Load                                         20                 μs
+EN Pull Down Resistor              RPD                                                      3.0                MΩ
+VOUT Discharge Resistor           RDCHG      Set EN pin at Low                               60                 Ω
+Thermal             Shutdown
+                                  TOTSD                                                     160
+Temperature
+                                                                                                               °C
+Thermal             Shutdown
+                                 THYOTSD                                                     25
+Hysteresis
+                                             SOIC-8                                         74.6
+                                             PSOP-8                                         43.7
+Thermal Resistance
+                                    θJC      SOT-223                                        50.9              °C/W
+(Junction to Case)
+                                             TO-252-2 (1) /(3) /(4)                          35
+                                             TO-263-3                                        22
+
+Note 2: To prevent the Short Circuit Current protection feature from being prematurely activated, the input
+voltage must be applied before a current source load is applied.
+Note 3: Production testing at TA=25°C. Over temperature specifications guaranteed by design only.
+
+
+
+Jan. 2013   Rev. 2. 2                                                      BCD Semiconductor Manufacturing Limited
+
+                                                         9
+                                                                                                       Data Sheet
+
+ 1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                             AP2114
+
+Electrical Characteristics (Continued)
+AP2114-1.8 Electrical Characteristics (Note 2)
+(VIN=2.8V, CIN=4.7μF (Ceramic), COUT=4.7μF (Ceramic), Typical TA= 25°C, Bold typeface applies over -40OC≤TA≤85OC
+ranges, unless otherwise specified (Note 3))
+
+Parameter                         Symbol                Test Conditions                Min      Typ     Max      Unit
+
+                                                                                       VOUT             VOUT
+Output Voltage                     VOUT       VIN =2.8V, 1mA ≤ IOUT ≤ 30mA                      1.8                V
+                                                                                      ×98.5%           ×101.5%
+
+Maximum Output Current            IOUT(MAX)   VIN=2.8V, VOUT=1.773V to 1.827V           1.0                        A
+                                △VOUT/VOUT
+Load Regulation                               VIN=2.8V, 1mA ≤ IOUT ≤1A                          0.2      1.0      %/A
+                                  △IOUT
+                                △VOUT/VOUT
+Line Regulation                               2.8V≤VIN≤6V, IOUT=30mA                    -0.1    0.02     0.1      %/V
+                                   △VIN
+Dropout Voltage                    VDROP      IOUT=1.0A                                         500      700      mV
+
+Quiescent Current                    IQ       VIN=2.8V, IOUT=0mA                                 60      75       μA
+
+                                              Ripple 1Vp-p      f=100Hz                          68
+Power   Supply      Rejection
+                                   PSRR       VIN=2.8V,                                                           dB
+Ratio
+                                              IOUT=100mA        f=1KHz                           68
+Output Voltage                  △VOUT/VOUT
+Temperature Coefficient                       IOUT=30mA, TA =-40°C to 85°C                      ±30              ppm/°C
+                                  △T
+Short Current Limit                ISHORT     VOUT=0V                                            50               mA
+
+RMS Output Noise                   VNOISE     10Hz ≤ f ≤100kHz (No load)                         30              μVRMS
+
+VEN High Voltage                    VIH       Enable logic high, regulator on           1.5
+                                                                                                                   V
+VEN Low Voltage                     VIL       Enable logic low, regulator off                            0.4
+
+Standby Current                     ISTD      VIN=2.8V, VEN in OFF mode                         0.01     1.0      μA
+
+Start-up Time                        tS       No Load                                            20                μs
+EN Pull Down Resistor               RPD                                                         3.0               MΩ
+VOUT Discharge Resistor            RDCHG      Set EN pin at Low                                  60                Ω
+Thermal             Shutdown
+                                   TOTSD                                                        160
+Temperature
+                                                                                                                  °C
+Thermal             Shutdown
+                                  THYOTSD                                                        25
+Hysteresis
+                                              SOIC-8                                            74.6
+                                              PSOP-8                                            43.7
+Thermal Resistance
+                                    θJC       SOT-223                                           50.9             °C /W
+(Junction to Case)
+                                              TO-252-2 (1) /(3) /(4)                             35
+                                              TO-263-3                                           22
+
+
+Note 2: To prevent the Short Circuit Current protection feature from being prematurely activated, the input
+voltage must be applied before a current source load is applied.
+Note 3: Production testing at TA=25°C. Over temperature specifications guaranteed by design only.
+
+
+Jan. 2013   Rev. 2. 2                                                           BCD Semiconductor Manufacturing Limited
+
+                                                          10
+                                                                                                  Data Sheet
+
+ 1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                        AP2114
+
+Electrical Characteristics (Continued)
+AP2114-2.5 Electrical Characteristics (Note 2)
+(VIN=3.5V, CIN=4.7μF (Ceramic), COUT=4.7μF (Ceramic), Typical TA= 25°C, Bold typeface applies over -40OC≤TA≤85OC
+ranges, unless otherwise specified (Note 3))
+
+Parameter                        Symbol               Test Conditions             Min      Typ     Max      Unit
+
+                                                                                  VOUT             VOUT
+Output Voltage                     VOUT      VIN =3.5V, 1mA ≤ IOUT ≤ 30mA                  2.5                V
+                                                                                 ×98.5%           ×101.5%
+
+Maximum Output Current           IOUT(MAX)   VIN=3.5V, VOUT=2.463V to 2.537V       1.0                        A
+                                △VOUT/VOUT   Vout=2.5V, VIN=Vout+1V
+Load Regulation                   △IOUT                                                    0.2      1.0      %/A
+                                             1mA ≤ IOUT ≤1A
+                                △VOUT/VOUT
+Line Regulation                   △VIN       3.5V≤VIN≤6V, IOUT=30mA                -0.1    0.02     0.1      %/V
+
+Dropout Voltage                   VDROP      IOUT =1A                                      450      750      mV
+
+Quiescent Current                   IQ       VIN=3.5V, IOUT=0mA                             60      80       μA
+                                             Ripple 1Vp-p        f=100Hz                    65
+Power   Supply      Rejection
+                                  PSRR       VIN=3.5V,                                                       dB
+Ratio                                                            f=1KHz                     65
+                                             IOUT=100mA
+Output Voltage                  △VOUT/VOUT
+                                             IOUT=30mA                                     ±30              ppm/°C
+Temperature Coefficient           △T
+Short Current Limit               ISHORT     VOUT=0V                                        50               mA
+
+RMS Output Noise                  VNOISE     10Hz ≤ f ≤100kHz                               30              μVRMS
+
+VEN High Voltage                   VIH       Enable logic high, regulator on       1.5
+                                                                                                              V
+VEN Low Voltage                    VIL       Enable logic low, regulator off                        0.4
+
+Standby Current                    ISTD      VIN=3.5V, VEN in OFF mode                     0.01     1.0      μA
+
+Start-up Time                       tS       No Load                                        20                μs
+
+EN Pull Down Resistor              RPD                                                     3.0               MΩ
+
+VOUT Discharge Resistor           RDCHG      Set EN pin at Low                              60                Ω
+Thermal             Shutdown
+                                  TOTSD                                                    160
+Temperature
+                                                                                                             °C
+Thermal             Shutdown
+                                 THYOTSD                                                    25
+Hysteresis
+                                             SOIC-8                                        74.6
+                                             PSOP-8                                        43.7
+Thermal Resistance                           SOT-223                                       50.9
+                                    θJC                                                                     °C /W
+(Junction to Case)
+                                             TO-252-2 (1) /(3) /(4)                         35
+                                             TO-263-3                                       22
+
+Note 2: To prevent the Short Circuit Current protection feature from being prematurely activated, the input
+voltage must be applied before a current source load is applied.
+Note 3: Production testing at TA=25°C. Over temperature specifications guaranteed by design only.
+
+
+
+Jan. 2013   Rev. 2. 2                                                      BCD Semiconductor Manufacturing Limited
+
+                                                        11
+                                                                                                      Data Sheet
+
+ 1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                            AP2114
+
+Electrical Characteristics (Continued)
+AP2114-3.3 Electrical Characteristics (Note 2)
+(VIN=4.3V, CIN=4.7μF (Ceramic), COUT=4.7μF (Ceramic), Typical TA= 25°C, Bold typeface applies over -40OC≤TA≤85OC
+ranges, unless otherwise specified (Note 3))
+
+Parameter                        Symbol                Test Conditions                Min      Typ     Max      Unit
+
+                                                                                      VOUT             VOUT
+Output Voltage                     VOUT      VIN =4.3V, 1mA ≤ IOUT ≤ 30mA                      3.3                V
+                                                                                     ×98.5%           ×101.5%
+
+Maximum Output Current           IOUT(MAX)   VIN =4.3V, VOUT=3.25V to 3.35V            1.0                        A
+                                △VOUT/VOUT
+Load Regulation                              VIN=4.3V, 1mA ≤ IOUT ≤1A                          0.2      1.0      %/A
+                                  △IOUT
+                                △VOUT/VOUT
+Line Regulation                              4.3V≤VIN≤6V, IOUT=30mA                    -0.1    0.02     0.1      %/V
+                                  △VIN
+Dropout Voltage                   VDROP      IOUT=1A                                           450      750      mV
+
+Quiescent Current                   IQ       VIN=4.3V, IOUT=0mA                                 65      90       μA
+                                             Ripple 1Vp-p      f=100Hz                          65
+Power   Supply      Rejection
+                                  PSRR       VIN=4.3V,                                                           dB
+Ratio                                                          f=1KHz                           65
+                                             IOUT=100mA
+Output Voltage                  △VOUT/VOUT
+                                             IOUT=30mA                                         ±30              ppm/°C
+Temperature Coefficient           △T
+Short Current Limit               ISHORT     VOUT=0V                                            50               mA
+
+RMS Output Noise                  VNOISE     10Hz ≤ f ≤100kHz (No load)                         30              μVRMS
+
+VEN High Voltage                   VIH       Enable logic high, regulator on           1.5
+                                                                                                                  V
+VEN Low Voltage                    VIL       Enable logic low, regulator off                            0.4
+
+Standby Current                    ISTD      VIN=4.3V, VEN in OFF mode                         0.01     1.0      μA
+
+Start-up Time                       tS       No Load                                            20                μs
+EN Pull Down Resistor              RPD                                                         3.0               MΩ
+VOUT Discharge Resistor           RDCHG      Set EN pin at Low                                  60                Ω
+Thermal         Shutdown
+                                  TOTSD                                                        160
+Temperature
+                                                                                                                 °C
+Thermal         Shutdown
+                                 THYOTSD                                                        25
+Hysteresis
+                                             SOIC-8                                            74.6
+
+                                             PSOP-8                                            43.7
+Thermal Resistance
+                                    θJC      SOT-223                                           50.9             °C/W
+(Junction to Case)
+                                             TO-252-2 (1) /(3) /(4)                             35
+
+                                             TO-263-3                                           22
+
+
+Note 2: To prevent the Short Circuit Current protection feature from being prematurely activated, the input
+voltage must be applied before a current source load is applied.
+Note 3: Production testing at TA=25°C. Over temperature specifications guaranteed by design only.
+
+
+Jan. 2013   Rev. 2. 2                                                          BCD Semiconductor Manufacturing Limited
+
+                                                         12
+                                                                                                   Data Sheet
+
+ 1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                         AP2114
+
+Electrical Characteristics (Continued)
+AP2114-ADJ Electrical Characteristics (Note 2)
+(VIN=2.5V, CIN=4.7μF (Ceramic), COUT=4.7μF (Ceramic), Typical TA= 25°C, Bold typeface applies over -40OC≤TA≤85OC
+ranges, unless otherwise specified (Note 3))
+
+Parameter                        Symbol                Test Conditions             Min      Typ      Max      Unit
+                                                                                   VREF               VREF
+Reference Voltage                  VREF      VIN =2.5V, 1mA ≤ IOUT ≤ 30mA                   0.8                 V
+                                                                                  ×98.5%            ×101.5%
+Input Voltage                      VIN                                                                6.0       V
+
+Maximum Output Current           IOUT(MAX)   VIN=2.5V, VOUT= 0.788V to 0.812V        1                          A
+                                △VOUT/VOUT
+Load Regulation                   △IOUT      VIN=2.5V, 1mA ≤ IOUT ≤1A                       0.2        1       %/A
+
+                                △VOUT/VOUT
+Line Regulation                              2.5V≤VIN≤6V, IOUT=30mA                 -0.1    0.02      0.1      %/V
+                                  △VIN
+Quiescent Current                   IQ       VIN=2.5V, IOUT=0mA                              60       75       μA
+
+                                             Ripple 1Vp-p     f=100Hz                        68
+Power    Supply     Rejection
+                                  PSRR       VIN=2.5V,                                                         dB
+Ratio
+                                             IOUT=100mA       f=1KHz                         68
+Output Voltage                  △VOUT/VOUT
+Temperature Coefficient                      IOUT=30mA, TA =-40°C to 85°C                   ±30               ppm/°C
+                                    △T
+Short Current Limit               ISHORT     VOUT=0V                                         50                mA
+RMS Output Noise                  VNOISE     10Hz ≤ f ≤100kHz (No Load)                      30               μVRMS
+
+VEN High Voltage                   VIH       Enable logic high, regulator on        1.5
+                                                                                                                V
+VEN Low Voltage                    VIL       Enable logic low, regulator off                          0.4
+
+Standby Current                    ISTD      VIN=2.5V, VEN in OFF mode                      0.01      1.0      μA
+
+Start-up Time                       tS       No Load                                         20                 μs
+EN Pull Down Resistor              RPD                                                      3.0                MΩ
+VOUT Discharge Resistor           RDCHG      Set EN pin at Low                               60                 Ω
+Thermal            Shutdown
+                                  TOTSD                                                     160
+Temperature
+                                                                                                               °C
+Thermal            Shutdown
+                                 THYOTSD                                                     25
+Hysteresis
+Thermal Resistance                           SOIC-8                                         74.6
+                                    θJC                                                                       °C/W
+(Junction to Case)                           PSOP-8                                         43.7
+
+Note 2: To prevent the Short Circuit Current protection feature from being prematurely activated, the input
+voltage must be applied before a current source load is applied.
+Note 3: Production testing at TA=25°C. Over temperature specifications guaranteed by design only.
+
+
+
+
+Jan. 2013   Rev. 2. 2                                                      BCD Semiconductor Manufacturing Limited
+
+                                                        13
+                                                                                                                                                                                           Data Sheet
+
+                1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                                                                                                  AP2114
+
+   Typical Performance Characteristics
+
+
+
+                                500                                                                                                      400
+                                               AP2114_1.2V                                                                                                AP2114_1.8V
+                                450
+                                               VIN=2.5V                                                                                  350              VIN=2.8V
+                                400                          O                                                                                            CIN=4.7μF
+                                                     TA=-40 C                                                                            300              COUT=4.7μF
+
+
+
+
+Ground Current (μA)                                                                                               Ground Current (μA)
+                                350                          O
+                                                     TA=25 C
+                                                             O                                                                           250
+                                300                  TA=85 C
+                                250                                                                                                      200
+
+                                200
+                                                                                                                                         150
+                                                                                                                                                                                                       O
+                                150                                                                                                                                                           TA=-40 C
+                                                                                                                                         100                                                           O
+                                                                                                                                                                                              TA=25 C
+                                100                                                                                                                                                                    O
+                                                                                                                                                                                              TA=85 C
+                                                                                                                                         50
+                                50
+                                                                           Continuous Airflow 10scfm                                                 Continuous Airflow 10scfm
+                                 0                                                                                                        0
+                                      0.0           0.2            0.4         0.6        0.8          1.0                                     0.0           0.2         0.4         0.6       0.8             1.0
+                                                                                                                                                                      Output Current (A)
+                                                                 Output Current (A)
+
+
+
+                                       Figure 4. Ground Current vs. Output Current                                                                   Figure 5. Ground Current vs. Output Current
+
+
+
+
+                                 400                                                                                                     500.0
+
+                                                AP2114_2.5V                                                                              450.0                                                AP2114_3.3V
+                                 350
+                                                VIN=3.5V                                                                                                                                      VIN=4.3V
+                                                                                                                                         400.0
+                                                CIN=4.7μF
+
+
+
+
+                                                                                                                   Ground Current (μA)
+                                 300
+
+
+
+
+          Ground Current (μA)
+                                                COUT=4.7μF                                                                               350.0
+
+                                 250                                                                                                     300.0
+
+                                 200                                                                                                     250.0
+
+                                                                                                                                         200.0
+                                 150
+                                                                                                                                         150.0                                                             O
+                                                                                                  O
+                                                                                           TA=-40 C                                                                                              TA=-40 C
+                                 100
+                                                                                                 O                                                                                                         O
+                                                                                           TA=25 C                                       100.0                                                   TA=25 C
+                                                                                                                                                                                                           O
+                                 50                                                              O
+                                                                                                                                                                                                 TA=85 C
+                                                                                           TA=85 C                                        50.0
+                                                                                                                                                       Continuous Airflow 10scfm
+                                             Continuous Airflow 10scfm
+                                  0                                                                                                        0.0
+                                       0.0           0.2            0.4         0.6        0.8         1.0                                       0.0           0.2         0.4         0.6       0.8            1.0
+
+                                                                 Output Current (A)                                                                                     Output Current (A)
+
+
+
+                                             Figure 6. Ground Current vs. Output Current                                                             Figure 7. Ground Current vs. Output Current
+
+
+
+
+   Jan. 2013                                   Rev. 2. 2                                                                                                    BCD Semiconductor Manufacturing Limited
+
+                                                                                                             14
+                                                                                                                                                                                                                            Data Sheet
+
+       1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                                                                                                                                               AP2114
+
+Typical Performance Characteristics (Continued)
+
+
+                               100                                                                                                                                        100
+                                                                                                                                                                                                                                   AP2114_1.8V
+                                                                                                       AP2114_1.2V                                                        90                                                       VIN=2.8V
+                                        90                                                             VIN=2.5V
+                                                                                                                                                                          80                                                       No Load
+
+
+
+
+                                                                                                                                                 Quiescent Current (μA)
+                                                                                                       IOUT=0mA
+
+
+
+
+Quiescent Current (μA)
+                                                                                                                                                                                                                                   CIN=4.7μF
+                                        80                                                                                                                                70
+                                                                                                                                                                                                                                   COUT=4.7μF
+                                                                                                                                                                          60
+                                        70
+                                                                                                                                                                          50
+
+                                        60                                                                                                                                40
+
+                                                                                                                                                                          30
+                                        50
+                                                                                                                                                                          20
+                                        40
+                                                                                                                                                                          10          Continuous Airflow 10scfm
+                                                    Continuous Airflow 10scfm
+                                        30                                                                                                                                 0
+                                              -40            -20          0         20            40         60         80                                                      -40       -20     0       20      40       60    80        100   120
+                                                                                                                                                                                                                       O
+                                                                                              O                                                                                                           Temperature ( C)
+                                                                              Temperature ( C)
+
+
+
+                                              Figure 8. Quiescent Current vs. Temperature                                                                                        Figure 9. Quiescent Current vs. Temperature
+
+
+
+
+                                                                                                                                                                          100
+                                             100
+                                              95                                                          AP2114_2.5V
+                                              90                                                                                                                           90
+                                                                                                                                                                                                                                 AP2114_3.3V
+                                                                                                          VIN=3.5V                                                                                                               VIN=4.3V
+                                              85
+
+
+
+
+                                                                                                                                        Quiescent Current (μA)
+                                              80                                                          No Load                                                                                                                IOUT=0mA
+
+
+
+
+                    Quiescent Current (μA)
+                                              75                                                          CIN=4.7μF                                                        80
+                                              70
+                                              65                                                          COUT=4.7μF
+                                              60                                                                                                                           70
+                                              55
+                                              50
+                                              45                                                                                                                           60
+                                              40
+                                              35
+                                              30                                                                                                                           50
+                                              25
+                                              20
+                                              15                                                                                                                           40
+                                              10         Continuous Airflow 10scfm                                                                                                Continuous Airflow 10scfm
+                                               5
+                                                                                                                                                                           30
+                                               0
+                                                   -40       -20      0        20        40       60    80        100        120
+                                                                                                                                                                                -40         -20       0           20        40        60         80
+                                                                                                                                                                                                                       O
+                                                                              Temperature ( C)
+                                                                                              O                                                                                                           Temperature ( C)
+
+
+
+                                                   Figure 10. Quiescent Current vs. Temperature                                                                                 Figure 11. Quiescent Current vs. Temperature
+
+
+
+
+Jan. 2013                                                 Rev. 2. 2                                                                                                                          BCD Semiconductor Manufacturing Limited
+
+                                                                                                                                   15
+                                                                                                                                                                                                   Data Sheet
+
+             1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                                                                                                             AP2114
+
+Typical Performance Characteristics (Continued)
+
+
+
+                          100                                                                                                              110
+                                       AP2114_1.2V
+                          90           IOUT=0mA                                                                                                                                                     AP2114_1.8V
+                                                                                                                                           100
+                                                      O
+                                                                                                                                                                                                    IOUT=0mA
+                          80                    TA= -40 C                                                                                                                                                             o
+                                                                                                                                                                                                          TA=25 C
+
+
+
+
+Quiescent Current (μA)                                                                                            Quiescent Current (μA)
+                                                     O                                                                                      90
+                                                TA= 25 C                                                                                                                                                                  o
+                          70
+                                                     O
+                                                                                                                                                                                                          TA=-40 C
+                                                TA= 85 C                                                                                    80                                                                        o
+                          60                                                                                                                                                                              TA=85 C
+                                                                                                                                            70
+                          50
+
+                                                                                                                                            60
+                          40
+
+                          30                                                                                                                50
+
+
+                          20                                                                                                                40
+                                                                       Continuous Airflow 10scfm                                                       Continuous Airflow 10scfm
+                          10                                                                                                                30
+                                            2                3              4            5          6                                            2.5         3.0         3.5       4.0      4.5     5.0         5.5               6.0
+
+                                                           Input Voltage (V)                                                                                                    Input Voltage (V)
+
+
+                            Figure 12. Quiescent Current vs. Input Voltage                                                                   Figure 13. Quiescent Current vs. Input Voltage
+
+
+
+
+                          110                                                                                                              110
+
+                                                                                  AP2114_2.5V                                                                                                        AP2114_3.3V
+                          100                                                     IOUT=0mA                                                 100
+                                                                                                                                                                                                     IOUT=0mA
+                                                                                              o
+                                                                                         TA=25 C                                                                                                                              O
+
+
+
+
+                                                                                                               Quiescent Current (μA)
+                                                                                                                                           90                                                               TA= -40 C
+
+
+
+
+ Quiescent Current (μA)
+                           90
+                                                                                               o
+                                                                                         TA=-40 C                                                                                                           TA= 25 C
+                                                                                                                                                                                                                              O
+
+                           80                                                                 o                                            80
+                                                                                         TA=85 C                                                                                                            TA= 85 C
+                                                                                                                                                                                                                              O
+
+
+                           70                                                                                                              70
+
+
+                           60                                                                                                              60
+
+
+                           50                                                                                                              50
+
+
+                           40                                                                                                              40
+                                      Continuous Airflow 10scfm                                                                                        Continuous Airflow 10scfm
+
+                           30                                                                                                              30
+                                2.5       3.0        3.5         4.0       4.5     5.0       5.5    6.0                                                3.5         4.0             4.5        5.0         5.5                     6.0
+
+
+                                                              Input Voltage (V)                                                                                                Input Voltage (V)
+
+                            Figure 14. Quiescent Current vs. Input Voltage                                                                       Figure 15. Quiescent Current vs. Input Voltage
+
+
+
+
+Jan. 2013                               Rev. 2. 2                                                                                                             BCD Semiconductor Manufacturing Limited
+
+                                                                                                          16
+                                                                                                                                                                                          Data Sheet
+
+              1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                                                                                                      AP2114
+
+Typical Performance Characteristics (Continued)
+
+
+
+                                                                                                                                    1.90
+                            1.216
+                                                                                         AP2114_1.2V                                              AP2114_1.8V                                 IOUT=10mA
+                                                                                                                                    1.88          VIN=2.8V
+                            1.212                                                        VIN=2.5V                                                                                             IOUT=100mA
+                                                                                              IOUT=10mA                             1.86          CIN=4.7μF                                   IOUT=500mA
+                            1.208
+
+
+
+
+Output Voltage (V)
+                                                                                              IOUT=100mA                                          COUT=4.7μF                                  IOUT=1000mA
+                                                                                                                                    1.84
+
+
+
+
+                                                                                                               Output Voltage (V)
+                            1.204                                                             IOUT=500mA
+                                                                                                                                    1.82
+                            1.200                                                             IOUT=1000mA
+                                                                                                                                    1.80
+                            1.196
+                                                                                                                                    1.78
+                            1.192
+                                                                                                                                    1.76
+                            1.188
+                                                                                                                                    1.74
+                            1.184
+                                          Continuous Airflow 10scfm                                                                 1.72                                          Continuous Airflow 10scfm
+                            1.180
+                                                                                                                                    1.70
+                                    -40         -20          0          20          40        60         80                                -40         -20       0          20           40       60         80
+
+                                                                              O                                                                                                      O
+                                                                 Temperature ( C)                                                                                     Temperature ( C)
+
+
+
+
+                                   Figure 16. Output Voltage vs. Temperature                                                                      Figure 17. Output Voltage vs. Temperature
+
+
+
+
+                                                                                                                                     3.35
+                            2.54                                                                                                                   AP2114_3.3V                                   IOUT=10mA
+                                                                                                                                     3.34          VIN=4.3V
+                                                                                                                                                                                                 IOUT=100mA
+                            2.52                                                                                                     3.33
+                                                                                                                                                                                                 IOUT=500mA
+
+
+
+
+                                                                                                               Output Voltage (V)
+                                                                                                                                     3.32                                                       IOUT=1000mA
+
+
+
+
+       Output Voltage (V)
+                            2.50
+                                                                                                                                     3.31
+                            2.48
+                                          AP2114_2.5V
+                                          VIN=3.5V                                                                                   3.30
+
+                            2.46          CIN=4.7μF                                                                                  3.29
+                                          COUT=4.7μF                                      IOUT=10mA                                  3.28
+                            2.44                                                          IOUT=100mA
+                                                                                                                                     3.27
+                                                                                          IOUT=500mA
+                            2.42
+                                          Continuous Airflow 10scfm                       IOUT=1000mA                                3.26
+                                                                                                                                                  Continuous Airflow 10scfm
+                            2.40                                                                                                     3.25
+                                   -40         -20       0             20         40         60         80                                  -40         -20       0          20          40        60         80
+
+                                                                             O                                                                                                       O
+                                                                 Temperature ( C)                                                                                    Temperature ( C)
+
+
+
+
+                                     Figure 18. Output Voltage vs. Temperature                                                                   Figure 19. Output Voltage vs. Temperature
+
+
+
+
+Jan. 2013                                  Rev. 2. 2                                                                                                     BCD Semiconductor Manufacturing Limited
+
+                                                                                                              17
+                                                                                                                                                                                                                             Data Sheet
+
+                             1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                                                                                                                            AP2114
+
+              Typical Performance Characteristics (Continued)
+
+
+                                                                                                                                                                    2.0
+                                    1.6
+                                                                                             AP2114_1.2V                                                            1.8
+                                    1.4
+                                                                                                                                                                    1.6
+                                    1.2
+
+
+
+
+Output Voltage (V)
+                                                                                                                                                                    1.4
+
+
+
+
+                                                                                                                          Output Voltage (V)
+                                    1.0                                                                                                                             1.2
+                                                                                                                                                                                                                                    AP2114_1.8V
+                                                                                                                                                                                                                                              o
+                                                                                                                                                                    1.0                                                                 TA=-40 C
+                                    0.8                                                                      O
+                                                                                                  TA=-40 C                                                                                                                                          o
+                                                                                                                                                                                                                                            TA=25 C
+                                                                                                          O                                                         0.8
+                                                                                                  TA=25 C                                                                                                                                           o
+                                    0.6                                                                                                                                                                                                     TA=85 C
+                                                                                                          O                                                         0.6
+                                                                                                  TA=85 C                                                                                                                            CIN=4.7μF
+                                    0.4
+                                                                                              CIN=4.7μF                                                             0.4                                                              COUT=4.7μF
+                                    0.2
+                                                                                              COUT=4.7μF                                                            0.2                                                              IOUT=10mA
+                                                                                              IOUT=10mA                                                                         Continuous Airflow 10scfm
+                                              Continuous Airflow 10scfm
+                                                                                                                                                                    0.0
+                                    0.0
+                                                                                                                                                                          0.5     1.0     1.5    2.0    2.5    3.0    3.5    4.0    4.5     5.0    5.5        6.0
+                                              1              2           3           4           5               6
+                                                                                                                                                                                                        Input Voltage (V)
+                                                                 Input Voltage (V)
+
+
+
+
+                                      Figure 20. Output Voltage vs. Input Voltage                                                                                         Figure 21. Output Voltage vs. Input Voltage
+
+
+
+
+                                                                                                                                                                     4.0
+                                                                                                                                                                                                                                      AP2114_3.3V
+                                    2.5                                                                                                                              3.5
+
+
+                                                                                                                                                                     3.0
+
+
+
+
+                                                                                                                                               Output Voltage (V)
+                                    2.0
+
+
+
+
+               Output Voltage (V)
+                                                                                             AP2114_2.5V
+                                                                                                                                                                     2.5
+                                                                                             CIN=4.7μF
+                                    1.5
+                                                                                             COUT=4.7μF                                                              2.0                                                                          TA=-40 C
+                                                                                                                                                                                                                                                          O
+
+
+                                                                                             IOUT=10mA                                                                                                                                            TA=25 C
+                                                                                                                                                                                                                                                          O
+                                    1.0                                                                   O                                                          1.5
+                                                                                                 TA=-40 C                                                                                                                                         TA=85 C
+                                                                                                                                                                                                                                                          O
+
+                                                                                                         O
+                                                                                                 TA=25 C                                                             1.0
+                                    0.5                                                                                                                                                                                                   CIN=4.7μF
+                                                                                                         O
+                                                                                                 TA=85 C                                                                                                                                  COUT=4.7μF
+                                                                                                                                                                     0.5
+                                    0.0           Continuous Airflow 10scfm                                                                                                             Continuous Airflow 10scfm                         IOUT=10mA
+                                                                                                                                                                     0.0
+                                                                                                                                                                           0.5     1.0     1.5    2.0    2.5    3.0    3.5    4.0    4.5     5.0    5.5        6.0
+                                              1          2           3        4          5           6               7
+
+
+                                                                   Input Voltage (V)                                                                                                                     Input Voltage (V)
+
+
+
+                                          Figure 22. Output Voltage vs. Input Voltage                                                                                       Figure 23. Output Voltage vs. Input Voltage
+
+
+
+
+              Jan. 2013                            Rev. 2. 2                                                                                                                             BCD Semiconductor Manufacturing Limited
+
+                                                                                                                         18
+                                                                                                                                                                                                   Data Sheet
+
+           1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                                                                                                                       AP2114
+
+Typical Performance Characteristics (Continued)
+
+
+                         1.210
+                                                                                                                                           1.3
+                                          AP2114_1.2V                                                                                                                                                         AP2114_1.2V
+                         1.205                                                                                                             1.2
+                         1.200
+                                          VIN=2.5V                                                                                         1.1
+                         1.195                                                                                                             1.0
+
+
+
+
+Output Voltage (V)                                                                                                   Output Voltage (V)
+                         1.190                                                                                                             0.9
+                                                                                                                                           0.8
+                         1.185
+                                                                                                                                           0.7
+                         1.180
+                                                                                                                                           0.6                                                                           VIN=2.5V
+                         1.175
+                                                                                                                                           0.5                                                                           VIN=3.3V
+                         1.170                         O
+                                               TA=-40 C                                                                                    0.4                                                                           O
+                                                                                                                                                                                                             TA=25 C
+                         1.165                         O                                                                                   0.3
+                                               TA=25 C                                                                                                                                                       CIN=4.7μF
+                         1.160                                                                                                             0.2
+                                             TA=85 C
+                                                       O
+                                                                                                                                                                                                             COUT=4.7μF
+                         1.155                                                                                                             0.1
+                                       Continuous Airflow 10scfm                                                                                                 Continuous Airflow 10scfm
+                         1.150                                                                                                             0.0
+                                                                                                                                                 0.0      0.2       0.4        0.6         0.8         1.0         1.2          1.4
+                                 0.0             0.2              0.4         0.6         0.8          1.0
+
+                                                                                                                                                                          Output Current (A)
+                                                           Output Current (A)
+
+
+
+                           Figure 24. Output Voltage vs. Output Current                                                                          Figure 25. Output Voltage vs. Output Current
+
+
+
+
+                         2.00                                                                                                             3.0
+
+
+                         1.75
+                                                                                                                                          2.5
+
+                         1.50
+                                        AP2114_1.8V
+                                                                                                                                                           AP2114_2.5V
+                                        VIN=2.8V
+
+
+
+
+    Output Voltage (V)                                                                                           Output Voltage (V)
+                                                                                                                                          2.0              VIN=3.5V
+                         1.25           CIN=4.7μF
+                                                                                                                                                           CIN=4.7μF
+                                        COUT=4.7μF
+                         1.00                                                                                                             1.5
+                                                                                                                                                           COUT=4.7μF
+
+                                                                                                 O                                                                                                                        O
+                         0.75
+                                                                                      TA=-40 C                                                                                                                TA=-40 C
+                                                                                                O                                         1.0                                                                            O
+                                                                                      TA=25 C                                                                                                                 TA=25 C
+                         0.50                                                                   O                                                                                                                        O
+                                                                                      TA=85 C                                                                                                                 TA=85 C
+                                                                                                                                          0.5
+                         0.25
+                                               Continuous Airflow 10scfm                                                                                         Continuous Airflow 10scfm
+                         0.00                                                                                                             0.0
+                                0.0      0.2       0.4      0.6         0.8   1.0   1.2         1.4   1.6                                       0.0      0.2      0.4        0.6     0.8         1.0         1.2          1.4         1.6
+
+                                                           Output Current (A)                                                                                               Output Current (A)
+
+
+                                      Figure 26. Output Voltage vs. Output Current                                                                    Figure 27. Output Voltage vs. Output Current
+
+
+
+
+Jan. 2013                               Rev. 2. 2                                                                                                               BCD Semiconductor Manufacturing Limited
+
+                                                                                                            19
+                                                                                                                                                                                                     Data Sheet
+
+                            1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                                                                                                AP2114
+
+                 Typical Performance Characteristics (Continued)
+
+
+
+                                                                                                                                                 3.35
+                                                                                   AP2114_3.3V
+                            3.5                                                                                                                                                                       AP2114_3.3V
+                                                                                                                                                 3.34
+                                                                                                                                                                                                      VIN=4.3V
+                            3.0                                                                                                                                                                                  O
+                                                                                                                                                 3.33                                                     TA=-40 C
+
+
+
+
+Output Voltage (V)                                                                                           Output Voltage (V)
+                                                                                                                                                                                                                 O
+                            2.5                                                                                                                                                                           TA=25 C
+                                                                                                                                                 3.32                                                            O
+                                                                                                                                                                                                          TA=85 C
+                            2.0
+                                                                                                                                                 3.31
+
+                            1.5                                                           VIN=4.3V                                               3.30
+                                                                                          VIN=5V
+                            1.0                                                            O                                                     3.29
+                                                                                   TA=25 C
+                            0.5                                                    CIN=4.7μF                                                     3.28
+                                                                                   COUT=4.7μF                                                                 Continuous Airflow 10scfm
+                                               Continuous Airflow 10scfm
+                            0.0                                                                                                                  3.27
+                                  0.0    0.2     0.4       0.6         0.8   1.0   1.2         1.4   1.6                                                0.0          0.2           0.4         0.6         0.8        1.0
+
+                                                           Output Current (A)                                                                                                  Output Current (A)
+
+
+
+
+                                   Figure 28. Output Voltage vs. Output Current                                                                         Figure 29. Output Voltage vs. Output Current
+
+
+
+
+                             0.7                                                                                                                 0.60
+
+                                         AP2114_1.8V                                                                                             0.55         AP2114_2.5V
+                                                                                                                                                              VIN=3.5V
+                             0.6         VIN=2.8V                                                                                                0.50
+                                                                                                                                                              CIN=4.7μF
+                                         CIN=4.7μF                                                                                               0.45
+                                                                                                                                                              COUT=4.7μF
+
+
+
+
+      Dropout Voltage (V)                                                                                                  Dropout Voltage (V)
+                             0.5         COUT=4.7μF                                                                                              0.40
+                                                                                                                                                                           O
+                                                       O
+                                                TA=-40 C                                                                                                            TA=-40 C
+                             0.4                                                                                                                 0.35
+                                                                                                                                                                           O
+                                                TA=25 C
+                                                       O
+                                                                                                                                                 0.30
+                                                                                                                                                                    TA=25 C
+                                                                                                                                                                           O
+                             0.3                TA=85 C
+                                                       O
+                                                                                                                                                 0.25               TA=85 C
+
+                                                                                                                                                 0.20
+                             0.2
+                                                                                                                                                 0.15
+
+                                                                                                                                                 0.10
+                             0.1
+                                                 Continuous Airflow 10scfm                                                                       0.05                Continuous Airflow 10scfm
+                             0.0                                                                                                                 0.00
+                                   0.0          0.2              0.4         0.6         0.8          1.0                                               0.0          0.2          0.4         0.6         0.8        1.0
+
+                                                           Output Current (A)                                                                                                   Output Current (A)
+
+
+
+
+                                   Figure 30. Dropout Voltage vs. Output Current                                                                        Figure 31. Dropout Voltage vs. Output Current
+
+
+
+
+                 Jan. 2013                Rev. 2. 2                                                                                                                 BCD Semiconductor Manufacturing Limited
+
+                                                                                                            20
+                                                                                                                                                                                                                     Data Sheet
+
+               1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                                                                                                                               AP2114
+
+Typical Performance Characteristics (Continued)
+
+
+
+                                         0.60                                                                                                                     1.8
+
+                                         0.55                                                                                                                     1.6
+                                                                                                                                                                                                                              AP2114_1.2V
+                                                           AP2114_3.3V                                                                                                                                                              O
+                                         0.50                                                                                                                                                                                 TA=25 C
+                                                           CIN=4.7μF                                                                                              1.4
+                                                                                                                                                                                                                              CIN=4.7μF
+
+
+
+
+                                                                                                                                       Max. Output Current (A)
+                                         0.45
+
+
+
+
+Dropout Voltage (V)
+                                                           COUT=4.7μF
+                                         0.40                                                                                                                     1.2                                                         COUT=4.7μF
+                                                                             O
+                                                                  TA=-40 C
+                                         0.35                                                                                                                     1.0
+                                                                             O
+                                                                  TA=25 C
+                                         0.30
+                                                                             O                                                                                    0.8
+                                                                  TA=85 C
+                                         0.25
+
+                                         0.20                                                                                                                     0.6
+
+                                         0.15                                                                                                                     0.4
+                                         0.10
+                                                                                                                                                                  0.2
+                                         0.05                                             Continuous Airflow 10scfm                                                           Continuous Airflow 10scfm
+                                         0.00                                                                                                                     0.0
+                                                0.0              0.2                0.4         0.6             0.8         1.0                                         2.0         2.5    3.0   3.5      4.0     4.5         5.0       5.5   6.0
+
+                                                                                 Output Current (A)                                                                                               Input Voltage (V)
+
+
+
+
+                                                  Figure 32. Dropout Voltage vs. Output Current                                                                    Figure 33. Max. Output Current vs. Input Voltage
+
+
+
+
+                                         2.0                                                                                                                      2.0
+                                                                                                      AP2114_1.8V                                                                                                 AP2114_2.5V
+                                         1.8                                                                                                                      1.8
+                                                                                                      CIN=4.7μF                                                                                                   CIN=4.7μF
+                                         1.6                                                          COUT=4.7μF                                                  1.6                                             COUT=4.7μF
+
+
+
+
+               Max. Output Current (A)                                                                                                  Max. Output Current (A)
+                                         1.4                                                          VOUT=1.8X(1+1.5%)                                           1.4                                             VOUT=2.5X(1+1.5%)
+
+                                         1.2                                                                                                                      1.2
+
+                                         1.0                                                                                                                      1.0
+
+                                         0.8                                                                                                                      0.8
+
+                                         0.6                                                                                                                      0.6
+
+                                         0.4                                                                                                                      0.4
+
+                                         0.2                                                                                                                      0.2
+                                                      Continuous Airflow 10scfm                                                                                               Continuous Airflow 10scfm
+                                         0.0                                                                                                                      0.0
+                                                2.0        2.5         3.0         3.5    4.0     4.5     5.0         5.5   6.0                                               3.0         3.5     4.0       4.5         5.0         5.5        6.0
+
+                                                                             Input Voltage (V)                                                                                                   Input Voltage (V)
+
+
+
+
+                                            Figure 34. Max. Output Current vs. Input Voltage                                                                       Figure 35. Max. Output Current vs. Input Voltage
+
+
+
+
+Jan. 2013                                                Rev. 2. 2                                                                                                                    BCD Semiconductor Manufacturing Limited
+
+                                                                                                                                  21
+                                                                                                                                                                                                                                             Data Sheet
+
+                                      1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                                                                                                                              AP2114
+
+                 Typical Performance Characteristics (Continued)
+
+
+                                          1.8                                                                                                                         2.0
+                                                                                                                                                                                                                                                     TA=-30OC
+                                          1.6                                                       AP2114_3.3V                                                       1.8                        AP2114-3.3V
+                                                                                                    CIN=4.7μF                                                                                    TO-252-2 (1)/(3)                                    TA=25OC
+                                          1.4
+                                                                                                    COUT=4.7μF
+                                                                                                                                                                      1.6                                                                            TA=40OC
+
+
+
+
+Max. Output Current (A)                                                                                                        Max. Output Current (A)
+                                                                                                                                                                                                                                                          O
+                                          1.2                                                       TA=25 C
+                                                                                                               O
+                                                                                                                                                                      1.4                                                                            TA=50 C
+
+                                          1.0
+                                                                                                                                                                                                                                                     TA=85OC
+                                                                                                                                                                      1.2
+
+                                          0.8                                                                                                                         1.0
+
+                                          0.6                                                                                                                         0.8
+                                                                                                                                                                                                 Note 4
+                                          0.4                                                                                                                         0.6
+                                                                                                                                                                                                             Still air
+                                          0.2                                                                                                                         0.4
+                                                                                                                                                                                                                                     2
+                                                  Continuous Airflow 10scfm                                                                                                                Copper Heat Spreader Area:100mm
+                                          0.0                                                                                                                         0.2
+                                                      4.0               4.5             5.0         5.5             6.0                                                              4.0                   4.5                5.0             5.5               6.0
+
+                                                                              Input Voltage (V)                                                                                                                      Input Voltege (V)
+
+
+
+                                           Figure 36. Max. Output Current vs. Input Voltage                                                                                           Figure 37. Max. Output Current vs. Input Voltage
+
+
+                 Note 4: Considering power dissipation and thermal behavior, we suggest provide enough design margins in
+                 application design which are no less than 30% at least.
+
+
+
+
+                                          100                                                                                                                                        100
+
+                                                                                                   AP2114_1.2V                                                                                                                                  AP2114_1.8V
+                                           90                                                                                                                                         90
+                                                                                                   VIN=2.5V                                                                                                                                     VIN=2.8V
+
+
+
+
+              Output Short Current (mA)                                                                                                                  Output Short Current (mA)
+                                           80                                                                                                                                         80
+                                                                                                                                                                                                                                                CIN=4.7μF
+                                                                                                                                                                                                                                                COUT=4.7μF
+                                           70                                                                                                                                         70
+
+                                           60                                                                                                                                         60
+
+                                           50                                                                                                                                         50
+
+                                           40                                                                                                                                         40
+
+                                           30                                                                                                                                         30
+                                                      Continuous Airflow 10scfm                                                                                                                    Continuous Airflow 10scfm
+                                           20                                                                                                                                         20
+                                                -40           -20         0        20         40          60       80                                                                      -40       -20         0       20     40       60     80      100     120
+                                                                                          O                                                                                                                                              O
+                                                                          Temperature ( C)                                                                                                                               Temperature ( C)
+
+
+
+                                           Figure 38. Output Short Current vs. Temperature                                                                                           Figure 39. Output Short Current vs. Temperature
+
+
+
+
+                 Jan. 2013                                  Rev. 2. 2                                                                                                                                     BCD Semiconductor Manufacturing Limited
+
+                                                                                                                          22
+                                                                                                                                                                                                              Data Sheet
+
+                        1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                                                                                                                 AP2114
+
+   Typical Performance Characteristics (Continued)
+
+
+
+                                                                                                                                                             100
+                               100
+
+                                                                                        AP2114_2.5V                                                           90         AP2114_3.3V
+                               90                                                       VIN=3.5V                                                                         VIN=4.3V
+
+
+
+
+   Output Short Current (mA)                                                                                         Output Short Current (mA)
+                                                                                        CIN=4.7μF                                                             80
+                               80
+                                                                                        COUT=4.7μF
+                               70                                                                                                                             70
+
+
+                               60                                                                                                                             60
+
+
+                               50                                                                                                                             50
+
+
+                               40                                                                                                                             40
+
+
+                               30                                                                                                                             30
+                                           Continuous Airflow 10scfm                                                                                                     Continuous Airflow 10scfm
+                               20                                                                                                                             20
+                                     -40      -20         0   20        40   60         80       100      120                                                      -40       -20         0           20       40         60       80
+                                                                                                                                                                                                          O
+                                                                             O
+                                                              Temperature ( C)                                                                                                           Temperature ( C)
+
+
+
+                                 Figure 40. Output Short Current vs. Temperature                                                                               Figure 41. Output Short Current vs. Temperature
+
+
+
+
+                               80                                                                                                                              80
+
+                                                                                   AP2114_1.2V                                                                                                                      AP2114_1.8V
+                               70                                                                                                                              70
+
+
+                               60                                                                                                                              60
+
+
+
+
+PSRR (dB)                                                                                                                                        PSRR (dB)
+                               50                                                                                                                              50
+
+
+                               40                                                                                                                              40
+                                                                                                                                                                                   O
+                                                                                             O                                                                            TA=25 C
+                               30                                                 TA=25 C                                                                      30
+                                                                                                                                                                          CIN=4.7μF
+                                                                                  CIN=1μF
+                               20                                                                                                                              20         COUT=4.7μF
+                                                                                  COUT=4.7μF
+                                                                                                                                                                          IOUT=10mA
+                                                                                  IOUT=10mA
+                               10                                                                                                                              10
+                                                                                                                                                                          Ripple=1Vp-p
+                                                                                  Ripple=1Vp-p
+                                0                                                                                                                                  0
+                                                    100            1k             10k                  100k                                                                    100              1k                 10k        100k
+
+                                                              Frequency (Hz)                                                                                                                 Frequency (Hz)
+
+
+
+                                              Figure 42. PSRR vs. Frequency                                                                                                   Figure 43. PSRR vs. Frequency
+
+
+
+
+   Jan. 2013                                   Rev. 2. 2                                                                                                                     BCD Semiconductor Manufacturing Limited
+
+                                                                                                                23
+                                                                                                                            Data Sheet
+
+            1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                                           AP2114
+
+   Typical Performance Characteristics (Continued)
+
+
+
+            80                                                                         80
+                                                 AP2114_2.5V                                AP2114_3.3V                           TA=25 C
+                                                                                                                                         O
+
+            70                                                                         70
+                                                                                                                                  CIN=1μF
+            60                                                                         60                                         COUT=4.7μF
+                                                                                                                                  Ripple=1Vp-p
+
+
+PSRR (dB)
+                                                                                       50
+
+
+
+                                                                           PSRR (dB)
+            50
+
+
+            40                                                                         40
+                                                 O
+                                            TA=25 C                                    30
+            30
+                                            CIN=4.7μF
+            20                              COUT=4.7μF                                 20
+                                                                                                                            IOUT=10mA
+                                            IOUT=10mA
+            10                                                                         10                                   IOUT=100mA
+                                            Ripple=1Vp-p
+            0                                                                          0
+                   100           1k            10k           100k                                100        1k              10k              100k
+
+                              Frequency (Hz)                                                               Frequency (Hz)
+
+
+
+                 Figure 44. PSRR vs. Frequency                                                 Figure 45. PSRR vs. Frequency
+
+
+
+
+                                       1A
+                                                         CIN=4.7μF
+                                                         COUT=4.7μF
+                    0A
+
+
+
+
+                          Figure 46. Load Transient
+
+
+
+
+   Jan. 2013      Rev. 2. 2                                                                      BCD Semiconductor Manufacturing Limited
+
+                                                                      24
+                                                                                 Data Sheet
+
+ 1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                         AP2114
+
+Typical Application
+
+
+
+
+                        Figure 47. Typical Application of AP2114
+
+
+
+
+Jan. 2013   Rev. 2. 2                                       BCD Semiconductor Manufacturing Limited
+
+                                          25
+                                                                                                                                              Data Sheet
+
+ 1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                                                                    AP2114
+
+Mechanical Dimensions
+
+                                                                             SOT-223                                                   Unit: mm(inch)
+
+
+                                                              6.300(0.248)
+                                                              6.700(0.264)
+                                                                                                                                                    0)
+                                                                                                                                         0.250(0.01
+                                                              2.900(0.114)                                                                      0. 014)
+                                                                                                                                          0.350(
+                                                              3.100(0.122)
+                                                                                                                   0.900(0.035)
+                                                                                                                      MIN
+
+
+
+
+            6.700(0.264)   7.300(0.287)                                              3.300(0.130)   3.700(0.146)
+                                                                                                                        0.250(0.010)
+
+
+
+
+                                1.750(0.069)
+                                    TYP
+
+                                          2.300(0.091)                           0.610(0.024)
+                                             TYP                                 0.810(0.032)                                            0°
+                                                                                                                                        10°
+                                                              4.500(0.177)
+                                                              4.700(0.185)
+
+
+                                                    0.020(0.001)
+                                                    0.100(0.004)
+
+
+            1.500(0.059)                                                                              1.520(0.060)
+            1.700(0.067)                                                                              1.800(0.071)
+
+
+
+
+Jan. 2013           Rev. 2. 2                                                                                        BCD Semiconductor Manufacturing Limited
+
+                                                                                26
+                                                                     9.500(0.374)
+                                                                     9.900(0.390)
+     Jan. 2013
+                                                                      0.600(0.024)        1.350(0.053)
+                                                                      0.900(0.035)        1.650(0.065)
+
+     Rev. 2. 2
+
+
+
+
+                                               1.400(0.055)
+                                               1.780(0.070)
+
+
+
+27
+                                                                                                                          Mechanical Dimensions (Continued)
+
+
+
+                                                                                                         TO-252-2 (1)
+
+                                                2.550(0.100)          5.450(0.215)
+                                                2.900(0.114)          6.250(0.246)
+                                                                                                                                                              1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE
+
+
+
+
+                                                      3.800REF(0.150REF)
+
+
+                                                                           4.800(0.189)
+                                                                           6.500(0.256)
+                                                                                                                                                              AP2114                                        Data Sheet
+     BCD Semiconductor Manufacturing Limited
+                                                                                                         Unit: mm(inch)
+                                                                                                                                                                  Data Sheet
+
+  1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                                                                                         AP2114
+
+Mechanical Dimensions (Continued)
+
+                                                                                  TO-252-2 (3)                                                           Unit: mm(inch)
+
+
+               0.900(0.035)        6.500(0. 256)
+                                   6.700(0. 264)
+               1.250(0.049)        5.130(0.202)
+                                                                                            4.700REF
+                                                                    1.29±0.1
+                                   5.460(0.215)                                                                                                                       0.470(0.019)
+                                                                                                                                                                      0.600(0.024)
+                                                                  Option 1
+
+
+                                                                                                       5.250REF
+6.000(0.236)
+                                                                                                                                                                         5
+                                                   0.150(0.006)
+                                                                             0.600(0.024)
+                                                                                                                                                                        9
+                                                                                                                       9.800(0.386)
+               1.800REF
+                                                                                                                                                                             0.900(0.035)
+
+6.200(0.244)
+                                                                                                                                                                             1.100(0.043)
+                                                   0.750(0.030)
+                                                                             1.000(0.039)
+                                                                                                                      10.400(0.409)
+                                                                                                                                                  0
+                                                                                                                                                  8
+
+
+                                                                                                                                      2.900REF
+                                                                                                                                                                         3
+                                                                                                                                                                         7
+
+       0.720(0.028)                                0.720(0.028)                                                                                                   0
+
+                                                                                                                                                   1.400(0.055)
+       0.900(0. 035)                               0.850(0.033)                                                                                                   8
+           2.286(0. 090)
+
+                                                                                                                                                   1.700(0.067)
+               BSC
+                                   5
+                                   9
+
+                                                            2.200(0.087)                                                                         Option 2
+                                                            2.380(0.094)
+
+
+
+
+Jan. 2013                     Rev. 2. 2                                                                           BCD Semiconductor Manufacturing Limited
+
+                                                                                               28
+                                                             Data Sheet
+
+ 1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                     AP2114
+
+Mechanical Dimensions (Continued)
+
+                         TO-252-2 (4)                  Unit: mm(inch)
+
+
+
+
+Jan. 2013   Rev. 2. 2                   BCD Semiconductor Manufacturing Limited
+
+                              29
+                                                                                                                                         Data Sheet
+
+ 1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                                                                                                    AP2114
+
+Mechanical Dimensions (Continued)
+
+                                                                  TO-263-3                                                        Unit: mm(inch)
+
+
+
+                       4.070(0.160)                 3°
+                       4.820(0.190)
+
+
+
+
+                                9.650(0.380)
+                                10.290(0.405)                                          1.150(0.045)                              7.420(0.292)
+                                8.840(0.348)           1.270(0.050)
+                                                                                       1.390(0.055)
+                                                       1.390(0.055)
+            70°
+                                                                                          7°
+
+
+
+                                                                                                                  5.600(0.220)
+                                                                                               0.020(0.001)
+        8.640(0.340)                                                                           0.250(0.010)
+                                                                                               2.640(0.104)
+        9.650(0.380)                                     14.760(0.581)                         2.700(0.106)
+                                                                                               0.360(0.014)                      7.980(0.314)
+                                                         15.740(0.620)
+
+                                                                   2.390(0.094)
+                                                                                               0.400(0.016)
+                                                                                                 7°
+                                                   1.150(0.045)                    3°           2.200(0.087)
+                                                                   2.690(0.106)
+                                                   1.390(0.055)
+                                                  0.510(0.020)                                 2°
+                                                  0.990(0.039)                                 8°
+                                                                                   0.380(0.015)
+        2.540(0.100)                            2.540(0.100)                                            2.540(0.100)
+
+                                                                                   0°                              2.540(0.100)
+                                                                                   6°
+
+
+
+
+Jan. 2013     Rev. 2. 2                                                                               BCD Semiconductor Manufacturing Limited
+
+                                                                                  30
+                                                                      Data Sheet
+
+ 1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                              AP2114
+
+Mechanical Dimensions (Continued)
+
+                         SOIC-8                               Unit: mm(inch)
+
+
+
+
+                            R0.150(0.006)
+
+
+
+
+Jan. 2013   Rev. 2. 2                            BCD Semiconductor Manufacturing Limited
+
+                                            31
+                                                                Data Sheet
+
+ 1A LOW NOISE CMOS LDO REGULATOR WITH ENABLE                        AP2114
+
+Mechanical Dimensions (Continued)
+
+                                  PSOP-8                  Unit: mm(inch)
+
+
+
+
+                   3.202(0.126)
+
+
+                   3.402(0.134)
+
+
+
+
+Jan. 2013   Rev. 2. 2                      BCD Semiconductor Manufacturing Limited
+
+                                     32
+                                            BCD Semiconductor Manufacturing Limited
+
+
+
+
+                                                            http://www.bcdsemi.com
+
+
+
+
+                                                                        IMPORTANT NOTICE
+                                                                        IMPORTANT NOTICE
+
+BCD Semiconductor
+BCD   Semiconductor Manufacturing       Limited reserves
+                        Manufacturing Limited   reserves the
+                                                         the right
+                                                             right to
+                                                                   to make
+                                                                      make changes
+                                                                            changes without
+                                                                                     without further
+                                                                                              further notice
+                                                                                                        notice to
+                                                                                                                to any
+                                                                                                                   any products
+                                                                                                                        products oror specifi-
+                                                                                                                                      specifi-
+cations herein.
+cations  herein. BCD   Semiconductor Manufacturing
+                 BCD Semiconductor      Manufacturing Limited
+                                                      Limited does
+                                                                does not
+                                                                      not assume
+                                                                          assume any
+                                                                                  any responsibility
+                                                                                      responsibility for
+                                                                                                       for use
+                                                                                                            use of
+                                                                                                                of any
+                                                                                                                   any its
+                                                                                                                        its products
+                                                                                                                            products for
+                                                                                                                                       for any
+                                                                                                                                           any
+particular purpose,
+particular  purpose, nor  does BCD
+                      nor does  BCD Semiconductor
+                                     Semiconductor Manufacturing
+                                                    Manufacturing Limited
+                                                                     Limited assume
+                                                                              assume any
+                                                                                      any liability
+                                                                                           liability arising
+                                                                                                     arising out
+                                                                                                              out of
+                                                                                                                   of the
+                                                                                                                      the application
+                                                                                                                           application or
+                                                                                                                                        or use
+                                                                                                                                           use
+of any
+of any its  products or
+        its products     circuits. BCD
+                      or circuits. BCD Semiconductor
+                                        Semiconductor Manufacturing
+                                                      Manufacturing Limited
+                                                                        Limited does
+                                                                                does not
+                                                                                      not convey
+                                                                                          convey anyany license
+                                                                                                         license under
+                                                                                                                  under its
+                                                                                                                          its patent
+                                                                                                                              patent rights
+                                                                                                                                     rights or
+                                                                                                                                            or
+other rights
+other rights nor
+              nor the
+                  the rights
+                      rights of
+                             of others.
+                                others.
+
+MAIN SITE
+MAIN   SITE
+- Headquarters
+BCD   Semiconductor Manufacturing Limited                                                  - Wafer
+                                                                                                BCD FabSemiconductor Manufacturing Limited
+BCD   Semiconductor
+- Wafer  Fab          Manufacturing Limited                                                Shanghai   SIM-BCD
+                                                                                                - IC Design GroupSemiconductor Manufacturing Co., Ltd.
+No.  1600, Zi Xing
+Shanghai   SIM-BCD Road, Shanghai
+                     SemiconductorZiZhu Science-basedLimited
+                                     Manufacturing    Industrial Park, 200241, China       800 Yi Shan
+                                                                                                AdvancedRoad, Shanghai
+                                                                                                           Analog       200233,
+                                                                                                                   Circuits     China Corporation
+                                                                                                                            (Shanghai)
+Tel: +86-21-24162266,
+800, Yi Shan           Fax: 200233,
+              Road, Shanghai+86-21-24162277
+                                     China                                                 Tel: 8F,
+                                                                                               +86-21-6485  1491,YiFax:
+                                                                                                    Zone B, 900,        +86-21-5450
+                                                                                                                    Shan Road,      0008200233, China
+                                                                                                                                Shanghai
+Tel: +86-21-6485 1491, Fax: +86-21-5450 0008                                                    Tel: +86-21-6495 9539, Fax: +86-21-6485 9673
+REGIONAL SALES OFFICE
+Shenzhen
+REGIONAL OfficeSALES OFFICE                                                               Taiwan Office                                               USA Office
+Shenzhen SIM-BCD
+Shanghai  Office    Semiconductor Manufacturing Co., Ltd., Shenzhen Office                BCD Taiwan
+                                                                                                Semiconductor
+                                                                                                        Office (Taiwan) Company Limited               BCD Office
+                                                                                                                                                      USA    Semiconductor Corp.
+Unit A Room
+Shanghai     1203, Skyworth
+          SIM-BCD           Bldg., Gaoxin
+                    Semiconductor   Manufacturing        Ltd.District,
+                                                    Nanshan
+                                          Ave.1.S., Co.,      Shenzhen Shenzhen,
+                                                                          Office          4F, 298-1,
+                                                                                                BCDRui Guang
+                                                                                                      Semiconductor  (Taiwan)District,
+                                                                                                                Road, Nei-Hu  Company  Taipei,
+                                                                                                                                          Limited     30920 Huntwood
+                                                                                                                                                      BCD               Ave. Hayward,
+                                                                                                                                                            Semiconductor  Corporation
+China
+Advanced Analog Circuits (Shanghai) Corporation Shenzhen Office                           Taiwan4F, 298-1, Rui Guang Road, Nei-Hu District, Taipei,   CA
+                                                                                                                                                      3092094544, USA Ave. Hayward,
+                                                                                                                                                              Huntwood
+Tel: +86-755-8826
+Room E, 5F, Noble 7951                                                                    Tel: Taiwan
+                  Center, No.1006, 3rd Fuzhong Road, Futian District, Shenzhen 518026, China   +886-2-2656 2808                                       Tel :94544,
+                                                                                                                                                      CA    +1-510-324-2988
+                                                                                                                                                                  U.S.A
+Fax: +86-755-88267951
+Tel: +86-755-8826 7865                                                                    Fax: +886-2-2656   28062808
+                                                                                                Tel: +886-2-2656                                      Fax: +1-510-324-2988
+                                                                                                                                                      Tel   +1-510-324-2788
+Fax: +86-755-8826 7865                                                                          Fax: +886-2-2656 2806                                 Fax: +1-510-324-2788
+

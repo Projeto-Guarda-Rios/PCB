@@ -264,6 +264,10 @@
           "drill": 0.2
         },
         {
+          "diameter": 0.6,
+          "drill": 0.3
+        },
+        {
           "diameter": 0.6858,
           "drill": 0.3302
         },
@@ -281,7 +285,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": ""
+      "sch_revision": "Schematic review 1"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -556,19 +560,11 @@
         "wire_width": 6
       },
       {
-        "clearance": 0.127,
-        "diff_pair_gap": 0.2507,
-        "diff_pair_width": 0.2507,
-        "microvia_diameter": 0.5,
-        "microvia_drill": 0.3,
-        "name": "USB",
+        "name": "90R_diff",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.254,
-        "tuning_profile": "",
-        "via_diameter": 0.5,
-        "via_drill": 0.3
+        "tuning_profile": ""
       }
     ],
     "meta": {
@@ -578,20 +574,24 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "USB",
+        "netclass": "90R_diff",
         "pattern": "D+"
       },
       {
-        "netclass": "USB",
+        "netclass": "90R_diff",
         "pattern": "D-"
       },
       {
-        "netclass": "USB",
+        "netclass": "Default",
         "pattern": "RXD0-"
       },
       {
-        "netclass": "USB",
+        "netclass": "Default",
         "pattern": "TXD0+"
+      },
+      {
+        "netclass": "90R_diff",
+        "pattern": "D(+|-)"
       }
     ]
   },

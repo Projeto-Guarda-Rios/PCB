@@ -1,0 +1,301 @@
+      Li-ion Battery Technology Specification
+
+       Reference BAT534
+
+       Part name             Li-ion Battery
+
+       Model No            ICR18650 2400mAh 3.7V
+
+
+
+
+-1-    If manufacturer want to modify the product technology specification, we won’t inform you additionally)
+1. SCOPE
+  This specification governs the performance of the following Li-ion battery
+  Cylindrical Cell and its stack-up batteries.
+
+2. SPECIFICATION
+No.                  Item                          Characteristics                          Remarks
+                                          Minimum: 2280mAh                      Standard discharge
+ 1        Nominal Capacity                                                      （0.2C5A)
+                                          Typical: 2400mAh                      after Standard charge
+ 2        Nominal Voltage                 3.7V                                             —
+          Charging Cut-off                                                                 —
+ 3                                        4.2V
+          Voltage
+          Discharge Cut-off                                                                     —
+ 4                                        3.0V
+          Voltage
+                                          Constant Current 0.5C5A
+                                                                                Charge Time : Approx
+ 5        Standard Charge                 Constant Voltage 4.2V                 4.0h
+                                          0.01 C5A cut-off
+          Maximum Constant
+ 6                                        2400mA                                                —
+          Charging Current
+                                          Discharge at 0.2 C5A to
+ 7          Standard Discharge                                                                  —
+                                          3.0V
+          Maximum Continuous
+ 8                                        3600mA
+          Discharging Current
+          Operating                       Charge    0～45℃                                                             -2-
+ 9                                                                                              —
+          Temperature                     Discharge –20～60℃
+                                          -20～45℃ for 1Month
+ 10       Storage Temperature                                                                   —
+                                          -10～35℃ for 6Months
+ 11       Storage Voltage                   3.7-3.85V                                        —
+                                                                                If the materials of the
+                                                                                product and packaging
+ 12       Environmental request           RoHS                                  accord with RoHS
+                                                                                standard，there will be a
+                                                                                RoHS Id on the box.
+
+3. Dimensions
+       Please refer the drawing in appendix.
+
+4. Appearance
+    No scratches, dirt, defect, leakage of electrolyte or gassing should be observed
+as a new product.
+
+5. Standard Testing Environment
+Temperature : 25±2℃
+Relative humidity : 65±20%（unless specially requested）
+
+6. Characteristics
+
+ -2-         If manufacturer want to modify the product technology specification, we won’t inform you additionally)
+6.1 Electrochemical performance characteristics
+No.           Item                       Testing Method                                         Requirements
+                         CCCV or Constant current charge to 4.2V
+         Fully Charged @0.5C follow by a constant voltage holding
+ 1                                                                                                      —
+              State      at 4.2V until current drops below 24±2mA.
+                         0.5c CCCV 0.01c at 4.2V (per 6.1.1) at
+                         room temp. (20±5C), rest for 1-2 hrs then
+              Rated      discharge at a constant current of 0.2C to
+ 2                                                                                           ≥2280mAh
+            Capacity     3.0V, testing will be terminated by either 5
+                         cycles or any one discharge time exceeds 5
+                         hrs
+                         Discharge to 3.0V @0.2C, then 0.5c CCCV
+                          0.01C charge to 4.2V, rest for 10 min.
+            Cycle Life    discharge @ 0.2C to 3.0V and rest for 10
+ 3                                                                                           Cycle life ≥500
+             @25℃         min. Continue the charge/discharge
+                          cycles until discharge capacity lower than
+                          70% of rated capacity.
+                         Internal impedance is measured on a 50%
+             Internal    charged battery at 1KHz AC at ambient
+ 4                                                                                                      —
+           Impedance
+                         temperature（20±2）℃
+                         Fully charge cells per 6.1.1, store them at                         Discharge
+            Capacity
+ 5                       (20±2)℃ for 28 days, then discharge the                             Capacity≥1920mA
+            Retention
+                         cells to 3.0V at 0.2C.                                              h
+                                                                                                           -3-
+               High      Fully charge cells per 6.1.1, store them at                         Discharge
+ 6        Temperature (55±2)℃ for 2 hours, then discharge the                                Capacity≥1920mA
+         Characteristics cells to 3.0V at 0.2C.                                              h
+               Low       Fully charge cells per 6.1.1, store them at (-                      Discharge
+ 7        Temperature 10±2)℃ for 16~24 hours, then discharge                                 Capacity≥1440mA
+         Characteristics the cells to 3.0V at 0.2C.                                          h
+          Cell Voltage
+                         Check open circuit voltage (OCV) of cells
+ 8            during                                                                         ≥3.75V
+                         prior to the delivery to customers
+         Transportation
+
+6.2 Safety characteristic
+No.              Item                                 Test Method                               Requirements
+                                                                                                    No fire
+                                 Discharge cells to 2.4V at 0.2C, then
+     1      Over charge                                                                          No explosion
+                                 charge to 4.45V at 3C and rest for 8 hours.
+                                                                                                  No leakage
+                                 Fully charge cells per 6.1.1, then discharge
+                                                                                                    No fire
+     2      Overdischarg         the battery to 3.0V with 0.2CmA at room
+                                                                                                 No explosion
+                 e               temperature, connect with external load of
+                                                                                                  No leakage
+                                 30Ω for 24 hours.
+                                 Put a fully charged battery in a forced air                        No fire
+              Hot Oven           oven and raise the temperature at
+     3                                                                                           No explosion
+                Test
+                                 5±2℃/min. to130±2℃ Rest for10 minutes.                           No leakage
+
+
+
+ -3-          If manufacturer want to modify the product technology specification, we won’t inform you additionally)
+6.3 Reliability
+
+ No
+          Item                                    Test Method                                   Requirements
+  .
+                                                                                               Electrochemica
+          High                                                                                         l
+                  Fully charged per 6.1.1,then rest at 60±2℃ for 2
+  1    Temperatur                                                                              performance、
+                  hours.
+         e Test                                                                                 visual test not
+                                                                                                   changed
+                                                                                               No appreciable
+          Low     Fully charge cells per 6.1.1, rest at -20±2℃ for 2
+                                                                                                  alternation
+  2    Temperatur hours. Then the cells are placed at room
+                                                                                               electrochemical
+         e Test   temperature for 3 hours.                                                      ly and visually
+
+                       Fully charge cells per 6.1.1, rest at 40±2℃ with     No appreciable
+        Humidity                                                               alternation
+  3                    90%～95RH% for 48 hours. Then the cells are
+         Test                                                               electrochemical
+                       placed at room temperature to “dry out” for 2 hours. ly and visually
+                       After standard charged, fixed the cell to vibration
+                       table and subjected to vibration cycling that the
+                                                                                                   No fire
+        Vibration      frequency is to be varied at the rate of 1Hz per
+  4                                                                                             No explosion
+          Test         minute between 10Hz an 55Hz, the excursion of
+                                                                                                No leakage
+                       the vibration is 1.6mm. The cell shall be vibrated
+                                                                                                                     -4-
+                       for 30 minutes per axis of XYZ axes.
+                                                                                                   No fire
+          Drop         The cell is to be dropped from a height of 1 meter
+  5                                                                                             No explosion
+          Test         twice onto concrete ground.
+                                                                                                No leakage
+                       After the vibration test, according to X.Y.Z each
+                       battery average three vertical pulse peak                                   No fire
+  6     Collisions     acceleration, the setting for the 100m/s2, every                         No explosion
+                       minute, 40 ~ 80 collision frequency, pulse duration                      No leakage
+                       16ms collision frequency ± 10 thousand.
+          Crush
+                                                                                                   No fire
+         (Fresh,       Crush between two flat plates. Applied force is
+  7                                                                                             No explosion
+          Fully        about 13kN(1.72Mpa) for 30min.
+                                                                                                No leakage
+        charged)
+                                                                                                No explosion,
+                       This test will be placed the battery electric dipole in                      No fire
+                       the fume hood, short-circuit the anode (total                                  The
+         Short         resistance is not more than 50mΩ lines), monitor                          temperature
+  8
+         Circuit       temperature changes, when the battery is low                             of the surface
+                       temperature dropped to about 10 degrees than                             of the Cells≤
+                       peak, the end of experiment.
+                                                                                                     150℃
+       Impact(Fres A 56mm diameter bar is inlayed into the bottom of                                No fire
+  9        h,      a 10kg weight. And the weight is to be dropped                               No explosion
+          Fully    from a height of 1m onto a sample battery and then                             No leakage
+
+
+ -4-        If manufacturer want to modify the product technology specification, we won’t inform you additionally)
+         charged)      the bar will be across the center of the sample.
+
+    Thermal
+    shock(Fresh Batteries in hot box Temperature in 5℃±2℃/min，                                     No fire
+ 10 ,                                                                                           No explosion
+                rising to 50℃±2℃ keep 30min                                                     No leakage
+        Fully
+      charged)
+                                                                        No obvious
+                After Standard charge of battery, Will a battery into  deformation,
+     Constant   40℃±2℃,    Relative humidity90%～95%      At constant    hands rust,
+ 11    damp     temperature and humidity box after 48h Battery will       smoke,
+    performance in environmental temperature 20±5℃ Aside 2h,            explosion,
+                0.2C5A to terminate discharge current voltage,        discharge time
+                                                                         ≥36 min
+
+7. Warranty
+      Warranty period for this product is 6 months starting from the date when the
+      products left the door of manufacturer.
+
+8. Liability
+      The user has to operate the products according to the instructions printed on the
+      battery label or follow the advices described in this “Product Specification for
+      Lithium Ion Batteries published
+                                                                                                                     -5-
+
+
+
+
+9. Battery Packing Label
+      The following warnings should be indicated on the battery pack labels.
+       Use a specified charger.
+       Do not throw the battery into fire, or heat.
+       Do not short-circuit the battery terminals.
+       Do not disassemble the battery.
+      
+10.     Warnings and Cautions in Handling the Lithium-ion Battery
+   To prevent potential leaking, overheating or explosion of batteries please be
+   advised to take following precautions:
+                                   WARNINGS!
+   Do not immerse the battery in water or seawater, and keep the battery in a
+     cool dry environment during stands by period.
+   Do not use or leave the battery near a heat source such as fire or heater.
+   When recharging, use the battery charger specifically for that purpose.
+   Do not reverse the position (+) and negative (-) terminals.
+   Do not connect the battery to an electrical outlet.
+
+
+-5-         If manufacturer want to modify the product technology specification, we won’t inform you additionally)
+     Do not dispose the battery in fire or heat.
+     Do not short-circuit the battery by directly connecting the positive (+) and
+      negative (-) terminal with metal objects such as wire.
+     Do not transport or store the battery together with metal objects such as
+      necklaces, hairpins etc.
+     Do not strike or throw the battery against hard surface.
+     Do not directly solder the battery and pierce the battery with a nail or other
+      sharp object.
+     Outer metal conduct can not contact the aluminum layer in AL laminate film,
+      especially with electrification ,which will be “black spot ”and swelling easily.
+     Do not use sharp things to hit the battery.
+                                         CAUTIONS!
+     Do not use or leave the battery at very high temperature (for example, at
+      strong direct sunlight or in a vehicle in extremely hot weather). Otherwise, it
+      can overheat or fire or its performance will be degenerate and its service life
+      will be shortened.
+     Do not use it in a location where static electricity is rich, otherwise, the safety
+      devices may be damaged, causing a harmful situation.
+     In case the electrolyte get into the eyes due to the leakage of battery, do not
+      rub the eyes! Rinse the eyes with clean running water, and seek medical
+      attention immediately. Otherwise, it may injure eyes or cause a loss of sight.
+     If the battery gives off an odor, generates heat, becomes discolored or
+      deformed, or in any way appear abnormal during use, recharging or storage,
+      immediately remove it from the device or battery charger and place it in a - 6 -
+      contained vessel such as a metal box.
+     In case the battery terminals are contaminated, clean the terminals with a dry
+      cloth before use. Otherwise power failure or charge failure may occur due to
+      the poor connection between the battery and the electronic circuitry of the
+      instrument.
+     Be aware discarded batteries may cause fire, tape the battery terminals to
+      insulate them before disposal.
+
+
+
+
+-6-      If manufacturer want to modify the product technology specification, we won’t inform you additionally)
+11．Dimensions
+
+
+
+
+                                                                                                               -7-
+
+
+
+
+                                       ……..END……..
+
+
+
+-7-   If manufacturer want to modify the product technology specification, we won’t inform you additionally)
+

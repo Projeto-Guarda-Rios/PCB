@@ -1,0 +1,2281 @@
+{
+  "id": {
+    "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+  },
+  "position": {
+    "xNm": "10000000",
+    "yNm": "8000000"
+  },
+  "orientation": {},
+  "layer": "BL_F_Cu",
+  "locked": "LS_UNLOCKED",
+  "definition": {
+    "id": {
+      "libraryNickname": "PGR-FootPrints",
+      "entryName": "USB_C_GCT_USB4145_03_0230_C_Vertical"
+    },
+    "attributes": {
+      "description": "GCT USB4145-03-0230-C vertical USB2.0, H7.46mm, 2.3mm shell stakes; GCT drawing Rev A1 page 2",
+      "keywords": "USB C vertical 16pin USB2.0 C5291559"
+    },
+    "items": [
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.Pad",
+        "id": {
+          "value": "dc8a5e8f-4f9a-4516-825a-7be292fb3ad5"
+        },
+        "locked": "LS_UNLOCKED",
+        "number": "B4",
+        "net": {
+          "name": "+5V_PROGRAM"
+        },
+        "type": "PT_SMD",
+        "padStack": {
+          "type": "PST_NORMAL",
+          "layers": [
+            "BL_F_Cu",
+            "BL_F_Mask",
+            "BL_F_Paste"
+          ],
+          "drill": {
+            "startLayer": "BL_F_Cu",
+            "endLayer": "BL_B_Cu",
+            "diameter": {},
+            "shape": "DS_CIRCLE"
+          },
+          "unconnectedLayerRemoval": "ULR_KEEP",
+          "copperLayers": [
+            {
+              "layer": "BL_F_Cu",
+              "shape": "PSS_RECTANGLE",
+              "size": {
+                "xNm": "300000",
+                "yNm": "1150000"
+              },
+              "cornerRoundingRatio": 0.25,
+              "chamferRatio": 0.2,
+              "customAnchorShape": "PSS_CIRCLE",
+              "offset": {}
+            }
+          ],
+          "angle": {},
+          "zoneSettings": {
+            "zoneConnection": "ZCS_INHERITED",
+            "thermalSpokes": {
+              "angle": {
+                "valueDegrees": 90.0
+              }
+            }
+          }
+        },
+        "position": {
+          "xNm": "11250000",
+          "yNm": "9485000"
+        },
+        "padToDieLength": {},
+        "symbolPin": {},
+        "padToDieDelay": {},
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.Pad",
+        "id": {
+          "value": "ab70ab67-2d68-4ea9-bbb7-41adfad95de4"
+        },
+        "locked": "LS_UNLOCKED",
+        "number": "B5",
+        "net": {
+          "name": "Net-(J9-CC2)"
+        },
+        "type": "PT_SMD",
+        "padStack": {
+          "type": "PST_NORMAL",
+          "layers": [
+            "BL_F_Cu",
+            "BL_F_Mask",
+            "BL_F_Paste"
+          ],
+          "drill": {
+            "startLayer": "BL_F_Cu",
+            "endLayer": "BL_B_Cu",
+            "diameter": {},
+            "shape": "DS_CIRCLE"
+          },
+          "unconnectedLayerRemoval": "ULR_KEEP",
+          "copperLayers": [
+            {
+              "layer": "BL_F_Cu",
+              "shape": "PSS_RECTANGLE",
+              "size": {
+                "xNm": "300000",
+                "yNm": "1150000"
+              },
+              "cornerRoundingRatio": 0.25,
+              "chamferRatio": 0.2,
+              "customAnchorShape": "PSS_CIRCLE",
+              "offset": {}
+            }
+          ],
+          "angle": {},
+          "zoneSettings": {
+            "zoneConnection": "ZCS_INHERITED",
+            "thermalSpokes": {
+              "angle": {
+                "valueDegrees": 90.0
+              }
+            }
+          }
+        },
+        "position": {
+          "xNm": "10750000",
+          "yNm": "9485000"
+        },
+        "padToDieLength": {},
+        "symbolPin": {},
+        "padToDieDelay": {},
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.Pad",
+        "id": {
+          "value": "4cfda988-fdf4-40ed-9736-7f991f1f7b31"
+        },
+        "locked": "LS_UNLOCKED",
+        "number": "B6",
+        "net": {
+          "name": "D+"
+        },
+        "type": "PT_SMD",
+        "padStack": {
+          "type": "PST_NORMAL",
+          "layers": [
+            "BL_F_Cu",
+            "BL_F_Mask",
+            "BL_F_Paste"
+          ],
+          "drill": {
+            "startLayer": "BL_F_Cu",
+            "endLayer": "BL_B_Cu",
+            "diameter": {},
+            "shape": "DS_CIRCLE"
+          },
+          "unconnectedLayerRemoval": "ULR_KEEP",
+          "copperLayers": [
+            {
+              "layer": "BL_F_Cu",
+              "shape": "PSS_RECTANGLE",
+              "size": {
+                "xNm": "300000",
+                "yNm": "1150000"
+              },
+              "cornerRoundingRatio": 0.25,
+              "chamferRatio": 0.2,
+              "customAnchorShape": "PSS_CIRCLE",
+              "offset": {}
+            }
+          ],
+          "angle": {},
+          "zoneSettings": {
+            "zoneConnection": "ZCS_INHERITED",
+            "thermalSpokes": {
+              "angle": {
+                "valueDegrees": 90.0
+              }
+            }
+          }
+        },
+        "position": {
+          "xNm": "10250000",
+          "yNm": "9485000"
+        },
+        "padToDieLength": {},
+        "symbolPin": {},
+        "padToDieDelay": {},
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.Pad",
+        "id": {
+          "value": "ccee3359-a93a-478f-ae05-dad2d962ee40"
+        },
+        "locked": "LS_UNLOCKED",
+        "number": "B1",
+        "net": {
+          "name": "GND"
+        },
+        "type": "PT_SMD",
+        "padStack": {
+          "type": "PST_NORMAL",
+          "layers": [
+            "BL_F_Cu",
+            "BL_F_Mask",
+            "BL_F_Paste"
+          ],
+          "drill": {
+            "startLayer": "BL_F_Cu",
+            "endLayer": "BL_B_Cu",
+            "diameter": {},
+            "shape": "DS_CIRCLE"
+          },
+          "unconnectedLayerRemoval": "ULR_KEEP",
+          "copperLayers": [
+            {
+              "layer": "BL_F_Cu",
+              "shape": "PSS_RECTANGLE",
+              "size": {
+                "xNm": "300000",
+                "yNm": "1150000"
+              },
+              "cornerRoundingRatio": 0.25,
+              "chamferRatio": 0.2,
+              "customAnchorShape": "PSS_CIRCLE",
+              "offset": {}
+            }
+          ],
+          "angle": {},
+          "zoneSettings": {
+            "zoneConnection": "ZCS_INHERITED",
+            "thermalSpokes": {
+              "angle": {
+                "valueDegrees": 90.0
+              }
+            }
+          }
+        },
+        "position": {
+          "xNm": "12750000",
+          "yNm": "9485000"
+        },
+        "padToDieLength": {},
+        "symbolPin": {},
+        "padToDieDelay": {},
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.Pad",
+        "id": {
+          "value": "e0b2fa79-c1d7-4666-b2b4-76467bec2b66"
+        },
+        "locked": "LS_UNLOCKED",
+        "number": "B8",
+        "net": {
+          "name": "unconnected-(J9-SBU2-PadB8)"
+        },
+        "type": "PT_SMD",
+        "padStack": {
+          "type": "PST_NORMAL",
+          "layers": [
+            "BL_F_Cu",
+            "BL_F_Mask",
+            "BL_F_Paste"
+          ],
+          "drill": {
+            "startLayer": "BL_F_Cu",
+            "endLayer": "BL_B_Cu",
+            "diameter": {},
+            "shape": "DS_CIRCLE"
+          },
+          "unconnectedLayerRemoval": "ULR_KEEP",
+          "copperLayers": [
+            {
+              "layer": "BL_F_Cu",
+              "shape": "PSS_RECTANGLE",
+              "size": {
+                "xNm": "300000",
+                "yNm": "1150000"
+              },
+              "cornerRoundingRatio": 0.25,
+              "chamferRatio": 0.2,
+              "customAnchorShape": "PSS_CIRCLE",
+              "offset": {}
+            }
+          ],
+          "angle": {},
+          "zoneSettings": {
+            "zoneConnection": "ZCS_INHERITED",
+            "thermalSpokes": {
+              "angle": {
+                "valueDegrees": 90.0
+              }
+            }
+          }
+        },
+        "position": {
+          "xNm": "9250000",
+          "yNm": "9485000"
+        },
+        "padToDieLength": {},
+        "symbolPin": {},
+        "padToDieDelay": {},
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.Pad",
+        "id": {
+          "value": "e331b4e4-e972-4946-ac50-4b37b7c2d5f3"
+        },
+        "locked": "LS_UNLOCKED",
+        "number": "B9",
+        "net": {
+          "name": "+5V_PROGRAM"
+        },
+        "type": "PT_SMD",
+        "padStack": {
+          "type": "PST_NORMAL",
+          "layers": [
+            "BL_F_Cu",
+            "BL_F_Mask",
+            "BL_F_Paste"
+          ],
+          "drill": {
+            "startLayer": "BL_F_Cu",
+            "endLayer": "BL_B_Cu",
+            "diameter": {},
+            "shape": "DS_CIRCLE"
+          },
+          "unconnectedLayerRemoval": "ULR_KEEP",
+          "copperLayers": [
+            {
+              "layer": "BL_F_Cu",
+              "shape": "PSS_RECTANGLE",
+              "size": {
+                "xNm": "300000",
+                "yNm": "1150000"
+              },
+              "cornerRoundingRatio": 0.25,
+              "chamferRatio": 0.2,
+              "customAnchorShape": "PSS_CIRCLE",
+              "offset": {}
+            }
+          ],
+          "angle": {},
+          "zoneSettings": {
+            "zoneConnection": "ZCS_INHERITED",
+            "thermalSpokes": {
+              "angle": {
+                "valueDegrees": 90.0
+              }
+            }
+          }
+        },
+        "position": {
+          "xNm": "8750000",
+          "yNm": "9485000"
+        },
+        "padToDieLength": {},
+        "symbolPin": {},
+        "padToDieDelay": {},
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.Pad",
+        "id": {
+          "value": "995f3d12-14e2-402a-95cd-15b4e5f423b7"
+        },
+        "locked": "LS_UNLOCKED",
+        "number": "B7",
+        "net": {
+          "name": "D-"
+        },
+        "type": "PT_SMD",
+        "padStack": {
+          "type": "PST_NORMAL",
+          "layers": [
+            "BL_F_Cu",
+            "BL_F_Mask",
+            "BL_F_Paste"
+          ],
+          "drill": {
+            "startLayer": "BL_F_Cu",
+            "endLayer": "BL_B_Cu",
+            "diameter": {},
+            "shape": "DS_CIRCLE"
+          },
+          "unconnectedLayerRemoval": "ULR_KEEP",
+          "copperLayers": [
+            {
+              "layer": "BL_F_Cu",
+              "shape": "PSS_RECTANGLE",
+              "size": {
+                "xNm": "300000",
+                "yNm": "1150000"
+              },
+              "cornerRoundingRatio": 0.25,
+              "chamferRatio": 0.2,
+              "customAnchorShape": "PSS_CIRCLE",
+              "offset": {}
+            }
+          ],
+          "angle": {},
+          "zoneSettings": {
+            "zoneConnection": "ZCS_INHERITED",
+            "thermalSpokes": {
+              "angle": {
+                "valueDegrees": 90.0
+              }
+            }
+          }
+        },
+        "position": {
+          "xNm": "9750000",
+          "yNm": "9485000"
+        },
+        "padToDieLength": {},
+        "symbolPin": {},
+        "padToDieDelay": {},
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.Pad",
+        "id": {
+          "value": "06cc6ba1-9489-49f6-ad6e-708db545dba0"
+        },
+        "locked": "LS_UNLOCKED",
+        "number": "B12",
+        "net": {
+          "name": "GND"
+        },
+        "type": "PT_SMD",
+        "padStack": {
+          "type": "PST_NORMAL",
+          "layers": [
+            "BL_F_Cu",
+            "BL_F_Mask",
+            "BL_F_Paste"
+          ],
+          "drill": {
+            "startLayer": "BL_F_Cu",
+            "endLayer": "BL_B_Cu",
+            "diameter": {},
+            "shape": "DS_CIRCLE"
+          },
+          "unconnectedLayerRemoval": "ULR_KEEP",
+          "copperLayers": [
+            {
+              "layer": "BL_F_Cu",
+              "shape": "PSS_RECTANGLE",
+              "size": {
+                "xNm": "300000",
+                "yNm": "1150000"
+              },
+              "cornerRoundingRatio": 0.25,
+              "chamferRatio": 0.2,
+              "customAnchorShape": "PSS_CIRCLE",
+              "offset": {}
+            }
+          ],
+          "angle": {},
+          "zoneSettings": {
+            "zoneConnection": "ZCS_INHERITED",
+            "thermalSpokes": {
+              "angle": {
+                "valueDegrees": 90.0
+              }
+            }
+          }
+        },
+        "position": {
+          "xNm": "7250000",
+          "yNm": "9485000"
+        },
+        "padToDieLength": {},
+        "symbolPin": {},
+        "padToDieDelay": {},
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.Pad",
+        "id": {
+          "value": "be7834cf-3fc1-478a-94e3-07df0dd8ba65"
+        },
+        "locked": "LS_UNLOCKED",
+        "number": "A9",
+        "net": {
+          "name": "+5V_PROGRAM"
+        },
+        "type": "PT_SMD",
+        "padStack": {
+          "type": "PST_NORMAL",
+          "layers": [
+            "BL_F_Cu",
+            "BL_F_Mask",
+            "BL_F_Paste"
+          ],
+          "drill": {
+            "startLayer": "BL_F_Cu",
+            "endLayer": "BL_B_Cu",
+            "diameter": {},
+            "shape": "DS_CIRCLE"
+          },
+          "unconnectedLayerRemoval": "ULR_KEEP",
+          "copperLayers": [
+            {
+              "layer": "BL_F_Cu",
+              "shape": "PSS_RECTANGLE",
+              "size": {
+                "xNm": "300000",
+                "yNm": "1150000"
+              },
+              "cornerRoundingRatio": 0.25,
+              "chamferRatio": 0.2,
+              "customAnchorShape": "PSS_CIRCLE",
+              "offset": {}
+            }
+          ],
+          "angle": {},
+          "zoneSettings": {
+            "zoneConnection": "ZCS_INHERITED",
+            "thermalSpokes": {
+              "angle": {
+                "valueDegrees": 90.0
+              }
+            }
+          }
+        },
+        "position": {
+          "xNm": "11250000",
+          "yNm": "6515000"
+        },
+        "padToDieLength": {},
+        "symbolPin": {},
+        "padToDieDelay": {},
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.Pad",
+        "id": {
+          "value": "8c129671-263f-466d-9cae-db14355aaba7"
+        },
+        "locked": "LS_UNLOCKED",
+        "number": "A8",
+        "net": {
+          "name": "unconnected-(J9-SBU1-PadA8)"
+        },
+        "type": "PT_SMD",
+        "padStack": {
+          "type": "PST_NORMAL",
+          "layers": [
+            "BL_F_Cu",
+            "BL_F_Mask",
+            "BL_F_Paste"
+          ],
+          "drill": {
+            "startLayer": "BL_F_Cu",
+            "endLayer": "BL_B_Cu",
+            "diameter": {},
+            "shape": "DS_CIRCLE"
+          },
+          "unconnectedLayerRemoval": "ULR_KEEP",
+          "copperLayers": [
+            {
+              "layer": "BL_F_Cu",
+              "shape": "PSS_RECTANGLE",
+              "size": {
+                "xNm": "300000",
+                "yNm": "1150000"
+              },
+              "cornerRoundingRatio": 0.25,
+              "chamferRatio": 0.2,
+              "customAnchorShape": "PSS_CIRCLE",
+              "offset": {}
+            }
+          ],
+          "angle": {},
+          "zoneSettings": {
+            "zoneConnection": "ZCS_INHERITED",
+            "thermalSpokes": {
+              "angle": {
+                "valueDegrees": 90.0
+              }
+            }
+          }
+        },
+        "position": {
+          "xNm": "10750000",
+          "yNm": "6515000"
+        },
+        "padToDieLength": {},
+        "symbolPin": {},
+        "padToDieDelay": {},
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.Pad",
+        "id": {
+          "value": "2c94cf4c-9359-46ac-84fc-356b1b7070e2"
+        },
+        "locked": "LS_UNLOCKED",
+        "number": "A7",
+        "net": {
+          "name": "D-"
+        },
+        "type": "PT_SMD",
+        "padStack": {
+          "type": "PST_NORMAL",
+          "layers": [
+            "BL_F_Cu",
+            "BL_F_Mask",
+            "BL_F_Paste"
+          ],
+          "drill": {
+            "startLayer": "BL_F_Cu",
+            "endLayer": "BL_B_Cu",
+            "diameter": {},
+            "shape": "DS_CIRCLE"
+          },
+          "unconnectedLayerRemoval": "ULR_KEEP",
+          "copperLayers": [
+            {
+              "layer": "BL_F_Cu",
+              "shape": "PSS_RECTANGLE",
+              "size": {
+                "xNm": "300000",
+                "yNm": "1150000"
+              },
+              "cornerRoundingRatio": 0.25,
+              "chamferRatio": 0.2,
+              "customAnchorShape": "PSS_CIRCLE",
+              "offset": {}
+            }
+          ],
+          "angle": {},
+          "zoneSettings": {
+            "zoneConnection": "ZCS_INHERITED",
+            "thermalSpokes": {
+              "angle": {
+                "valueDegrees": 90.0
+              }
+            }
+          }
+        },
+        "position": {
+          "xNm": "10250000",
+          "yNm": "6515000"
+        },
+        "padToDieLength": {},
+        "symbolPin": {},
+        "padToDieDelay": {},
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.Pad",
+        "id": {
+          "value": "3c70781d-a9cf-4fd2-b985-86fc7212f9df"
+        },
+        "locked": "LS_UNLOCKED",
+        "number": "A12",
+        "net": {
+          "name": "GND"
+        },
+        "type": "PT_SMD",
+        "padStack": {
+          "type": "PST_NORMAL",
+          "layers": [
+            "BL_F_Cu",
+            "BL_F_Mask",
+            "BL_F_Paste"
+          ],
+          "drill": {
+            "startLayer": "BL_F_Cu",
+            "endLayer": "BL_B_Cu",
+            "diameter": {},
+            "shape": "DS_CIRCLE"
+          },
+          "unconnectedLayerRemoval": "ULR_KEEP",
+          "copperLayers": [
+            {
+              "layer": "BL_F_Cu",
+              "shape": "PSS_RECTANGLE",
+              "size": {
+                "xNm": "300000",
+                "yNm": "1150000"
+              },
+              "cornerRoundingRatio": 0.25,
+              "chamferRatio": 0.2,
+              "customAnchorShape": "PSS_CIRCLE",
+              "offset": {}
+            }
+          ],
+          "angle": {},
+          "zoneSettings": {
+            "zoneConnection": "ZCS_INHERITED",
+            "thermalSpokes": {
+              "angle": {
+                "valueDegrees": 90.0
+              }
+            }
+          }
+        },
+        "position": {
+          "xNm": "12750000",
+          "yNm": "6515000"
+        },
+        "padToDieLength": {},
+        "symbolPin": {},
+        "padToDieDelay": {},
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.Pad",
+        "id": {
+          "value": "cc5c7c56-b9aa-4741-8425-6b012757dc42"
+        },
+        "locked": "LS_UNLOCKED",
+        "number": "A5",
+        "net": {
+          "name": "Net-(J9-CC1)"
+        },
+        "type": "PT_SMD",
+        "padStack": {
+          "type": "PST_NORMAL",
+          "layers": [
+            "BL_F_Cu",
+            "BL_F_Mask",
+            "BL_F_Paste"
+          ],
+          "drill": {
+            "startLayer": "BL_F_Cu",
+            "endLayer": "BL_B_Cu",
+            "diameter": {},
+            "shape": "DS_CIRCLE"
+          },
+          "unconnectedLayerRemoval": "ULR_KEEP",
+          "copperLayers": [
+            {
+              "layer": "BL_F_Cu",
+              "shape": "PSS_RECTANGLE",
+              "size": {
+                "xNm": "300000",
+                "yNm": "1150000"
+              },
+              "cornerRoundingRatio": 0.25,
+              "chamferRatio": 0.2,
+              "customAnchorShape": "PSS_CIRCLE",
+              "offset": {}
+            }
+          ],
+          "angle": {},
+          "zoneSettings": {
+            "zoneConnection": "ZCS_INHERITED",
+            "thermalSpokes": {
+              "angle": {
+                "valueDegrees": 90.0
+              }
+            }
+          }
+        },
+        "position": {
+          "xNm": "9250000",
+          "yNm": "6515000"
+        },
+        "padToDieLength": {},
+        "symbolPin": {},
+        "padToDieDelay": {},
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.Pad",
+        "id": {
+          "value": "1a31bc9d-fe6c-4b4d-960e-80dcd6ffd9e1"
+        },
+        "locked": "LS_UNLOCKED",
+        "number": "A4",
+        "net": {
+          "name": "+5V_PROGRAM"
+        },
+        "type": "PT_SMD",
+        "padStack": {
+          "type": "PST_NORMAL",
+          "layers": [
+            "BL_F_Cu",
+            "BL_F_Mask",
+            "BL_F_Paste"
+          ],
+          "drill": {
+            "startLayer": "BL_F_Cu",
+            "endLayer": "BL_B_Cu",
+            "diameter": {},
+            "shape": "DS_CIRCLE"
+          },
+          "unconnectedLayerRemoval": "ULR_KEEP",
+          "copperLayers": [
+            {
+              "layer": "BL_F_Cu",
+              "shape": "PSS_RECTANGLE",
+              "size": {
+                "xNm": "300000",
+                "yNm": "1150000"
+              },
+              "cornerRoundingRatio": 0.25,
+              "chamferRatio": 0.2,
+              "customAnchorShape": "PSS_CIRCLE",
+              "offset": {}
+            }
+          ],
+          "angle": {},
+          "zoneSettings": {
+            "zoneConnection": "ZCS_INHERITED",
+            "thermalSpokes": {
+              "angle": {
+                "valueDegrees": 90.0
+              }
+            }
+          }
+        },
+        "position": {
+          "xNm": "8750000",
+          "yNm": "6515000"
+        },
+        "padToDieLength": {},
+        "symbolPin": {},
+        "padToDieDelay": {},
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.Pad",
+        "id": {
+          "value": "c30bf595-c735-4f60-9cf9-b6f91487efa8"
+        },
+        "locked": "LS_UNLOCKED",
+        "number": "A6",
+        "net": {
+          "name": "D+"
+        },
+        "type": "PT_SMD",
+        "padStack": {
+          "type": "PST_NORMAL",
+          "layers": [
+            "BL_F_Cu",
+            "BL_F_Mask",
+            "BL_F_Paste"
+          ],
+          "drill": {
+            "startLayer": "BL_F_Cu",
+            "endLayer": "BL_B_Cu",
+            "diameter": {},
+            "shape": "DS_CIRCLE"
+          },
+          "unconnectedLayerRemoval": "ULR_KEEP",
+          "copperLayers": [
+            {
+              "layer": "BL_F_Cu",
+              "shape": "PSS_RECTANGLE",
+              "size": {
+                "xNm": "300000",
+                "yNm": "1150000"
+              },
+              "cornerRoundingRatio": 0.25,
+              "chamferRatio": 0.2,
+              "customAnchorShape": "PSS_CIRCLE",
+              "offset": {}
+            }
+          ],
+          "angle": {},
+          "zoneSettings": {
+            "zoneConnection": "ZCS_INHERITED",
+            "thermalSpokes": {
+              "angle": {
+                "valueDegrees": 90.0
+              }
+            }
+          }
+        },
+        "position": {
+          "xNm": "9750000",
+          "yNm": "6515000"
+        },
+        "padToDieLength": {},
+        "symbolPin": {},
+        "padToDieDelay": {},
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.Pad",
+        "id": {
+          "value": "c40951ec-3b4b-44d1-959c-11c8c96ee244"
+        },
+        "locked": "LS_UNLOCKED",
+        "number": "A1",
+        "net": {
+          "name": "GND"
+        },
+        "type": "PT_SMD",
+        "padStack": {
+          "type": "PST_NORMAL",
+          "layers": [
+            "BL_F_Cu",
+            "BL_F_Mask",
+            "BL_F_Paste"
+          ],
+          "drill": {
+            "startLayer": "BL_F_Cu",
+            "endLayer": "BL_B_Cu",
+            "diameter": {},
+            "shape": "DS_CIRCLE"
+          },
+          "unconnectedLayerRemoval": "ULR_KEEP",
+          "copperLayers": [
+            {
+              "layer": "BL_F_Cu",
+              "shape": "PSS_RECTANGLE",
+              "size": {
+                "xNm": "300000",
+                "yNm": "1150000"
+              },
+              "cornerRoundingRatio": 0.25,
+              "chamferRatio": 0.2,
+              "customAnchorShape": "PSS_CIRCLE",
+              "offset": {}
+            }
+          ],
+          "angle": {},
+          "zoneSettings": {
+            "zoneConnection": "ZCS_INHERITED",
+            "thermalSpokes": {
+              "angle": {
+                "valueDegrees": 90.0
+              }
+            }
+          }
+        },
+        "position": {
+          "xNm": "7250000",
+          "yNm": "6515000"
+        },
+        "padToDieLength": {},
+        "symbolPin": {},
+        "padToDieDelay": {},
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.Pad",
+        "id": {
+          "value": "0bdd036c-3257-4cb3-9b23-30c5229b6a82"
+        },
+        "locked": "LS_UNLOCKED",
+        "number": "S1",
+        "net": {
+          "name": "GND"
+        },
+        "type": "PT_PTH",
+        "padStack": {
+          "type": "PST_NORMAL",
+          "layers": [
+            "BL_F_Cu",
+            "BL_F_Mask",
+            "BL_B_Cu",
+            "BL_B_Mask",
+            "BL_In1_Cu",
+            "BL_In2_Cu",
+            "BL_In3_Cu",
+            "BL_In4_Cu",
+            "BL_In5_Cu",
+            "BL_In6_Cu",
+            "BL_In7_Cu",
+            "BL_In8_Cu",
+            "BL_In9_Cu",
+            "BL_In10_Cu",
+            "BL_In11_Cu",
+            "BL_In12_Cu",
+            "BL_In13_Cu",
+            "BL_In14_Cu",
+            "BL_In15_Cu",
+            "BL_In16_Cu",
+            "BL_In17_Cu",
+            "BL_In18_Cu",
+            "BL_In19_Cu",
+            "BL_In20_Cu",
+            "BL_In21_Cu",
+            "BL_In22_Cu",
+            "BL_In23_Cu",
+            "BL_In24_Cu",
+            "BL_In25_Cu",
+            "BL_In26_Cu",
+            "BL_In27_Cu",
+            "BL_In28_Cu",
+            "BL_In29_Cu",
+            "BL_In30_Cu"
+          ],
+          "drill": {
+            "startLayer": "BL_F_Cu",
+            "endLayer": "BL_B_Cu",
+            "diameter": {
+              "xNm": "1100000",
+              "yNm": "600000"
+            },
+            "shape": "DS_OBLONG"
+          },
+          "unconnectedLayerRemoval": "ULR_KEEP",
+          "copperLayers": [
+            {
+              "layer": "BL_F_Cu",
+              "shape": "PSS_OVAL",
+              "size": {
+                "xNm": "1600000",
+                "yNm": "1100000"
+              },
+              "cornerRoundingRatio": 0.25,
+              "chamferRatio": 0.2,
+              "customAnchorShape": "PSS_CIRCLE",
+              "offset": {}
+            }
+          ],
+          "angle": {},
+          "zoneSettings": {
+            "zoneConnection": "ZCS_INHERITED",
+            "thermalSpokes": {
+              "angle": {
+                "valueDegrees": 90.0
+              }
+            }
+          }
+        },
+        "position": {
+          "xNm": "14000000",
+          "yNm": "6570000"
+        },
+        "padToDieLength": {},
+        "symbolPin": {},
+        "padToDieDelay": {},
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.Pad",
+        "id": {
+          "value": "166571c4-9ad9-4f4e-85af-8642fe0041a5"
+        },
+        "locked": "LS_UNLOCKED",
+        "number": "S1",
+        "net": {
+          "name": "GND"
+        },
+        "type": "PT_PTH",
+        "padStack": {
+          "type": "PST_NORMAL",
+          "layers": [
+            "BL_F_Cu",
+            "BL_F_Mask",
+            "BL_B_Cu",
+            "BL_B_Mask",
+            "BL_In1_Cu",
+            "BL_In2_Cu",
+            "BL_In3_Cu",
+            "BL_In4_Cu",
+            "BL_In5_Cu",
+            "BL_In6_Cu",
+            "BL_In7_Cu",
+            "BL_In8_Cu",
+            "BL_In9_Cu",
+            "BL_In10_Cu",
+            "BL_In11_Cu",
+            "BL_In12_Cu",
+            "BL_In13_Cu",
+            "BL_In14_Cu",
+            "BL_In15_Cu",
+            "BL_In16_Cu",
+            "BL_In17_Cu",
+            "BL_In18_Cu",
+            "BL_In19_Cu",
+            "BL_In20_Cu",
+            "BL_In21_Cu",
+            "BL_In22_Cu",
+            "BL_In23_Cu",
+            "BL_In24_Cu",
+            "BL_In25_Cu",
+            "BL_In26_Cu",
+            "BL_In27_Cu",
+            "BL_In28_Cu",
+            "BL_In29_Cu",
+            "BL_In30_Cu"
+          ],
+          "drill": {
+            "startLayer": "BL_F_Cu",
+            "endLayer": "BL_B_Cu",
+            "diameter": {
+              "xNm": "1100000",
+              "yNm": "600000"
+            },
+            "shape": "DS_OBLONG"
+          },
+          "unconnectedLayerRemoval": "ULR_KEEP",
+          "copperLayers": [
+            {
+              "layer": "BL_F_Cu",
+              "shape": "PSS_OVAL",
+              "size": {
+                "xNm": "1600000",
+                "yNm": "1100000"
+              },
+              "cornerRoundingRatio": 0.25,
+              "chamferRatio": 0.2,
+              "customAnchorShape": "PSS_CIRCLE",
+              "offset": {}
+            }
+          ],
+          "angle": {},
+          "zoneSettings": {
+            "zoneConnection": "ZCS_INHERITED",
+            "thermalSpokes": {
+              "angle": {
+                "valueDegrees": 90.0
+              }
+            }
+          }
+        },
+        "position": {
+          "xNm": "14000000",
+          "yNm": "9430000"
+        },
+        "padToDieLength": {},
+        "symbolPin": {},
+        "padToDieDelay": {},
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.Pad",
+        "id": {
+          "value": "c279f662-8377-4460-96ac-a49ab9a4edca"
+        },
+        "locked": "LS_UNLOCKED",
+        "number": "S1",
+        "net": {
+          "name": "GND"
+        },
+        "type": "PT_PTH",
+        "padStack": {
+          "type": "PST_NORMAL",
+          "layers": [
+            "BL_F_Cu",
+            "BL_F_Mask",
+            "BL_B_Cu",
+            "BL_B_Mask",
+            "BL_In1_Cu",
+            "BL_In2_Cu",
+            "BL_In3_Cu",
+            "BL_In4_Cu",
+            "BL_In5_Cu",
+            "BL_In6_Cu",
+            "BL_In7_Cu",
+            "BL_In8_Cu",
+            "BL_In9_Cu",
+            "BL_In10_Cu",
+            "BL_In11_Cu",
+            "BL_In12_Cu",
+            "BL_In13_Cu",
+            "BL_In14_Cu",
+            "BL_In15_Cu",
+            "BL_In16_Cu",
+            "BL_In17_Cu",
+            "BL_In18_Cu",
+            "BL_In19_Cu",
+            "BL_In20_Cu",
+            "BL_In21_Cu",
+            "BL_In22_Cu",
+            "BL_In23_Cu",
+            "BL_In24_Cu",
+            "BL_In25_Cu",
+            "BL_In26_Cu",
+            "BL_In27_Cu",
+            "BL_In28_Cu",
+            "BL_In29_Cu",
+            "BL_In30_Cu"
+          ],
+          "drill": {
+            "startLayer": "BL_F_Cu",
+            "endLayer": "BL_B_Cu",
+            "diameter": {
+              "xNm": "1100000",
+              "yNm": "600000"
+            },
+            "shape": "DS_OBLONG"
+          },
+          "unconnectedLayerRemoval": "ULR_KEEP",
+          "copperLayers": [
+            {
+              "layer": "BL_F_Cu",
+              "shape": "PSS_OVAL",
+              "size": {
+                "xNm": "1600000",
+                "yNm": "1100000"
+              },
+              "cornerRoundingRatio": 0.25,
+              "chamferRatio": 0.2,
+              "customAnchorShape": "PSS_CIRCLE",
+              "offset": {}
+            }
+          ],
+          "angle": {},
+          "zoneSettings": {
+            "zoneConnection": "ZCS_INHERITED",
+            "thermalSpokes": {
+              "angle": {
+                "valueDegrees": 90.0
+              }
+            }
+          }
+        },
+        "position": {
+          "xNm": "6000000",
+          "yNm": "9430000"
+        },
+        "padToDieLength": {},
+        "symbolPin": {},
+        "padToDieDelay": {},
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.Pad",
+        "id": {
+          "value": "0d3b83a1-9d1a-437f-9b45-4cb92ab98e8f"
+        },
+        "locked": "LS_UNLOCKED",
+        "number": "S1",
+        "net": {
+          "name": "GND"
+        },
+        "type": "PT_PTH",
+        "padStack": {
+          "type": "PST_NORMAL",
+          "layers": [
+            "BL_F_Cu",
+            "BL_F_Mask",
+            "BL_B_Cu",
+            "BL_B_Mask",
+            "BL_In1_Cu",
+            "BL_In2_Cu",
+            "BL_In3_Cu",
+            "BL_In4_Cu",
+            "BL_In5_Cu",
+            "BL_In6_Cu",
+            "BL_In7_Cu",
+            "BL_In8_Cu",
+            "BL_In9_Cu",
+            "BL_In10_Cu",
+            "BL_In11_Cu",
+            "BL_In12_Cu",
+            "BL_In13_Cu",
+            "BL_In14_Cu",
+            "BL_In15_Cu",
+            "BL_In16_Cu",
+            "BL_In17_Cu",
+            "BL_In18_Cu",
+            "BL_In19_Cu",
+            "BL_In20_Cu",
+            "BL_In21_Cu",
+            "BL_In22_Cu",
+            "BL_In23_Cu",
+            "BL_In24_Cu",
+            "BL_In25_Cu",
+            "BL_In26_Cu",
+            "BL_In27_Cu",
+            "BL_In28_Cu",
+            "BL_In29_Cu",
+            "BL_In30_Cu"
+          ],
+          "drill": {
+            "startLayer": "BL_F_Cu",
+            "endLayer": "BL_B_Cu",
+            "diameter": {
+              "xNm": "1100000",
+              "yNm": "600000"
+            },
+            "shape": "DS_OBLONG"
+          },
+          "unconnectedLayerRemoval": "ULR_KEEP",
+          "copperLayers": [
+            {
+              "layer": "BL_F_Cu",
+              "shape": "PSS_OVAL",
+              "size": {
+                "xNm": "1600000",
+                "yNm": "1100000"
+              },
+              "cornerRoundingRatio": 0.25,
+              "chamferRatio": 0.2,
+              "customAnchorShape": "PSS_CIRCLE",
+              "offset": {}
+            }
+          ],
+          "angle": {},
+          "zoneSettings": {
+            "zoneConnection": "ZCS_INHERITED",
+            "thermalSpokes": {
+              "angle": {
+                "valueDegrees": 90.0
+              }
+            }
+          }
+        },
+        "position": {
+          "xNm": "6000000",
+          "yNm": "6570000"
+        },
+        "padToDieLength": {},
+        "symbolPin": {},
+        "padToDieDelay": {},
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.Pad",
+        "id": {
+          "value": "1923e86f-5630-43d8-bc60-b6ef02160f00"
+        },
+        "locked": "LS_UNLOCKED",
+        "net": {},
+        "type": "PT_NPTH",
+        "padStack": {
+          "type": "PST_NORMAL",
+          "layers": [
+            "BL_F_Cu",
+            "BL_F_Mask",
+            "BL_B_Cu",
+            "BL_B_Mask",
+            "BL_In1_Cu",
+            "BL_In2_Cu",
+            "BL_In3_Cu",
+            "BL_In4_Cu",
+            "BL_In5_Cu",
+            "BL_In6_Cu",
+            "BL_In7_Cu",
+            "BL_In8_Cu",
+            "BL_In9_Cu",
+            "BL_In10_Cu",
+            "BL_In11_Cu",
+            "BL_In12_Cu",
+            "BL_In13_Cu",
+            "BL_In14_Cu",
+            "BL_In15_Cu",
+            "BL_In16_Cu",
+            "BL_In17_Cu",
+            "BL_In18_Cu",
+            "BL_In19_Cu",
+            "BL_In20_Cu",
+            "BL_In21_Cu",
+            "BL_In22_Cu",
+            "BL_In23_Cu",
+            "BL_In24_Cu",
+            "BL_In25_Cu",
+            "BL_In26_Cu",
+            "BL_In27_Cu",
+            "BL_In28_Cu",
+            "BL_In29_Cu",
+            "BL_In30_Cu"
+          ],
+          "drill": {
+            "startLayer": "BL_F_Cu",
+            "endLayer": "BL_B_Cu",
+            "diameter": {
+              "xNm": "660000",
+              "yNm": "660000"
+            },
+            "shape": "DS_CIRCLE"
+          },
+          "unconnectedLayerRemoval": "ULR_KEEP",
+          "copperLayers": [
+            {
+              "layer": "BL_F_Cu",
+              "shape": "PSS_CIRCLE",
+              "size": {
+                "xNm": "660000",
+                "yNm": "660000"
+              },
+              "cornerRoundingRatio": 0.25,
+              "chamferRatio": 0.2,
+              "customAnchorShape": "PSS_CIRCLE",
+              "offset": {}
+            }
+          ],
+          "angle": {},
+          "zoneSettings": {
+            "zoneConnection": "ZCS_INHERITED",
+            "thermalSpokes": {
+              "angle": {
+                "valueDegrees": 45.0
+              }
+            }
+          }
+        },
+        "position": {
+          "xNm": "6000000",
+          "yNm": "8000000"
+        },
+        "padToDieLength": {},
+        "symbolPin": {},
+        "padToDieDelay": {},
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.Pad",
+        "id": {
+          "value": "30811e3c-d672-42fc-ab1e-b4337d55bedf"
+        },
+        "locked": "LS_UNLOCKED",
+        "net": {},
+        "type": "PT_NPTH",
+        "padStack": {
+          "type": "PST_NORMAL",
+          "layers": [
+            "BL_F_Cu",
+            "BL_F_Mask",
+            "BL_B_Cu",
+            "BL_B_Mask",
+            "BL_In1_Cu",
+            "BL_In2_Cu",
+            "BL_In3_Cu",
+            "BL_In4_Cu",
+            "BL_In5_Cu",
+            "BL_In6_Cu",
+            "BL_In7_Cu",
+            "BL_In8_Cu",
+            "BL_In9_Cu",
+            "BL_In10_Cu",
+            "BL_In11_Cu",
+            "BL_In12_Cu",
+            "BL_In13_Cu",
+            "BL_In14_Cu",
+            "BL_In15_Cu",
+            "BL_In16_Cu",
+            "BL_In17_Cu",
+            "BL_In18_Cu",
+            "BL_In19_Cu",
+            "BL_In20_Cu",
+            "BL_In21_Cu",
+            "BL_In22_Cu",
+            "BL_In23_Cu",
+            "BL_In24_Cu",
+            "BL_In25_Cu",
+            "BL_In26_Cu",
+            "BL_In27_Cu",
+            "BL_In28_Cu",
+            "BL_In29_Cu",
+            "BL_In30_Cu"
+          ],
+          "drill": {
+            "startLayer": "BL_F_Cu",
+            "endLayer": "BL_B_Cu",
+            "diameter": {
+              "xNm": "660000",
+              "yNm": "660000"
+            },
+            "shape": "DS_CIRCLE"
+          },
+          "unconnectedLayerRemoval": "ULR_KEEP",
+          "copperLayers": [
+            {
+              "layer": "BL_F_Cu",
+              "shape": "PSS_CIRCLE",
+              "size": {
+                "xNm": "660000",
+                "yNm": "660000"
+              },
+              "cornerRoundingRatio": 0.25,
+              "chamferRatio": 0.2,
+              "customAnchorShape": "PSS_CIRCLE",
+              "offset": {}
+            }
+          ],
+          "angle": {},
+          "zoneSettings": {
+            "zoneConnection": "ZCS_INHERITED",
+            "thermalSpokes": {
+              "angle": {
+                "valueDegrees": 45.0
+              }
+            }
+          }
+        },
+        "position": {
+          "xNm": "14000000",
+          "yNm": "8000000"
+        },
+        "padToDieLength": {},
+        "symbolPin": {},
+        "padToDieDelay": {},
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.BoardText",
+        "id": {
+          "value": "7b6f3494-6efe-493a-b0d1-bc79b9909dc8"
+        },
+        "text": {
+          "position": {
+            "xNm": "10000000",
+            "yNm": "8000000"
+          },
+          "attributes": {
+            "horizontalAlignment": "HA_CENTER",
+            "verticalAlignment": "VA_CENTER",
+            "angle": {},
+            "lineSpacing": 1.0,
+            "strokeWidth": {
+              "valueNm": "150000"
+            },
+            "visible": true,
+            "multiline": true,
+            "keepUpright": true,
+            "size": {
+              "xNm": "1000000",
+              "yNm": "1000000"
+            }
+          },
+          "text": "${REFERENCE}"
+        },
+        "layer": "BL_F_Fab",
+        "locked": "LS_UNLOCKED",
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.BoardGraphicShape",
+        "shape": {
+          "attributes": {
+            "stroke": {
+              "width": {
+                "valueNm": "250000"
+              },
+              "style": "SLS_SOLID"
+            },
+            "fill": {
+              "fillType": "GFT_UNFILLED"
+            }
+          },
+          "segment": {
+            "start": {
+              "xNm": "5530000",
+              "yNm": "7270000"
+            },
+            "end": {
+              "xNm": "5530000",
+              "yNm": "8730000"
+            }
+          }
+        },
+        "layer": "BL_F_SilkS",
+        "net": {},
+        "id": {
+          "value": "a609c663-a32d-40c7-8245-e9ac8040ab65"
+        },
+        "locked": "LS_UNLOCKED",
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.BoardGraphicShape",
+        "shape": {
+          "attributes": {
+            "stroke": {
+              "width": {
+                "valueNm": "250000"
+              },
+              "style": "SLS_SOLID"
+            },
+            "fill": {
+              "fillType": "GFT_UNFILLED"
+            }
+          },
+          "segment": {
+            "start": {
+              "xNm": "11630000",
+              "yNm": "9580000"
+            },
+            "end": {
+              "xNm": "12370000",
+              "yNm": "9580000"
+            }
+          }
+        },
+        "layer": "BL_F_SilkS",
+        "net": {},
+        "id": {
+          "value": "2f62eb8c-2822-4fba-8a12-78059cbfdb7e"
+        },
+        "locked": "LS_UNLOCKED",
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.BoardGraphicShape",
+        "shape": {
+          "attributes": {
+            "stroke": {
+              "width": {
+                "valueNm": "250000"
+              },
+              "style": "SLS_SOLID"
+            },
+            "fill": {
+              "fillType": "GFT_UNFILLED"
+            }
+          },
+          "segment": {
+            "start": {
+              "xNm": "7630000",
+              "yNm": "9580000"
+            },
+            "end": {
+              "xNm": "8370000",
+              "yNm": "9580000"
+            }
+          }
+        },
+        "layer": "BL_F_SilkS",
+        "net": {},
+        "id": {
+          "value": "575dc91b-6b9f-45d0-a391-72d7cf27537e"
+        },
+        "locked": "LS_UNLOCKED",
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.BoardGraphicShape",
+        "shape": {
+          "attributes": {
+            "stroke": {
+              "width": {
+                "valueNm": "250000"
+              },
+              "style": "SLS_SOLID"
+            },
+            "fill": {
+              "fillType": "GFT_UNFILLED"
+            }
+          },
+          "segment": {
+            "start": {
+              "xNm": "14480000",
+              "yNm": "7270000"
+            },
+            "end": {
+              "xNm": "14480000",
+              "yNm": "8730000"
+            }
+          }
+        },
+        "layer": "BL_F_SilkS",
+        "net": {},
+        "id": {
+          "value": "e738a95c-ce27-439d-abb5-297fb6618082"
+        },
+        "locked": "LS_UNLOCKED",
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.BoardGraphicShape",
+        "shape": {
+          "attributes": {
+            "stroke": {
+              "width": {
+                "valueNm": "250000"
+              },
+              "style": "SLS_SOLID"
+            },
+            "fill": {
+              "fillType": "GFT_UNFILLED"
+            }
+          },
+          "segment": {
+            "start": {
+              "xNm": "11630000",
+              "yNm": "6420000"
+            },
+            "end": {
+              "xNm": "12370000",
+              "yNm": "6420000"
+            }
+          }
+        },
+        "layer": "BL_F_SilkS",
+        "net": {},
+        "id": {
+          "value": "0b5561ca-8af2-4abd-bb3d-9eb9f6076439"
+        },
+        "locked": "LS_UNLOCKED",
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.BoardGraphicShape",
+        "shape": {
+          "attributes": {
+            "stroke": {
+              "width": {
+                "valueNm": "250000"
+              },
+              "style": "SLS_SOLID"
+            },
+            "fill": {
+              "fillType": "GFT_UNFILLED"
+            }
+          },
+          "segment": {
+            "start": {
+              "xNm": "7630000",
+              "yNm": "6420000"
+            },
+            "end": {
+              "xNm": "8370000",
+              "yNm": "6420000"
+            }
+          }
+        },
+        "layer": "BL_F_SilkS",
+        "net": {},
+        "id": {
+          "value": "0ada10e8-4569-486e-984e-0032497bc70f"
+        },
+        "locked": "LS_UNLOCKED",
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.BoardGraphicShape",
+        "shape": {
+          "attributes": {
+            "stroke": {
+              "width": {
+                "valueNm": "60000"
+              },
+              "style": "SLS_SOLID"
+            },
+            "fill": {
+              "fillType": "GFT_UNFILLED"
+            }
+          },
+          "circle": {
+            "center": {
+              "xNm": "5530000",
+              "yNm": "6170000"
+            },
+            "radiusPoint": {
+              "xNm": "5560000",
+              "yNm": "6170000"
+            }
+          }
+        },
+        "layer": "BL_F_SilkS",
+        "net": {},
+        "id": {
+          "value": "ad3c8471-375f-4c9a-9b34-6a5ab0e46efe"
+        },
+        "locked": "LS_UNLOCKED",
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.BoardGraphicShape",
+        "shape": {
+          "attributes": {
+            "stroke": {
+              "width": {
+                "valueNm": "200000"
+              },
+              "style": "SLS_SOLID"
+            },
+            "fill": {
+              "fillType": "GFT_UNFILLED"
+            }
+          },
+          "circle": {
+            "center": {
+              "xNm": "14000000",
+              "yNm": "8000000"
+            },
+            "radiusPoint": {
+              "xNm": "14100000",
+              "yNm": "8000000"
+            }
+          }
+        },
+        "layer": "BL_Cmts_User",
+        "net": {},
+        "id": {
+          "value": "7081f70b-9c34-45e3-a2fc-6e4e53afa0d1"
+        },
+        "locked": "LS_UNLOCKED",
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.BoardGraphicShape",
+        "shape": {
+          "attributes": {
+            "stroke": {
+              "width": {
+                "valueNm": "200000"
+              },
+              "style": "SLS_SOLID"
+            },
+            "fill": {
+              "fillType": "GFT_UNFILLED"
+            }
+          },
+          "circle": {
+            "center": {
+              "xNm": "6000000",
+              "yNm": "8000000"
+            },
+            "radiusPoint": {
+              "xNm": "6100000",
+              "yNm": "8000000"
+            }
+          }
+        },
+        "layer": "BL_Cmts_User",
+        "net": {},
+        "id": {
+          "value": "61677741-8195-4f5e-b26e-9a00be4bb356"
+        },
+        "locked": "LS_UNLOCKED",
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.BoardGraphicShape",
+        "shape": {
+          "attributes": {
+            "stroke": {
+              "width": {
+                "valueNm": "50000"
+              },
+              "style": "SLS_SOLID"
+            },
+            "fill": {
+              "fillType": "GFT_UNFILLED"
+            }
+          },
+          "segment": {
+            "start": {
+              "xNm": "5530000",
+              "yNm": "9580000"
+            },
+            "end": {
+              "xNm": "5530000",
+              "yNm": "6420000"
+            }
+          }
+        },
+        "layer": "BL_F_CrtYd",
+        "net": {},
+        "id": {
+          "value": "60ab9479-15f5-4662-b4e4-5ace4fffec42"
+        },
+        "locked": "LS_UNLOCKED",
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.BoardGraphicShape",
+        "shape": {
+          "attributes": {
+            "stroke": {
+              "width": {
+                "valueNm": "50000"
+              },
+              "style": "SLS_SOLID"
+            },
+            "fill": {
+              "fillType": "GFT_UNFILLED"
+            }
+          },
+          "segment": {
+            "start": {
+              "xNm": "5530000",
+              "yNm": "6420000"
+            },
+            "end": {
+              "xNm": "14470000",
+              "yNm": "6420000"
+            }
+          }
+        },
+        "layer": "BL_F_CrtYd",
+        "net": {},
+        "id": {
+          "value": "f9a410b4-e0f7-4f54-b1f4-c991375e7a1a"
+        },
+        "locked": "LS_UNLOCKED",
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.BoardGraphicShape",
+        "shape": {
+          "attributes": {
+            "stroke": {
+              "width": {
+                "valueNm": "50000"
+              },
+              "style": "SLS_SOLID"
+            },
+            "fill": {
+              "fillType": "GFT_UNFILLED"
+            }
+          },
+          "segment": {
+            "start": {
+              "xNm": "14470000",
+              "yNm": "6420000"
+            },
+            "end": {
+              "xNm": "14470000",
+              "yNm": "9580000"
+            }
+          }
+        },
+        "layer": "BL_F_CrtYd",
+        "net": {},
+        "id": {
+          "value": "701d7898-15ad-4b6c-b407-8fb63c5d4238"
+        },
+        "locked": "LS_UNLOCKED",
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.BoardGraphicShape",
+        "shape": {
+          "attributes": {
+            "stroke": {
+              "width": {
+                "valueNm": "50000"
+              },
+              "style": "SLS_SOLID"
+            },
+            "fill": {
+              "fillType": "GFT_UNFILLED"
+            }
+          },
+          "segment": {
+            "start": {
+              "xNm": "14470000",
+              "yNm": "9580000"
+            },
+            "end": {
+              "xNm": "5530000",
+              "yNm": "9580000"
+            }
+          }
+        },
+        "layer": "BL_F_CrtYd",
+        "net": {},
+        "id": {
+          "value": "86ea6461-2067-40cf-b918-0a5c50d3a6cd"
+        },
+        "locked": "LS_UNLOCKED",
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.BoardGraphicShape",
+        "shape": {
+          "attributes": {
+            "stroke": {
+              "width": {
+                "valueNm": "50000"
+              },
+              "style": "SLS_SOLID"
+            },
+            "fill": {
+              "fillType": "GFT_UNFILLED"
+            }
+          },
+          "rectangle": {
+            "topLeft": {
+              "xNm": "4950000",
+              "yNm": "5650000"
+            },
+            "bottomRight": {
+              "xNm": "15050000",
+              "yNm": "10350000"
+            },
+            "cornerRadius": {}
+          }
+        },
+        "layer": "BL_F_CrtYd",
+        "net": {},
+        "id": {
+          "value": "4c6c328f-7eb3-4376-a833-783363bbeb0e"
+        },
+        "locked": "LS_UNLOCKED",
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.BoardGraphicShape",
+        "shape": {
+          "attributes": {
+            "stroke": {
+              "width": {
+                "valueNm": "100000"
+              },
+              "style": "SLS_SOLID"
+            },
+            "fill": {
+              "fillType": "GFT_UNFILLED"
+            }
+          },
+          "rectangle": {
+            "topLeft": {
+              "xNm": "5530000",
+              "yNm": "6155000"
+            },
+            "bottomRight": {
+              "xNm": "14470000",
+              "yNm": "9845000"
+            },
+            "cornerRadius": {}
+          }
+        },
+        "layer": "BL_F_Fab",
+        "net": {},
+        "id": {
+          "value": "590207f5-bc44-4cc1-b4c7-e6f98f9d0f39"
+        },
+        "locked": "LS_UNLOCKED",
+        "parent": {
+          "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/kiapi.board.types.Footprint3DModel",
+        "filename": "${KIPRJMOD}/3dmodels/USB_C_GCT_USB4145_03_0230_C_Vertical.wrl",
+        "scale": {
+          "xNm": 1.0,
+          "yNm": 1.0,
+          "zNm": 1.0
+        },
+        "rotation": {},
+        "offset": {},
+        "visible": true,
+        "opacity": 1.0
+      }
+    ],
+    "jumpers": {}
+  },
+  "referenceField": {
+    "id": {
+      "id": 1
+    },
+    "name": "Reference",
+    "text": {
+      "id": {
+        "value": "1f5d0d7c-2bcb-4905-8469-49f7fcac21ef"
+      },
+      "text": {
+        "position": {
+          "xNm": "10000000",
+          "yNm": "4600000"
+        },
+        "attributes": {
+          "horizontalAlignment": "HA_CENTER",
+          "verticalAlignment": "VA_CENTER",
+          "angle": {},
+          "lineSpacing": 1.0,
+          "strokeWidth": {
+            "valueNm": "150000"
+          },
+          "visible": true,
+          "multiline": true,
+          "size": {
+            "xNm": "1000000",
+            "yNm": "1000000"
+          }
+        },
+        "text": "J9"
+      },
+      "layer": "BL_F_SilkS",
+      "locked": "LS_UNLOCKED",
+      "parent": {
+        "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+      }
+    },
+    "visible": true
+  },
+  "valueField": {
+    "id": {
+      "id": 2
+    },
+    "name": "Value",
+    "text": {
+      "id": {
+        "value": "99597654-5b65-49bb-b053-31d6d9e7f23f"
+      },
+      "text": {
+        "position": {
+          "xNm": "10000000",
+          "yNm": "11400000"
+        },
+        "attributes": {
+          "horizontalAlignment": "HA_CENTER",
+          "verticalAlignment": "VA_CENTER",
+          "angle": {},
+          "lineSpacing": 1.0,
+          "strokeWidth": {
+            "valueNm": "150000"
+          },
+          "visible": true,
+          "multiline": true,
+          "size": {
+            "xNm": "1000000",
+            "yNm": "1000000"
+          }
+        },
+        "text": "USB4145-03-0230-C"
+      },
+      "layer": "BL_F_Fab",
+      "locked": "LS_UNLOCKED",
+      "parent": {
+        "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+      }
+    }
+  },
+  "datasheetField": {
+    "id": {
+      "id": 4
+    },
+    "name": "Datasheet",
+    "text": {
+      "id": {
+        "value": "84272c0d-8afa-4475-a841-8333a221aa4a"
+      },
+      "text": {
+        "position": {
+          "xNm": "10000000",
+          "yNm": "11400000"
+        },
+        "attributes": {
+          "horizontalAlignment": "HA_CENTER",
+          "verticalAlignment": "VA_CENTER",
+          "angle": {},
+          "lineSpacing": 1.0,
+          "strokeWidth": {
+            "valueNm": "150000"
+          },
+          "visible": true,
+          "multiline": true,
+          "size": {
+            "xNm": "1270000",
+            "yNm": "1270000"
+          }
+        },
+        "text": "https://gct.co/files/drawings/usb4145.pdf"
+      },
+      "layer": "BL_F_Fab",
+      "locked": "LS_UNLOCKED",
+      "parent": {
+        "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+      }
+    }
+  },
+  "descriptionField": {
+    "id": {
+      "id": 5
+    },
+    "name": "Description",
+    "text": {
+      "id": {
+        "value": "f7e6b3e4-5ab4-4503-8588-a5290f9b5148"
+      },
+      "text": {
+        "position": {
+          "xNm": "10000000",
+          "yNm": "11400000"
+        },
+        "attributes": {
+          "horizontalAlignment": "HA_CENTER",
+          "verticalAlignment": "VA_CENTER",
+          "angle": {},
+          "lineSpacing": 1.0,
+          "strokeWidth": {
+            "valueNm": "150000"
+          },
+          "visible": true,
+          "multiline": true,
+          "size": {
+            "xNm": "1270000",
+            "yNm": "1270000"
+          }
+        },
+        "text": "USB Full-Featured Type-C Receptacle connector"
+      },
+      "layer": "BL_F_Fab",
+      "locked": "LS_UNLOCKED",
+      "parent": {
+        "value": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+      }
+    }
+  },
+  "attributes": {
+    "mountingStyle": "FMS_SMD"
+  },
+  "overrides": {
+    "zoneConnection": "ZCS_INHERITED"
+  },
+  "symbolPath": {},
+  "parent": {
+    "value": "89f60509-3764-4189-ac04-d4f6eef0c0eb"
+  },
+  "embeddedFiles": {}
+}

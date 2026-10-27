@@ -1,0 +1,38 @@
+{
+  "SW1": {
+    "fp": "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP",
+    "mpn": "B3FS-1002P",
+    "mfr": "Omron",
+    "lcsc": "C87038",
+    "ds": "https://components.omron.com/sg-en/products/switches/B3FS",
+    "desc": "6x6mm SMT normally-open tactile pushbutton, 3.1mm high, 1.47N",
+    "pos": [
+      126,
+      173
+    ]
+  },
+  "SW2": {
+    "fp": "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP",
+    "mpn": "B3FS-1002P",
+    "mfr": "Omron",
+    "lcsc": "C87038",
+    "ds": "https://components.omron.com/sg-en/products/switches/B3FS",
+    "desc": "6x6mm SMT normally-open tactile pushbutton, 3.1mm high, 1.47N",
+    "pos": [
+      142,
+      173
+    ]
+  },
+  "SW4": {
+    "fp": "PGR-FootPrints:SW_Slide_CK_1101M2S3CBE2",
+    "mpn": "1101M2S3CBE2",
+    "mfr": "C&K / Littelfuse",
+    "lcsc": "C2798505",
+    "ds": "https://www.littelfuse.com/assetdocs/littelfuse-ck-slide-1000-series-datasheet?assetguid=68a2b41e-19a4-4cf4-821b-aca78a430f00",
+    "desc": "Top-actuated SPDT slide switch used as battery enable; gold dry-circuit contacts; 12.7x6.6mm body; 5.08mm protruding actuator",
+    "pos": [
+      30,
+      58
+    ]
+  }
+}

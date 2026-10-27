@@ -1,0 +1,98 @@
+defaults:
+  library: 'PCBEdge'
+  fp_name: 'TE_{part}_{key}'
+  source: 'https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=114-115006&DocType=Specification%20Or%20Standard&DocLang=English&DocFormat=pdf&PartCntxt=2199119-4'
+  pad_pitch: 0.5
+  parameters:
+    part: "M.2"
+
+defaults_TE_M.2:
+  inherit: 'defaults'
+  description: '0.5mm Pitch, Key {key:s}, M.2 Receptacle, horizontal'
+  tags: 'conn te board-to-board receptacle {parts:s}'
+  row_pitch: 7.55
+  num_rows: 2
+  row_x_offset: 0.25
+  positions: [38]
+  pads:
+    size:
+      x: 0.3
+      y: 1.55
+  body_size:
+    x: 21.9
+    y: 7.75
+  offset:
+    body: [0, 0.125]
+  first_pin:
+    position: 'top'
+    marker:
+      shape: 'triangle'
+      size: 0.5
+      offset: 0.71
+  mount_pads:
+    top:
+      center:
+        x: 20.70
+        y: -3
+      size:
+        x: 1.2
+        y: 2.75
+      shape: 'rect'
+      paste: True
+      name: 'MP'
+      ends: 'both'
+    npth_left:
+      center:
+        x: 20
+        y: 1.5
+      size: 1.1
+      drill: 1.1
+      shape: 'circ'
+      paste: False
+      copper: False
+      ends: 'left'
+    npth_right:
+      center:
+        x: 20
+        y: 1.5
+      size: 1.8
+      drill: 1.8
+      shape: 'circ'
+      paste: False
+      copper: False
+      ends: 'right'
+  additional_drawings:
+    card_edge:
+      type: poly
+      layer: mechanical
+      points:
+        - [-11, -0.25]
+        - [11, -0.25]
+
+TE_M.2_Key_A:
+  inherit: 'defaults_TE_M.2'
+  parameters:
+    key: "A"
+    parts: "2199125-7 2199125-8 2199125-9 2199119-7 2199119-8 2199119-9 2199230-7 2199230-8 2199330-9"
+  hidden_pins: [8, 9, 10, 11, 12, 13, 14, 15, 76]
+
+TE_M.2_Key_B:
+  inherit: 'defaults_TE_M.2'
+  parameters:
+    key: "B"
+    parts: "2199125-1 2199125-3 2199125-5 2199119-1 2199119-3 2199119-5 2199230-1 2199230-3 2199330-5"
+  hidden_pins: [12, 13, 14, 15, 16, 17, 18, 19, 76]
+
+TE_M.2_Key_E:
+  inherit: 'defaults_TE_M.2'
+  parameters:
+    key: "E"
+    parts: "2199125-2 2199125-4 2199125-6 2199119-2 2199119-4 2199119-6 2199230-2 2199230-4 2199330-6"
+  hidden_pins: [24, 25, 26, 27, 28, 29, 30, 31, 76]
+
+TE_M.2_Key_M:
+  inherit: 'defaults_TE_M.2'
+  parameters:
+    key: "M"
+    parts: "2199125-13 2199125-14 2199125-15 2199119-13 2199119-15 2199119-16 2199230-13 2199230-15 2199330-16"
+  hidden_pins: [59, 60, 61, 62, 63, 64, 65, 66, 76]

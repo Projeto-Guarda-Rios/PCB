@@ -1,0 +1,3975 @@
+types ['GlobalLabel', 'Junction', 'LocalLabel', 'NoConnectMarker', 'SchematicGraphicShape', 'SchematicLine', 'SchematicSymbolInstance', 'SchematicText']
+id {
+  value: "fad31e15-5b29-4824-8dd9-a3959c923602"
+}
+path {
+  path {
+    value: "2a888306-90d9-48e5-ba43-e08ba2da2ab6"
+  }
+}
+position {
+  x_nm: 203200000
+  y_nm: -67310000
+}
+transform {
+  orientation: SSO_0
+}
+locked: LS_UNLOCKED
+definition {
+  id {
+    library_nickname: "AP2114H-3.3TRG1"
+    entry_name: "AP2114H-3.3TRG1"
+  }
+  type: SST_NORMAL
+  reference_field {
+    name: "Reference"
+    text {
+      position {
+        x_nm: 6096000
+        y_nm: -6096000
+      }
+      attributes {
+        horizontal_alignment: HA_LEFT
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "IC"
+    }
+    visible: true
+    allow_auto_place: true
+  }
+  value_field {
+    name: "Value"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_BOTTOM
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "AP2114H-3.3TRG1"
+    }
+    allow_auto_place: true
+  }
+  footprint_field {
+    name: "Footprint"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_BOTTOM
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "SOT223"
+    }
+    allow_auto_place: true
+  }
+  datasheet_field {
+    name: "Datasheet"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+    }
+    allow_auto_place: true
+  }
+  description_field {
+    name: "Description"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_BOTTOM
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "IC REG LINEAR 3.3V 1A SOT223"
+    }
+    allow_auto_place: true
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n2\032\016\n\010\n\004\010\260\300\017\020\001\022\002\010\004* \n\n\010\300\207\266\002\020\240\213\321\003\022\020\010\240\251\251\r\020\240\374\344\376\377\377\377\377\377\001\032\000\022&\n$4a34bc84-92a4-4968-a6e7-db97ad7f9959\030\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\030MANUFACTURER_PART_NUMBER\0324\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\017AP2114H-3.3TRG10\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\002MP\0324\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\017AP2114H-3.3TRG10\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\024SUPPLIER_PART_NUMBER\032;\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\026AP2114H-3.3TRG1DICT-ND0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\010SUPPLIER\032,\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\007Digikey0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\002MF\0320\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\013Diodes Inc.0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\014Availability\032-\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\010In Stock0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\005Price\032)\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\004None0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\007Package\0328\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\023SOT-223 Diodes Inc.0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\rDescription_1\032{\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*VVoltage Regulators, LDO, 1.5MHz CMOS LDO 2.5V to 5V 600mV | Diodes Inc AP2114H-3.3TRG10\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\014Check_prices\032q\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*Lhttps://www.snapeda.com/parts/AP2114H-3.3TRG1/Diodes+Inc./view-part/?ref=eda0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\014SnapEDA_Link\032r\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*Mhttps://www.snapeda.com/parts/AP2114H-3.3TRG1/Diodes+Inc./view-part/?ref=snap0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$2077ea77-edbd-479e-9536-f30e8a41a5f3\022\006VOUT_2\032\0014"\020\010\340\334\321p\020\320\334\363\337\377\377\377\377\377\001*\005\010\300\207\266\0020\0028\003@\001H\001R\004\010\300\201>Z\004\010\300\201>"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$6302a82b-c31b-4bf6-88ce-0b6d61332051\022\003VIN\032\0013"\020\010\200\254\362`\020\320\334\363\337\377\377\377\377\377\001*\005\010\300\207\266\0020\0018\003@\001H\001R\004\010\300\201>Z\004\010\300\201>"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$66ca5f93-5534-4a72-97cc-7bbad9dbffbd\022\006VOUT_1\032\0012"\020\010\340\334\321p\020\260\340\216\341\377\377\377\377\377\001*\005\010\300\207\266\0020\0028\003@\001H\001R\004\010\300\201>Z\004\010\300\201>"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$f028d357-5b9d-4fd8-bdfe-6d9f74d6e6b8\022\003GND\032\0011"\020\010\200\254\362`\020\220\344\251\342\377\377\377\377\377\001*\005\010\300\207\266\0020\0018\003@\001H\001R\004\010\300\201>Z\004\010\300\201>"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  unit_count: 1
+  body_style {
+    name: "?"
+  }
+  jumpers {
+  }
+  show_pin_numbers: true
+  show_pin_names: true
+  pin_name_offset {
+    value_nm: 1016000
+  }
+}
+reference_field {
+  name: "Reference"
+  text {
+    position {
+      x_nm: 219710000
+      y_nm: -74930000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "IC1"
+  }
+  visible: true
+  allow_auto_place: true
+}
+value_field {
+  name: "Value"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "AP2114H-3.3TRG1"
+  }
+  allow_auto_place: true
+}
+footprint_field {
+  name: "Footprint"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "SOT223"
+  }
+  allow_auto_place: true
+}
+datasheet_field {
+  name: "Datasheet"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+  }
+  allow_auto_place: true
+}
+description_field {
+  name: "Description"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "IC REG LINEAR 3.3V 1A SOT223"
+  }
+  allow_auto_place: true
+}
+attributes {
+}
+unit {
+  unit: 1
+}
+show_pin_names: true
+show_pin_numbers: true
+pin_name_offset {
+}
+user_fields {
+  name: "MF"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Diodes Inc."
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "Package"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "SOT-223 Diodes Inc."
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "SUPPLIER_PART_NUMBER"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "AP2114H-3.3TRG1DICT-ND"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "Price"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "None"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "Check_prices"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "https://www.snapeda.com/parts/AP2114H-3.3TRG1/Diodes+Inc./view-part/?ref=eda"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "SUPPLIER"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Digikey"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "SnapEDA_Link"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "https://www.snapeda.com/parts/AP2114H-3.3TRG1/Diodes+Inc./view-part/?ref=snap"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "MP"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "AP2114H-3.3TRG1"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "Description_1"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Voltage Regulators, LDO, 1.5MHz CMOS LDO 2.5V to 5V 600mV | Diodes Inc AP2114H-3.3TRG1"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "Availability"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "In Stock"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "MANUFACTURER_PART_NUMBER"
+  text {
+    position {
+      x_nm: 203200000
+      y_nm: -67310000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "AP2114H-3.3TRG1"
+  }
+  allow_auto_place: true
+}
+fields_autoplaced: true
+
+id {
+  value: "0ef3abc4-ecf1-48c4-82fb-c4aa27f7a36e"
+}
+path {
+  path {
+    value: "2a888306-90d9-48e5-ba43-e08ba2da2ab6"
+  }
+}
+position {
+  x_nm: 234950000
+  y_nm: -16510000
+}
+transform {
+  orientation: SSO_0
+}
+locked: LS_UNLOCKED
+definition {
+  id {
+    library_nickname: "SS8050-G"
+    entry_name: "SS8050-G"
+  }
+  type: SST_NORMAL
+  reference_field {
+    name: "Reference"
+    text {
+      position {
+        x_nm: -10160000
+        y_nm: -7620000
+      }
+      attributes {
+        horizontal_alignment: HA_LEFT
+        vertical_alignment: VA_BOTTOM
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "Q"
+    }
+    visible: true
+    allow_auto_place: true
+  }
+  value_field {
+    name: "Value"
+    text {
+      position {
+        x_nm: -10160000
+        y_nm: 7620000
+      }
+      attributes {
+        horizontal_alignment: HA_LEFT
+        vertical_alignment: VA_BOTTOM
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "SS8050-G"
+    }
+    visible: true
+    allow_auto_place: true
+  }
+  footprint_field {
+    name: "Footprint"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_BOTTOM
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "SS8050-G:TRANS_SS8050-G"
+    }
+    allow_auto_place: true
+  }
+  datasheet_field {
+    name: "Datasheet"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+    }
+    allow_auto_place: true
+  }
+  description_field {
+    name: "Description"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+    }
+    allow_auto_place: true
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n7\032\016\n\010\n\004\010\240\215\006\020\001\022\002\010\002*%\n\020\010\320\277\360\377\377\377\377\377\377\001\020\340\203\233\001\022\017\010\340\200\037\020\240\374\344\376\377\377\377\377\377\001\032\000\022&\n$1a86886a-b1a1-47ed-9aaa-349b43194095\030\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n#\032\016\n\010\n\004\010\320\246\t\020\001\022\002\010\001B\021\n\017\n\r\n\013\n\t\010\360\301M\020\340\203\233\001\022&\n$5378a76d-7a30-449a-8bc3-83f77153ab50\030\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n#\032\016\n\010\n\004\010\260\300\017\020\001\022\002\010\001B\021\n\017\n\r\n\013\n\t\010\240\202]\020\260\303\213\001\022&\n$2c7aeb70-9a8e-4e62-b34e-9b41be19317c\030\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n#\032\016\n\010\n\004\010\260\300\017\020\001\022\002\010\001B\021\n\017\n\r\n\013\n\t\010\240\202]\020\310\243\223\001\022&\n$1380f764-5d7a-4559-a8c5-5bf8506bbc49\030\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n"\032\016\n\010\n\004\010\320\246\t\020\001\022\002\010\001B\020\n\016\n\014\n\n\n\010\010\240\377]\020\300\301|\022&\n$cd667578-0e03-4738-962a-7b2e67804bdb\030\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n"\032\016\n\010\n\004\010\320\246\t\020\001\022\002\010\001B\020\n\016\n\014\n\n\n\010\010\320\302l\020\240\202]\022&\n$dba1c43f-8184-4f4a-9061-40fab5b00073\030\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n"\032\016\n\010\n\004\010\260\300\017\020\001\022\002\010\001B\020\n\016\n\014\n\n\n\010\010\320\302l\020\320\302l\022&\n$50136910-c8ca-4e46-900c-f8a116c7bbd0\030\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n#\032\016\n\010\n\004\010\260\300\017\020\001\022\002\010\001B\021\n\017\n\r\n\013\n\t\010\350\242t\020\260\303\213\001\022&\n$658de6f9-6d7a-428d-b489-3a22f1b119d7\030\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n$\032\016\n\010\n\004\010\260\300\017\020\001\022\002\010\001B\022\n\020\n\016\n\014\n\n\010\260\303\213\001\020\310\243\223\001\022&\n$cb4c319e-22f4-446a-9fc0-864aa5fb5490\030\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n*\032\016\n\010\n\004\010\320\246\t\020\001\022\002\010\001B\030\n\026\n\024\n\022\n\020\010\340\203\233\001\020\240\374\344\376\377\377\377\377\377\001\022&\n$9eddf080-2a6e-4677-84bf-3d816cb220b0\030\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n$\032\016\n\010\n\004\010\320\246\t\020\001\022\002\010\001B\022\n\020\n\016\n\014\n\n\010\340\203\233\001\020\340\203\233\001\022&\n$5841dbd8-3d7d-4afa-85e4-dcd9aa4434fb\030\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\026MAXIMUM_PACKAGE_HEIGHT\032,\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\0071.05 mm0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\007PARTREV\032&\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\001A0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\rDescription_1\032q\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*LBipolar (BJT) Transistor NPN 25 V 1.5 A 100MHz 300 mW Surface Mount SOT-23-30\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\014MANUFACTURER\032,\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\007Comchip0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\002MF\0327\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\022Comchip Technology0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\014Availability\032-\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\010In Stock0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\010STANDARD\032A\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\034Manufacturer Recommendations0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\005Price\032)\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\004None0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\002MP\032-\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\010SS8050-G0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\007Package\0323\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\016TO-236 Comchip0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\014Check_prices\032f\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*Ahttps://www.snapeda.com/parts/SS8050-G/Comchip/view-part/?ref=eda0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\014SnapEDA_Link\032g\022\000\032\037\020\002\030\003"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*Bhttps://www.snapeda.com/parts/SS8050-G/Comchip/view-part/?ref=snap0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$1882e81a-bf50-46dd-9972-f6ae244e3033\032\0012"\020\010\320\236\237q\020\220\257\306\372\377\377\377\377\377\001*\005\010\340\203\233\0010\0038\005@\001H\001R\004\010\300\201>Z\004\010\300\201>"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$a2a5aef3-b810-40f6-b4e2-64edfb90d2f1\032\0013"\020\010\320\236\237q\020\220\240\332\365\377\377\377\377\377\001*\005\010\340\203\233\0010\0048\005@\001H\001R\004\010\300\201>Z\004\010\300\201>"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$c812a1c6-48eb-4764-8587-489e8f4b3a5e\032\0011"\020\010\220\227\351n\020\320\247\220\370\377\377\377\377\377\001*\005\010\340\203\233\0010\0018\005@\001H\001R\004\010\300\201>Z\004\010\300\201>"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  unit_count: 1
+  body_style {
+    name: "?"
+  }
+  jumpers {
+  }
+  show_pin_numbers: true
+  show_pin_names: true
+  pin_name_offset {
+    value_nm: 1016000
+  }
+}
+reference_field {
+  name: "Reference"
+  text {
+    position {
+      x_nm: 238760000
+      y_nm: -17780100
+    }
+    attributes {
+      horizontal_alignment: HA_LEFT
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Q2"
+  }
+  visible: true
+  allow_auto_place: true
+}
+value_field {
+  name: "Value"
+  text {
+    position {
+      x_nm: 238760000
+      y_nm: -15240100
+    }
+    attributes {
+      horizontal_alignment: HA_LEFT
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "SS8050-G"
+  }
+  visible: true
+  allow_auto_place: true
+}
+footprint_field {
+  name: "Footprint"
+  text {
+    position {
+      x_nm: 234950000
+      y_nm: -16510000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "SS8050-G:TRANS_SS8050-G"
+  }
+  allow_auto_place: true
+}
+datasheet_field {
+  name: "Datasheet"
+  text {
+    position {
+      x_nm: 234950000
+      y_nm: -16510000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+  }
+  allow_auto_place: true
+}
+description_field {
+  name: "Description"
+  text {
+    position {
+      x_nm: 234950000
+      y_nm: -16510000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+  }
+  allow_auto_place: true
+}
+attributes {
+}
+unit {
+  unit: 1
+}
+show_pin_names: true
+show_pin_numbers: true
+pin_name_offset {
+}
+user_fields {
+  name: "MF"
+  text {
+    position {
+      x_nm: 234950000
+      y_nm: -16510000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Comchip Technology"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "MAXIMUM_PACKAGE_HEIGHT"
+  text {
+    position {
+      x_nm: 234950000
+      y_nm: -16510000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "1.05 mm"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "Package"
+  text {
+    position {
+      x_nm: 234950000
+      y_nm: -16510000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "TO-236 Comchip"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "Price"
+  text {
+    position {
+      x_nm: 234950000
+      y_nm: -16510000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "None"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "Check_prices"
+  text {
+    position {
+      x_nm: 234950000
+      y_nm: -16510000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "https://www.snapeda.com/parts/SS8050-G/Comchip/view-part/?ref=eda"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "STANDARD"
+  text {
+    position {
+      x_nm: 234950000
+      y_nm: -16510000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Manufacturer Recommendations"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "PARTREV"
+  text {
+    position {
+      x_nm: 234950000
+      y_nm: -16510000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "A"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "SnapEDA_Link"
+  text {
+    position {
+      x_nm: 234950000
+      y_nm: -16510000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "https://www.snapeda.com/parts/SS8050-G/Comchip/view-part/?ref=snap"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "MP"
+  text {
+    position {
+      x_nm: 234950000
+      y_nm: -16510000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "SS8050-G"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "Description_1"
+  text {
+    position {
+      x_nm: 234950000
+      y_nm: -16510000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Bipolar (BJT) Transistor NPN 25 V 1.5 A 100MHz 300 mW Surface Mount SOT-23-3"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "Availability"
+  text {
+    position {
+      x_nm: 234950000
+      y_nm: -16510000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "In Stock"
+  }
+  allow_auto_place: true
+}
+user_fields {
+  name: "MANUFACTURER"
+  text {
+    position {
+      x_nm: 234950000
+      y_nm: -16510000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_BOTTOM
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Comchip"
+  }
+  allow_auto_place: true
+}
+fields_autoplaced: true
+
+id {
+  value: "abce8491-c32d-4ef0-b6a6-a4f4782a1a8f"
+}
+path {
+  path {
+    value: "2a888306-90d9-48e5-ba43-e08ba2da2ab6"
+  }
+}
+position {
+  x_nm: 245110000
+  y_nm: 88900000
+}
+transform {
+  orientation: SSO_90
+}
+locked: LS_UNLOCKED
+definition {
+  id {
+    library_nickname: "Device"
+    entry_name: "LED"
+  }
+  type: SST_NORMAL
+  reference_field {
+    name: "Reference"
+    text {
+      position {
+        y_nm: -2540000
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "D"
+    }
+    visible: true
+    allow_auto_place: true
+  }
+  value_field {
+    name: "Value"
+    text {
+      position {
+        y_nm: 2540000
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "LED"
+    }
+    visible: true
+    allow_auto_place: true
+  }
+  footprint_field {
+    name: "Footprint"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+    }
+    allow_auto_place: true
+  }
+  datasheet_field {
+    name: "Datasheet"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+    }
+    allow_auto_place: true
+  }
+  description_field {
+    name: "Description"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "Light emitting diode"
+    }
+    allow_auto_place: true
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\na\032\n\n\004\n\000\020\001\022\002\010\001BS\nQ\nO\n\021\n\017\010\300\373\305\376\377\377\377\377\377\001\020\220\301.\n\022\n\020\010\240\371\350\375\377\377\377\377\377\001\020\260\303\213\001\n\022\n\020\010\260\272\227\376\377\377\377\377\377\001\020\260\303\213\001\n\022\n\020\010\240\371\350\375\377\377\377\377\377\001\020\260\303\213\001\022&\n$8bf26d41-b34f-419d-bdb2-1916711ad941\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\na\032\n\n\004\n\000\020\001\022\002\010\001BS\nQ\nO\n\021\n\017\010\260\275\223\377\377\377\377\377\377\001\020\220\301.\n\022\n\020\010\220\273\266\376\377\377\377\377\377\001\020\260\303\213\001\n\022\n\020\010\240\374\344\376\377\377\377\377\377\001\020\260\303\213\001\n\022\n\020\010\220\273\266\376\377\377\377\377\377\001\020\260\303\213\001\022&\n$4f0506e3-4b47-4ecf-b48b-cf1534f2e0c2\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n!\032\n\n\004\n\000\020\001\022\002\010\001B\023\n\021\n\017\n\r\n\013\010\220\276\262\377\377\377\377\377\377\001\022&\n$37417529-663f-4242-a4a2-aab71a18a350\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n)\032\016\n\010\n\004\010\260\300\017\020\001\022\002\010\001B\027\n\025\n\023\n\021\n\017\010\220\276\262\377\377\377\377\377\377\001\020\360\301M\022&\n$d7f016d6-5b24-419b-96ba-19cd170a43d9\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\nD\032\016\n\010\n\004\010\260\300\017\020\001\022\002\010\001B2\n0\n.\n\n\n\010\010\360\301M\020\360\301M\n\021\n\017\010\360\301M\020\220\276\262\377\377\377\377\377\377\001\n\r\n\013\010\220\276\262\377\377\377\377\377\377\001\022&\n$9defe7d3-69db-43a1-894a-3ea77d647f9f\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicField"
+      value: "\022\010Sim.Pins\032,\022\000\032\037\020\002\030\002"\000)\000\000\000\000\000\000\360?2\000P\001`\001r\010\010\360\301M\020\360\301M*\0071=K 2=A0\001"
+    }
+    unit {
+    }
+    body_style {
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$39784891-470d-40da-a957-6f3d0d0392dc\022\001K\032\0011"\n\010\360\251\360t\020\360\310\232,*\005\010\340\203\233\0010\0018\005@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$55c8cc12-53cc-4803-a851-484c0779f1f2\022\001A\032\0012"\n\010\360\251\360t\020\320\275\311(*\005\010\340\203\233\0010\0028\005@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  unit_count: 1
+  body_style {
+    name: "?"
+  }
+  keywords: "LED diode"
+  footprint_filters: "LED*"
+  footprint_filters: "LED_SMD:*"
+  footprint_filters: "LED_THT:*"
+  jumpers {
+  }
+  pin_name_offset {
+    value_nm: 1016000
+  }
+}
+reference_field {
+  name: "Reference"
+  text {
+    position {
+      x_nm: 247650000
+      y_nm: 88138000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "D9"
+  }
+  visible: true
+  allow_auto_place: true
+}
+value_field {
+  name: "Value"
+  text {
+    position {
+      x_nm: 247650000
+      y_nm: 85598000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "BLUE"
+  }
+  visible: true
+  allow_auto_place: true
+}
+footprint_field {
+  name: "Footprint"
+  text {
+    position {
+      x_nm: 245110000
+      y_nm: 88900000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "LED_SMD:LED_0603_1608Metric"
+  }
+  allow_auto_place: true
+}
+datasheet_field {
+  name: "Datasheet"
+  text {
+    position {
+      x_nm: 245110000
+      y_nm: 88900000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+  }
+  allow_auto_place: true
+}
+description_field {
+  name: "Description"
+  text {
+    position {
+      x_nm: 245110000
+      y_nm: 88900000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Light emitting diode"
+  }
+  allow_auto_place: true
+}
+attributes {
+}
+unit {
+  unit: 1
+}
+pin_name_offset {
+}
+user_fields {
+  name: "Sim.Pins"
+  text {
+    position {
+      x_nm: 245110000
+      y_nm: 88900000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "1=K 2=A"
+  }
+  allow_auto_place: true
+}
+
+id {
+  value: "fbdda013-8a66-492d-9f41-50c7ca12f7d6"
+}
+path {
+  path {
+    value: "2a888306-90d9-48e5-ba43-e08ba2da2ab6"
+  }
+}
+position {
+  x_nm: 217170000
+  y_nm: -137160000
+}
+transform {
+  orientation: SSO_0
+}
+locked: LS_UNLOCKED
+definition {
+  id {
+    library_nickname: "RF_Module"
+    entry_name: "ESP32-WROOM-32E"
+  }
+  type: SST_NORMAL
+  reference_field {
+    name: "Reference"
+    text {
+      position {
+        x_nm: -12700000
+        y_nm: -34290000
+      }
+      attributes {
+        horizontal_alignment: HA_LEFT
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "U"
+    }
+    visible: true
+    allow_auto_place: true
+  }
+  value_field {
+    name: "Value"
+    text {
+      position {
+        x_nm: 1270000
+        y_nm: -34290000
+      }
+      attributes {
+        horizontal_alignment: HA_LEFT
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "ESP32-WROOM-32E"
+    }
+    visible: true
+    allow_auto_place: true
+  }
+  footprint_field {
+    name: "Footprint"
+    text {
+      position {
+        x_nm: 16510000
+        y_nm: 34290000
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "RF_Module:ESP32-WROOM-32D"
+    }
+    allow_auto_place: true
+  }
+  datasheet_field {
+    name: "Datasheet"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf"
+    }
+    allow_auto_place: true
+  }
+  description_field {
+    name: "Description"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "RF Module, ESP32-D0WD-V3 SoC, without PSRAM, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 2.7-3.6V, onboard antenna, SMD"
+    }
+    allow_auto_place: true
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n8\032\016\n\010\n\004\010\260\300\017\020\001\022\002\010\004*&\n\026\010\240\355\370\371\377\377\377\377\377\001\020\240\317\240\360\377\377\377\377\377\001\022\n\010\340\222\207\006\020\340\260\337\017\032\000\022&\n$8c4db02d-6d64-45b3-8057-7d8ac09fb504\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$0474916a-3faa-4ae5-b009-9bd233943f1e\022\004IO16\032\00227"\020\010\220\227\351n\020\200\256\226\274\377\377\377\377\377\001*\005\010\340\203\233\0010\0028\003@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$1d119820-245f-480f-8bee-cdc74bb7b296\022\004IO21\032\00233"\020\010\220\227\351n\020\200\275\202\301\377\377\377\377\377\001*\005\010\340\203\233\0010\0028\003@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$20d88c4a-158f-4e42-9562-396f80331232\022\004IO34\032\0016"\020\010\220\227\351n\020\200\333\332\312\377\377\377\377\377\001*\005\010\340\203\233\0010\0028\001@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$21730fd5-2523-4405-b538-ccf3b82ebd66\022\010TXD0/IO1\032\00235"\020\010\220\227\351n\020\240\214\243\261\377\377\377\377\377\001*\005\010\340\203\233\0010\0028\003@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$229a4c9f-4c13-4e6f-a4ae-660ec19674fd\022\004IO19\032\00231"\020\010\220\227\351n\020\240\271\347\277\377\377\377\377\377\001*\005\010\340\203\233\0010\0028\003@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$268397a0-c56c-4683-bcd6-7a4518b6e7e3\022\003VDD\032\0012"\020\010\320\200\307g\020\200\201\322\255\377\377\377\377\377\001*\005\010\340\203\233\0010\0048\010@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$28065d8d-9cfb-4e5c-abf9-02939d57acb9\022\004IO18\032\00230"\020\010\220\227\351n\020\300\265\314\276\377\377\377\377\377\001*\005\010\340\203\233\0010\0028\003@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$2b763bba-36e5-473d-be5a-61b55cf49d34\022\003GND\032\00239"\020\010\320\200\307g\020\200\352\306\317\377\377\377\377\377\001*\005\010\340\203\233\0010\0038\005@\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$347a6f03-721f-48de-8833-1e6099295008\022\004IO14\032\00213"\020\010\220\227\351n\020\300\246\340\271\377\377\377\377\377\001*\005\010\340\203\233\0010\0028\003@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$3f48a5f0-11a5-41a8-9562-d951d426d636\022\002NC\032\00222"\020\010\360\355\277a\020\240\271\347\277\377\377\377\377\377\001*\005\010\340\203\233\0010\0018\014@\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$53c67ad4-c894-404c-b1d5-d1d15876d8ff\022\003GND\032\00215"\020\010\320\200\307g\020\200\352\306\317\377\377\377\377\377\001*\005\010\340\203\233\0010\0038\005@\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$541a98f3-34dc-4b3f-86a3-56df9625e3ec\022\003IO5\032\00229"\020\010\220\227\351n\020\240\233\217\266\377\377\377\377\377\001*\005\010\340\203\233\0010\0028\003@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$60c9ab15-6661-4984-96cc-fc56cfccd7d3\022\004IO27\032\00212"\020\010\220\227\351n\020\340\317\211\307\377\377\377\377\377\001*\005\010\340\203\233\0010\0028\003@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$62042e9f-267b-4e4b-b07f-4c74c43517e7\022\004IO35\032\0017"\020\010\220\227\351n\020\340\336\365\313\377\377\377\377\377\001*\005\010\340\203\233\0010\0028\001@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$6d6471c7-8c65-4b9a-ac52-b52a9e372a5e\022\004IO33\032\0019"\020\010\220\227\351n\020\240\327\277\311\377\377\377\377\377\001*\005\010\340\203\233\0010\0028\003@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$6eb98d4e-4e36-4966-b92a-e254ba775965\022\002EN\032\0013"\020\010\220\352\244`\020\300\210\210\260\377\377\377\377\377\001*\005\010\340\203\233\0010\0018\001@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$767a433f-3b2a-4eb6-85da-3356b8fc8048\022\003GND\032\0011"\020\010\320\200\307g\020\200\352\306\317\377\377\377\377\377\001*\005\010\340\203\233\0010\0038\010@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$77c2d06d-52b2-4576-a9f5-2584a92e2873\022\004IO17\032\00228"\020\010\220\227\351n\020\340\261\261\275\377\377\377\377\377\001*\005\010\340\203\233\0010\0028\003@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$81bcfa26-b80a-4139-90c5-3b3156acfc8c\022\004IO22\032\00236"\020\010\220\227\351n\020\340\300\235\302\377\377\377\377\377\001*\005\010\340\203\233\0010\0028\003@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$85b1f450-b584-4ba2-a59f-3fc7dc6dc5d7\022\tSENSOR_VP\032\0014"\020\010\220\352\244`\020\200\220\276\262\377\377\377\377\377\001*\005\010\340\203\233\0010\0018\001@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$85c74a00-9fc5-4cb8-978d-0fd776c15d07\022\002NC\032\00218"\020\010\360\355\277a\020\340\300\235\302\377\377\377\377\377\001*\005\010\340\203\233\0010\0018\014@\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$8d5d808f-ed40-4a34-bd0f-3d8cf14b6252\022\003GND\032\00238"\020\010\320\200\307g\020\200\352\306\317\377\377\377\377\377\001*\005\010\340\203\233\0010\0038\005@\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$95e57fe1-b724-48b6-a6cc-41731f541d59\022\002NC\032\00232"\020\010\360\355\277a\020\340\336\365\313\377\377\377\377\377\001*\005\010\340\203\233\0010\0018\014@\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$a021240b-8699-4563-87d9-80df1888d2ef\022\003IO0\032\00225"\020\010\220\227\351n\020\300\210\210\260\377\377\377\377\377\001*\005\010\340\203\233\0010\0028\003@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$a085bc3d-1a7a-4d76-8657-9b337131fadb\022\004IO15\032\00223"\020\010\220\227\351n\020\240\252\373\272\377\377\377\377\377\001*\005\010\340\203\233\0010\0028\003@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$a2beedd0-f681-4a6b-93c6-0388c320d3f3\022\002NC\032\00221"\020\010\360\355\277a\020\300\265\314\276\377\377\377\377\377\001*\005\010\340\203\233\0010\0018\014@\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$a7116918-9fb6-4221-9ceb-74a19951599d\022\003IO2\032\00224"\020\010\220\227\351n\020\200\220\276\262\377\377\377\377\377\001*\005\010\340\203\233\0010\0028\003@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$a80aad40-5eef-45ae-91a9-064092175a56\022\tSENSOR_VN\032\0015"\020\010\220\352\244`\020\340\223\331\263\377\377\377\377\377\001*\005\010\340\203\233\0010\0018\001@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$aa191aa8-92f1-4eeb-bd6a-940309a3c206\022\010RXD0/IO3\032\00234"\020\010\220\227\351n\020\340\223\331\263\377\377\377\377\377\001*\005\010\340\203\233\0010\0028\003@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$ac2aa367-cc17-45a7-8656-149eea31ae2a\022\004IO32\032\0018"\020\010\220\227\351n\020\300\323\244\310\377\377\377\377\377\001*\005\010\340\203\233\0010\0028\003@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$cae1938f-beb0-4b3a-a9da-653b8155aa0b\022\004IO25\032\00210"\020\010\220\227\351n\020\240\310\323\304\377\377\377\377\377\001*\005\010\340\203\233\0010\0028\003@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$cd7c25ab-663c-44b7-b519-469b77bc4e1a\022\003IO4\032\00226"\020\010\220\227\351n\020\300\227\364\264\377\377\377\377\377\001*\005\010\340\203\233\0010\0028\003@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$ce082674-5489-47db-bfb9-a57182cab409\022\004IO23\032\00237"\020\010\220\227\351n\020\300\304\270\303\377\377\377\377\377\001*\005\010\340\203\233\0010\0028\003@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$ce2688e1-11b9-4d7b-aaa1-e52b896baea6\022\004IO26\032\00211"\020\010\220\227\351n\020\200\314\356\305\377\377\377\377\377\001*\005\010\340\203\233\0010\0028\003@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$d7d118ca-d8df-4c57-b0c8-889d31d4f297\022\002NC\032\00220"\020\010\360\355\277a\020\300\304\270\303\377\377\377\377\377\001*\005\010\340\203\233\0010\0018\014@\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$d7da0469-455c-48fd-ad0f-ce7200c56917\022\002NC\032\00219"\020\010\360\355\277a\020\240\310\323\304\377\377\377\377\377\001*\005\010\340\203\233\0010\0018\014@\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$e17263b0-10ae-4751-b20a-90ff4885a731\022\002NC\032\00217"\020\010\360\355\277a\020\200\275\202\301\377\377\377\377\377\001*\005\010\340\203\233\0010\0018\014@\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$ebbee450-3f53-41a3-8f19-836635e7e6b1\022\004IO13\032\00216"\020\010\220\227\351n\020\340\242\305\270\377\377\377\377\377\001*\005\010\340\203\233\0010\0028\003@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$edc85d01-e3ac-4f9e-8d31-2132c7e3c468\022\004IO12\032\00214"\020\010\220\227\351n\020\200\237\252\267\377\377\377\377\377\001*\005\010\340\203\233\0010\0028\003@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  unit_count: 1
+  body_style {
+    name: "?"
+  }
+  keywords: "RF Radio BT ESP ESP32 Espressif onboard PCB antenna"
+  footprint_filters: "ESP32?WROOM?32D*"
+  jumpers {
+  }
+  show_pin_numbers: true
+  show_pin_names: true
+  pin_name_offset {
+    value_nm: 508000
+  }
+}
+reference_field {
+  name: "Reference"
+  text {
+    position {
+      x_nm: 219313300
+      y_nm: -175260000
+    }
+    attributes {
+      horizontal_alignment: HA_LEFT
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "U5"
+  }
+  visible: true
+  allow_auto_place: true
+}
+value_field {
+  name: "Value"
+  text {
+    position {
+      x_nm: 219313300
+      y_nm: -172720000
+    }
+    attributes {
+      horizontal_alignment: HA_LEFT
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "ESP32-WROOM-32E"
+  }
+  visible: true
+  allow_auto_place: true
+}
+footprint_field {
+  name: "Footprint"
+  text {
+    position {
+      x_nm: 233680000
+      y_nm: -102870000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "RF_Module:ESP32-WROOM-32D"
+  }
+  allow_auto_place: true
+}
+datasheet_field {
+  name: "Datasheet"
+  text {
+    position {
+      x_nm: 217170000
+      y_nm: -137160000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf"
+  }
+  allow_auto_place: true
+}
+description_field {
+  name: "Description"
+  text {
+    position {
+      x_nm: 217170000
+      y_nm: -137160000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "RF Module, ESP32-D0WD-V3 SoC, without PSRAM, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 2.7-3.6V, onboard antenna, SMD"
+  }
+  allow_auto_place: true
+}
+attributes {
+}
+unit {
+  unit: 1
+}
+show_pin_names: true
+show_pin_numbers: true
+pin_name_offset {
+}
+fields_autoplaced: true
+
+id {
+  value: "530ced9a-c727-44fe-875d-99545b813d6d"
+}
+path {
+  path {
+    value: "2a888306-90d9-48e5-ba43-e08ba2da2ab6"
+  }
+}
+position {
+  x_nm: 118110000
+  y_nm: 35560000
+}
+transform {
+  orientation: SSO_0
+}
+locked: LS_UNLOCKED
+definition {
+  id {
+    library_nickname: "Device"
+    entry_name: "R"
+  }
+  type: SST_NORMAL
+  reference_field {
+    name: "Reference"
+    text {
+      position {
+        x_nm: 2032000
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+          value_degrees: 90
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "R"
+    }
+    visible: true
+    allow_auto_place: true
+  }
+  value_field {
+    name: "Value"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+          value_degrees: 90
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "R"
+    }
+    visible: true
+    allow_auto_place: true
+  }
+  footprint_field {
+    name: "Footprint"
+    text {
+      position {
+        x_nm: -1778000
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+          value_degrees: 90
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+    }
+    allow_auto_place: true
+  }
+  datasheet_field {
+    name: "Datasheet"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+    }
+    allow_auto_place: true
+  }
+  description_field {
+    name: "Description"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "Resistor"
+    }
+    allow_auto_place: true
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n7\032\016\n\010\n\004\010\260\300\017\020\001\022\002\010\001*%\n\020\010\300\376\301\377\377\377\377\377\377\001\020\340\203\233\001\022\017\010\300\201>\020\240\374\344\376\377\377\377\377\377\001\032\000\022&\n$ab147196-24e2-47c5-98d1-eb544bf87fe0\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$1b3e63b0-0ce0-417b-88b1-a38043d51587\032\0011"\n\010\260\356\2508\020\360\356\221\017*\004\010\360\301M0\0048\005@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$1cedc46e-d185-481a-85af-bb4c55398c44\032\0012"\n\010\260\356\2508\020\220\372\342\022*\004\010\360\301M0\0038\005@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  unit_count: 1
+  body_style {
+    name: "?"
+  }
+  keywords: "R res resistor"
+  footprint_filters: "R_*"
+  jumpers {
+  }
+  show_pin_names: true
+  pin_name_offset {
+  }
+}
+reference_field {
+  name: "Reference"
+  text {
+    position {
+      x_nm: 120650000
+      y_nm: 34289900
+    }
+    attributes {
+      horizontal_alignment: HA_LEFT
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "R18"
+  }
+  visible: true
+  allow_auto_place: true
+}
+value_field {
+  name: "Value"
+  text {
+    position {
+      x_nm: 120650000
+      y_nm: 36829900
+    }
+    attributes {
+      horizontal_alignment: HA_LEFT
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "10K"
+  }
+  visible: true
+  allow_auto_place: true
+}
+footprint_field {
+  name: "Footprint"
+  text {
+    position {
+      x_nm: 116332000
+      y_nm: 35560000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+        value_degrees: 90
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Resistor_SMD:R_0603_1608Metric"
+  }
+  allow_auto_place: true
+}
+datasheet_field {
+  name: "Datasheet"
+  text {
+    position {
+      x_nm: 118110000
+      y_nm: 35560000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+  }
+  allow_auto_place: true
+}
+description_field {
+  name: "Description"
+  text {
+    position {
+      x_nm: 118110000
+      y_nm: 35560000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Resistor"
+  }
+  allow_auto_place: true
+}
+attributes {
+}
+unit {
+  unit: 1
+}
+show_pin_names: true
+pin_name_offset {
+}
+fields_autoplaced: true
+
+id {
+  value: "5df7f2cc-8c95-4309-94c5-313a64868fc7"
+}
+path {
+  path {
+    value: "2a888306-90d9-48e5-ba43-e08ba2da2ab6"
+  }
+}
+position {
+  x_nm: 41910000
+  y_nm: 129540000
+}
+transform {
+  orientation: SSO_0
+}
+locked: LS_UNLOCKED
+definition {
+  id {
+    library_nickname: "Device"
+    entry_name: "Buzzer"
+  }
+  type: SST_NORMAL
+  reference_field {
+    name: "Reference"
+    text {
+      position {
+        x_nm: 3810000
+        y_nm: -1270000
+      }
+      attributes {
+        horizontal_alignment: HA_LEFT
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "BZ"
+    }
+    visible: true
+    allow_auto_place: true
+  }
+  value_field {
+    name: "Value"
+    text {
+      position {
+        x_nm: 3810000
+        y_nm: 1270000
+      }
+      attributes {
+        horizontal_alignment: HA_LEFT
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "Buzzer"
+    }
+    visible: true
+    allow_auto_place: true
+  }
+  footprint_field {
+    name: "Footprint"
+    text {
+      position {
+        x_nm: -635000
+        y_nm: -2540000
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+          value_degrees: 90
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+    }
+    allow_auto_place: true
+  }
+  datasheet_field {
+    name: "Datasheet"
+    text {
+      position {
+        x_nm: -635000
+        y_nm: -2540000
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+          value_degrees: 90
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+    }
+    allow_auto_place: true
+  }
+  description_field {
+    name: "Description"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "Buzzer, polarized"
+    }
+    allow_auto_place: true
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n,\032\n\n\004\n\000\020\001\022\002\010\001B\036\n\034\n\032\n\030\n\026\010\310\235\233\377\377\377\377\377\377\001\020\230\335\213\377\377\377\377\377\377\001\022&\n$9436b5fd-8834-424e-9eab-1d763f7408c7\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n,\032\n\n\004\n\000\020\001\022\002\010\001B\036\n\034\n\032\n\030\n\026\010\370\335\252\377\377\377\377\377\377\001\020\350\234\374\376\377\377\377\377\377\001\022&\n$548803c2-5ac6-4e57-871d-f9c6596ecebe\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n)\032\n\n\004\n\000\020\001\022\002\010\0012\033\n\013\020\250\233\276\376\377\377\377\377\377\001\022\005\010\360\370\300\001\032\005\020\330\344\301\001\022&\n$1a6c0d1d-8173-427a-801e-700f2a5a9522\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n!\032\n\n\004\n\000\020\001\022\002\010\001B\023\n\021\n\017\n\r\n\013\020\250\233\276\376\377\377\377\377\377\001\022&\n$be85da51-9a64-4afb-8e95-51ff5f495b6d\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$039212c4-2ac9-41a8-8ddf-dfb549e49bd8\022\001+\032\0011"\n\010\220\372\342\022\020\300\273\307<*\005\010\340\203\233\0010\0018\005@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$57369b93-086b-4448-a34d-9307c9852b5d\022\001-\032\0012"\n\010\220\372\342\022\020\200\303\375>*\005\010\340\203\233\0010\0018\005@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  unit_count: 1
+  body_style {
+    name: "?"
+  }
+  keywords: "quartz resonator ceramic"
+  footprint_filters: "*Buzzer*"
+  jumpers {
+  }
+  show_pin_numbers: true
+  pin_name_offset {
+    value_nm: 25400
+  }
+}
+reference_field {
+  name: "Reference"
+  text {
+    position {
+      x_nm: 45720000
+      y_nm: 128269900
+    }
+    attributes {
+      horizontal_alignment: HA_LEFT
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "BZ1"
+  }
+  visible: true
+  allow_auto_place: true
+}
+value_field {
+  name: "Value"
+  text {
+    position {
+      x_nm: 45720000
+      y_nm: 130809900
+    }
+    attributes {
+      horizontal_alignment: HA_LEFT
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Buzzer"
+  }
+  visible: true
+  allow_auto_place: true
+}
+footprint_field {
+  name: "Footprint"
+  text {
+    position {
+      x_nm: 41275000
+      y_nm: 127000000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+        value_degrees: 90
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Buzzer_Beeper:Buzzer_12x9.5RM7.6"
+  }
+  allow_auto_place: true
+}
+datasheet_field {
+  name: "Datasheet"
+  text {
+    position {
+      x_nm: 41275000
+      y_nm: 127000000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+        value_degrees: 90
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+  }
+  allow_auto_place: true
+}
+description_field {
+  name: "Description"
+  text {
+    position {
+      x_nm: 41910000
+      y_nm: 129540000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Buzzer, polarized"
+  }
+  allow_auto_place: true
+}
+attributes {
+}
+unit {
+  unit: 1
+}
+show_pin_numbers: true
+pin_name_offset {
+}
+fields_autoplaced: true
+
+id {
+  value: "75cce5b0-21e7-4327-922e-9fa2efc405cc"
+}
+path {
+  path {
+    value: "2a888306-90d9-48e5-ba43-e08ba2da2ab6"
+  }
+}
+position {
+  x_nm: 127000000
+  y_nm: 165100000
+}
+transform {
+  orientation: SSO_0
+}
+locked: LS_UNLOCKED
+definition {
+  id {
+    library_nickname: "Regulator_Switching"
+    entry_name: "TPS61200DRC"
+  }
+  type: SST_NORMAL
+  reference_field {
+    name: "Reference"
+    text {
+      position {
+        x_nm: -10160000
+        y_nm: -8890000
+      }
+      attributes {
+        horizontal_alignment: HA_LEFT
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "U"
+    }
+    visible: true
+    allow_auto_place: true
+  }
+  value_field {
+    name: "Value"
+    text {
+      position {
+        x_nm: -2540000
+        y_nm: -8890000
+      }
+      attributes {
+        horizontal_alignment: HA_LEFT
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "TPS61200DRC"
+    }
+    visible: true
+    allow_auto_place: true
+  }
+  footprint_field {
+    name: "Footprint"
+    text {
+      position {
+        y_nm: 11430000
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "Package_SON:Texas_S-PVSON-N10_ThermalVias"
+    }
+    allow_auto_place: true
+  }
+  datasheet_field {
+    name: "Datasheet"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "http://www.ti.com/lit/ds/symlink/tps61200.pdf"
+    }
+    allow_auto_place: true
+  }
+  description_field {
+    name: "Description"
+    text {
+      position {
+      }
+      attributes {
+        horizontal_alignment: HA_CENTER
+        vertical_alignment: VA_CENTER
+        angle {
+        }
+        line_spacing: 1
+        stroke_width {
+        }
+        visible: true
+        multiline: true
+        size {
+          x_nm: 1270000
+          y_nm: 1270000
+        }
+      }
+      text: "Low Input Voltage Synchronous Boost Converter With 1.3A Switches, Adjustable Output Voltage, 0.3-5.5V Input Voltage, VSON-10"
+    }
+    allow_auto_place: true
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicGraphicShape"
+      value: "\n8\032\016\n\010\n\004\010\260\300\017\020\001\022\002\010\004*&\n\026\010\340\364\256\374\377\377\377\377\377\001\020\340\364\256\374\377\377\377\377\377\001\022\n\010\240\213\321\003\020\200\217\354\004\032\000\022&\n$9c5146cc-3a1d-42cf-abf8-e4bb35ea69fb\030\001"
+    }
+    unit {
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$17b95578-dbac-4a6a-84e8-c2a0a32465a8\022\002EN\032\0016"\n\010\300\254\3337\020\200\360\301M*\005\010\340\203\233\0010\0018\001@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$1bde2507-449c-4d3f-a314-f6d55d2786b7\022\003GND\032\0019"\n\010\340\267\254;\020\300\206\344T*\005\010\340\203\233\0010\0038\010@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$2a364875-0589-4ce7-a6e8-44866e20197a\022\002PS\032\0018"\n\010\300\254\3337\020\340\363\334N*\005\010\340\203\233\0010\0018\001@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$5473c52c-2e35-4044-b110-d7e50ea4d487\022\003PAD\032\00211"\n\010\300\273\307<\020\300\206\344T*\005\010\340\203\233\0010\0038\010@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$6ad44e88-0b68-4ed3-83a2-4ea663430fb3\022\001L\032\0013"\n\010\300\312\263A\020\240\354\246L*\005\010\340\203\233\0010\0028\001@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$6ff2685b-f058-40e3-b1a7-da7508c6189b\022\003VIN\032\0015"\n\010\300\254\3337\020\240\354\246L*\005\010\340\203\233\0010\0018\010@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$9d3106d5-f0a9-4756-8e4c-f7fbbdc50ee7\022\002FB\032\00210"\n\010\300\312\263A\020\240\373\222Q*\005\010\340\203\233\0010\0028\001@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$a7d3fbe4-e98c-4d91-b0b2-dacec34faa48\022\004VOUT\032\0012"\n\010\300\312\263A\020\200\360\301M*\005\010\340\203\233\0010\0028\t@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$cb4be313-6705-4b21-b1bd-2a608b785f9b\022\004VAUX\032\0011"\n\010\300\312\263A\020\340\363\334N*\005\010\340\203\233\0010\0028\003@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$df173714-0177-42a9-a5ee-56b91730c737\022\004UVLO\032\0017"\n\010\300\254\3337\020\300\367\367O*\005\010\340\203\233\0010\0018\001@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  items {
+    item {
+      type_url: "type.googleapis.com/kiapi.schematic.types.SchematicPin"
+      value: "\n&\n$f205a03c-671b-448d-be0a-355df18f8999\022\004PGND\032\0014"\n\010\240\277\342=\020\300\206\344T*\005\010\340\203\233\0010\0038\010@\001H\001R\004\010\360\301MZ\004\010\360\301M"
+    }
+    unit {
+      unit: 1
+    }
+    body_style {
+      style: 1
+    }
+  }
+  unit_count: 1
+  body_style {
+    name: "?"
+  }
+  keywords: "boost step-up DC/DC synchronous"
+  footprint_filters: "Texas*S*PVSON*N10*ThermalVias*"
+  jumpers {
+  }
+  show_pin_numbers: true
+  show_pin_names: true
+  pin_name_offset {
+    value_nm: 508000
+  }
+}
+reference_field {
+  name: "Reference"
+  text {
+    position {
+      x_nm: 127000000
+      y_nm: 152400000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "U3"
+  }
+  visible: true
+  allow_auto_place: true
+}
+value_field {
+  name: "Value"
+  text {
+    position {
+      x_nm: 127000000
+      y_nm: 154940000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "TPS61200DRC"
+  }
+  visible: true
+  allow_auto_place: true
+}
+footprint_field {
+  name: "Footprint"
+  text {
+    position {
+      x_nm: 127000000
+      y_nm: 176530000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Package_SON:Texas_S-PVSON-N10_ThermalVias"
+  }
+  allow_auto_place: true
+}
+datasheet_field {
+  name: "Datasheet"
+  text {
+    position {
+      x_nm: 127000000
+      y_nm: 165100000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "http://www.ti.com/lit/ds/symlink/tps61200.pdf"
+  }
+  allow_auto_place: true
+}
+description_field {
+  name: "Description"
+  text {
+    position {
+      x_nm: 127000000
+      y_nm: 165100000
+    }
+    attributes {
+      horizontal_alignment: HA_CENTER
+      vertical_alignment: VA_CENTER
+      angle {
+      }
+      line_spacing: 1
+      stroke_width {
+      }
+      visible: true
+      multiline: true
+      size {
+        x_nm: 1270000
+        y_nm: 1270000
+      }
+    }
+    text: "Low Input Voltage Synchronous Boost Converter With 1.3A Switches, Adjustable Output Voltage, 0.3-5.5V Input Voltage, VSON-10"
+  }
+  allow_auto_place: true
+}
+attributes {
+}
+unit {
+  unit: 1
+}
+show_pin_names: true
+show_pin_numbers: true
+pin_name_offset {
+}
+fields_autoplaced: true
+
+commands ['GetSchematicHierarchy', 'SchematicHierarchyResponse', 'GetSchematicNetlist', 'SchematicNetlistResponse']

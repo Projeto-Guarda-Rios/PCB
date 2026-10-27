@@ -1,0 +1,20 @@
+{
+  "MPN": "USB4145-03-0230-C",
+  "Manufacturer": "GCT",
+  "LCSC": "C5291559",
+  "Footprint": "PGR-FootPrints:USB_C_GCT_USB4145_03_0230_C_Vertical",
+  "pcb_thickness_mm": 1.6,
+  "shell_stakes_mm": 2.3,
+  "height_mm": 7.46,
+  "live_stock": 1608,
+  "live_orderable": 1535,
+  "live_price_usd_1pc": 1.3962,
+  "drawing": "https://gct.co/files/drawings/usb4145.pdf",
+  "cad_corrections": [
+    "Signal pads 0.30 x 1.15mm, rows +/-1.485mm",
+    "Shell plated slots 1.10 x 0.60mm, pads 1.60 x 1.10mm at x+/-4 y+/-1.43",
+    "Two NPTH locating holes, diameter0.66mm at x+/-4 y0",
+    "Courtyard includes all pads; S1 shell matches schematic",
+    "3D family shell stakes extended from0.7mm to2.3mm"
+  ]
+}

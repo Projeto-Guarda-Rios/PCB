@@ -1,0 +1,48 @@
+{
+  "footprints": 161,
+  "groups": 15,
+  "active_pad_net_assignments_verified": 474,
+  "schematic_unchanged": true,
+  "remaining_footprint_drc": {
+    "hole_clearance": 4,
+    "invalid_outline": 1,
+    "solder_mask_bridge": 4,
+    "lib_footprint_mismatch": 6
+  },
+  "expected_absent_usb3_no_connect_pins": [
+    [
+      "J9",
+      "B11"
+    ],
+    [
+      "J9",
+      "B10"
+    ],
+    [
+      "J9",
+      "A11"
+    ],
+    [
+      "J9",
+      "A10"
+    ],
+    [
+      "J9",
+      "A2"
+    ],
+    [
+      "J9",
+      "A3"
+    ],
+    [
+      "J9",
+      "B2"
+    ],
+    [
+      "J9",
+      "B3"
+    ]
+  ],
+  "unrouted_items": 375,
+  "board_sha256": "d56dc3dd7548726cbce46e633b27191fc3e25f385809527d012104753fc826e8"
+}

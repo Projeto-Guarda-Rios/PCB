@@ -1,0 +1,127 @@
+This document contains data proprietary to PUI Audio Inc. Any use or reproduction, in any form, without prior written permission
+                                                of PUI Audio Inc. is prohibited.
+                                                    ©2024, PUI Audio Inc.
+
+
+
+
+ Data Sheet                                                                             AI-1223-TWT-5V-2-R
+
+Features:
+        •    Top-firing, thru-hole magnetic indicator
+        •    5VDC, 2300 Hz resonant frequency
+        •    Wave Solder and Washing Allowed
+
+Specifications
+ Parameters                                               Values                                       Units
+ Rated Voltage                                               5                                          VDC
+ Operating Voltage Range                                   3~7                                          VDC
+ Current Draw at Rated Voltage                           30(Max.)                                       mA
+ Minimum SPL @ 10cm                                         85                                          dBA
+ Resonant Frequency                                    2,300±400                                         Hz
+ Tone or Pulse Rate                                    Continuous                                         -
+ Housing Material                                          PBT                                            -
+ Terminal Material                             Sn Plated Red Copper(DSn)                                  -
+ Weight                                                      2                                         Grams
+ Acceptable Soldering Methods                   Hand Solder, Wave Solder                                  -
+ Environmental Compliances                            RoHS/REACH                                          -
+ Storage Temperature                                    -40 ~ +85                                        °C
+ Operating Temperature                                  -30 ~ +70                                        °C
+
+
+Measurement Method (Temperature: 25±3°C; Relative Humidity: 60% ~ 70%)
+Standard test fixture (Distance: 10cm; Voltage: 5VDC)
+
+
+
+
+                                                     www.puiaudio.com
+This document contains data proprietary to PUI Audio Inc. Any use or reproduction, in any form, without prior written permission
+                                                of PUI Audio Inc. is prohibited.
+                                                    ©2024, PUI Audio Inc.
+
+
+Typical SPL Vs Voltage
+
+
+
+
+Recommended Wave Soldering Profile
+
+
+
+
+                                                     www.puiaudio.com
+This document contains data proprietary to PUI Audio Inc. Any use or reproduction, in any form, without prior written permission
+                                                of PUI Audio Inc. is prohibited.
+                                                    ©2024, PUI Audio Inc.
+
+
+Reliability Testing
+ Type of Test                                 Test Specifications
+ High Temperature Test                        96 hours at +80±2°C, then rest at room temperature for 2 hours
+                                              without applying power.
+ Low Temperature Test                         96 hours at -40±2°C, then rest at room temperature for 2 hours
+                                              without applying power.
+                                              96 hours at +40±2°C with relative humidity at 95% then rest at
+ Humidity Test                                room temperature for 2 hours without applying power.
+
+
+
+ Temperature Cycle Testing
+                                              Complete the test above for 5 cycles without applying power.
+                                              Then expose to room temperature for 2 hours before testing.
+                                                                                                  Amplitude:1.5mm
+                                                   9.3g
+                                                   0.3g                                          Time :1min/axis
+
+                                                                 10                       55 Hz
+ Vibration Test                               Test each X,Y,Z direction for 2 hours (6 hours total)
+ Drop Test                                    Drop from 100cm onto the surface of a 1cm thick wooden board
+*After tests, part SPL shall be within ± 5dB.
+
+
+
+
+Dimensions
+
+
+
+
+                                                     www.puiaudio.com
+This document contains data proprietary to PUI Audio Inc. Any use or reproduction, in any form, without prior written permission
+                                                of PUI Audio Inc. is prohibited.
+                                                    ©2024, PUI Audio Inc.
+
+
+Packaging
+
+
+
+
+                                                     www.puiaudio.com
+This document contains data proprietary to PUI Audio Inc. Any use or reproduction, in any form, without prior written permission
+                                                of PUI Audio Inc. is prohibited.
+                                                    ©2024, PUI Audio Inc.
+
+
+
+
+                                                 Specification Revisions
+ Revision                                         Description                                                  Date          Approved
+    -                                      Released From Engineering                                        08/05/2005           -
+    A                                     Revised Dimensions and Style                                      11/28/2005          BR
+    B                               Revised to Inventor 3D Drawing Template                                 11/12/2007          BR
+    C                      Update Spec Format, Add details for Reliability, Packaging, etc.                 06/26/2024          ML
+
+Note:
+    1.   Unless otherwise specified:
+               A. All dimensions are in millimeters.
+               B. Default tolerances are ±0.5mm and angles are ±3°.
+    2.   Specifications subject to change or withdrawal without notice.
+
+
+
+
+                                                     www.puiaudio.com
+

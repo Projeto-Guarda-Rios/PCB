@@ -7,4 +7,5 @@
   (lib (name "LESD5D5.0CT1G")(type "KiCad")(uri "${KIPRJMOD}/symbols/LESD5D5.0CT1G.kicad_sym")(options "")(descr ""))
   (lib (name "SS8050-G")(type "KiCad")(uri "${KIPRJMOD}/symbols/SS8050-G.kicad_sym")(options "")(descr ""))
   (lib (name "FS8205A")(type "KiCad")(uri "${KIPRJMOD}/footprints/FS8205A/FS8205A.kicad_sym")(options "")(descr ""))
+  (lib (name "PGR_Validated")(type "KiCad")(uri "${KIPRJMOD}/symbols/PGR_Validated.kicad_sym")(options "")(descr "Reviewed project-local symbol definitions"))
 )

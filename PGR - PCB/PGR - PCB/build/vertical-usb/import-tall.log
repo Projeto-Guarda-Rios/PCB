@@ -1,0 +1,11 @@
+[INFO] Created Kicad symbol for ID : C3151749
+       Symbol name : TYPE-C 16PLT-H10.0
+       Library path : /home/dauwt/Projects/Guarda Rios/PCB/.backplane/worktrees/backplane-38d7e810/PGR - PCB/PGR - PCB/build/vertical-usb/tall.kicad_sym
+[INFO] Created Kicad footprint for ID: C3151749
+       Footprint name: TYPE-C-SMD_USB4120-03-C
+       Footprint path: /home/dauwt/Projects/Guarda Rios/PCB/.backplane/worktrees/backplane-38d7e810/PGR - PCB/PGR - PCB/build/vertical-usb/tall.pretty/TYPE-C-SMD_USB4120-03-C.kicad_mod
+[INFO] Created 3D model for ID: C3151749
+       3D model name: TYPE-C-SMD_USB4120-03-C
+       3D model path (wrl): /home/dauwt/Projects/Guarda Rios/PCB/.backplane/worktrees/backplane-38d7e810/PGR - PCB/PGR - PCB/build/vertical-usb/tall.3dshapes/TYPE-C-SMD_USB4120-03-C.wrl
+       3D model path (step): /home/dauwt/Projects/Guarda Rios/PCB/.backplane/worktrees/backplane-38d7e810/PGR - PCB/PGR - PCB/build/vertical-usb/tall.3dshapes/TYPE-C-SMD_USB4120-03-C.step
+-- easyeda2kicad.py v1.0.1 --

@@ -1,0 +1,877 @@
+{
+  "scope": "Schematic only. No board or schematic modifications. No hardware measurements.",
+  "git_commit": "277381fd66d6c328eacca4260c29459151b055fe",
+  "canonical_files": {
+    "PGR.kicad_sch": "3bc5e48bb88d19a90a768cc72720ffc3bc947a047ae53e03005b76cb12def210",
+    "PGR.kicad_pcb": "811e045f96b8ebcd8d9fc74db8e8b20c1eeb85033b405861b957f0ebe0ba61f2",
+    "PGR.kicad_pro": "ba4081926f9e4070c33e0cf5f84786c62544d99428e80bc674a5fa03b3898c2c"
+  },
+  "component_count": 78,
+  "net_count": 103,
+  "components": {
+    "BT1": {
+      "value": "1S Li-ion 4.2V",
+      "footprint": "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical",
+      "datasheet": null
+    },
+    "BZ1": {
+      "value": "Buzzer",
+      "footprint": "Buzzer_Beeper:Buzzer_12x9.5RM7.6",
+      "datasheet": null
+    },
+    "C1": {
+      "value": "0.1uF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "datasheet": null
+    },
+    "C2": {
+      "value": "0.1uF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "datasheet": null
+    },
+    "C3": {
+      "value": "0.1uF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "datasheet": null
+    },
+    "C4": {
+      "value": "10uF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "datasheet": null
+    },
+    "C5": {
+      "value": "10uF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "datasheet": null
+    },
+    "C6": {
+      "value": "10uF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "datasheet": null
+    },
+    "C7": {
+      "value": "0.1uF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "datasheet": null
+    },
+    "C8": {
+      "value": "22uF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "datasheet": null
+    },
+    "C9": {
+      "value": "22uF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "datasheet": null
+    },
+    "C10": {
+      "value": "0.1uF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "datasheet": null
+    },
+    "C11": {
+      "value": "4.7uF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "datasheet": null
+    },
+    "C12": {
+      "value": "0.1uF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "datasheet": null
+    },
+    "C13": {
+      "value": "10uF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "datasheet": null
+    },
+    "C14": {
+      "value": "10uF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "datasheet": null
+    },
+    "C15": {
+      "value": "0.1uF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "datasheet": null
+    },
+    "C17": {
+      "value": "100nF",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "datasheet": null
+    },
+    "D1": {
+      "value": "SS14",
+      "footprint": "Diode_SMD:D_SMA",
+      "datasheet": "https://www.vishay.com/docs/88746/ss12.pdf"
+    },
+    "D2": {
+      "value": "SS14",
+      "footprint": "Diode_SMD:D_SMA",
+      "datasheet": "https://www.vishay.com/docs/88746/ss12.pdf"
+    },
+    "D3": {
+      "value": "LESD5D5.0CT1G",
+      "footprint": "LESD5D5.0CT1G:TVS_LESD5D5.0CT1G",
+      "datasheet": null
+    },
+    "D4": {
+      "value": "LESD5D5.0CT1G",
+      "footprint": "LESD5D5.0CT1G:TVS_LESD5D5.0CT1G",
+      "datasheet": null
+    },
+    "D5": {
+      "value": "LESD5D5.0CT1G",
+      "footprint": "LESD5D5.0CT1G:TVS_LESD5D5.0CT1G",
+      "datasheet": null
+    },
+    "D6": {
+      "value": "SM712_SOT23",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "datasheet": "https://www.littelfuse.com/~/media/electronics/datasheets/tvs_diode_arrays/littelfuse_tvs_diode_array_sm712_datasheet.pdf.pdf"
+    },
+    "D7": {
+      "value": "BLUE",
+      "footprint": "LED_SMD:LED_0603_1608Metric",
+      "datasheet": null
+    },
+    "D8": {
+      "value": "RED",
+      "footprint": "LED_SMD:LED_0603_1608Metric",
+      "datasheet": null
+    },
+    "D9": {
+      "value": "BLUE",
+      "footprint": "LED_SMD:LED_0603_1608Metric",
+      "datasheet": null
+    },
+    "D10": {
+      "value": "BLUE",
+      "footprint": "LED_SMD:LED_0603_1608Metric",
+      "datasheet": null
+    },
+    "IC1": {
+      "value": "AP2114H-3.3TRG1",
+      "footprint": "SOT223",
+      "datasheet": null
+    },
+    "J1": {
+      "value": "Conn_01x16",
+      "footprint": "Connector_PinSocket_2.00mm:PinSocket_1x16_P2.00mm_Vertical",
+      "datasheet": null
+    },
+    "J7": {
+      "value": "Conn_01x03",
+      "footprint": "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",
+      "datasheet": null
+    },
+    "J8": {
+      "value": "Conn_01x04",
+      "footprint": "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical",
+      "datasheet": null
+    },
+    "J9": {
+      "value": "USB_C_Receptacle",
+      "footprint": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+      "datasheet": "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+    },
+    "J10": {
+      "value": "Conn_01x02",
+      "footprint": "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical",
+      "datasheet": null
+    },
+    "J11": {
+      "value": "Conn_01x04",
+      "footprint": "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical",
+      "datasheet": null
+    },
+    "J12": {
+      "value": "BATTERY_NTC",
+      "footprint": "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical",
+      "datasheet": null
+    },
+    "L1": {
+      "value": "L",
+      "footprint": "Inductor_SMD:L_0805_2012Metric",
+      "datasheet": null
+    },
+    "Q1": {
+      "value": "SS8050-G",
+      "footprint": "SS8050-G:TRANS_SS8050-G",
+      "datasheet": null
+    },
+    "Q2": {
+      "value": "SS8050-G",
+      "footprint": "SS8050-G:TRANS_SS8050-G",
+      "datasheet": null
+    },
+    "Q3": {
+      "value": "FS8205A",
+      "footprint": "FS8205A:SOP65P640X120-8N",
+      "datasheet": null
+    },
+    "R1": {
+      "value": "2kR",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R2": {
+      "value": "2K",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R3": {
+      "value": "120R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R4": {
+      "value": "5.1K",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R5": {
+      "value": "5.1K",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R6": {
+      "value": "22.1K",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R7": {
+      "value": "47.5K",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R8": {
+      "value": "2K",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R9": {
+      "value": "10K",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R10": {
+      "value": "10K",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R11": {
+      "value": "100R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R12": {
+      "value": "22R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R13": {
+      "value": "33R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R14": {
+      "value": "150R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R15": {
+      "value": "10K",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R16": {
+      "value": "10K",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R17": {
+      "value": "2K",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R18": {
+      "value": "10K",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R19": {
+      "value": "10K",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R20": {
+      "value": "10K",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R21": {
+      "value": "33R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R22": {
+      "value": "820K",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R23": {
+      "value": "91K",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R24": {
+      "value": "33R",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R25": {
+      "value": "10K",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R28": {
+      "value": "10K",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R29": {
+      "value": "10K",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "R30": {
+      "value": "68kR",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "datasheet": null
+    },
+    "SW1": {
+      "value": "BOOT",
+      "footprint": "Button_Switch_SMD:SW_SPST_B3U-1000P",
+      "datasheet": null
+    },
+    "SW2": {
+      "value": "RESET",
+      "footprint": "Button_Switch_SMD:SW_SPST_B3U-1000P",
+      "datasheet": null
+    },
+    "SW4": {
+      "value": "SW_SPDT",
+      "footprint": "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin",
+      "datasheet": null
+    },
+    "TH1": {
+      "value": "10k NTC",
+      "footprint": null,
+      "datasheet": null
+    },
+    "U1": {
+      "value": "BQ24074RGT",
+      "footprint": "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm",
+      "datasheet": "http://www.ti.com/lit/ds/symlink/bq24074.pdf"
+    },
+    "U3": {
+      "value": "TPS61200DRC",
+      "footprint": "Package_SON:Texas_S-PVSON-N10_ThermalVias",
+      "datasheet": "http://www.ti.com/lit/ds/symlink/tps61200.pdf"
+    },
+    "U4": {
+      "value": "CP2102N-Axx-xQFN28",
+      "footprint": "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm",
+      "datasheet": "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf"
+    },
+    "U5": {
+      "value": "ESP32-WROOM-32E",
+      "footprint": "RF_Module:ESP32-WROOM-32D",
+      "datasheet": "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf"
+    },
+    "U6": {
+      "value": "DW01A",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "datasheet": "https://hmsemi.com/downfile/DW01A.PDF"
+    },
+    "U8": {
+      "value": "MAX3485",
+      "footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+      "datasheet": "https://datasheets.maximintegrated.com/en/ds/MAX3483-MAX3491.pdf"
+    }
+  },
+  "pin_to_net": {
+    "C10.1": "+3.3V",
+    "C17.2": "+3.3V",
+    "C3.2": "+3.3V",
+    "C4.2": "+3.3V",
+    "C6.2": "+3.3V",
+    "C7.2": "+3.3V",
+    "C9.1": "+3.3V",
+    "IC1.2": "+3.3V",
+    "IC1.4": "+3.3V",
+    "J1.5": "+3.3V",
+    "J1.6": "+3.3V",
+    "J7.1": "+3.3V",
+    "R10.1": "+3.3V",
+    "R13.1": "+3.3V",
+    "R14.2": "+3.3V",
+    "R19.2": "+3.3V",
+    "R20.2": "+3.3V",
+    "R8.1": "+3.3V",
+    "R9.1": "+3.3V",
+    "U4.6": "+3.3V",
+    "U4.7": "+3.3V",
+    "U5.2": "+3.3V",
+    "U8.8": "+3.3V",
+    "C8.1": "+5V",
+    "D1.1": "+5V",
+    "D2.1": "+5V",
+    "IC1.3": "+5V",
+    "J1.3": "+5V",
+    "J1.4": "+5V",
+    "J11.3": "+5V",
+    "J8.2": "+5V",
+    "R18.1": "+5V",
+    "C1.2": "+5V_PROGRAM",
+    "D2.2": "+5V_PROGRAM",
+    "D3.1": "+5V_PROGRAM",
+    "J9.A4": "+5V_PROGRAM",
+    "J9.A9": "+5V_PROGRAM",
+    "J9.B4": "+5V_PROGRAM",
+    "J9.B9": "+5V_PROGRAM",
+    "R6.1": "+5V_PROGRAM",
+    "J12.1": "/BAT_NTC",
+    "TH1.1": "/BAT_NTC",
+    "U1.1": "/BAT_NTC",
+    "D5.1": "D+",
+    "J9.A6": "D+",
+    "J9.B6": "D+",
+    "U4.4": "D+",
+    "D4.1": "D-",
+    "J9.A7": "D-",
+    "J9.B7": "D-",
+    "U4.5": "D-",
+    "C2.1": "EN",
+    "Q1.3": "EN",
+    "R10.2": "EN",
+    "SW2.2": "EN",
+    "U5.3": "EN",
+    "BZ1.2": "GND",
+    "C1.1": "GND",
+    "C10.2": "GND",
+    "C11.1": "GND",
+    "C13.1": "GND",
+    "C14.1": "GND",
+    "C15.2": "GND",
+    "C17.1": "GND",
+    "C2.2": "GND",
+    "C3.1": "GND",
+    "C4.1": "GND",
+    "C5.1": "GND",
+    "C6.1": "GND",
+    "C7.1": "GND",
+    "C8.2": "GND",
+    "C9.2": "GND",
+    "D10.1": "GND",
+    "D3.2": "GND",
+    "D4.2": "GND",
+    "D5.2": "GND",
+    "D6.3": "GND",
+    "D8.1": "GND",
+    "D9.1": "GND",
+    "IC1.1": "GND",
+    "J1.1": "GND",
+    "J1.2": "GND",
+    "J10.1": "GND",
+    "J11.4": "GND",
+    "J12.2": "GND",
+    "J7.2": "GND",
+    "J8.1": "GND",
+    "J9.A1": "GND",
+    "J9.A12": "GND",
+    "J9.B1": "GND",
+    "J9.B12": "GND",
+    "J9.S1": "GND",
+    "Q3.2": "GND",
+    "Q3.3": "GND",
+    "R1.1": "GND",
+    "R17.2": "GND",
+    "R2.1": "GND",
+    "R23.2": "GND",
+    "R25.2": "GND",
+    "R28.2": "GND",
+    "R29.2": "GND",
+    "R30.1": "GND",
+    "R4.2": "GND",
+    "R5.2": "GND",
+    "R7.2": "GND",
+    "SW1.1": "GND",
+    "SW2.1": "GND",
+    "TH1.2": "GND",
+    "U1.17": "GND",
+    "U1.4": "GND",
+    "U1.5": "GND",
+    "U1.8": "GND",
+    "U3.11": "GND",
+    "U3.4": "GND",
+    "U3.9": "GND",
+    "U4.29": "GND",
+    "U4.3": "GND",
+    "U5.1": "GND",
+    "U5.15": "GND",
+    "U5.38": "GND",
+    "U5.39": "GND",
+    "U8.5": "GND",
+    "Q2.2": "IO0_BTN",
+    "R12.2": "IO0_BTN",
+    "R9.2": "IO0_BTN",
+    "SW1.2": "IO0_BTN",
+    "R25.1": "IO2",
+    "U5.24": "IO2",
+    "U5.26": "IO4",
+    "U8.1": "IO4",
+    "U5.29": "IO5",
+    "U8.4": "IO5",
+    "J1.8": "IO12",
+    "U5.14": "IO12",
+    "J1.7": "IO13",
+    "U5.16": "IO13",
+    "J1.9": "IO14",
+    "U5.13": "IO14",
+    "R20.1": "IO15",
+    "R24.1": "IO15",
+    "U1.7": "IO15",
+    "U5.23": "IO15",
+    "J8.4": "IO16",
+    "U5.27": "IO16",
+    "J8.3": "IO17",
+    "U5.28": "IO17",
+    "D7.1": "IO18",
+    "U5.30": "IO18",
+    "BZ1.1": "IO19",
+    "U5.31": "IO19",
+    "R19.1": "IO21",
+    "R21.1": "IO21",
+    "U1.9": "IO21",
+    "U5.33": "IO21",
+    "R29.1": "IO22",
+    "U5.36": "IO22",
+    "U8.2": "IO22",
+    "U8.3": "IO22",
+    "J7.3": "IO23",
+    "U5.37": "IO23",
+    "J1.12": "IO25",
+    "U5.10": "IO25",
+    "J1.11": "IO26",
+    "U5.11": "IO26",
+    "J1.10": "IO27",
+    "U5.12": "IO27",
+    "J1.14": "IO32",
+    "U5.8": "IO32",
+    "J1.13": "IO33",
+    "U5.9": "IO33",
+    "J1.16": "IO34",
+    "U5.6": "IO34",
+    "J1.15": "IO35",
+    "U5.7": "IO35",
+    "BT1.1": "Net-(BT1-+)",
+    "C11.2": "Net-(BT1-+)",
+    "C12.1": "Net-(BT1-+)",
+    "R11.1": "Net-(BT1-+)",
+    "U1.2": "Net-(BT1-+)",
+    "U1.3": "Net-(BT1-+)",
+    "BT1.2": "Net-(BT1--)",
+    "SW4.2": "Net-(BT1--)",
+    "C14.2": "Net-(D1-A)",
+    "D1.2": "Net-(D1-A)",
+    "R22.1": "Net-(D1-A)",
+    "U3.2": "Net-(D1-A)",
+    "D7.2": "Net-(D7-A)",
+    "R13.2": "Net-(D7-A)",
+    "D8.2": "Net-(D8-A)",
+    "R14.1": "Net-(D8-A)",
+    "D9.2": "Net-(D9-A)",
+    "R21.2": "Net-(D9-A)",
+    "D10.2": "Net-(D10-A)",
+    "R24.2": "Net-(D10-A)",
+    "J9.A5": "Net-(J9-CC1)",
+    "R4.1": "Net-(J9-CC1)",
+    "J9.B5": "Net-(J9-CC2)",
+    "R5.1": "Net-(J9-CC2)",
+    "Q1.1": "Net-(Q1-Pad1)",
+    "R15.2": "Net-(Q1-Pad1)",
+    "Q2.1": "Net-(Q2-Pad1)",
+    "R16.2": "Net-(Q2-Pad1)",
+    "C12.2": "Net-(SW4-A)",
+    "Q3.6": "Net-(SW4-A)",
+    "Q3.7": "Net-(SW4-A)",
+    "SW4.1": "Net-(SW4-A)",
+    "U6.6": "Net-(SW4-A)",
+    "R2.2": "Net-(U1-ILIM)",
+    "U1.12": "Net-(U1-ILIM)",
+    "R1.2": "Net-(U1-ISET)",
+    "U1.16": "Net-(U1-ISET)",
+    "R30.2": "Net-(U1-TMR)",
+    "U1.14": "Net-(U1-TMR)",
+    "R22.2": "Net-(U3-FB)",
+    "R23.1": "Net-(U3-FB)",
+    "U3.10": "Net-(U3-FB)",
+    "L1.2": "Net-(U3-L)",
+    "U3.3": "Net-(U3-L)",
+    "C15.1": "Net-(U3-VAUX)",
+    "U3.1": "Net-(U3-VAUX)",
+    "R6.2": "Net-(U4-VBUS)",
+    "R7.1": "Net-(U4-VBUS)",
+    "U4.8": "Net-(U4-VBUS)",
+    "R8.2": "Net-(U4-~{RST})",
+    "U4.9": "Net-(U4-~{RST})",
+    "R12.1": "Net-(U5-IO0)",
+    "U5.25": "Net-(U5-IO0)",
+    "R17.1": "Net-(U6-CS)",
+    "U6.2": "Net-(U6-CS)",
+    "Q3.4": "Net-(U6-OC)",
+    "U6.3": "Net-(U6-OC)",
+    "Q3.5": "Net-(U6-OD)",
+    "U6.1": "Net-(U6-OD)",
+    "R11.2": "Net-(U6-VCC)",
+    "U6.5": "Net-(U6-VCC)",
+    "C13.2": "PWR_OUT",
+    "L1.1": "PWR_OUT",
+    "U1.10": "PWR_OUT",
+    "U1.11": "PWR_OUT",
+    "U1.6": "PWR_OUT",
+    "U3.5": "PWR_OUT",
+    "U3.6": "PWR_OUT",
+    "U3.7": "PWR_OUT",
+    "U3.8": "PWR_OUT",
+    "D6.1": "RS-485-A",
+    "J11.1": "RS-485-A",
+    "R18.2": "RS-485-A",
+    "R3.1": "RS-485-A",
+    "U8.6": "RS-485-A",
+    "D6.2": "RS-485-B",
+    "J11.2": "RS-485-B",
+    "R28.1": "RS-485-B",
+    "R3.2": "RS-485-B",
+    "U8.7": "RS-485-B",
+    "U4.25": "RXD0",
+    "U5.35": "RXD0",
+    "U5.5": "SENSOR_VN",
+    "U5.4": "SENSOR_VP",
+    "U4.26": "TXD0",
+    "U5.34": "TXD0",
+    "Q2.3": "USB_DTR",
+    "R15.1": "USB_DTR",
+    "U4.28": "USB_DTR",
+    "Q1.2": "USB_RTS",
+    "R16.1": "USB_RTS",
+    "U4.24": "USB_RTS",
+    "C5.2": "VBUS",
+    "J10.2": "VBUS",
+    "U1.13": "VBUS",
+    "J9.B11": "unconnected-(J9-RX1+-PadB11)",
+    "J9.B10": "unconnected-(J9-RX1--PadB10)",
+    "J9.A11": "unconnected-(J9-RX2+-PadA11)",
+    "J9.A10": "unconnected-(J9-RX2--PadA10)",
+    "J9.A8": "unconnected-(J9-SBU1-PadA8)",
+    "J9.B8": "unconnected-(J9-SBU2-PadB8)",
+    "J9.A2": "unconnected-(J9-TX1+-PadA2)",
+    "J9.A3": "unconnected-(J9-TX1--PadA3)",
+    "J9.B2": "unconnected-(J9-TX2+-PadB2)",
+    "J9.B3": "unconnected-(J9-TX2--PadB3)",
+    "Q3.1": "unconnected-(Q3-Pad1)",
+    "Q3.8": "unconnected-(Q3-Pad1)",
+    "SW4.3": "unconnected-(SW4-C-Pad3)",
+    "U1.15": "unconnected-(U1-ITERM-Pad15)",
+    "U4.15": "unconnected-(U4-CHR0-Pad15)",
+    "U4.14": "unconnected-(U4-CHR1-Pad14)",
+    "U4.13": "unconnected-(U4-CHREN-Pad13)",
+    "U4.22": "unconnected-(U4-GPIO.4-Pad22)",
+    "U4.21": "unconnected-(U4-GPIO.5-Pad21)",
+    "U4.20": "unconnected-(U4-GPIO.6-Pad20)",
+    "U4.10": "unconnected-(U4-NC-Pad10)",
+    "U4.17": "unconnected-(U4-RS485/GPIO.2-Pad17)",
+    "U4.12": "unconnected-(U4-SUSPEND-Pad12)",
+    "U4.23": "unconnected-(U4-~{CTS}-Pad23)",
+    "U4.1": "unconnected-(U4-~{DCD}-Pad1)",
+    "U4.27": "unconnected-(U4-~{DSR}-Pad27)",
+    "U4.2": "unconnected-(U4-~{RI}/CLK-Pad2)",
+    "U4.18": "unconnected-(U4-~{RXT}/GPIO.1-Pad18)",
+    "U4.11": "unconnected-(U4-~{SUSPEND}-Pad11)",
+    "U4.19": "unconnected-(U4-~{TXT}/GPIO.0-Pad19)",
+    "U4.16": "unconnected-(U4-~{WAKEUP}/GPIO.3-Pad16)",
+    "U5.17": "unconnected-(U5-NC-Pad17)",
+    "U5.18": "unconnected-(U5-NC-Pad18)",
+    "U5.19": "unconnected-(U5-NC-Pad19)",
+    "U5.20": "unconnected-(U5-NC-Pad20)",
+    "U5.21": "unconnected-(U5-NC-Pad21)",
+    "U5.22": "unconnected-(U5-NC-Pad22)",
+    "U5.32": "unconnected-(U5-NC-Pad32)",
+    "U6.4": "unconnected-(U6-TD-Pad4)"
+  },
+  "erc_counts": {
+    "error": 9,
+    "warning": 13,
+    "exclusion": 0
+  },
+  "calculations": {
+    "boost_output_before_D1_nominal_V": 5.0054945054945055,
+    "idle_bus_local_120ohm_V_at5V": 0.02982107355864811,
+    "idle_bus_two_120ohm_V_at5V": 0.014955134596211365,
+    "battery_charge_target_A": 0.445,
+    "input_limit_mode": "EN2=0 EN1=1: USB500, 475mA typical, 500mA maximum",
+    "charge_timer_hours_nominal": 9.066666666666666,
+    "precharge_timer_minutes_nominal": 54.4,
+    "red_power_LED_A_assuming_Vf2V": 0.008666666666666666,
+    "C14_recommended_min_uF_if_L1_2p2uH": 11.0
+  },
+  "external_specifications_pending": [
+    "NB-IoT carrier part number and UART levels, supply min/max and peak current, power-on/control requirements",
+    "AquaNode schematic, cable length/gauge, supply current and voltage limits, remote RS485 termination/bias",
+    "18650 manufacturer/cell model, allowable charge current and temperature, minimum discharge voltage",
+    "Solar panel/carrier input/output specifications and weak-light restart behavior"
+  ],
+  "sources": {
+    "charger": "https://www.ti.com/lit/ds/symlink/bq24074.pdf",
+    "boost": "https://www.ti.com/lit/ds/symlink/tps61200.pdf",
+    "usb_bridge": "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf",
+    "rs485": "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX3483-MAX3491.pdf",
+    "ldo": "https://www.diodes.com/datasheet/download/AP2114.pdf",
+    "esp32": "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf",
+    "boot_reference": "https://dl.espressif.com/dl/schematics/esp32_devkitc_v4-sch.pdf",
+    "battery_protection": "https://hmsemi.com/downfile/DW01A.PDF",
+    "dual_mosfet": "https://www.ic-fortune.com/upload/Download/FS8205A-DS-12_EN.pdf"
+  },
+  "findings": [
+    {
+      "id": "F01",
+      "priority": "high",
+      "status": "confirmed",
+      "refs": [
+        "L1",
+        "U3",
+        "C14"
+      ],
+      "finding": "L1 has no inductance or exact part/rating. Boost capacitor sizing cannot be closed. C14 is nominal 10uF; TPS61200 guidance is about 11uF for 2.2uH, before DC-bias and tolerance allowance."
+    },
+    {
+      "id": "F02",
+      "priority": "high",
+      "status": "confirmed local circuit; system outcome depends on remote bias or permanently active driver",
+      "refs": [
+        "R18",
+        "R28",
+        "R3",
+        "U8"
+      ],
+      "finding": "Local terminated idle bias is about 30mV, or 15mV with two terminators, below the guaranteed +200mV receiver high threshold."
+    },
+    {
+      "id": "F03",
+      "priority": "high for programming",
+      "status": "confirmed",
+      "refs": [
+        "Q2",
+        "R16",
+        "U4",
+        "U5"
+      ],
+      "finding": "Q2 pin2/emitter connects to IO0_BTN; pin3/collector connects to USB_DTR. The normal reference circuit uses emitter on DTR and collector on GPIO0."
+    },
+    {
+      "id": "F04",
+      "priority": "high",
+      "status": "confirmed voltage loss; external acceptance pending",
+      "refs": [
+        "D1",
+        "D2",
+        "R22",
+        "R23",
+        "J8",
+        "J11"
+      ],
+      "finding": "Boost feedback sets about 5.005V before D1. Both sources pass through Schottky diodes, so the +5V distribution is below its nominal label and is not regulated at the connector."
+    },
+    {
+      "id": "F05",
+      "priority": "production verification blocker",
+      "status": "external specifications missing",
+      "refs": [
+        "U3",
+        "IC1",
+        "J8",
+        "J11",
+        "BT1",
+        "J10"
+      ],
+      "finding": "Simultaneous steady and peak loads, low-cell current capability, LDO dissipation, panel energy balance, modem supply/UART/control and AquaNode cable drop are unverified."
+    },
+    {
+      "id": "F06",
+      "priority": "high for unattended low-power operation",
+      "status": "confirmed",
+      "refs": [
+        "U3.8",
+        "D8",
+        "R14",
+        "U8.2",
+        "U8.3",
+        "J8",
+        "J11"
+      ],
+      "finding": "Boost PS is high, disabling power save. Red power LED is always on with 150ohm series resistor. Tied REb/DE cannot select shutdown. Modem and AquaNode supplies have no parent-controlled power gating."
+    },
+    {
+      "id": "F07",
+      "priority": "medium-high",
+      "status": "confirmed circuit; recovery behavior requires bench validation",
+      "refs": [
+        "U3.7",
+        "U6",
+        "R10",
+        "C2",
+        "U5"
+      ],
+      "finding": "UVLO is connected directly to VIN and therefore does not provide a useful Li-ion early cutoff. No battery voltage sensing or external reset supervisor. EN RC is 10k/100nF."
+    },
+    {
+      "id": "F08",
+      "priority": "medium",
+      "status": "confirmed topology; high-level margin depends on selected LED",
+      "refs": [
+        "D9",
+        "D10",
+        "R19",
+        "R20",
+        "R21",
+        "R24",
+        "U1.7",
+        "U1.9"
+      ],
+      "finding": "Open-drain charger status outputs drive LEDs to ground. LEDs turn off when the status asserts low, and load the weak pull-up when inactive; logic-high margin is unverified."
+    },
+    {
+      "id": "F09",
+      "priority": "conditional component safety",
+      "status": "buzzer unspecified",
+      "refs": [
+        "BZ1",
+        "U5.31"
+      ],
+      "finding": "Buzzer connects directly from GPIO19 to GND. Current, voltage, capacitive/inductive behavior and driver suitability are unverified."
+    },
+    {
+      "id": "F10",
+      "priority": "medium production documentation",
+      "status": "confirmed",
+      "refs": [
+        "IC1",
+        "U4",
+        "SW4",
+        "PGR.kicad_sch"
+      ],
+      "finding": "IC1 footprint is unqualified SOT223. U4 value is a generic family/revision placeholder. SW4 symbol is SPDT but footprint SPST. Upper schematic blocks lie outside the A4 drawing viewport. ERC still reports 9 errors and 13 warnings after library path resolution."
+    }
+  ]
+}

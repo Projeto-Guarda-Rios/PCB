@@ -1,0 +1,13 @@
+{
+  "unchanged_other_footprints": 160,
+  "connectivity_unchanged": true,
+  "polarity": {
+    "1": "CELL_P",
+    "2": "BMS_NEG"
+  },
+  "erc_violations": [],
+  "BT1_drc_violations": [],
+  "footprint": "Battery:BatteryHolder_Keystone_1042_1x18650",
+  "MPN": "1042",
+  "LCSC": "C5249310"
+}

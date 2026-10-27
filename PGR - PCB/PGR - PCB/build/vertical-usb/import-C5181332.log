@@ -1,0 +1,5 @@
+[DEBUG] certifi package not available
+[DEBUG] Using system default SSL certificates
+[DEBUG] {'success': False, 'code': 404, 'message': 'Component not found'}
+[ERROR] Failed to fetch data from EasyEDA API for part C5181332
+-- easyeda2kicad.py v1.0.1 --

@@ -1,0 +1,1945 @@
+                                        Product            Sample &          Technical                           Tools &                  Support &
+                                        Folder             Buy               Documents                           Software                 Community
+
+
+
+                                                                                                                                  TPS61230, TPS61231, TPS61232
+                                                                                                                     SLVSAQ2C – JANUARY 2014 – REVISED OCTOBER 2014
+
+            TPS6123x High Efficiency Synchronous Step Up Converters with 5-A Switches
+1 Features                                                                         3 Description
+•
+1   Input Voltage Range: 2.3 V to 5.5 V                                            The TPS6123x device family is a high efficiency
+                                                                                   synchronous step up converter with compact solution
+•   Output Voltage Range: 2.5 V to 5.5 V                                           size. It is optimized for products powered by a one-
+•   Up to 96% Efficiency Synchronous Boost                                         cell Li-Ion battery, or a regulated power rail of 3.3 V.
+    Converter                                                                      The IC integrates a 5-A switch and is capable of
+•   3.3-V to 5-V Power Conversion with 2.1-A Output                                delivering output currents up to 2.1 A at a 5-V output
+    Current                                                                        with a 3.3-V input supply. The device is based on a
+                                                                                   quasi-constant on-time valley current mode control
+•   Input Supply Voltage Supervisor with Adjustable                                scheme. The typical operating frequency is 2 MHz,
+    Threshold/Hysteresis                                                           which allows the use of small inductors and
+•   Power Save Mode for Light Load Efficiency                                      capacitors to achieve a small solution size. The
+•   Load Disconnect During Shutdown                                                TPS61230 and TPS61231 provide an adjustable
+                                                                                   output voltage via an external resistor divider, and the
+•   Output Over Voltage Protection                                                 TPS61232 provides a fixed output voltage of 5 V.
+•   Programmable Soft Start
+                                                                                   During light loads, the TPS6123x automatically enters
+•   Power Good Output                                                              power save mode for maximum efficiency at lowest
+•   2-MHz Switching Frequency                                                      quiescent currents. In shutdown, the load is
+•   Output Capacitor Discharge (TPS61231)                                          completely disconnected from the input, and the input
+                                                                                   current consumption is reduced to 1.5 µA typical. The
+•   3 mm x 3 mm x 0.9 mm VSON Package
+                                                                                   device integrates a precise low power EN
+                                                                                   comparator. The EN threshold as well as the
+2 Applications                                                                     hysteresis of the enable comparator are adjustable
+•   Low Voltage Li-Ion Battery Powered Products                                    with external resistors and support application
+•   USB Power Supply                                                               specific system power up and down requirements.
+                                                                                   Other features like output over voltage protection,
+•   Tablet PCs                                                                     thermal shutdown protection, and a power good
+•   Power Banks, Battery Backup Units                                              output are built-in.
+•   Industrial Metering Equipments                                                 The devices are available in a 3 mm x 3 mm x 0.9
+                                                                                   mm VSON package.
+
+                                                                                                                            Device Information(1)
+                                                                                         PART NUMBER                                     PACKAGE          BODY SIZE (NOM)
+                                                                                    TPS61230
+                                                                                    TPS61231(2)                                  VSON (10)                3.00 mm x 3.00 mm
+                                                                                    TPS61232
+                                                                                    (1) For all available packages, see the orderable addendum at
+                                                                                        the end of the datasheet.
+                                                                                    (2) Preview product. Contact TI factory for more information
+
+                   TPS61230 Typical Application                                                       TPS61230 Typical Application Efficiency
+                                L1                                                                         100
+                                1.0µH
+
+
+
+    VIN                                                                                                    90
+                          VIN            SW
+
+
+
+                                                                                          Efficiency (%)
+            C1
+            22µF          EN        VOUT                              VOUT
+                                                   R1             C2                                       80
+                          HYS             FB       402k           3x22µF
+
+                          SS                       R2                                                      70
+                   C3                              100k
+                   10nF                                                                                                                                             Vin = 3.0 V
+                          GND            PG                                                                                                                         Vin = 3.6 V
+                                                  R3                                                              Vout = 5.0 V                                      Vin = 4.2 V
+                           TPS61230               1.0Meg                                                   60
+                                                                                                            0.001                0.010            0.100         1.000
+                                                                                                                                              Iout (A)                            C008
+
+
+
+
+1
+
+
+
+
+          An IMPORTANT NOTICE at the end of this data sheet addresses availability, warranty, changes, use in safety-critical applications,
+          intellectual property matters and other important disclaimers. UNLESS OTHERWISE NOTED, this document contains PRODUCTION
+          DATA.
+TPS61230, TPS61231, TPS61232
+SLVSAQ2C – JANUARY 2014 – REVISED OCTOBER 2014                                                                                                                          www.ti.com
+
+
+                                                                           Table of Contents
+    1   Features .................................................................. 1                 8.4 Device Functional Modes........................................ 11
+    2   Applications ........................................................... 1             9     Applications and Implementation ...................... 12
+    3   Description ............................................................. 1                   9.1 Application Information............................................ 12
+    4   Revision History..................................................... 2                       9.2 Typical Applications ................................................ 12
+    5   Device Comparison Table..................................... 3                         10 Power Supply Recommendations ..................... 20
+    6   Pin Configuration and Functions ......................... 3                            11 Layout................................................................... 21
+                                                                                                      11.1 Layout Guidelines ................................................. 21
+    7   Specifications......................................................... 4
+                                                                                                      11.2 Layout Example .................................................... 21
+         7.1    Absolute Maximum Ratings ...................................... 4
+                                                                                                      11.3 Thermal Considerations ........................................ 21
+         7.2    Handling Ratings....................................................... 4
+         7.3    Recommended Operating Conditions....................... 4                      12 Device and Documentation Support ................. 23
+         7.4    Thermal Information .................................................. 4              12.1    Device Support...................................................... 23
+         7.5    Electrical Characteristics........................................... 5               12.2    Documentation Support ....................................... 23
+         7.6    Typical Characteristics .............................................. 6              12.3    Related Links ........................................................ 23
+                                                                                                      12.4    Trademarks ........................................................... 23
+    8   Detailed Description .............................................. 8
+                                                                                                      12.5    Electrostatic Discharge Caution ............................ 23
+         8.1 Overview ................................................................... 8
+                                                                                                      12.6    Glossary ................................................................ 23
+         8.2 Functional Block Diagram ......................................... 8
+         8.3 Feature Description................................................... 8          13 Mechanical, Packaging, and Orderable
+                                                                                                  Information ........................................................... 23
+
+
+
+4 Revision History
+Changes from Revision B (June 2014) to Revision C                                                                                                                                Page
+
+•   Changed Electrical Characteristics in the IQ row; VOUT = 3.5 V to VOUT = No Supply ........................................................... 5
+
+
+Changes from Revision A (March 2014) to Revision B                                                                                                                               Page
+
+•   Added TPS61232 to the data sheet ...................................................................................................................................... 1
+•   Changed the Device Information ........................................................................................................................................... 1
+•   Changed the Device Comparison Table................................................................................................................................. 3
+•   Changed the Handling Ratings table ..................................................................................................................................... 4
+
+
+Changes from Original (September 2013) to Revision A                                                                                                                             Page
+
+•   Deleted TPS61232 from the data sheet ................................................................................................................................ 1
+•   Changed the data sheet to the new TI format ....................................................................................................................... 1
+•   Changed the Description From: input current consumption is reduced to 0.5 µA typical To: input current
+    consumption is reduced to 1.5 µA typical .............................................................................................................................. 1
+•   Changed the Functional Block Diagram. Removed Note 2 ................................................................................................... 8
+•   Deleted the Programming The Output Voltage section ....................................................................................................... 13
+•   Changed Figure 14 label From: Startup (A) To: Startup (Ω) ................................................................................................ 15
+
+
+
+
+2        Submit Documentation Feedback                                                                                   Copyright © 2014, Texas Instruments Incorporated
+
+                                                        Product Folder Links: TPS61230 TPS61231 TPS61232
+                                                                                                                  TPS61230, TPS61231, TPS61232
+www.ti.com                                                                                               SLVSAQ2C – JANUARY 2014 – REVISED OCTOBER 2014
+
+
+5 Device Comparison Table
+                      PART NUMBER                                                 OUTPUT VOLTAGE                           OUTPUT DISCHARGE
+                       TPS61230DRC                                                      Adjustable                                  No
+                                       (1)
+                      TPS61231DRC                                                       Adjustable                                  Yes
+                       TPS61232DRC                                                  5-V fixed output                                No
+
+(1)   Preview product. Contact TI factory for more information
+
+
+6 Pin Configuration and Functions
+
+                                                                               11-PIN VSON
+                                                                              DRC PACKAGE
+                                                                                (Top View)
+
+
+                                                                   1   SW                     VIN   10
+
+                                                                   2   SW                     EN    9
+
+                                                                   3 VOUT         GND         HYS   8
+                                                                                   11
+                                                                   4   VOUT                   FB    7
+
+                                                                   5   PG                     SS    6
+
+
+
+
+                                                                            Pin Functions
+             PIN
+                                 I/O                                                                DESCRIPTION
+NAME               NUMBER
+SW                    1,2       PWR          The switch pin of the converter. It is connected to the drain of the internal Power MOSFETs.
+VOUT                  3,4       PWR          Boost converter output pin.
+PG                     5        OUT          Power Good open drain output. Can be left floating if not used.
+SS                     6         IN          Soft startup pin. A soft startup capacitor connects to this pin to set the soft start time.
+FB                     7         IN          Voltage feedback of adjustable versions. Must be connected to VOUT on fixed output voltage version.
+HYS                    8        OUT          EN hysteresis program pin. See the application section for details. Can be left floating if not used.
+EN                     9         IN          Enable logic input. Logic HIGH enables the device. Logic LOW disables the device and turns it into
+                                             shutdown mode. This pin must be terminated.
+VIN                   10         IN          Supply voltage pin.
+GND                   11        PWR          Ground pin.
+
+
+
+
+Copyright © 2014, Texas Instruments Incorporated                                                                  Submit Documentation Feedback      3
+                                                  Product Folder Links: TPS61230 TPS61231 TPS61232
+TPS61230, TPS61231, TPS61232
+SLVSAQ2C – JANUARY 2014 – REVISED OCTOBER 2014                                                                                          www.ti.com
+
+
+7 Specifications
+7.1 Absolute Maximum Ratings
+over operating free-air temperature range (unless otherwise noted) (1)
+                                                                                                                 MIN            MAX         UNIT
+Voltage range at pins (2)                                    EN, FB, PG, SS, HYS, VIN, VOUT, SW                  –0.3            7           V
+Operating junction temperature range, TJ                                                                           –40          150          °C
+
+(1)    Stresses beyond those listed under absolute maximum ratings may cause permanent damage to the device. These are stress ratings
+       only, and functional operation of the device at these or any other conditions beyond those indicated under recommended operating
+       conditions is not implied. Exposure to absolute-maximum-rated conditions for extended periods my affect device reliability.
+(2)    All voltages are with respect to network ground pin.
+
+7.2 Handling Ratings
+                                                                                                                   MIN          MAX         UNIT
+Tstg        Storage temperature range                                                                              -65          150          °C
+                                    Human body model (HBM), per ANSI/ESDA/JEDEC JS-001, all pins (1)               –2            2           kV
+            Electrostatic
+VESD                                Charged device model (CDM), per JEDEC specification JESD22-C101, all                                     V
+            discharge                                                                                           –500            500
+                                    pins (2)
+
+(1)    JEDEC document JEP155 states that 500-V HBM allows safe manufacturing with a standard ESD control process.
+(2)    JEDEC document JEP157 states that 250-V CDM allows safe manufacturing with a standard ESD control process.
+
+7.3 Recommended Operating Conditions
+                                                                                                             MIN         TYP         MAX     UNIT
+VIN             Supply voltage at VIN pin                                                                    2.3                      5.5     V
+ISINK_PG        Sink current at PG pin                                                                                               500      µA
+VPG             Pull-up resistor voltage                                                                                              5.5     V
+TJ              Operating junction temperature                                                               -40                     125      °C
+
+
+7.4 Thermal Information
+                                                                                                                    TPS6123x
+                                            THERMAL METRIC (1)                                                                               UNIT
+                                                                                                                DRC (11 PINS)
+RθJA            Junction-to-ambient thermal resistance                                                                   49.1
+RθJC(top)       Junction-to-case(top) thermal resistance                                                                 57.2
+RθJB            Junction-to-board thermal resistance                                                                     26.6
+                                                                                                                                             °C/W
+ψJT             Junction-to-top characterization parameter                                                               0.8
+ψJB             Junction-to-board characterization parameter                                                             23.8
+RθJC(bottom)    Junction-to-case(bottom) thermal resistance                                                              4.5
+
+(1)    For more information about traditional and new thermal metrics, see the IC Package Thermal Metrics application report, SPRA953.
+
+
+
+
+4         Submit Documentation Feedback                                                         Copyright © 2014, Texas Instruments Incorporated
+
+                                            Product Folder Links: TPS61230 TPS61231 TPS61232
+                                                                                                        TPS61230, TPS61231, TPS61232
+www.ti.com                                                                                      SLVSAQ2C – JANUARY 2014 – REVISED OCTOBER 2014
+
+
+7.5 Electrical Characteristics
+TJ = –40°C to 125°C and VIN = 3.6 V. Typical values are at TJ = 25°C, unless otherwise noted.
+                       PARAMETER                                                 TEST CONDITIONS                 MIN     TYP     MAX     UNIT
+SUPPLY
+                                                             VIN falling                                                  2.0     2.1
+VUVLO         Input under voltage lockout                                                                                                 V
+                                                             VIN rising                                                   2.1     2.2
+                                                             IC enabled, No load, No switching
+                                                                                                                          35      60
+                                                             VOUT = 5 V, TJ = –40 °C to 85°C
+IQ            Quiescent current into VIN                     IC enabled, No load                                                         µA
+                                                             VIN = 4.2 V, VOUT = No supply, TJ = –40 °C to               200     230
+                                                             85°C
+                                                             0 V ≤ VEN ≤ 0.4 V, VIN = 2.3 V to 5.5 V, TJ = -40
+ISD           Shutdown current into VIN                                                                                   1.5     6      µA
+                                                             °C to 85°C
+              Leakage current from SW to VOUT                VEN = 0 V, VOUT = 0 V; VSW = VIN = 3.6 V                             2.5    µA
+OUTPUT
+VOUT          Output voltage range                                                                                2.5             5.5     V
+VOUT          Output voltage accuracy, TPS61232              PWM mode                                             4.9     5.0     5.1     V
+                                                                           (1)
+VOUT          Output voltage accuracy, TPS61232              PFM mode                                                    5.035            V
+              Feedback voltage, TPS61230 and                 PWM mode                                            0.985    1      1.015
+VFB                                                                                                                                       V
+              TPS61231                                       PFM mode (1)                                                1.007
+              FB pin leakage current                         VFB = 1 V                                                           100     nA
+              Output discharge resistor
+RDIS                                                         VOUT = 5 V                                                  200              Ω
+              TPS61231
+              Over voltage protection DC threshold           VOUT rising                                          5.7     6       6.2
+VOVP                                                                                                                                      V
+              Over voltage protection hysteresis             VOUT falling below VOVP                                     0.15
+ISS           Bias current in soft start phase               After pre-charge phase                                       5              µA
+              Line regulation                                IOUT = 1 A, VIN = 2.3 V to 4.5 V                            0.06            %/V
+              Load regulation                                IOUT = 0.5 A to 2 A                                         0.15            %/A
+LOGIC INTERFACE
+VTH_EN_ON     EN pin threshold rising                        VIN = 2.3 V to 5.5 V                                1.15    1.19    1.23     V
+VTH_EN_OF                                                    VIN = 2.3 V to 5.5 V                                                         V
+              EN pin threshold falling                                                                           1.11    1.14    1.18
+F
+VOL_HYS       HYS pin low level voltage                      ISINK_HYS = 1 mA, VEN = 1.1 V                                        0.7     V
+                                                             VOUT rising, referenced to VOUT_NOMINAL             93%     95%     99%
+VTH_PG        Power good DC threshold
+                                                             VOUT falling referenced to VOUT_NOMINAL             87%     90%     93%
+VOL_PG        PG pin low level voltage                       ISINK_PG = 500 µA                                                    0.4     V
+POWER STAGE
+ILIM_SW       Switch valley current limit                                                                         4.0     5.0     6.0     A
+                                                             VOUT = 5 V                                           2.0     2.8     3.5
+ILIM_Pre      Precharge current limit                        VOUT = 3.5 V                                         1.8     2.6     3.3     A
+                                                             VOUT = 0 V                                           0.4    0.55     0.7
+              High side MOSFET on resistance                 VOUT = 5 V                                                   50      75
+RDS(on)                                                                                                                                  mΩ
+              Low side MOSFET on resistance                  VOUT = 5 V                                                   50      75
+              Thermal shutdown threshold                     TJ rising                                                   150
+TJSD                                                                                                                                      °C
+              Thermal shutdown hysteresis                    TJ falling below TJSD                                        20
+
+(1)   L = 1 µH, COUT = 20 µF (effective capacitance value)
+
+
+
+
+Copyright © 2014, Texas Instruments Incorporated                                                        Submit Documentation Feedback           5
+                                             Product Folder Links: TPS61230 TPS61231 TPS61232
+TPS61230, TPS61231, TPS61232
+SLVSAQ2C – JANUARY 2014 – REVISED OCTOBER 2014                                                                                                                                                                                                       www.ti.com
+
+
+7.6 Typical Characteristics
+VIN = 3.6 V, VOUT = 5.0 V, TJ = -40°C to 125 °C, unless otherwise noted.
+
+                                                              70                                                                                                                          70
+
+
+
+
+                                  HS FET On Resistance (m:)                                                                                                   LS FET On Resistance (m:)
+                                                              60                                                                                                                          60
+
+
+
+                                                              50                                                                                                                          50
+
+
+
+                                                              40                                                                                                                          40
+
+
+
+                                                              30                                                                                                                          30
+                                                                   -40   -20   0      20     40     60     80    100   120                                                                     -40   -20   0       20    40        60   80     100     120
+                                                                                   Junction Temperature (C)                 C001                                                                              Junction Temperature (C)                     C002
+
+
+
+
+                                           Figure 1. High-Side MOSFET On Resistance vs Junction                                                                       Figure 2. Low-Side MOSFET On Resistance vs Junction
+                                                                Temperature                                                                                                               Temperature
+                                  1.010                                                                                                                             2.20
+
+
+
+
+                                                                                                                                    Vin UVLO Threshold (V)
+    Voltage Reference (V)
+                                  1.005
+
+
+
+                                  1.000                                                                                                                             2.00
+
+
+
+                                  0.995
+                                                                                                                                                                                                                                             VIN
+                                                                                                                                                                                                                                             V IN Rising
+
+                                                                                                                                                                                                                                              V
+                                                                                                                                                                                                                                             VININ Falling
+                                  0.990                                                                                                                             1.80
+                                                                   -40   -20   0      20     40     60    80    100    120                                                                     ±40   ±20   0       20    40        60   80     100      120
+                                                                                   Junction Temperature (C)                 C003
+                                                                                                                                                                                                               Junction Temperature (oC)                     C013
+
+
+
+
+                                                              Figure 3. Voltage Reference vs Junction Temperature                                                          Figure 4. Vin UVLO Threshold vs Junction Temperature
+                                        1.30                                                                                                                                              50
+
+
+
+
+         EN Logic Threshold (V)                                                                                                                        Quiescent Current (PA)
+                                                                                                                                                                                          40
+
+
+                                        1.20
+
+
+                                                                                                                                                                                          30
+                                                                                                                                                                                                                                             Tj = 85C
+                                                                                                                                                                                                                                                    oC
+
+                                                                                                                EN Rising                                                                                                                    Tj = 25C
+                                                                                                                                                                                                                                                    oC
+
+                                                                                                                EN Falling                                                                                                                           oC
+                                                                                                                                                                                                                                             Tj = -40C
+                                        1.10                                                                                                                                              20
+                                                               ±40       ±20   0      20     40     60     80    100    120                                                                    2               3               4                 5
+                                                                                   Junction Temperature (oC)                 C014                                                                                  Input Voltage (V)                         C010
+
+
+
+
+                                                    Figure 5. EN Logic Threshold vs Junction Temperature                                              Figure 6. Quiescent Current vs Input Voltage (Boost Mode)
+
+
+
+
+6                                            Submit Documentation Feedback                                                                                                                                 Copyright © 2014, Texas Instruments Incorporated
+
+                                                                                                  Product Folder Links: TPS61230 TPS61231 TPS61232
+                                                                                                                                                                                         TPS61230, TPS61231, TPS61232
+www.ti.com                                                                                                                                                                       SLVSAQ2C – JANUARY 2014 – REVISED OCTOBER 2014
+
+
+Typical Characteristics (continued)
+VIN = 3.6 V, VOUT = 5.0 V, TJ = -40°C to 125 °C, unless otherwise noted.
+                                4                                                                                                                                 5.0
+
+
+
+
+                                                                                                                                Switch Valley Current Limit (A)
+                                                                                                                                                                  4.8
+
+
+
+
+        Shutdown Current (PA)
+                                3
+
+                                                                                                                                                                  4.6
+                                2
+                                                                                                                                                                  4.4
+
+                                1                                                                   Tj = 85C
+                                                                                                           oC
+                                                                                                                                                                                                                       Tj
+                                                                                                                                                                  4.2                                                  Tj == 125C
+                                                                                                                                                                                                                             125oC
+                                                                                                    Tj = 25oCC                                                                                                         Tj  25CoC
+                                                                                                                                                                                                                       Tj== 25
+                                                                                                                                                                                                                       Tj== -40o
+                                                                                                    Tj = -40oCC                                                                                                        Tj  -40CC
+                                0                                                                                                                                 4.0
+                                    2   3                             4                                  5                                                              2               3                      4          5
+                                            Input Voltage (V)                                                     C011                                                                             Input Voltage (V)                 C012
+
+
+
+
+       Figure 7. Shutdown Current vs Input Voltage (Boost Mode)                                                                                                   Figure 8. Switch Valley Current Limit vs Input Voltage
+                                                                                                                                                                                      (Boost Mode)
+                                                                                       5.1
+
+
+
+
+                                                       Softstart Charge Current (PA)
+                                                                                       5.0
+
+
+                                                                                       4.9
+
+
+                                                                                       4.8
+
+
+                                                                                       4.7
+
+
+                                                                                       4.6
+
+
+                                                                                       4.5
+                                                                                             ±40   ±20       0       20    40                                     60        80    100   120
+                                                                                                                 Junction Temperature (oC)                                                  C015
+
+
+
+
+                                                      Figure 9. Soft Start Charge Current vs Junction Temperature
+
+
+
+
+Copyright © 2014, Texas Instruments Incorporated                                                                                                                                            Submit Documentation Feedback                   7
+                                                                 Product Folder Links: TPS61230 TPS61231 TPS61232
+TPS61230, TPS61231, TPS61232
+SLVSAQ2C – JANUARY 2014 – REVISED OCTOBER 2014                                                                                                        www.ti.com
+
+
+8 Detailed Description
+
+8.1 Overview
+The TPS6123x synchronous step-up converter typically operates at a quasi-constant 2-MHz frequency pulse
+width modulation (PWM) at moderate to heavy load currents. At light load currents, the TPS6123x converter
+operates in power-save mode with pulse frequency modulation (PFM). The converter uses a novel quasi-
+constant on-time valley current mode control scheme which provides excellent transient line / load response with
+minimal output capacitance. Internal loop compensation simplifies the design process while minimizing the
+number of external components. The TPS6123x device can smoothly transit in and out of zero duty cycle mode
+(high side FET full on). Therefore the output can be kept as close as possible to its regulation limits even though
+the converter is subject to an input voltage that tends to be excessive.
+
+8.2 Functional Block Diagram
+
+                                                                 VIN                               SW
+
+                                                                    Supply for
+                                                                  logic circuitry
+
+                                      61230/1
+                                                                    VOUT
+                       FB                                                           Over Voltage
+                                                     EA                              Protection                                   VOUT
+                                      61232
+
+
+                                 2)
+                                       REF                                   VOUT
+                                                                                                                 Valley
+                                                                                                                 Current
+                                                                                                                 Sense
+
+                                                   Pulse
+                                                                        Gate
+                                                  Modulator                                                                1)
+                                                                        Driver
+                                                                                                                 EN
+
+
+
+
+                                             EN                               Thermal
+                                                           ON/
+                                          Threshold/                         Shutdown          OVP
+                                                           OFF
+                                          Hysteresis
+                                                                                                                                  PG
+                       EN                                                                                 PG Comparator
+                                                                                                        FB
+                                                     REF
+                                                                                       Logic            REF
+                      HYS
+                                                  EN Comparator
+
+
+
+                                                                                               Undervoltage
+                                                                              Softstart
+                                                                                                 Lockout
+
+
+
+
+                                                                                    SS                                GND
+     (1)   Output discharge block is implemented in TPS61231 only.
+     (2)   Internal resistor divider is implemented in TPS61232 only. For adjustable output versions, the FB pin is directly
+           connected to the negative pin of the EA.
+
+8.3 Feature Description
+8.3.1 Startup
+In boost mode (PWM or PFM), the rectifying switch is turned on first until the output capacitor is charged to 0.5 V
+with the current limit of 550 mA after the device is enabled. Then, the output capacitor is continuously charged to
+a value close to the input voltage. This is called the pre-charge phase. During the pre-charge phase, the output
+current is limited by the pre-charge current limit of the high side rectifying switch and the SS pin voltage follows
+the FB voltage (in the TPS61232, the SS pin follows the internal FB voltage). Once the output capacitor has
+been biased to the input voltage, the device starts switching. This is called the soft start phase. During the soft
+
+
+8      Submit Documentation Feedback                                                                               Copyright © 2014, Texas Instruments Incorporated
+
+                                                Product Folder Links: TPS61230 TPS61231 TPS61232
+                                                                                                TPS61230, TPS61231, TPS61232
+www.ti.com                                                                           SLVSAQ2C – JANUARY 2014 – REVISED OCTOBER 2014
+
+
+Feature Description (continued)
+start phase, the SS pin voltage limits the FB pin voltage, and the output voltage rising slope follows the SS pin
+voltage slope. The capacitor connected to the SS pin is charged by the internal bias current of ISS, giving the time
+of the soft start phase shown in Equation 1. The larger the soft start capacitor, the longer the soft start phase
+time. Leaving the SS pin floating sets the minimum soft startup phase time. The device finishes the soft start
+phase and operates normally when the nominal output voltage is reached.
+                C SS    æ     V IN ö
+       t SS =        ´ çç 1 -          ÷ ´ VREF
+                5mA è         V O U T ÷ø                                                                                        (1)
+The SS pin voltage is discharged in the cases when the device gets disabled by the EN pin, thermal shutdown
+and undervoltage lockout. The SS pin may be left floating to disable the soft start phase and start up with the
+fastest time. In zero duty cycle mode, only the pre-charge phase works during startup.
+
+8.3.2 Current Limit Operation
+The device employs a valley current sensing scheme. Switch valley current limit detection occurs during the off
+time through sensing of the voltage drop across the synchronous rectifier. If the current is above the valley
+current limit level when it is time to turn off the synchronous rectifier, the device instead keeps the synchronous
+rectifier on until its current decreases below the valley current limit level. The maximum continuous output current
+IOUT(MAX), before entering switch valley current limit operation, is defined by Equation 2.
+                              æ            1    ö
+       IOUT(MAX ) = (1 - D) ´ ç ILIM _ SW + DIL ÷
+                              è            2    ø
+
+             VOUT - VIN
+       D=
+               VOUT
+
+
+                VIN    D
+       DIL =        ´
+                 L    fSW                                                                                                       (2)
+Where
+   ILIM_SW = Switch valley current limit
+   L = Inductor value
+   fSW = Switching frequency
+When the switch current limit is reached, the output voltage decreases from further load increase. The switch
+valley current limit works in PWM, PFM and Zero Duty Cycle Mode operations.
+Another current limit scheme, pre-charge current limit, ILIM_Pre is implemented. Pre-charge current limit detection
+works when VOUT < VOUT_NOM and VOUT < VIN . It can happen when the device is in the pre-charge phase or an
+over load condition. It impacts the minimum load resistance at startup as shown in Figure 14 and Figure 27.
+
+8.3.3 Enable/Disable
+The EN pin is connected to an ON/OFF detector (ON/OFF) and an input of the Enable Comparator, shown in the
+functional block diagram. With a voltage level of 0.4 V or less at the EN pin, the ON/OFF detector turns the
+device into Shutdown mode and the quiescent current is reduced to typically 1.5 uA. In this mode, the EN
+comparator and the entire internal control circuitry are switched off. A voltage level of typically 0.9 V at the EN
+pin triggers the ON/OFF detector and activates the internal reference, the EN comparator and the UVLO
+comparator. Once the ON/OFF detector has tripped, the quiescent current into the VIN pin is typically 1.5 μA.
+The TPS6123x starts regulation once the voltage at the EN pin trips the threshold VEN_TH_ON and the VIN pin
+voltage is above the UVLO threshold. The device enters startup and ramps up the output voltage. The TPS6123x
+stops regulation once the voltage on the EN pin falls blow the threshold VEN_TH_OFF or the VIN pin voltage falls
+below the UVLO threshold. For proper operation, The EN pin must be terminated and must not be left floating.
+An external logic signal applied directly to the EN pin can enable/disable the device. The device can be driven
+into shutdown mode by pulling the EN pin to GND. In this mode, true load disconnect between the battery and
+load prevents current flow from VIN to VOUT, as well as reverse flow from VOUT to VIN.
+
+Copyright © 2014, Texas Instruments Incorporated                                                Submit Documentation Feedback    9
+                                             Product Folder Links: TPS61230 TPS61231 TPS61232
+TPS61230, TPS61231, TPS61232
+SLVSAQ2C – JANUARY 2014 – REVISED OCTOBER 2014                                                                          www.ti.com
+
+
+Feature Description (continued)
+8.3.4 Undervoltage Lockout
+An under voltage lockout is implemented to avoid mis-operation of the device at low input voltages. It shuts down
+the device with voltages lower than VUVLO.
+Use the HYS pin to configure a new undervoltage lockout threshold and hysteresis shown in Figure 10 and
+Equation 3. The new thresholds must be higher than VUVLO; otherwise it does not work. The devices holds the
+HYS pin low until the EN voltage rises above VEN_TH_ON. Then, the HYS pin goes high impedance.
+                                                   VIN
+
+
+                                                                 EN          ON/
+                                            REN1              Threshold/     OFF
+                                                              Hysteresis
+                                                         EN
+
+                                                                       REF
+                                            REN2
+                                                     HYS            EN Comparator
+
+
+                                            REN3
+
+
+
+
+                           Figure 10. EN Comparator threshold and hysteresis setting
+
+                                   æ       REN1        ö            æ    REN1     ö
+      VIN _ OFF = VTH _ EN _ OFF ´ ç1 +                ÷ = 1.14 V ´ ç1 +          ÷
+                                   è REN2 + REN3 ø                  è REN2 + REN3 ø
+                                 æ    REN1 ö            æ    REN1 ö
+      VIN _ ON = VTH _ EN _ ON ´ ç1 +      ÷ = 1.19 V ´ ç1 +       ÷
+                                 è REN2 ø               è REN2 ø                                                                 (3)
+
+8.3.5 Output Capacitor Discharge, TPS61231
+To make sure the device starts up under defined conditions, the output capacitor of the TPS61231 gets
+discharged by the VOUT pin with a typical discharge resistor of RDIS in the cases when the device gets disabled
+by the EN pin, thermal shutdown, and undervoltage lockout.
+
+8.3.6 Power Good Output
+The PG output is low when the output voltage is below 90% of its nominal value. The PG pin becomes high
+impedance once the output is higher than 95% of its nominal voltage. The PG pin is an open drain output and is
+specified to sink up to 500 µA. This PG output requires a pull-up resistor that cannot be connected to any voltage
+higher than 5.5 V. PG is held low when the device is disabled by the EN pin and thermal shutdown.
+
+8.3.7 Over Voltage Protection
+The device stops switching as soon as the output voltage exceeds VOVP. When the output voltage falls 0.15V
+below the OVP threshold, the device resumes normal operation until the output voltage exceeds the OVP
+threshold again.
+
+8.3.8 Thermal Shutdown
+The device goes into thermal shutdown and stops switching once the junction temperature exceeds TJSD. Once
+the junction temperature falls below the threshold, it returns to normal operation automatically.
+
+
+
+
+10     Submit Documentation Feedback                                                 Copyright © 2014, Texas Instruments Incorporated
+
+                                       Product Folder Links: TPS61230 TPS61231 TPS61232
+                                                                                                        TPS61230, TPS61231, TPS61232
+www.ti.com                                                                                  SLVSAQ2C – JANUARY 2014 – REVISED OCTOBER 2014
+
+
+8.4 Device Functional Modes
+The TPS6123x boost converter family has three operation modes, as shown in Table 1.
+
+                                                   Table 1. Operation Mode Description
+                           MODE                          DESCRIPTION                                CONDITION
+                            PWM               Boost in normal switching operation VIN < VOUT + 0.2 V, heavy load
+                             PFM              Boost in power save operation       VIN < VOUT + 0.2 V, light load
+                                                                                  VOUT < VIN ≤ VOUT + 0.24 V and VOUT ≥
+                      Zero Duty Cycle         Zero duty cycle operation
+                                                                                  VOUT_NOM
+
+8.4.1 Boost Normal Mode
+The TPS6123x boost converter family typically operates at a quasi-constant 2-MHz frequency pulse width
+modulation (PWM) at moderate to heavy load currents. Based on the VIN/VOUT ratio, a simple circuit predicts the
+required on-time. At the beginning of the switching cycle, the low-side N-MOS switch, shown in the functional
+block diagram, is turned on and the inductor current ramps up to a peak current that is defined by the on-time
+and the inductance. In the second phase, once this peak current is reached, the current comparator trips, the on-
+timer is reset turning off the low-side N-MOS switch and turning on the high-side rectifying switch. The current
+through the inductor then decays to an internally set valley current. Once this occurs, the on-timer is set to turn
+the boost switch back on again and the cycle is repeated.
+
+8.4.2 Boost Power Save Mode
+The device integrates a power save mode with pulse frequency modulation (PFM) to improve efficiency at light
+load. In power save mode, the device only switches when the output voltage trips below a set threshold voltage.
+It ramps up the output with several pulses and enters the power save mode when the output voltage exceeds the
+set threshold voltage. PFM is left and PWM mode entered when the inductor current becomes discontinuous.
+The DC output voltage in PFM mode rises above the nominal output voltage in PWM mode by 0.7%.
+                            Output Voltage
+
+
+                                             PFM mode at light load
+
+
+                                                                                      VOUT_DC = 1.007 x VOUT_NOM
+
+
+
+
+                                                                                                                   VOUT_NOM
+
+                                                                                 PWM mode at heavy load
+
+                                                                                                                        t
+
+                                             Figure 11. Output Voltage in PFM/PWM Mode
+
+8.4.3 Zero Duty Cycle Mode
+When the input voltage is lower than VOUT + 0.24 V and VOUT is higher than the nominal output voltage, the
+device automatically changes to a Zero Duty Cycle Mode. In Zero Duty Cycle Mode, the rectifying switch is
+constantly turned on and the low side switch is turned off. The output voltage in this mode depends on the
+resistance between the input and the output, calculated as:
+      VOUT = VIN - IOUT ´ (RDS(on ) + RL )
+                                                                                                                                         (4)
+
+
+
+
+Copyright © 2014, Texas Instruments Incorporated                                                         Submit Documentation Feedback   11
+                                              Product Folder Links: TPS61230 TPS61231 TPS61232
+TPS61230, TPS61231, TPS61232
+SLVSAQ2C – JANUARY 2014 – REVISED OCTOBER 2014                                                                                        www.ti.com
+
+
+9 Applications and Implementation
+
+                                                        NOTE
+            Information in the following applications sections is not part of the TI component
+            specification, and TI does not warrant its accuracy or completeness. TI’s customers are
+            responsible for determining suitability of components for their purposes. Customers should
+            validate and test their design implementation to confirm system functionality.
+
+
+9.1 Application Information
+The devices are designed to operate from an input voltage supply range between 2.3 V and 5.5 V with a
+maximum output current of 2.1 A. The devices operate in PWM mode for medium to heavy load conditions and in
+power save mode at light load currents. In PWM mode the TPS6123x converter operates with the nominal
+switching frequency of 2 MHz which provides a controlled frequency variation over the input voltage range. As
+the load current decreases, the converter enters power save mode, reducing the switching frequency and
+minimizing the IC quiescent current to achieve high efficiency over the entire load current range. The WEBENCH
+software uses an iterative design procedure and accesses a comprehensive database of components when
+generating a design. See the Related Documentation section for additional documentation.
+
+9.2 Typical Applications
+9.2.1 TPS61230 2.3-V to 5.5-V Input, 5-V Output Converter
+                                                               L1
+                                                               1.0µH
+
+
+
+                                     VIN                 VIN           SW
+                                           C1
+                                           22µF          EN        VOUT                            VOUT
+                                                                             R1               C2
+                                                         HYS           FB    402k             3x22µF
+
+                                                         SS                  R2
+                                                  C3                         100k
+                                                  10nF
+                                                         GND           PG
+                                                                            R3
+                                                          TPS61230          1.0Meg
+
+
+                                  Figure 12. TPS61230 5-V Output Typical Application
+
+9.2.1.1 TPS61230 5-V Output Design Requirements
+Use the following typical application design procedure to select external components values for the TPS61230
+device.
+
+                                    Table 2. TPS61230 5-V Output Design Parameters
+         DESIGN PARAMETERS                                                           EXAMPLE VALUES
+           Input Voltage Range                                                         2.3 V to 5.5 V
+              Output Voltage                                                               5.0 V
+          Output Voltage Ripple                                                         ±3% VOUT
+           Transient Response                                                           ±10% VOUT
+           Input Voltage Ripple                                                          ±200 mV
+          Output Current Rating                                                            2.1 A
+           Operating Frequency                                                            2 MHz
+
+
+
+
+12     Submit Documentation Feedback                                                               Copyright © 2014, Texas Instruments Incorporated
+
+                                       Product Folder Links: TPS61230 TPS61231 TPS61232
+                                                                                                       TPS61230, TPS61231, TPS61232
+www.ti.com                                                                                   SLVSAQ2C – JANUARY 2014 – REVISED OCTOBER 2014
+
+
+9.2.1.2 TPS61230 5-V Detailed Design Procedure
+
+                                         Table 3. TPS61230 5-V Output List of Components
+           REFERENCE                                              DESCRIPTION                                           MANUFACTURER
+                 L1                                 1.0 μH, power inductor, XFL4020-102MEB                                  Coilcraft
+                 C1                          2 μF 6.3 V, 0805, X5R ceramic, GRM21BR60J226ME39                               Murata
+                 C2                          3 × 22 μF 10 V, 0805, X5R ceramic, LMK212BBJ226MG                              YUDEN
+                 C3                                            10 nF, X7R ceramic                                           Murata
+                 R1                                      402 k, resistor, chip, 1/10W, 1%                                    Rohm
+                 R2                                      100 k, resistor, chip, 1/10W, 1%                                    Rohm
+
+
+9.2.1.2.1 Programming the Output Voltage
+The TPS6123x device family's output voltage need to be programmed via an external voltage divider to set the
+desired output voltage.
+An external resistor divider is used, as shown in Equation 5. By selecting R1 and R2, the output voltage is
+programmed to the desired value. When the output voltage is regulated, the typical voltage at the FB pin is VFB.
+The following equation can be used to calculate R1 and R2.
+                    æ    R1 ö         æ    R1 ö
+       VOUT = VFB ´ ç1 +     ÷ = 1V ´ ç1 +    ÷
+                    è    R 2 ø        è    R 2ø                                                                                         (5)
+For best accuracy, R2 should be kept smaller than 100 kΩ to ensure that the current following through R2 is at
+least 100 times larger than FB pin leakage current. Changing R2 towards a lower value increases the robustness
+against noise injection. Changing the R2 towards higher values reduces the quiescent current for achieving
+highest efficiency at low load currents.
+For the fixed output voltage version, TPS61232, the FB pin must be tied to the output directly.
+
+9.2.1.2.2 Inductor and Capacitor Selection
+The second step is the selection of the inductor and capacitor components. To simplify this process, Table 4
+outlines possible inductor and output capacitor value combinations.
+
+                                     Table 4. Inductor and Output Capacitor Combinations
+                                                                            COUT (µF) (2)
+                        L (µH) (1)
+                                              10                    20                      47                     100
+                          0.47                                      √                       √                       √
+                           1.0                                     √ (3)                    √                       √
+                           1.5
+
+                  (1)   This is the nominal inductance of inductor. Inductor tolerance and current de-rating is anticipated. The
+                        effective inductance can vary by -30%.
+                  (2)   This is the effective capacitance of output capacitors. A higher nominal value is required.
+                  (3)   Typical application configuration. Other check mark indicates alternative filter combinations.
+9.2.1.2.2.1 Inductor Selection
+A boost converter requires two main passive components for storing energy during the conversion, an inductor
+and an output capacitor. It is advisable to select an inductor with a saturation current rating higher than the
+possible peak current flowing through the power switches. The inductor peak current varies as a function of the
+load, the input and output voltages and is estimated using Equation 6.
+                     IOUT     1 V ´D
+      IL(PEAK ) =            + ´ IN
+                  (1 - D) ´ h 2 L ´ fSW                                                                      (6)
+Where
+   η = Power conversion estimated efficiency
+
+
+
+Copyright © 2014, Texas Instruments Incorporated                                                       Submit Documentation Feedback    13
+                                             Product Folder Links: TPS61230 TPS61231 TPS61232
+TPS61230, TPS61231, TPS61232
+SLVSAQ2C – JANUARY 2014 – REVISED OCTOBER 2014                                                                          www.ti.com
+
+
+Selecting an inductor with insufficient saturation performance can lead to excessive peak current in the
+converter. This could eventually harm the device and reduce reliability. It's recommended to choose the
+saturation current for the inductor 20%~30% higher than the IL(PEAK), from Equation 6. The following inductors are
+recommended to be used in designs.
+
+                                                 Table 5. List of Inductors
+                 INDUCTANCE            CURRENT         DC RESISTANCE      PART NUMBER       MANUFACTURER
+                     [µH]              RATING [A]           [mΩ]
+                       1.0                 5.4               10.8         XFL4020-102ME           Coilcraft
+                       1.0                 7.5                9            LQH6PPN1R0             muRata
+                      0.47                 6.6               7.6          XFL4015-471ME           Coilcraft
+
+9.2.1.2.2.2 Output Capacitor Selection
+For the output capacitor, it is recommended to use small X5R or X7R ceramic capacitors placed as close as
+possible to the VOUT and GND pins of the IC. If, for any reason, the application requires the use of large
+capacitors which cannot be placed close to the IC, using a smaller ceramic capacitor of 1 µF in parallel to the
+large one is highly recommended. This small capacitor should be placed as close as possible to the VOUT and
+GND pins of the IC.
+Care must be taken when evaluating a capacitor’s derating under bias. The bias can significantly reduce
+capacitance. Ceramic capacitors can loss as much as 50% of their capacitance at rated voltage. Therefore, leave
+margin on the voltage rating to ensure adequate effective capacitance.
+The ESR impact on the output ripple must be considered as well, if tantalum or electrolytic capacitors are used.
+Assuming there is enough capacitance such that the ripple due to the capacitance can be ignored, the ESR
+needed to limit the VRipple is:
+     VRipple(ESR ) = IL(PEAK ) ´ ESR
+                                                                                                                                 (7)
+
+9.2.1.2.2.3 Input Capacitor Selection
+Multilayer X5R or X7R ceramic capacitors are an excellent choice for input decoupling of the step-up converter
+as they have extremely low ESR and are available in small footprints. Input capacitors should be located as
+close as possible to the device. While a 22-μF input capacitor is sufficient for most applications, larger values
+may be used to reduce input current ripple without limitations. Take care when using only ceramic input
+capacitors. When a ceramic capacitor is used at the input and the power is being supplied through long wires,
+such as from a wall adapter, a load step at the output can induce ringing at the VIN pin. This ringing can couple
+to the output and be mistaken as loop instability or could even damage the part. Additional "bulk" capacitance
+(electrolytic or tantalum) should in this circumstance be placed between CIN and the power source to reduce
+ringing than can occur between the inductance of the power source leads and CIN.
+
+9.2.1.2.3 Loop Stability, Feed Forward Capacitor
+The third step is to check the loop stability. The stability evaluation is to look from a steady-state perspective at
+the following signals:
+• Switching node, SW
+• Inductor current, IL
+• Output ripple, VRipple(OUT)
+When the switching waveform shows large duty cycle jitter or the output voltage or inductor current shows
+oscillations, the regulation loop may be unstable. This is often a result of board layout and/or L-C combination.
+The load transient response is another approach to check the loop stability. During the load transient recovery
+time, VOUT can be monitored for settling time, overshoot or ringing that helps judge the converter’s stability.
+Without any ringing, the loop has usually more than 45° of phase margin.
+As for the heavy load transient applications such as a 2 A load step transient, a feed forward capacitor in parallel
+with R1 is recommended. The feed forward capacitor increases the loop bandwidth by adding a zero. This results
+in a lower output voltage drop, as shown in Figure 36. Set the feed forward capacitor zero near 20 kHz for most
+applications. See application report Optimizing Transient Response of Internally Compensated dc-dc Converters
+With Feedforward Capacitor (SLVA289).
+
+14     Submit Documentation Feedback                                                 Copyright © 2014, Texas Instruments Incorporated
+
+                                       Product Folder Links: TPS61230 TPS61231 TPS61232
+                                                                                                                                                                                                                                                TPS61230, TPS61231, TPS61232
+www.ti.com                                                                                                                                                                                                                         SLVSAQ2C – JANUARY 2014 – REVISED OCTOBER 2014
+
+
+9.2.1.3 TPS61230 5-V Output Application Performance Plots
+
+                                             6.0                                                                                                                                                                 4.0
+                                                         Vout = 5 V                                                                                                                                                          Vout = 5 V
+
+
+
+
+            Maximum Load after Startup (A)                                                                                                                                   Minimum Resistance at Startup (:)
+                                             5.0
+                                                                                                                                                                                                                 3.0
+
+                                             4.0
+                                                                                                                                                                                                                 2.0
+                                             3.0
+
+                                                                                                                                                                                                                 1.0
+                                             2.0                                                                       TA = -40 °C                                                                                                                                              TA = -40 C
+                                                                                                                       TA = 25 °C                                                                                                                                               TA = 25 C
+                                                                                                                       TA = 85 °C                                                                                                                                               TA = 85 C
+                                             1.0                                                                                                                                                                 0.0
+                                                   2.3          2.8            3.3         3.8            4.3   4.8           5.3                                                                                      2.3           2.8             3.3     3.8       4.3     4.8            5.3
+                                                                                           Vin (V)                                    C004                                                                                                                 Vin (V)                             C006
+
+
+
+
+                                                     Figure 13. Maximum Load Current after Startup                                                                                                                            Figure 14. Minimum Resistance at Startup
+                                             100                                                                                                                                                          5.20
+
+
+
+                                             90                                                                                                                                                           5.10
+
+
+
+
+        Efficiency (%)
+                                                                                                                                                                         Vout (V)
+                                             80                                                                                                                                                           5.00
+
+
+
+                                             70                                                                                                                                                           4.90
+                                                                                                                        Vin = 3.0 V                                                                                                                                             TA = -40 °C
+                                                                                                                        Vin = 3.6 V                                                                                                                                             TA = 25 °C
+                                                         Vout = 5.0 V                                                   Vin = 4.2 V                                                                                          Vout = 5 V, Vin = 3.6 V                            TA = 85 °C
+                                             60                                                                                                                                                           4.80
+                                              0.001                         0.010                0.100           1.000                                                                                       0.001                           0.010             0.100         1.000
+                                                                                           Iout (A)                                   C008                                                                                                                 Iout (A)                            C0011
+
+
+
+
+                                                                              Figure 15. Efficiency                                                                                                                                         Figure 16. Load Regulation
+                                     5.20                                                                                                                                10,000K
+                                                                                                                                                                                                                             Vout = 5.0 V
+
+
+
+
+                                                                                                                                              Switching Frequency (Hz)
+                                     5.10                                                                                                                                 1,000K
+
+
+
+
+      Vout (V)
+                                     5.00                                                                                                                                                   100K
+
+
+
+                                     4.90                                                                                                                                                                        10K
+                                                                                                                       TA = -40 °C                                                                                                                                               Vin = 2.3 V
+                                                                                                                       TA = 25 °C                                                                                                                                                Vin = 3.6 V
+                                                         Vout = 5 V, Iout = 1 A                                        TA = 85 °C                                                                                                                                                Vin = 4.2 V
+                                     4.80                                                                                                                                                                        1K
+                                                   2.3                2.8            3.3                 3.8     4.3                 4.8                                                                          0.001                      0.010             0.100         1.000
+                                                                                           Vin (V)                                    C0013                                                                                                                Iout (A)                            C0015
+
+
+
+
+                                                                        Figure 17. Line Regulation                                                                                                                                    Figure 18. Switching Frequency
+
+
+
+
+Copyright © 2014, Texas Instruments Incorporated                                                                                                                                                                                                 Submit Documentation Feedback                   15
+                                                                                                     Product Folder Links: TPS61230 TPS61231 TPS61232
+TPS61230, TPS61231, TPS61232
+SLVSAQ2C – JANUARY 2014 – REVISED OCTOBER 2014                                                                                                         www.ti.com
+
+
+                                                                  t -- 300 ns/div                                                                t -- 10 µs/div
+     Vout (AC, 50 mV/div)
+
+                                                                                    Vout (AC, 50 mV/div)
+
+
+
+
+     Icoil (DC, 1 A/div)
+
+
+
+                                                                                    Icoil (DC, 1 A/div)
+
+     SW (DC, 5 V/div)
+
+
+                                                                                    SW (DC, 5 V/div)
+
+
+
+
+                   Figure 19. PWM Operation (VOUT = 5 V, IOUT = 2 A)                            Figure 20. PFM Operation (VOUT = 5 V, IOUT = 50 mA)
+
+                                                                  t -- 50 µs/div                                                                 t -- 10 µs/div
+                                                                                    Vout (DC, 1 V/div)
+
+     Load (DC, 2 A/div)
+
+
+
+
+     PG (DC, 5 V/div)                                                               PG (LOW, 0 V)
+
+                                                                                    SW (DC, 5 V/div)
+     Vout (AC, 0.5 V/div)
+
+
+
+
+                                                                                    Icoil (DC, 5 A/div)
+
+     Icoil (DC, 5 A/div)
+
+
+
+
+          Figure 21. Load Transient (VOUT = 5 V, IOUT = 0.5 A to 2 A)                    Figure 22. Output Over Voltage Protection (FB = 0 V, ROUT
+                                                                                                                 = 30 Ω)
+
+                                                                  t -- 300 µs/div                                                                t -- 100 µs/div
+                                                                                    EN (DC, 5 V/div)
+
+     EN (DC, 5 V/div)
+
+                                                                                    PG (DC, 5 V/div)
+
+
+     PG (DC, 5 V/div)
+                                                                                    Vout (DC, 2 V/div)
+
+
+
+
+                                                                                    Icoil (DC, 2 A/div)
+
+
+     Vout (DC, 2 V/div)
+
+
+
+     Icoil (DC, 2 A/div)
+
+
+
+
+                           Figure 23. Startup (VOUT = 5 V, ROUT = 2.5 Ω)                             Figure 24. Shutdown (VOUT = 5 V, ROUT = 2.5 Ω)
+
+
+
+
+16          Submit Documentation Feedback                                                                        Copyright © 2014, Texas Instruments Incorporated
+
+                                                     Product Folder Links: TPS61230 TPS61231 TPS61232
+                                                                                                             TPS61230, TPS61231, TPS61232
+www.ti.com                                                                                       SLVSAQ2C – JANUARY 2014 – REVISED OCTOBER 2014
+
+
+9.2.2 TPS61230 2.3-V to 5.5-V Input, 3.5-V Output Converter
+                                                                       L1
+                                                                       1.0µH
+
+
+
+                                            VIN                  VIN           SW
+                                                   C1
+                                                   22µF          EN        VOUT                            VOUT
+                                                                                     R1               C2
+                                                                 HYS           FB    250k             3x22µF
+
+                                                                 SS                  R2
+                                                          C3                         100k
+                                                          10nF
+                                                                 GND           PG
+                                                                                    R3
+                                                                  TPS61230          1.0Meg
+
+
+                                     Figure 25. TPS61230 3.5-V Output Typical Application
+
+9.2.2.1 TPS61230 3.5-V Output Design Requirements
+
+                                        Table 6. TPS61230 3.5-V Output Design Parameters
+           DESIGN PARAMETERS                                                                 EXAMPLE VALUES
+              Input Voltage Range                                                              2.3 V to 5.5 V
+                 Output Voltage                                                                    3.5 V
+             Output Voltage Ripple                                                              ±3% VOUT
+              Transient Response                                                                ±10% VOUT
+              Input Voltage Ripple                                                               ±200 mV
+             Output Current Rating                                                                 2.1 A
+             Operating Frequency                                                                  2 MHz
+
+
+9.2.2.2 Detailed Design Procedure
+Refer to the TPS61230 5-V Detailed Design Procedure section for the 3.5-V detailed design procedures.
+
+
+
+
+Copyright © 2014, Texas Instruments Incorporated                                                               Submit Documentation Feedback   17
+                                              Product Folder Links: TPS61230 TPS61231 TPS61232
+TPS61230, TPS61231, TPS61232
+SLVSAQ2C – JANUARY 2014 – REVISED OCTOBER 2014                                                                                                                                                                                                                                     www.ti.com
+
+
+9.2.2.3 TPS61230 3.5-V Output Application Performance Plots
+
+                                          5.0                                                                                                                                                                  3.0
+                                                                                                                                                                                                                           Vout = 3.5 V
+
+
+
+
+                                                                                                                                                                           Minimum Resistance at Startup ()
+                                                       Vout = 3.5 V
+
+
+
+
+         Maximum Load after Startup (A)
+                                          4.0                                                                                                                                                                  2.5
+
+
+
+                                          3.0                                                                                                                                                                  2.0
+
+
+
+                                          2.0                                                                                                                                                                  1.5
+                                                                                                                      TA = -40 °C                                                                                                                                             TA = -40 °C
+                                                                                                                      TA = 25 °C                                                                                                                                              TA = 25 °C
+                                                                                                                      TA = 85 °C                                                                                                                                              TA = 85 °C
+                                          1.0                                                                                                                                                                  1.0
+                                                2.3                     2.8               3.3             3.8                       4.3                                                                              2.3           2.5             2.7     2.9       3.1      3.3            3.5
+                                                                                        Vin (V)                                      C003                                                                                                                Vin (V)                              C005
+
+
+
+
+                                                  Figure 26. Maximum Load Current after Startup                                                                                                                             Figure 27. Minimum Resistance at Startup
+                                          100                                                                                                                                                          3.64
+
+
+
+                                           90                                                                                                                                                          3.57
+
+
+
+
+     Efficiency (%)
+                                                                                                                                                                       Vout (V)
+                                           80                                                                                                                                                          3.50
+
+
+
+                                           70                                                                                                                                                          3.43
+                                                                                                                       Vin = 2.5 V                                                                                                                                            TA = -40 °C
+                                                                                                                       Vin = 3.0 V                                                                                                                                            TA = 25 °C
+                                                       Vout = 3.5 V                                                                                                                                            Vout = 3.5 V, Vin = 3.0 V
+                                                                                                                       Vin = 3.3 V                                                                                                                                            TA = 85 °C
+                                           60                                                                                                                                                          3.36
+                                            0.001                       0.010               0.100               1.000                                                                                     0.001               0.010                          0.100         1.000
+                                                                                        Iout (A)                                     C007                                                                                                                Iout (A)                            C0010
+
+
+
+
+                                                                          Figure 28. Efficiency                                                                                                                                           Figure 29. Load Regulation
+                                          3.64                                                                                                                         10,000K
+                                                                                                                                                                                                                           Vout = 3.5 V
+
+
+
+
+                                                                                                                                            Switching Frequency (Hz)
+                                          3.57                                                                                                                            1,000K
+
+
+
+
+     Vout (V)
+                                          3.50                                                                                                                                                    100K
+
+
+
+                                          3.43                                                                                                                                                                 10K
+                                                                                                                      TA = -40 °C                                                                                                                                              Vin = 2.3 V
+                                                                                                                      TA = 25 °C                                                                                                                                               Vin = 2.7 V
+                                                       Vout = 3.5 V, Iout = 1 A
+                                                                                                                      TA = 85 °C                                                                                                                                               Vin = 3.0 V
+                                          3.36                                                                                                                                                                 1K
+                                                 2.3              2.5             2.7               2.9         3.1                 3.3                                                                         0.001                      0.010             0.100         1.000
+                                                                                        Vin (V)                                     C0012                                                                                                                Iout (A)                            C0014
+
+
+
+
+                                                                      Figure 30. Line Regulation                                                                                                                                    Figure 31. Switching Frequency
+
+
+
+
+18                                        Submit Documentation Feedback                                                                                                                                                                     Copyright © 2014, Texas Instruments Incorporated
+
+                                                                                                  Product Folder Links: TPS61230 TPS61231 TPS61232
+                                                                                                                         TPS61230, TPS61231, TPS61232
+www.ti.com                                                                                             SLVSAQ2C – JANUARY 2014 – REVISED OCTOBER 2014
+
+
+                                                                 t -- 2 ms/div                                                                  t -- 200 µs/div
+     PG (DC, 2 V/div)
+
+                                                                                 EN (DC, 5 V/div)
+
+
+
+
+     Vin (DC, 1 V/div)                                                           PG (DC, 5 V/div)
+                    Vout (DC, 1 V/div)
+
+
+
+
+     Icoil (DC, 1.5 A/div)
+                                                                                 Vout (DC, 2 V/div)
+
+
+
+                                                                                 Icoil (DC, 1 A/div)
+
+
+
+
+           Figure 32. Input Sweep (VOUT = 3.5 V, VIN = 2.7 V to 4.2 V,                Figure 33. Startup (VOUT = 3.5 V, VIN = 3.0 V, ROUT = 2.3 Ω)
+                                 IOUT = 1.5 A)
+
+                                                                                                        t -- 75 µs/div
+                                           EN (DC, 5 V/div)
+
+
+
+
+                                           PG (DC, 5 V/div)
+
+
+
+
+                                           Vout (DC, 2 V/div)
+
+
+                                           Icoil (DC, 1 A/div)
+
+
+
+
+                                             Figure 34. Shutdown (VOUT = 3.5 V, VIN = 3.0 V, ROUT = 2.3 Ω)
+
+
+
+
+Copyright © 2014, Texas Instruments Incorporated                                                                         Submit Documentation Feedback            19
+                                               Product Folder Links: TPS61230 TPS61231 TPS61232
+TPS61230, TPS61231, TPS61232
+SLVSAQ2C – JANUARY 2014 – REVISED OCTOBER 2014                                                                                                  www.ti.com
+
+
+9.2.3    TPS61230 Application with Feed Forward Capacitor for Best Transient Response
+As for the heavy load transient applications such as a 2-A load step transient, a feed forward capacitor in parallel
+with R1 is recommended. The feed forward capacitor increases the loop bandwidth by adding a zero. This results
+in a lower output voltage drop, as shown in Figure 36. Set the feed forward capacitor zero near 20 kHz for most
+applications. See application report Optimizing Transient Response of Internally Compensated dc-dc Converters
+With Feedforward Capacitor (SLVA289).
+                                                                    L1
+                                                                    1.0µH
+
+
+
+                                 VIN                          VIN           SW
+                                               C1
+                                               22µF           EN        VOUT                                      VOUT
+                                                                                  R1                        C2
+                                                                                          C4
+                                                              HYS           FB    402k    18pF
+                                                                                                            3x22µF
+
+                                                              SS                  R2
+                                                       C3                         100k
+                                                       10nF
+                                                              GND           PG
+                                                                                 R3
+                                                               TPS61230          1.0Meg
+
+
+                          Figure 35. TPS61230 5-V Output with Cff Typical Application
+
+9.2.3.1 Design Requirements
+Refer to the TPS61230 5-V Output Design Requirements section for the design requirements.
+
+9.2.3.2 Detailed Design Procedure
+Refer to the TPS61230 5-V Detailed Design Procedure section for the detailed design procedures.
+
+9.2.3.3 Application Curve
+                                                                                                 t -- 50 µs/div
+
+
+                                       Load (DC, 2 A/div)
+
+
+
+
+                                       PG (DC, 5 V/div)
+
+
+
+                                       Vout (AC, 0.5 V/div)
+
+
+
+
+                                       Icoil (DC, 5 A/div)
+
+
+
+
+                     Figure 36. Load Transient (VOUT = 5 V, IOUT = 0.5 A to 2 A, CFF = 18 pF)
+
+10 Power Supply Recommendations
+The device is designed to operate from an input voltage supply range between 2.3 V and 5.5 V. This input supply
+must be well regulated. If the input supply is located more than a few inches from the converter, additional bulk
+capacitance may be required in addition to the ceramic bypass capacitors. An electrolytic or tantalum capacitor
+with a value of 47 μF is a typical choice.
+
+
+
+
+20      Submit Documentation Feedback                                                                        Copyright © 2014, Texas Instruments Incorporated
+
+                                           Product Folder Links: TPS61230 TPS61231 TPS61232
+                                                                                                TPS61230, TPS61231, TPS61232
+www.ti.com                                                                           SLVSAQ2C – JANUARY 2014 – REVISED OCTOBER 2014
+
+
+11 Layout
+
+11.1 Layout Guidelines
+For all switching power supplies, the layout is an important step in the design, especially at high peak currents
+and high switching frequencies. If the layout is not carefully done, the regulator could show stability problems as
+well as EMI problems. Therefore, use wide and short traces for the main current path and for the power ground
+tracks. The input capacitor, output capacitor, and the inductor should be placed as close as possible to the IC.
+Use a common ground node for power ground and a different one for control ground to minimize the effects of
+ground noise. Connect these ground nodes at the GND pin of the IC. The most critical current path for all boost
+converters is from the switching FET, through the synchronous FET, then the output capacitors, and back to
+ground of the switching FET. Therefore, the output capacitors and their traces should be placed on the same
+board layer as the IC and as close as possible between the IC’s VOUT and GND pin.
+See Figure 37 for the recommended layout.
+
+11.2 Layout Example
+
+                                    Top Layer                               Bottom Layer
+                                          GND           R2               R1
+                                                                                 C3
+                                                                                                        GND
+                         VIN C1 1                                                        C2
+                                                   L1                                     VOUT
+                                                                                 R3
+                                                   Figure 37. Layout Recommendation
+
+
+11.3 Thermal Considerations
+Implementation of integrated circuits in low-profile and fine-pitch surface-mount packages typically requires
+special attention to power dissipation. Many system-dependent issues such as thermal coupling, airflow, added
+heat sinks and convection surfaces, and the presence of other heat-generating components affect the power-
+dissipation limits of a given component.
+Two basic approaches for enhancing thermal performance are listed below.
+• Improving the power dissipation capability of the PCB design
+• Introducing airflow in the system
+
+
+
+
+Copyright © 2014, Texas Instruments Incorporated                                                Submit Documentation Feedback   21
+                                             Product Folder Links: TPS61230 TPS61231 TPS61232
+TPS61230, TPS61231, TPS61232
+SLVSAQ2C – JANUARY 2014 – REVISED OCTOBER 2014                                                                          www.ti.com
+
+
+Thermal Considerations (continued)
+For more details on how to use the thermal parameters in the dissipation ratings table please check the
+application report Thermal Characteristics of Linear and Logic Packages Using JEDEC PCB Designs (SZZA017)
+and the application report Semiconductor and IC Package Thermal Metrics (SPRA953).
+
+
+
+
+22     Submit Documentation Feedback                                                 Copyright © 2014, Texas Instruments Incorporated
+
+                                       Product Folder Links: TPS61230 TPS61231 TPS61232
+                                                                                                 TPS61230, TPS61231, TPS61232
+www.ti.com                                                                               SLVSAQ2C – JANUARY 2014 – REVISED OCTOBER 2014
+
+
+12 Device and Documentation Support
+
+12.1 Device Support
+
+12.1.1 Third-Party Products Disclaimer
+TI'S PUBLICATION OF INFORMATION REGARDING THIRD-PARTY PRODUCTS OR SERVICES DOES NOT
+CONSTITUTE AN ENDORSEMENT REGARDING THE SUITABILITY OF SUCH PRODUCTS OR SERVICES
+OR A WARRANTY, REPRESENTATION OR ENDORSEMENT OF SUCH PRODUCTS OR SERVICES, EITHER
+ALONE OR IN COMBINATION WITH ANY TI PRODUCT OR SERVICE.
+
+12.2 Documentation Support
+12.2.1 Related Documentation
+Optimizing Transient Response of Internally Compensated dc-dc Converters With Feedforward Capacitor
+SLVA289
+Thermal Characteristics of Linear and Logic Packages Using JEDEC PCB Designs (SZZA017)
+Semiconductor and IC Package Thermal Metrics (SPRA953)
+
+12.3 Related Links
+The table below lists quick access links. Categories include technical documents, support and community
+resources, tools and software, and quick access to sample or buy.
+
+                                                         Table 7. Related Links
+                                                                         TECHNICAL                TOOLS &               SUPPORT &
+        PARTS             PRODUCT FOLDER           SAMPLE & BUY
+                                                                         DOCUMENTS               SOFTWARE               COMMUNITY
+       TPS61230                 Click here            Click here            Click here             Click here             Click here
+       TPS61231                 Click here            Click here            Click here             Click here             Click here
+       TPS61232                 Click here            Click here            Click here             Click here             Click here
+
+
+12.4 Trademarks
+All trademarks are the property of their respective owners.
+12.5 Electrostatic Discharge Caution
+          These devices have limited built-in ESD protection. The leads should be shorted together or the device placed in conductive foam
+          during storage or handling to prevent electrostatic damage to the MOS gates.
+
+
+12.6 Glossary
+SLYZ022 — TI Glossary.
+   This glossary lists and explains terms, acronyms, and definitions.
+
+13 Mechanical, Packaging, and Orderable Information
+The following pages include mechanical packaging and orderable information. This information is the most
+current data available for the designated devices. This data is subject to change without notice and revision of
+this document. For browser-based versions of this data sheet, refer to the left-hand navigation.
+
+
+
+
+Copyright © 2014, Texas Instruments Incorporated                                                 Submit Documentation Feedback          23
+                                             Product Folder Links: TPS61230 TPS61231 TPS61232
+                                                                                                                                                                     PACKAGE OPTION ADDENDUM
+
+       www.ti.com                                                                                                                                                                                                   10-Nov-2025
+
+
+
+
+PACKAGING INFORMATION
+
+       Orderable part number          Status     Material type      Package | Pins      Package qty | Carrier       RoHS             Lead finish/               MSL rating/          Op temp (°C)               Part marking
+                                        (1)            (2)                                                            (3)            Ball material              Peak reflow                                           (6)
+                                                                                                                                          (4)                       (5)
+
+          TPS61230DRCR                Active      Production       VSON (DRC) | 10       3000 | LARGE T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                    SBK
+         TPS61230DRCR.B               Active      Production       VSON (DRC) | 10       3000 | LARGE T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                    SBK
+         TPS61230DRCRG4               Active      Production       VSON (DRC) | 10       3000 | LARGE T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                    SBK
+        TPS61230DRCRG4.B              Active      Production       VSON (DRC) | 10       3000 | LARGE T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                    SBK
+          TPS61230DRCT                Active      Production       VSON (DRC) | 10        250 | SMALL T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                    SBK
+         TPS61230DRCT.B               Active      Production       VSON (DRC) | 10        250 | SMALL T&R            Yes               NIPDAU            Level-1-260C-UNLIM            -40 to 125                    SBK
+          TPS61232DRCR                Active      Production       VSON (DRC) | 10       3000 | LARGE T&R            Yes               NIPDAU           Level-2-260C-1 YEAR            -40 to 125                    SBL
+         TPS61232DRCR.B               Active      Production       VSON (DRC) | 10       3000 | LARGE T&R            Yes               NIPDAU           Level-2-260C-1 YEAR            -40 to 125                    SBL
+          TPS61232DRCT                Active      Production       VSON (DRC) | 10        250 | SMALL T&R            Yes               NIPDAU           Level-2-260C-1 YEAR            -40 to 125                    SBL
+         TPS61232DRCT.B               Active      Production       VSON (DRC) | 10        250 | SMALL T&R            Yes               NIPDAU           Level-2-260C-1 YEAR            -40 to 125                    SBL
+
+(1)
+      Status: For more details on status, see our product life cycle.
+
+(2)
+   Material type: When designated, preproduction parts are prototypes/experimental devices, and are not yet approved or released for full production. Testing and final process, including without limitation quality assurance,
+reliability performance testing, and/or process qualification, may not yet be complete, and this item is subject to further changes or possible discontinuation. If available for ordering, purchases will be subject to an additional
+waiver at checkout, and are intended for early internal evaluation purposes only. These items are sold without warranties of any kind.
+
+(3)
+      RoHS values: Yes, No, RoHS Exempt. See the TI RoHS Statement for additional information and value definition.
+
+(4)
+   Lead finish/Ball material: Parts may have multiple material finish options. Finish options are separated by a vertical ruled line. Lead finish/Ball material values may wrap to two lines if the finish value exceeds the maximum
+column width.
+
+(5)
+  MSL rating/Peak reflow: The moisture sensitivity level ratings and peak solder (reflow) temperatures. In the event that a part has multiple moisture sensitivity ratings, only the lowest level per JEDEC standards is shown.
+Refer to the shipping label for the actual reflow temperature that will be used to mount the part to the printed circuit board.
+
+(6)
+      Part marking: There may be an additional marking, which relates to the logo, the lot trace code information, or the environmental category of the part.
+
+Multiple part markings will be inside parentheses. Only one part marking contained in parentheses and separated by a "~" will appear on a part. If a line is indented then it is a continuation of the previous line and the two
+combined represent the entire part marking for that device.
+
+Important Information and Disclaimer:The information provided on this page represents TI's knowledge and belief as of the date that it is provided. TI bases its knowledge and belief on information provided by third parties, and
+makes no representation or warranty as to the accuracy of such information. Efforts are underway to better integrate information from third parties. TI has taken and continues to take reasonable steps to provide representative
+
+
+                                                                                                          Addendum-Page 1
+                                                                                                                                                                      PACKAGE OPTION ADDENDUM
+
+    www.ti.com                                                                                                                                                                                           10-Nov-2025
+
+
+
+
+and accurate information but may not have conducted destructive testing or chemical analysis on incoming materials and chemicals. TI and TI suppliers consider certain information to be proprietary, and thus CAS numbers
+and other limited information may not be available for release.
+
+In no event shall TI's liability arising out of such information exceed the total purchase price of the TI part(s) at issue in this document sold by TI to Customer on an annual basis.
+
+
+
+
+                                                                                                          Addendum-Page 2
+                                                                               PACKAGE MATERIALS INFORMATION
+
+www.ti.com                                                                                                                                       18-Jun-2025
+
+
+
+TAPE AND REEL INFORMATION
+
+       REEL DIMENSIONS                                                                      TAPE DIMENSIONS
+                                                                                       K0       P1
+
+
+
+                                                                                                                      B0 W
+                                        Reel
+                                      Diameter
+                                                                                    Cavity           A0
+                                                                A0   Dimension designed to accommodate the component width
+                                                                B0   Dimension designed to accommodate the component length
+                                                                K0   Dimension designed to accommodate the component thickness
+                                                                W    Overall width of the carrier tape
+                                                                P1   Pitch between successive cavity centers
+
+
+                                       Reel Width (W1)
+                              QUADRANT ASSIGNMENTS FOR PIN 1 ORIENTATION IN TAPE
+
+                                                                                                     Sprocket Holes
+
+
+                                                 Q1        Q2          Q1    Q2
+
+                                                 Q3        Q4          Q3    Q4                  User Direction of Feed
+
+
+
+                                                            Pocket Quadrants
+
+
+*All dimensions are nominal
+             Device           Package Package Pins              SPQ        Reel   Reel   A0                 B0         K0     P1     W     Pin1
+                               Type Drawing                              Diameter Width (mm)               (mm)       (mm)   (mm)   (mm) Quadrant
+                                                                           (mm) W1 (mm)
+     TPS61230DRCR              VSON     DRC           10        3000        330.0        12.4        3.3    3.3       1.1    8.0    12.0    Q2
+   TPS61230DRCRG4              VSON     DRC           10        3000        330.0        12.4        3.3    3.3       1.1    8.0    12.0    Q2
+     TPS61230DRCT              VSON     DRC           10         250        180.0        12.4        3.3    3.3       1.1    8.0    12.0    Q2
+     TPS61232DRCR              VSON     DRC           10        3000        330.0        12.4        3.3    3.3       1.1    8.0    12.0    Q2
+     TPS61232DRCT              VSON     DRC           10         250        180.0        12.4        3.3    3.3       1.1    8.0    12.0    Q2
+
+
+
+
+                                                                       Pack Materials-Page 1
+                                                                PACKAGE MATERIALS INFORMATION
+
+www.ti.com                                                                                                              18-Jun-2025
+
+
+
+ TAPE AND REEL BOX DIMENSIONS
+
+
+
+
+                                                               Width (mm)
+                                                                              H
+
+
+
+
+                      W                                   L
+
+
+
+
+*All dimensions are nominal
+             Device           Package Type   Package Drawing   Pins         SPQ    Length (mm)   Width (mm)   Height (mm)
+     TPS61230DRCR                VSON             DRC           10          3000      346.0        346.0         33.0
+    TPS61230DRCRG4               VSON             DRC           10          3000      346.0        346.0         33.0
+     TPS61230DRCT                VSON             DRC           10          250       182.0        182.0         20.0
+     TPS61232DRCR                VSON             DRC           10          3000      346.0        346.0         33.0
+     TPS61232DRCT                VSON             DRC           10          250       210.0        185.0         35.0
+
+
+
+
+                                                        Pack Materials-Page 2
+                                                                  GENERIC PACKAGE VIEW
+DRC 10                                                                     VSON - 1 mm max height
+3 x 3, 0.5 mm pitch                                                         PLASTIC SMALL OUTLINE - NO LEAD
+
+
+
+
+               This image is a representation of the package family, actual package may vary.
+                             Refer to the product data sheet for package details.
+
+
+
+
+                                                                                                   4226193/A
+
+
+
+
+                                                    www.ti.com
+                                                                                                      PACKAGE OUTLINE
+DRC0010G                                                                                          VSON - 1 mm max height
+                                                                                           PLASTIC QUAD FLATPACK-NO LEAD
+
+                                        B                    3.1                           A
+                                                             2.9
+
+
+
+
+              PIN 1 INDEX AREA
+
+                                                                                           3.1
+                                                                                           2.9
+
+
+
+
+                                 1.0
+                                 0.8                                                              C
+
+                                                                                                         SEATING PLANE
+                                 0.05                                                                 0.08 C
+                                 0.00                     1.6±0.1
+
+                                                6X 0.41                                                            (0.2) TYP
+                                                                              (0.18) TYP
+
+
+                           8X 0.5
+                                            5
+                                                                                     6
+
+
+
+
+                                                               11                        SYMM
+                            2X                                                                   2.1±0.1
+                             2
+                                                               (R0.15)
+                                                                 TYP
+
+
+                                            1
+                                                                                     10
+                          PIN1 ID                                                              10X 0.3
+                                                                                                   0.2
+                        OPTIONAL                                                                  0.1      C A B
+                                                           SYMM     10X 0.5
+                                                                        0.3                       0.05      C
+
+                                                                                                                    4218882/A 12/2020
+
+NOTES:
+
+ 1.   All linear dimensions are in millimeters. Any dimensions in parenthesis are for reference only. Dimensioning and tolerancing
+      per ASME Y14.5M.
+ 2.   This drawing is subject to change without notice.
+ 3.   The package thermal pad must be soldered to the printed circuit board for optimal thermal and mechanical performance.
+
+
+
+
+                                                               www.ti.com
+                                                                                         EXAMPLE BOARD LAYOUT
+DRC0010G                                                                                             VSON - 1 mm max height
+                                                                                                  PLASTIC QUAD FLATPACK-NO LEAD
+
+                                                                         (2.8)
+
+                                                                     SYMM
+                                                                                           8X
+                                                 6X (0.41)                               (0.18)
+                                                                                          TYP            (0.625)
+                                 10X (0.6)                                                                 TYP
+
+                        10X (0.24)
+                                             1
+                                                                                                    10
+
+
+
+                     8X (0.5)
+                                  SYMM                                      11
+                                                                                                                (2.15)
+
+                                                                                                       2X
+                                                                                                     (0.825)
+
+
+                                             5                                                       6
+
+
+                        (R0.05) TYP
+
+
+                                (Ø 0.2) VIA                  2X (0.55)
+                                   TYP
+                                                                         (1.6)
+
+
+
+                                                      LAND PATTERN EXAMPLE
+                                                         EXPOSED METAL SHOWN
+                                                              SCALE: 20X
+
+                         0.07 MAX                                                  0.07 MIN
+                       ALL AROUND                                                ALL AROUND
+                                                       METAL                                                    METAL UNDER
+                                                                                                                SOLDER MASK
+                                                                     EXPOSED METAL
+
+
+                                                       SOLDER MASK                                             SOLDER MASK
+                EXPOSED METAL                          OPENING                                                 OPENING
+
+
+                                   NON- SOLDER MASK                                      SOLDER MASK
+                                        DEFINED                                            DEFINED
+                                     (PREFERRED)
+
+                                                       SOLDER MASK DETAILS
+                                                                                                                         4218882/A 12/2020
+
+NOTES: (continued)
+
+ 4.   This package is designed to be soldered to a thermal pad on the board. For more information, see Texas Instruments literature
+      number SLUA271 (www.ti.com/lit/slua271) .
+ 5.   Vias are optional depending on application, refer to device data sheet. If any vias are implemented, refer to their locations shown
+      on this view. It is recommended that vias under paste be filled, plugged or tented.
+
+
+
+
+                                                                   www.ti.com
+                                                                                EXAMPLE STENCIL DESIGN
+DRC0010G                                                                                      VSON - 1 mm max height
+                                                                                          PLASTIC QUAD FLATPACK-NO LEAD
+
+
+                                                                 (2.8)
+
+                                                                SYMM
+                                                                                   8X
+                                                6X (0.41)                        (0.18)
+                                                                                             8X (0.44)
+                                10X (0.6)
+
+                        10X (0.24)
+                                            1
+                                                                                             10
+                                                                                                              2X
+                                                                                                    2X        (1)
+                                                                                                  (0.96)
+                     8X (0.5)
+
+                                 SYMM                               11
+
+
+
+
+                                                                                                       2X
+                                                                                                     (0.58)
+                                            5                                                6
+
+
+                        (R0.05) TYP
+
+                       EXPOSED METAL
+                                 TYP
+                                                              2X (1.47)
+
+
+
+
+                                                     SOLDER PASTE EXAMPLE
+                                                    BASED ON 0.1 mm THICK STENCIL
+
+                                                            EXPOSED PAD
+                                                   79% PRINTED COVERAGE BY AREA
+                                                             SCALE: 20X
+
+
+
+
+                                                                                                                    4218882/A 12/2020
+
+NOTES: (continued)
+
+ 6.   Laser cutting apertures with trapezoidal walls and rounded corners may offer better paste release. IPC-7525 may have alternate
+      design recommendations.
+
+
+
+
+                                                              www.ti.com
+                                         IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS”
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable
+standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you fully
+indemnify TI and its representatives against any claims, damages, costs, losses, and liabilities arising out of your use of these resources.
+TI’s products are provided subject to TI’s Terms of Sale, TI’s General Quality Guidelines, or other applicable terms available either on
+ti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable
+warranties or warranty disclaimers for TI products. Unless TI explicitly designates a product as custom or customer-specified, TI products
+are standard, catalog, general purpose devices.
+TI objects to and rejects any additional or different terms you may propose.
+IMPORTANT NOTICE
+
+                                                Copyright © 2025, Texas Instruments Incorporated
+                                                                Last updated 10/2025
+

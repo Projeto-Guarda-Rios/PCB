@@ -1,0 +1,8 @@
+[INFO] Created Kicad footprint for ID: C5187468
+       Footprint name: USB-C-SMD_TYPE-C-16P-LTH6.8
+       Footprint path: /home/dauwt/Projects/Guarda Rios/PCB/.backplane/worktrees/backplane-38d7e810/PGR - PCB/PGR - PCB/build/vertical-usb/imported.pretty/USB-C-SMD_TYPE-C-16P-LTH6.8.kicad_mod
+[INFO] Created 3D model for ID: C5187468
+       3D model name: USB-C-SMD_TYPE-C-16P-LTH6.8
+       3D model path (wrl): /home/dauwt/Projects/Guarda Rios/PCB/.backplane/worktrees/backplane-38d7e810/PGR - PCB/PGR - PCB/build/vertical-usb/imported.3dshapes/USB-C-SMD_TYPE-C-16P-LTH6.8.wrl
+       3D model path (step): /home/dauwt/Projects/Guarda Rios/PCB/.backplane/worktrees/backplane-38d7e810/PGR - PCB/PGR - PCB/build/vertical-usb/imported.3dshapes/USB-C-SMD_TYPE-C-16P-LTH6.8.step
+-- easyeda2kicad.py v1.0.1 --

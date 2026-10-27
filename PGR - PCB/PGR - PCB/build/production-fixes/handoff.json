@@ -1,0 +1,98 @@
+{
+  "scope": "Canonical PGR schematic corrected; PCB layout deliberately unchanged.",
+  "hardware": {
+    "modem": "M5Stack Unit NB-IoT2 U111-B, SIM7028",
+    "cell_primary": "LGABHG21865 / LG HG2",
+    "cell_alternative": "NIMO BAT534 ICR18650 2400mAh 3.7V",
+    "cell_count": 1,
+    "battery_enable_switch": "Nidec CHS-01A, low-current control only",
+    "battery_switch_MOSFETs": "Q4 and Q9, DMP2035U-7 common-source back-to-back pair"
+  },
+  "changes": [
+    "Corrected USB auto-program transistor orientation and reset timing.",
+    "Replaced marginal 5V boost and hot 3.3V LDO with TPS61230 and TLV62568; added TPS3808 reset supervisor.",
+    "Added normal low-battery cutoff near 3.21V with restart near 3.57V.",
+    "Added reverse-blocking source selection, protected USB fallback and separately limited modem/AquaNode supplies.",
+    "Added battery and solar reverse-polarity protection and a high-interrupting-capacity 3A cell fuse.",
+    "Implemented external cell NTC charge-temperature window and explicit approximately 24mA charge termination.",
+    "Corrected active-low status indicators and reduced optional LED consumption.",
+    "Separated RS485 receiver and driver enables; increased idle bias margin.",
+    "Added modem UART buffers with independent output enable to prevent phantom powering.",
+    "Moved tamper input to RTC-capable GPIO33 and solar status to GPIO34, freeing four JTAG pins.",
+    "Added battery/NTC telemetry, UART0 and JTAG access, and eight test points.",
+    "Reorganized the schematic onto A2 and preserved complete reviewed symbols in a project-local library.",
+    "Moved SW4 into a <40uA control path and added a back-to-back low-resistance MOSFET battery disconnect.",
+    "Added JP1 UART RX source selection to prevent CP2102/external-adapter output contention.",
+    "Excluded TH1 from the PCB and froze a project-local USB footprint with S1 shield numbering."
+  ],
+  "firmware": {
+    "RS485": {
+      "RX": 4,
+      "TX": 5,
+      "DE": 22,
+      "nRE": 23,
+      "sleep": "DE=0, nRE=1"
+    },
+    "modem": {
+      "TX": 17,
+      "RX": 16,
+      "power_enable": 25,
+      "UART_buffer_enable": 27,
+      "sequence": "Enable GPIO25, wait for module rail, then enable GPIO27. Disable GPIO27 before cutting GPIO25. Keep module powered if preserving PSM state.",
+      "USB_only": "Keep modem disabled when operating solely from USB fallback; total USB current is limited below 500mA."
+    },
+    "AquaNode": {
+      "power_enable": 26,
+      "default": "ON",
+      "policy": "Keep powered while parent sleeps; power cycle only for recovery."
+    },
+    "tamper": {
+      "GPIO": 33,
+      "capability": "RTC wake",
+      "pin_map": "J7.1 3.3V, J7.2 GND, J7.3 signal"
+    },
+    "status": {
+      "charge_active_low": 21,
+      "solar_good_active_low": 34,
+      "boost_selected_active_high": 35
+    },
+    "ADC": {
+      "battery": 36,
+      "NTC": "Configure appropriate ADC attenuation and calibrate probe.",
+      "battery_scale": "Vcell * 270/1270; calibrate ADC, allow >=200ms settling"
+    },
+    "JTAG": {
+      "J13.1": "3.3V reference",
+      "J13.2": "GND",
+      "J13.3": "GPIO13 TCK",
+      "J13.4": "GPIO14 TMS",
+      "J13.5": "GPIO12 TDI, keep low during boot",
+      "J13.6": "GPIO15 TDO"
+    },
+    "UART0_debug": {
+      "J14.1": "GND",
+      "J14.2": "3.3V reference",
+      "J14.3": "ESP TX",
+      "J14.4": "ESP RX"
+    }
+  },
+  "assembly": {
+    "NTC": "TH1 is offboard and excluded from PCB; retain Semitec103AT-2 probe in harness BOM through J12.",
+    "power_LED": "D8 and R14 are DNP by default.",
+    "M5_cable": "PGR J8.1 GND -> M5 black J1.4; J8.2 switched5V -> M5 red J1.3; J8.3 module RX -> M5 yellow J1.2; J8.4 module TX -> M5 white J1.1.",
+    "UART_selector": "Fit one Harwin M7567-05 shunt on JP1: pins1-2 USB default, pins2-3 external UART. Never bridge all three.",
+    "USB_footprint": "Use project-local PGR-FootPrints:USB_C_GCT_USB4105_PGR; shield pads S1 match schematic."
+  },
+  "remaining_before_production": [
+    "Synchronize the PCB with the corrected schematic, then place/route the changed power circuitry and run DRC.",
+    "Verify startup, solar/battery handover, USB fallback, modem current bursts, charge cutoff/temperature faults, reset and programming on a prototype.",
+    "Measure cable voltage drop at AquaNode under actual sensor load.",
+    "Confirm exact solar panel output, worst-month energy budget and measured station consumption.",
+    "Validate charge-temperature trip points using the actual mounted probe."
+  ],
+  "validation": "../review-corrections/validation.json",
+  "erc": "../review-corrections/erc.json",
+  "netlist": "../review-corrections/netlist.xml",
+  "schematic_sha256": "8c670f595a2d040379fc8ecf81aa4934954c7dd30f7d9837dda1436def614d8c",
+  "correction_closure": "../review-corrections/closure.json"
+}

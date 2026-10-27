@@ -1,0 +1,159 @@
+BT1 1S Li-ion 4.2V [Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical]  {'2': 'CELL_N', '1': 'CELL_P'}
+BZ1 AI-1223-TWT-5V-2-R [Buzzer_Beeper:Buzzer_12x9.5RM7.6] AI-1223-TWT-5V-2-R {'1': '+5V', '2': 'BUZZ_SW'}
+C1 4.7uF [Capacitor_SMD:C_0805_2012Metric]  {'2': '+5V_PROGRAM', '1': 'GND'}
+C2 1uF [Capacitor_SMD:C_0603_1608Metric]  {'1': 'EN', '2': 'GND'}
+C3 0.1uF [Capacitor_SMD:C_0603_1608Metric]  {'2': '+3.3V', '1': 'GND'}
+C4 10uF [Capacitor_SMD:C_0805_2012Metric]  {'2': '+3.3V', '1': 'GND'}
+C5 22uF [Capacitor_SMD:C_1210_3225Metric] C3225X7R1C226M250AC {'1': 'GND', '2': 'VBUS'}
+C6 10uF [Capacitor_SMD:C_0805_2012Metric]  {'2': '+3.3V', '1': 'GND'}
+C7 0.1uF [Capacitor_SMD:C_0603_1608Metric]  {'2': '+3.3V', '1': 'GND'}
+C8 22uF [Capacitor_SMD:C_1210_3225Metric] C3225X7R1C226M250AC {'1': '+5V', '2': 'GND'}
+C9 22uF [Capacitor_SMD:C_1210_3225Metric] C3225X7R1C226M250AC {'1': '+3.3V', '2': 'GND'}
+C10 100nF [Capacitor_SMD:C_0603_1608Metric]  {'1': '+3.3V', '2': 'GND'}
+C11 22uF [Capacitor_SMD:C_1210_3225Metric] C3225X7R1C226M250AC {'2': 'BAT_PROTECTED', '1': 'GND'}
+C12 0.1uF [Capacitor_SMD:C_0603_1608Metric]  {'1': 'BAT_PROTECTED', '2': 'BMS_NEG'}
+C13 22uF [Capacitor_SMD:C_1210_3225Metric] C3225X7R1C226M250AC {'2': 'GND', '1': 'PWR_OUT'}
+C14 22uF [Capacitor_SMD:C_1210_3225Metric] C3225X7R1C226M250AC {'1': 'BOOST_5V', '2': 'GND'}
+C15 10nF [Capacitor_SMD:C_0603_1608Metric]  {'1': 'BOOST_SS', '2': 'GND'}
+C17 100nF [Capacitor_SMD:C_0603_1608Metric]  {'2': '+3.3V', '1': 'GND'}
+C18 22uF [Capacitor_SMD:C_1210_3225Metric] C3225X7R1C226M250AC {'1': 'BOOST_5V', '2': 'GND'}
+C19 22uF [Capacitor_SMD:C_1210_3225Metric] C3225X7R1C226M250AC {'1': 'BOOST_5V', '2': 'GND'}
+C20 100nF [Capacitor_SMD:C_0603_1608Metric]  {'1': '+3.3V', '2': 'GND'}
+C21 1nF [Capacitor_SMD:C_0603_1608Metric]  {'2': '+5V_PROGRAM', '1': 'USB_SLEW'}
+C22 22uF [Capacitor_SMD:C_1210_3225Metric] C3225X7R1C226M250AC {'1': '+5V', '2': 'GND'}
+C23 1nF [Capacitor_SMD:C_0603_1608Metric]  {'2': '+5V', '1': 'U9_SLEW'}
+C24 1nF [Capacitor_SMD:C_0603_1608Metric]  {'2': '+5V', '1': 'U10_SLEW'}
+C25 100nF [Capacitor_SMD:C_0603_1608Metric]  {'1': 'BAT_NTC', '2': 'GND'}
+C26 100nF [Capacitor_SMD:C_0603_1608Metric]  {'1': '+3.3V', '2': 'GND'}
+C27 100nF [Capacitor_SMD:C_0603_1608Metric]  {'1': '+3.3V', '2': 'GND'}
+C28 100nF [Capacitor_SMD:C_0603_1608Metric]  {'1': '+3.3V', '2': 'GND'}
+C29 100nF [Capacitor_SMD:C_0603_1608Metric]  {'1': 'BATT_ADC', '2': 'GND'}
+C30 100nF [Capacitor_SMD:C_0603_1608Metric]  {'2': 'GND', '1': 'NTC_ADC'}
+C31 100nF [Capacitor_SMD:C_0603_1608Metric]  {'2': 'GND', '1': 'IO33'}
+C32 22uF [Capacitor_SMD:C_1210_3225Metric] C3225X7R1C226M250AC {'2': 'GND', '1': 'MODEM_5V'}
+C33 22uF [Capacitor_SMD:C_1210_3225Metric] C3225X7R1C226M250AC {'2': 'GND', '1': 'MODEM_5V'}
+C34 22uF [Capacitor_SMD:C_1210_3225Metric] C3225X7R1C226M250AC {'2': 'GND', '1': 'NODE_5V'}
+C35 100nF [Capacitor_SMD:C_0603_1608Metric]  {'1': '+5V_PROGRAM', '2': 'GND'}
+C36 100nF [Capacitor_SMD:C_0603_1608Metric]  {'1': '+5V', '2': 'GND'}
+C37 100nF [Capacitor_SMD:C_0603_1608Metric]  {'1': '+5V', '2': 'GND'}
+D3 LESD5D5.0CT1G [LESD5D5.0CT1G:TVS_LESD5D5.0CT1G] LESD5D5.0CT1G {'1': '+5V_PROGRAM', '2': 'GND'}
+D4 LESD5D5.0CT1G [LESD5D5.0CT1G:TVS_LESD5D5.0CT1G] LESD5D5.0CT1G {'1': 'D-', '2': 'GND'}
+D5 LESD5D5.0CT1G [LESD5D5.0CT1G:TVS_LESD5D5.0CT1G] LESD5D5.0CT1G {'1': 'D+', '2': 'GND'}
+D6 SM712_SOT23 [Package_TO_SOT_SMD:SOT-23]  {'3': 'GND', '1': 'RS-485-A', '2': 'RS-485-B'}
+D7 BLUE [LED_SMD:LED_0603_1608Metric]  {'1': 'IO18', '2': 'Net-(D7-A)'}
+D8 RED [LED_SMD:LED_0603_1608Metric]  {'1': 'GND', '2': 'Net-(D8-A)'}
+D9 BLUE [LED_SMD:LED_0603_1608Metric]  {'1': 'IO21', '2': 'Net-(D9-A)'}
+D10 BLUE [LED_SMD:LED_0603_1608Metric]  {'1': 'IO34', '2': 'Net-(D10-A)'}
+D13 1N4148W [Diode_SMD:D_SOD-123] 1N4148W-7-F {'1': 'BAT_DETECT', '2': 'BMS_NEG'}
+D14 SS14 [Diode_SMD:D_SMA] SS14 {'1': '+5V', '2': 'BUZZ_SW'}
+F1 3A fast [Fuse:Fuse_Littelfuse-NANO2-451_453] 0451003.MRL {'2': 'CELL_FUSED', '1': 'CELL_P'}
+IC1 TLV62568 [Package_TO_SOT_SMD:SOT-23-5] TLV62568DBVR {'1': '+5V', '4': '+5V', '5': 'BUCK_FB', '3': 'BUCK_SW', '2': 'GND'}
+J1 Conn_01x16 [Connector_PinSocket_2.00mm:PinSocket_1x16_P2.00mm_Vertical]  {'5': '+3.3V', '6': '+3.3V', '3': '+5V', '4': '+5V', '15': 'BOOST_ACTIVE', '1': 'GND', '2': 'GND', '8': 'IO12', '7': 'IO13', '9': 'IO14', '12': 'IO25', '11': 'IO26', '10': 'IO27', '14': 'IO32', '13': 'IO33', '16': 'IO34'}
+J7 Conn_01x03 [Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical]  {'1': '+3.3V', '2': 'GND', '3': 'TAMPER_EXT'}
+J8 Conn_01x04 [Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical]  {'1': 'GND', '2': 'MODEM_5V', '3': 'MODEM_RX', '4': 'MODEM_TX'}
+J9 USB_C_Receptacle [Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal]  {'A4': '+5V_PROGRAM', 'A9': '+5V_PROGRAM', 'B4': '+5V_PROGRAM', 'B9': '+5V_PROGRAM', 'A6': 'D+', 'B6': 'D+', 'A7': 'D-', 'B7': 'D-', 'A1': 'GND', 'A12': 'GND', 'B1': 'GND', 'B12': 'GND', 'S1': 'GND', 'A5': 'Net-(J9-CC1)', 'B5': 'Net-(J9-CC2)', 'B11': 'unconnected-(J9-RX1+-PadB11)', 'B10': 'unconnected-(J9-RX1--PadB10)', 'A11': 'unconnected-(J9-RX2+-PadA11)', 'A10': 'unconnected-(J9-RX2--PadA10)', 'A8': 'unconnected-(J9-SBU1-PadA8)', 'B8': 'unconnected-(J9-SBU2-PadB8)', 'A2': 'unconnected-(J9-TX1+-PadA2)', 'A3': 'unconnected-(J9-TX1--PadA3)', 'B2': 'unconnected-(J9-TX2+-PadB2)', 'B3': 'unconnected-(J9-TX2--PadB3)'}
+J10 Conn_01x02 [Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical]  {'1': 'GND', '2': 'SOLAR_RAW'}
+J11 Conn_01x04 [Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical]  {'4': 'GND', '3': 'NODE_5V', '1': 'RS-485-A', '2': 'RS-485-B'}
+J12 BATTERY_NTC [Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical]  {'1': 'BAT_NTC', '2': 'GND'}
+J13 JTAG [Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical]  {'1': '+3.3V', '2': 'GND', '5': 'IO12', '3': 'IO13', '4': 'IO14', '6': 'IO15'}
+J14 UART0 DEBUG [Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical]  {'2': '+3.3V', '1': 'GND', '3': 'RXD0', '4': 'TXD0'}
+L1 1uH [Inductor_SMD:L_Coilcraft_XAL4020-XXX] XAL4020-102MEC {'2': 'BOOST_SW', '1': 'PWR_OUT'}
+L2 2.2uH [Inductor_SMD:L_Coilcraft_XAL4020-XXX] XAL4020-222MEC {'2': '+3.3V', '1': 'BUCK_SW'}
+Q1 SS8050-G [SS8050-G:TRANS_SS8050-G] SS8050-G {'3': 'EN', '1': 'Net-(Q1-Pad1)', '2': 'USB_RTS'}
+Q2 SS8050-G [SS8050-G:TRANS_SS8050-G] SS8050-G {'3': 'IO0_BTN', '1': 'Net-(Q2-Pad1)', '2': 'USB_DTR'}
+Q3 FS8205A [FS8205A:SOP65P640X120-8N] FS8205A {'6': 'BMS_NEG', '7': 'BMS_NEG', '2': 'GND', '3': 'GND', '4': 'Net-(U6-OC)', '5': 'Net-(U6-OD)', '1': 'unconnected-(Q3-Pad1)', '8': 'unconnected-(Q3-Pad1)'}
+Q4 AO3401A [Package_TO_SOT_SMD:SOT-23] AO3401A {'1': 'BAT_GATE', '2': 'BAT_PROTECTED', '3': 'CELL_FUSED'}
+Q5 AO3401A [Package_TO_SOT_SMD:SOT-23] AO3401A {'1': 'GND', '3': 'SOLAR_RAW', '2': 'VBUS'}
+Q6 SS8050-G [SS8050-G:TRANS_SS8050-G] SS8050-G {'1': 'BUZZ_B', '3': 'BUZZ_SW', '2': 'GND'}
+Q7 SS8050-G [SS8050-G:TRANS_SS8050-G] SS8050-G {'1': 'BAT_DETECT', '3': 'BAT_GATE', '2': 'BMS_NEG'}
+Q8 2N7002 [Package_TO_SOT_SMD:SOT-23] 2N7002-7-F {'3': 'CHG_CE', '2': 'GND', '1': 'TEMP_OK'}
+R1 2kR [Resistor_SMD:R_0603_1608Metric]  {'1': 'GND', '2': 'Net-(U1-ISET)'}
+R2 2K [Resistor_SMD:R_0603_1608Metric]  {'1': 'GND', '2': 'Net-(U1-ILIM)'}
+R3 120R [Resistor_SMD:R_0603_1608Metric]  {'1': 'RS-485-A', '2': 'RS-485-B'}
+R4 5.1K [Resistor_SMD:R_0603_1608Metric]  {'2': 'GND', '1': 'Net-(J9-CC1)'}
+R5 5.1K [Resistor_SMD:R_0603_1608Metric]  {'2': 'GND', '1': 'Net-(J9-CC2)'}
+R6 22.1K [Resistor_SMD:R_0603_1608Metric]  {'1': '+5V_PROGRAM', '2': 'Net-(U4-VBUS)'}
+R7 47.5K [Resistor_SMD:R_0603_1608Metric]  {'2': 'GND', '1': 'Net-(U4-VBUS)'}
+R8 2K [Resistor_SMD:R_0603_1608Metric]  {'1': '+3.3V', '2': 'Net-(U4-~{RST})'}
+R9 10K [Resistor_SMD:R_0603_1608Metric]  {'1': '+3.3V', '2': 'IO0_BTN'}
+R10 10K [Resistor_SMD:R_0603_1608Metric]  {'1': '+3.3V', '2': 'EN'}
+R11 100R [Resistor_SMD:R_0603_1608Metric]  {'1': 'BAT_PROTECTED', '2': 'BMS_VCC'}
+R12 22R [Resistor_SMD:R_0603_1608Metric]  {'2': 'IO0_BTN', '1': 'Net-(U5-IO0)'}
+R13 2.2kR [Resistor_SMD:R_0603_1608Metric]  {'1': '+3.3V', '2': 'Net-(D7-A)'}
+R14 10kR [Resistor_SMD:R_0603_1608Metric]  {'2': '+3.3V', '1': 'Net-(D8-A)'}
+R15 10K [Resistor_SMD:R_0603_1608Metric]  {'2': 'Net-(Q1-Pad1)', '1': 'USB_DTR'}
+R16 10K [Resistor_SMD:R_0603_1608Metric]  {'2': 'Net-(Q2-Pad1)', '1': 'USB_RTS'}
+R17 2K [Resistor_SMD:R_0603_1608Metric]  {'2': 'GND', '1': 'Net-(U6-CS)'}
+R18 470R [Resistor_SMD:R_0603_1608Metric]  {'1': '+5V', '2': 'RS-485-A'}
+R19 10K [Resistor_SMD:R_0603_1608Metric]  {'2': '+3.3V', '1': 'IO21'}
+R20 10K [Resistor_SMD:R_0603_1608Metric]  {'2': '+3.3V', '1': 'IO34'}
+R21 4.7kR [Resistor_SMD:R_0603_1608Metric]  {'1': '+3.3V', '2': 'Net-(D9-A)'}
+R22 402kR [Resistor_SMD:R_0603_1608Metric] RT0603BRD07402KL {'1': 'BOOST_5V', '2': 'BOOST_FB'}
+R23 100kR [Resistor_SMD:R_0603_1608Metric] RT0603BRD07100KL {'1': 'BOOST_FB', '2': 'GND'}
+R24 4.7kR [Resistor_SMD:R_0603_1608Metric]  {'1': '+3.3V', '2': 'Net-(D10-A)'}
+R25 10K [Resistor_SMD:R_0603_1608Metric]  {'2': 'GND', '1': 'IO2'}
+R28 470R [Resistor_SMD:R_0603_1608Metric]  {'2': 'GND', '1': 'RS-485-B'}
+R29 10K [Resistor_SMD:R_0603_1608Metric]  {'2': 'GND', '1': 'IO22'}
+R30 68kR [Resistor_SMD:R_0603_1608Metric]  {'1': 'GND', '2': 'Net-(U1-TMR)'}
+R31 10kR [Resistor_SMD:R_0603_1608Metric]  {'2': 'GND', '1': 'TS_FIXED'}
+R32 200kR [Resistor_SMD:R_0603_1608Metric]  {'2': 'BOOST_EN', '1': 'PWR_OUT'}
+R33 100kR [Resistor_SMD:R_0603_1608Metric]  {'1': 'BOOST_EN', '2': 'BOOST_HYS'}
+R34 10kR [Resistor_SMD:R_0603_1608Metric]  {'1': 'BOOST_HYS', '2': 'GND'}
+R35 450kR [Resistor_SMD:R_0603_1608Metric]  {'1': '+3.3V', '2': 'BUCK_FB'}
+R36 100kR [Resistor_SMD:R_0603_1608Metric]  {'1': 'BUCK_FB', '2': 'GND'}
+R37 620R [Resistor_SMD:R_0603_1608Metric]  {'2': 'GND', '1': 'USB_ILIM'}
+R38 312kR [Resistor_SMD:R_0603_1608Metric]  {'1': 'BOOST_5V', '2': 'BOOST_PR'}
+R39 100kR [Resistor_SMD:R_0603_1608Metric]  {'1': 'BOOST_PR', '2': 'GND'}
+R40 100kR [Resistor_SMD:R_0603_1608Metric]  {'1': '+3.3V', '2': 'BOOST_ACTIVE'}
+R41 330R [Resistor_SMD:R_0603_1608Metric]  {'2': 'GND', '1': 'U9_ILIM'}
+R42 1kR [Resistor_SMD:R_0603_1608Metric]  {'2': 'GND', '1': 'U10_ILIM'}
+R43 100kR [Resistor_SMD:R_0603_1608Metric]  {'2': 'GND', '1': 'IO25'}
+R44 100kR [Resistor_SMD:R_0603_1608Metric]  {'1': '+3.3V', '2': 'IO26'}
+R45 10kR [Resistor_SMD:R_0603_1608Metric]  {'1': '+3.3V', '2': 'BAT_NTC'}
+R46 178kR [Resistor_SMD:R_0603_1608Metric]  {'1': '+3.3V', '2': 'NTC_HOT'}
+R47 100kR [Resistor_SMD:R_0603_1608Metric]  {'2': 'GND', '1': 'NTC_HOT'}
+R48 43.2kR [Resistor_SMD:R_0603_1608Metric]  {'1': '+3.3V', '2': 'NTC_COLD'}
+R49 100kR [Resistor_SMD:R_0603_1608Metric]  {'2': 'GND', '1': 'NTC_COLD'}
+R50 100kR [Resistor_SMD:R_0603_1608Metric]  {'1': '+3.3V', '2': 'TEMP_OK'}
+R51 100kR [Resistor_SMD:R_0603_1608Metric]  {'2': 'CHG_CE', '1': 'PWR_OUT'}
+R53 100kR [Resistor_SMD:R_0603_1608Metric]  {'2': 'BAT_GATE', '1': 'BAT_PROTECTED'}
+R54 100kR [Resistor_SMD:R_0603_1608Metric]  {'2': 'BAT_DETECT', '1': 'CELL_FUSED'}
+R60 100kR [Resistor_SMD:R_0603_1608Metric]  {'2': 'GND', '1': 'IO27'}
+R61 100kR [Resistor_SMD:R_0603_1608Metric]  {'2': 'GND', '1': 'MODEM_TX'}
+R62 100kR [Resistor_SMD:R_0603_1608Metric]  {'1': '+3.3V', '2': 'IO16'}
+R63 100kR [Resistor_SMD:R_0603_1608Metric]  {'1': '+3.3V', '2': 'IO17'}
+R64 1kR [Resistor_SMD:R_0603_1608Metric]  {'2': 'BUZZ_B', '1': 'IO19'}
+R65 100kR [Resistor_SMD:R_0603_1608Metric]  {'1': 'BUZZ_B', '2': 'GND'}
+R66 1MR [Resistor_SMD:R_0603_1608Metric]  {'2': 'BATT_ADC', '1': 'BAT_PROTECTED'}
+R67 270kR [Resistor_SMD:R_0603_1608Metric]  {'1': 'BATT_ADC', '2': 'GND'}
+R68 100kR [Resistor_SMD:R_0603_1608Metric]  {'1': 'BAT_NTC', '2': 'NTC_ADC'}
+R69 100kR [Resistor_SMD:R_0603_1608Metric]  {'1': '+3.3V', '2': 'TAMPER_EXT'}
+R70 1kR [Resistor_SMD:R_0603_1608Metric]  {'2': 'IO33', '1': 'TAMPER_EXT'}
+R71 100kR [Resistor_SMD:R_0603_1608Metric]  {'2': 'GND', '1': 'IO12'}
+R72 1.6kR [Resistor_SMD:R_0603_1608Metric]  {'2': 'GND', '1': 'ITERM_SET'}
+SW1 BOOT [Button_Switch_SMD:SW_SPST_B3U-1000P]  {'1': 'GND', '2': 'IO0_BTN'}
+SW2 RESET [Button_Switch_SMD:SW_SPST_B3U-1000P]  {'2': 'EN', '1': 'GND'}
+SW4 BATTERY DISCONNECT [Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin]  {'1': 'BMS_NEG', '2': 'CELL_N'}
+TH1 103AT-2 10kR [None] 103AT-2 {'1': 'BAT_NTC', '2': 'GND'}
+TP1 TP [TestPoint:TestPoint_Pad_D1.0mm]  {'1': 'GND'}
+TP2 TP [TestPoint:TestPoint_Pad_D1.0mm]  {'1': '+3.3V'}
+TP3 TP [TestPoint:TestPoint_Pad_D1.0mm]  {'1': '+5V'}
+TP4 TP [TestPoint:TestPoint_Pad_D1.0mm]  {'1': 'PWR_OUT'}
+TP5 TP [TestPoint:TestPoint_Pad_D1.0mm]  {'1': 'BAT_PROTECTED'}
+TP6 TP [TestPoint:TestPoint_Pad_D1.0mm]  {'1': 'MODEM_5V'}
+TP7 TP [TestPoint:TestPoint_Pad_D1.0mm]  {'1': 'NODE_5V'}
+TP8 TP [TestPoint:TestPoint_Pad_D1.0mm]  {'1': 'EN'}
+U1 BQ24074RGT [Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm]  {'2': 'BAT_PROTECTED', '3': 'BAT_PROTECTED', '4': 'CHG_CE', '17': 'GND', '5': 'GND', '8': 'GND', '9': 'IO21', '7': 'IO34', '15': 'ITERM_SET', '12': 'Net-(U1-ILIM)', '16': 'Net-(U1-ISET)', '14': 'Net-(U1-TMR)', '10': 'PWR_OUT', '11': 'PWR_OUT', '6': 'PWR_OUT', '1': 'TS_FIXED', '13': 'VBUS'}
+U3 TPS61230 [Package_SON:Texas_S-PVSON-N10_ThermalVias] TPS61230DRCR {'3': 'BOOST_5V', '4': 'BOOST_5V', '9': 'BOOST_EN', '7': 'BOOST_FB', '8': 'BOOST_HYS', '6': 'BOOST_SS', '1': 'BOOST_SW', '2': 'BOOST_SW', '11': 'GND', '10': 'PWR_OUT', '5': 'unconnected-(U3-PG-Pad5)'}
+U4 CP2102N-A02-GQFN28 [Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm]  {'6': '+3.3V', '7': '+3.3V', '4': 'D+', '5': 'D-', '29': 'GND', '3': 'GND', '8': 'Net-(U4-VBUS)', '9': 'Net-(U4-~{RST})', '25': 'RXD0', '26': 'TXD0', '28': 'USB_DTR', '24': 'USB_RTS', '15': 'unconnected-(U4-CHR0-Pad15)', '14': 'unconnected-(U4-CHR1-Pad14)', '13': 'unconnected-(U4-CHREN-Pad13)', '22': 'unconnected-(U4-GPIO.4-Pad22)', '21': 'unconnected-(U4-GPIO.5-Pad21)', '20': 'unconnected-(U4-GPIO.6-Pad20)', '10': 'unconnected-(U4-NC-Pad10)', '17': 'unconnected-(U4-RS485/GPIO.2-Pad17)', '12': 'unconnected-(U4-SUSPEND-Pad12)', '23': 'unconnected-(U4-~{CTS}-Pad23)', '1': 'unconnected-(U4-~{DCD}-Pad1)', '27': 'unconnected-(U4-~{DSR}-Pad27)', '2': 'unconnected-(U4-~{RI}/CLK-Pad2)', '18': 'unconnected-(U4-~{RXT}/GPIO.1-Pad18)', '11': 'unconnected-(U4-~{SUSPEND}-Pad11)', '19': 'unconnected-(U4-~{TXT}/GPIO.0-Pad19)', '16': 'unconnected-(U4-~{WAKEUP}/GPIO.3-Pad16)'}
+U5 ESP32-WROOM-32E [RF_Module:ESP32-WROOM-32D]  {'2': '+3.3V', '4': 'BATT_ADC', '7': 'BOOST_ACTIVE', '3': 'EN', '1': 'GND', '15': 'GND', '38': 'GND', '39': 'GND', '24': 'IO2', '26': 'IO4', '29': 'IO5', '14': 'IO12', '16': 'IO13', '13': 'IO14', '23': 'IO15', '27': 'IO16', '28': 'IO17', '30': 'IO18', '31': 'IO19', '33': 'IO21', '36': 'IO22', '37': 'IO23', '10': 'IO25', '11': 'IO26', '12': 'IO27', '8': 'IO32', '9': 'IO33', '6': 'IO34', '5': 'NTC_ADC', '25': 'Net-(U5-IO0)', '35': 'RXD0', '34': 'TXD0', '17': 'unconnected-(U5-NC-Pad17)', '18': 'unconnected-(U5-NC-Pad18)', '19': 'unconnected-(U5-NC-Pad19)', '20': 'unconnected-(U5-NC-Pad20)', '21': 'unconnected-(U5-NC-Pad21)', '22': 'unconnected-(U5-NC-Pad22)', '32': 'unconnected-(U5-NC-Pad32)'}
+U6 DW01A [Package_TO_SOT_SMD:SOT-23-6]  {'6': 'BMS_NEG', '5': 'BMS_VCC', '2': 'Net-(U6-CS)', '3': 'Net-(U6-OC)', '1': 'Net-(U6-OD)', '4': 'unconnected-(U6-TD-Pad4)'}
+U7 TPS2116 [Package_TO_SOT_SMD:SOT-583-8] TPS2116DRLR {'2': '+5V', '7': '+5V', '3': 'BOOST_5V', '5': 'BOOST_5V', '8': 'BOOST_ACTIVE', '4': 'BOOST_PR', '1': 'GND', '6': 'USB_LIMIT'}
+U8 MAX3485 [Package_SO:SOIC-8_3.9x4.9mm_P1.27mm]  {'8': '+3.3V', '5': 'GND', '1': 'IO4', '4': 'IO5', '3': 'IO22', '2': 'IO23', '6': 'RS-485-A', '7': 'RS-485-B'}
+U9 MIC2007 [Package_TO_SOT_SMD:SOT-23-6] MIC2007YM6-TR {'1': '+5V', '2': 'GND', '3': 'IO25', '6': 'MODEM_5V', '4': 'U9_ILIM', '5': 'U9_SLEW'}
+U10 MIC2007 [Package_TO_SOT_SMD:SOT-23-6] MIC2007YM6-TR {'1': '+5V', '2': 'GND', '3': 'IO26', '6': 'NODE_5V', '4': 'U10_ILIM', '5': 'U10_SLEW'}
+U11 MIC2007 [Package_TO_SOT_SMD:SOT-23-6] MIC2007YM6-TR {'1': '+5V_PROGRAM', '3': '+5V_PROGRAM', '2': 'GND', '4': 'USB_ILIM', '6': 'USB_LIMIT', '5': 'USB_SLEW'}
+U12 TPS3808G33 [Package_TO_SOT_SMD:SOT-23-6] TPS3808G33DBVR {'3': '+3.3V', '5': '+3.3V', '6': '+3.3V', '1': 'EN', '2': 'GND', '4': 'unconnected-(U12-CT-Pad4)'}
+U13 MCP6566 [Package_TO_SOT_SMD:SOT-23-5] MCP6566T-E/OT {'5': '+3.3V', '3': 'BAT_NTC', '2': 'GND', '4': 'NTC_HOT', '1': 'TEMP_OK'}
+U14 MCP6566 [Package_TO_SOT_SMD:SOT-23-5] MCP6566T-E/OT {'5': '+3.3V', '4': 'BAT_NTC', '2': 'GND', '3': 'NTC_COLD', '1': 'TEMP_OK'}
+U15 74LVC2G126 [Package_SO:VSSOP-8_2.3x2mm_P0.5mm] SN74LVC2G126DCUR {'8': '+3.3V', '4': 'GND', '3': 'IO16', '2': 'IO17', '1': 'IO27', '7': 'IO27', '6': 'MODEM_RX', '5': 'MODEM_TX'}

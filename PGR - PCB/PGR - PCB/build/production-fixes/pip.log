@@ -1,0 +1,51 @@
+Collecting protobuf==5.29.6
+  Downloading protobuf-5.29.6-cp38-abi3-manylinux2014_x86_64.whl.metadata (592 bytes)
+Collecting pynng==0.9.0
+  Downloading pynng-0.9.0-cp314-cp314-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl.metadata (7.0 kB)
+Collecting grpcio-tools==1.71.0
+  Downloading grpcio_tools-1.71.0.tar.gz (5.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.3/5.3 MB 6.6 MB/s  0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting sexpdata
+  Downloading sexpdata-1.0.2-py3-none-any.whl.metadata (3.6 kB)
+Collecting cffi (from pynng==0.9.0)
+  Using cached cffi-2.1.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+Collecting sniffio (from pynng==0.9.0)
+  Using cached sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Collecting grpcio>=1.71.0 (from grpcio-tools==1.71.0)
+  Downloading grpcio-1.84.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (3.8 kB)
+Collecting setuptools (from grpcio-tools==1.71.0)
+  Using cached setuptools-84.2.1-py3-none-any.whl.metadata (6.6 kB)
+Collecting typing-extensions~=4.12 (from grpcio>=1.71.0->grpcio-tools==1.71.0)
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting pycparser (from cffi->pynng==0.9.0)
+  Downloading pycparser-3.12-py3-none-any.whl.metadata (9.7 kB)
+Downloading protobuf-5.29.6-cp38-abi3-manylinux2014_x86_64.whl (320 kB)
+Downloading pynng-0.9.0-cp314-cp314-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (1.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 60.0 MB/s  0:00:00
+Downloading sexpdata-1.0.2-py3-none-any.whl (10 kB)
+Downloading grpcio-1.84.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (7.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.1/7.1 MB 73.2 MB/s  0:00:00
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Using cached cffi-2.1.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (221 kB)
+Downloading pycparser-3.12-py3-none-any.whl (62 kB)
+Using cached setuptools-84.2.1-py3-none-any.whl (876 kB)
+Using cached sniffio-1.3.1-py3-none-any.whl (10 kB)
+Building wheels for collected packages: grpcio-tools
+  Building wheel for grpcio-tools (pyproject.toml): started
+  Building wheel for grpcio-tools (pyproject.toml): still running...
+  Building wheel for grpcio-tools (pyproject.toml): finished with status 'done'
+  Created wheel for grpcio-tools: filename=grpcio_tools-1.71.0-cp314-cp314-linux_x86_64.whl size=58542203 sha256=54ceb9d15bd6b11e265edffb0ae57d3923cd338deeb00bcaa6f95ec3e0a631b9
+  Stored in directory: /home/dauwt/.cache/pip/wheels/60/16/cc/7718fa5c16823e3575de93c6350625e7ab3e3bbb60f376d445
+Successfully built grpcio-tools
+Installing collected packages: typing-extensions, sniffio, sexpdata, setuptools, pycparser, protobuf, grpcio, cffi, pynng, grpcio-tools
+
+Successfully installed cffi-2.1.1 grpcio-1.84.1 grpcio-tools-1.71.0 protobuf-5.29.6 pycparser-3.12 pynng-0.9.0 setuptools-84.2.1 sexpdata-1.0.2 sniffio-1.3.1 typing-extensions-4.16.0
+
+[notice] A new release of pip is available: 26.2.1 -> 26.2.2
+[notice] To update, run: /home/dauwt/Projects/Guarda Rios/PCB/.backplane/worktrees/backplane-8ba8b17b/PGR - PCB/PGR - PCB/build/production-fixes/venv/bin/python -m pip install --upgrade pip

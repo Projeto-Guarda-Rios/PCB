@@ -1,0 +1,7 @@
+exec(open('build/layout-groups/probe_api.py').read().split('r=a.request')[0])
+r=a.request(bc.ImportNetlist(board=d,netlist_path=str(Path('build/layout-groups/netlist.net').resolve()),dry_run=False,match_mode=bc.NMM_UUID,delete_extra_footprints=True,update_footprints=True,override_locks=True),bc.ImportNetlistResponse)
+Path('build/layout-groups/import-result.txt').write_text(str(r));print('import',r.error_count,r.warning_count,r.new_footprint_count)
+assert r.error_count==8 and all(('J9 pad '+pin+' not found') in r.report for pin in ['B11','B10','A11','A10','A2','A3','B2','B3'])
+a.save(d)
+fs=a.items(d,[enums.KOT_PCB_FOOTPRINT]); print('footprints',len(fs))
+Path('build/layout-groups/imported-items.json').write_text(json.dumps([json_format.MessageToDict(f,preserving_proto_field_name=True) for f in fs],indent=2))

@@ -1,0 +1,352 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-26T14:18:25",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [],
+    "source": "footprint-fixture.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad S1 [GND] of J9",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 6.57
+                    },
+                    "uuid": "0d3b83a1-9d1a-437f-9b45-4cb92ab98e8f"
+                },
+                {
+                    "description": "PTH pad S1 [GND] of J9",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 9.43
+                    },
+                    "uuid": "c279f662-8377-4460-96ac-a49ab9a4edca"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad S1 [GND] of J9",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 9.43
+                    },
+                    "uuid": "c279f662-8377-4460-96ac-a49ab9a4edca"
+                },
+                {
+                    "description": "Pad B12 [GND] of J9 on Front",
+                    "pos": {
+                        "x": 7.25,
+                        "y": 9.485
+                    },
+                    "uuid": "06cc6ba1-9489-49f6-ad6e-708db545dba0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad A1 [GND] of J9 on Front",
+                    "pos": {
+                        "x": 7.25,
+                        "y": 6.515
+                    },
+                    "uuid": "c40951ec-3b4b-44d1-959c-11c8c96ee244"
+                },
+                {
+                    "description": "PTH pad S1 [GND] of J9",
+                    "pos": {
+                        "x": 6.0,
+                        "y": 6.57
+                    },
+                    "uuid": "0d3b83a1-9d1a-437f-9b45-4cb92ab98e8f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad A12 [GND] of J9 on Front",
+                    "pos": {
+                        "x": 12.75,
+                        "y": 6.515
+                    },
+                    "uuid": "3c70781d-a9cf-4fd2-b985-86fc7212f9df"
+                },
+                {
+                    "description": "Pad A1 [GND] of J9 on Front",
+                    "pos": {
+                        "x": 7.25,
+                        "y": 6.515
+                    },
+                    "uuid": "c40951ec-3b4b-44d1-959c-11c8c96ee244"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad B1 [GND] of J9 on Front",
+                    "pos": {
+                        "x": 12.75,
+                        "y": 9.485
+                    },
+                    "uuid": "ccee3359-a93a-478f-ae05-dad2d962ee40"
+                },
+                {
+                    "description": "PTH pad S1 [GND] of J9",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 9.43
+                    },
+                    "uuid": "166571c4-9ad9-4f4e-85af-8642fe0041a5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad S1 [GND] of J9",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 6.57
+                    },
+                    "uuid": "0bdd036c-3257-4cb3-9b23-30c5229b6a82"
+                },
+                {
+                    "description": "Pad A12 [GND] of J9 on Front",
+                    "pos": {
+                        "x": 12.75,
+                        "y": 6.515
+                    },
+                    "uuid": "3c70781d-a9cf-4fd2-b985-86fc7212f9df"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "PTH pad S1 [GND] of J9",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 9.43
+                    },
+                    "uuid": "166571c4-9ad9-4f4e-85af-8642fe0041a5"
+                },
+                {
+                    "description": "PTH pad S1 [GND] of J9",
+                    "pos": {
+                        "x": 14.0,
+                        "y": 6.57
+                    },
+                    "uuid": "0bdd036c-3257-4cb3-9b23-30c5229b6a82"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad B9 [+5V_PROGRAM] of J9 on Front",
+                    "pos": {
+                        "x": 8.75,
+                        "y": 9.485
+                    },
+                    "uuid": "e331b4e4-e972-4946-ac50-4b37b7c2d5f3"
+                },
+                {
+                    "description": "Pad B4 [+5V_PROGRAM] of J9 on Front",
+                    "pos": {
+                        "x": 11.25,
+                        "y": 9.485
+                    },
+                    "uuid": "dc8a5e8f-4f9a-4516-825a-7be292fb3ad5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad A9 [+5V_PROGRAM] of J9 on Front",
+                    "pos": {
+                        "x": 11.25,
+                        "y": 6.515
+                    },
+                    "uuid": "be7834cf-3fc1-478a-94e3-07df0dd8ba65"
+                },
+                {
+                    "description": "Pad A4 [+5V_PROGRAM] of J9 on Front",
+                    "pos": {
+                        "x": 8.75,
+                        "y": 6.515
+                    },
+                    "uuid": "1a31bc9d-fe6c-4b4d-960e-80dcd6ffd9e1"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad B4 [+5V_PROGRAM] of J9 on Front",
+                    "pos": {
+                        "x": 11.25,
+                        "y": 9.485
+                    },
+                    "uuid": "dc8a5e8f-4f9a-4516-825a-7be292fb3ad5"
+                },
+                {
+                    "description": "Pad A9 [+5V_PROGRAM] of J9 on Front",
+                    "pos": {
+                        "x": 11.25,
+                        "y": 6.515
+                    },
+                    "uuid": "be7834cf-3fc1-478a-94e3-07df0dd8ba65"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad A6 [D+] of J9 on Front",
+                    "pos": {
+                        "x": 9.75,
+                        "y": 6.515
+                    },
+                    "uuid": "c30bf595-c735-4f60-9cf9-b6f91487efa8"
+                },
+                {
+                    "description": "Pad B6 [D+] of J9 on Front",
+                    "pos": {
+                        "x": 10.25,
+                        "y": 9.485
+                    },
+                    "uuid": "4cfda988-fdf4-40ed-9736-7f991f1f7b31"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad B7 [D-] of J9 on Front",
+                    "pos": {
+                        "x": 9.75,
+                        "y": 9.485
+                    },
+                    "uuid": "995f3d12-14e2-402a-95cd-15b4e5f423b7"
+                },
+                {
+                    "description": "Pad A7 [D-] of J9 on Front",
+                    "pos": {
+                        "x": 10.25,
+                        "y": 6.515
+                    },
+                    "uuid": "2c94cf4c-9359-46ac-84fc-356b1b7070e2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "The current configuration does not include the footprint library 'PGR-FootPrints'",
+            "items": [
+                {
+                    "description": "Footprint J9",
+                    "pos": {
+                        "x": 10.0,
+                        "y": 8.0
+                    },
+                    "uuid": "213d6bc2-c1dd-40c0-8c9b-27eb8304bd31"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "Circle of J9 on F.Silkscreen",
+                    "pos": {
+                        "x": 5.53,
+                        "y": 6.17
+                    },
+                    "uuid": "ad3c8471-375f-4c9a-9b34-6a5ab0e46efe"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

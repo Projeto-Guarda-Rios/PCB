@@ -1,0 +1,465 @@
+{
+  "rules": {
+    "constraints": {
+      "minClearance": {
+        "valueNm": "127000"
+      },
+      "minGrooveWidth": {},
+      "minConnectionWidth": {},
+      "minTrackWidth": {
+        "valueNm": "150000"
+      },
+      "minViaAnnularWidth": {
+        "valueNm": "150000"
+      },
+      "minViaSize": {
+        "valueNm": "600000"
+      },
+      "minThroughDrill": {
+        "valueNm": "200000"
+      },
+      "minMicroviaSize": {},
+      "minMicroviaDrill": {},
+      "copperEdgeClearance": {
+        "valueNm": "500000"
+      },
+      "holeClearance": {
+        "valueNm": "200000"
+      },
+      "holeToHoleMin": {
+        "valueNm": "250000"
+      },
+      "silkClearance": {
+        "valueNm": "150000"
+      },
+      "minResolvedSpokes": 2,
+      "minSilkTextHeight": {
+        "valueNm": "1000000"
+      },
+      "minSilkTextThickness": {
+        "valueNm": "150000"
+      }
+    },
+    "predefinedSizes": {
+      "tracks": [
+        {
+          "width": {
+            "valueNm": "150000"
+          }
+        },
+        {
+          "width": {
+            "valueNm": "200000"
+          }
+        },
+        {
+          "width": {
+            "valueNm": "250000"
+          }
+        },
+        {
+          "width": {
+            "valueNm": "300000"
+          }
+        },
+        {
+          "width": {
+            "valueNm": "500000"
+          }
+        },
+        {
+          "width": {
+            "valueNm": "750000"
+          }
+        },
+        {
+          "width": {
+            "valueNm": "1000000"
+          }
+        },
+        {
+          "width": {
+            "valueNm": "1500000"
+          }
+        },
+        {
+          "width": {
+            "valueNm": "2000000"
+          }
+        }
+      ],
+      "vias": [
+        {
+          "diameter": {
+            "valueNm": "600000"
+          },
+          "drill": {
+            "valueNm": "300000"
+          }
+        },
+        {
+          "diameter": {
+            "valueNm": "700000"
+          },
+          "drill": {
+            "valueNm": "300000"
+          }
+        },
+        {
+          "diameter": {
+            "valueNm": "800000"
+          },
+          "drill": {
+            "valueNm": "400000"
+          }
+        }
+      ],
+      "diffPairs": [
+        {
+          "width": {
+            "valueNm": "250700"
+          },
+          "gap": {
+            "valueNm": "200000"
+          },
+          "viaGap": {
+            "valueNm": "200000"
+          }
+        }
+      ]
+    },
+    "solderMaskPaste": {
+      "maskExpansion": {},
+      "maskMinWidth": {
+        "valueNm": "100000"
+      },
+      "maskToCopperClearance": {
+        "valueNm": "5000"
+      },
+      "pasteMargin": {}
+    },
+    "teardrops": {
+      "targetVias": true,
+      "targetPthPads": true,
+      "targetSmdPads": true,
+      "targetParams": [
+        {
+          "target": "TDT_ROUND",
+          "params": {
+            "maxLength": {
+              "valueNm": "1000000"
+            },
+            "maxWidth": {
+              "valueNm": "2000000"
+            },
+            "bestLengthRatio": 0.5,
+            "bestWidthRatio": 1.0,
+            "widthToSizeFilterRatio": 0.9,
+            "allowTwoTracks": true
+          }
+        },
+        {
+          "target": "TDT_RECT",
+          "params": {
+            "maxLength": {
+              "valueNm": "1000000"
+            },
+            "maxWidth": {
+              "valueNm": "2000000"
+            },
+            "bestLengthRatio": 0.5,
+            "bestWidthRatio": 1.0,
+            "widthToSizeFilterRatio": 0.9,
+            "allowTwoTracks": true
+          }
+        },
+        {
+          "target": "TDT_TRACK",
+          "params": {
+            "maxLength": {
+              "valueNm": "1000000"
+            },
+            "maxWidth": {
+              "valueNm": "2000000"
+            },
+            "bestLengthRatio": 0.5,
+            "bestWidthRatio": 1.0,
+            "widthToSizeFilterRatio": 0.9,
+            "allowTwoTracks": true
+          }
+        }
+      ]
+    },
+    "viaProtection": {
+      "tentFront": true,
+      "tentBack": true
+    },
+    "severities": [
+      {
+        "errorKey": "unconnected_items",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "shorting_items",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "items_not_allowed",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "text_on_edge_cuts",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "clearance",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "creepage",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "tracks_crossing",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "copper_edge_clearance",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "zones_intersect",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "isolated_copper",
+        "severity": "RS_WARNING"
+      },
+      {
+        "errorKey": "starved_thermal",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "via_dangling",
+        "severity": "RS_WARNING"
+      },
+      {
+        "errorKey": "track_dangling",
+        "severity": "RS_WARNING"
+      },
+      {
+        "errorKey": "hole_to_hole",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "holes_co_located",
+        "severity": "RS_WARNING"
+      },
+      {
+        "errorKey": "hole_clearance",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "track_width",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "track_angle",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "track_segment_length",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "annular_width",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "connection_width",
+        "severity": "RS_WARNING"
+      },
+      {
+        "errorKey": "drill_out_of_range",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "via_diameter",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "padstack",
+        "severity": "RS_WARNING"
+      },
+      {
+        "errorKey": "padstack_invalid",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "microvia_drill_out_of_range",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "courtyards_overlap",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "missing_courtyard",
+        "severity": "RS_IGNORE"
+      },
+      {
+        "errorKey": "malformed_courtyard",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "pth_inside_courtyard",
+        "severity": "RS_IGNORE"
+      },
+      {
+        "errorKey": "npth_inside_courtyard",
+        "severity": "RS_IGNORE"
+      },
+      {
+        "errorKey": "item_on_disabled_layer",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "invalid_outline",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "missing_footprint",
+        "severity": "RS_WARNING"
+      },
+      {
+        "errorKey": "duplicate_footprints",
+        "severity": "RS_WARNING"
+      },
+      {
+        "errorKey": "extra_footprint",
+        "severity": "RS_WARNING"
+      },
+      {
+        "errorKey": "net_conflict",
+        "severity": "RS_WARNING"
+      },
+      {
+        "errorKey": "footprint_symbol_mismatch",
+        "severity": "RS_WARNING"
+      },
+      {
+        "errorKey": "footprint_filters_mismatch",
+        "severity": "RS_IGNORE"
+      },
+      {
+        "errorKey": "footprint_type_mismatch",
+        "severity": "RS_IGNORE"
+      },
+      {
+        "errorKey": "lib_footprint_issues",
+        "severity": "RS_WARNING"
+      },
+      {
+        "errorKey": "lib_footprint_mismatch",
+        "severity": "RS_WARNING"
+      },
+      {
+        "errorKey": "through_hole_pad_without_hole",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "footprint",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "unresolved_variable",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "assertion_failure",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "generic_warning",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "generic_error",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "copper_sliver",
+        "severity": "RS_WARNING"
+      },
+      {
+        "errorKey": "solder_mask_bridge",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "silk_over_copper",
+        "severity": "RS_WARNING"
+      },
+      {
+        "errorKey": "silk_edge_clearance",
+        "severity": "RS_WARNING"
+      },
+      {
+        "errorKey": "silk_overlap",
+        "severity": "RS_WARNING"
+      },
+      {
+        "errorKey": "text_height",
+        "severity": "RS_WARNING"
+      },
+      {
+        "errorKey": "text_thickness",
+        "severity": "RS_WARNING"
+      },
+      {
+        "errorKey": "length_out_of_range",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "skew_out_of_range",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "too_many_vias",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "diff_pair_gap_out_of_range",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "diff_pair_uncoupled_length_too_long",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "mirrored_text_on_front_layer",
+        "severity": "RS_WARNING"
+      },
+      {
+        "errorKey": "nonmirrored_text_on_back_layer",
+        "severity": "RS_WARNING"
+      },
+      {
+        "errorKey": "missing_tuning_profile",
+        "severity": "RS_WARNING"
+      },
+      {
+        "errorKey": "track_on_post_machined_layer",
+        "severity": "RS_ERROR"
+      },
+      {
+        "errorKey": "track_not_centered_on_via",
+        "severity": "RS_IGNORE"
+      },
+      {
+        "errorKey": "footprint_symbol_field_mismatch",
+        "severity": "RS_WARNING"
+      }
+    ]
+  },
+  "customRulesStatus": "CRS_NONE"
+}
