@@ -1,0 +1,13 @@
+generator: resistor/THT makeResistorRadial
+name: NTC_Semitec_103AT-2_P2.54mm
+pitch_mm: 2.54
+body_width_mm: 4.0
+body_depth_mm: 2.4
+body_height_mm: 3.7
+lead_square_mm: 0.5
+drill_mm: 0.9
+source: https://www.semitec-global.com/uploads/2022/01/P12-13-AT-Thermistor.pdf
+minimum_body_to_solder_joint_mm: 5
+minimum_body_to_lead_bend_mm: 3
+model_note: Representative body and leads with 5mm body standoff; final height and
+  lead forming depend on battery placement

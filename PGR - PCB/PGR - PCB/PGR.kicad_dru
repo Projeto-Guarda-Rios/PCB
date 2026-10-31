@@ -1,11 +1,38 @@
 (version 1)
 
-(rule "USB full-speed pair geometry"
-	# JLC04161H-3313, 1 oz outer copper; 90 ohm non-coplanar differential microstrip over L2 GND. 5.34 mil width / 6 mil gap from JLCPCB calculator 2026-10-27. Skew and uncoupled limits are conservative project targets for 12 Mbit/s USB.
-	(condition "A.NetName == 'D+' || A.NetName == 'D-'")
-	(constraint track_width (min 0.127mm) (opt 0.135636mm) (max 0.145mm))
-	(constraint diff_pair_gap (min 0.14mm) (opt 0.1524mm) (max 0.17mm))
-	(constraint skew (opt 0mm) (max 1mm) (within_diff_pairs))
-	(constraint diff_pair_uncoupled (max 5mm))
-	(severity error)
+# JLC04161H-3313, 1 oz outer copper, F.Cu over L2 GND.
+# Nominal 90-ohm non-coplanar USB geometry from JLC calculator: 5.34 mil / 6 mil.
+# Both connector polarities have two layer transitions. Short pad/protection escapes
+# require wider spacing; the named rule area bounds the tightly coupled trunk.
+(rule "USB width and end-to-end skew"
+ (condition "A.NetName == 'D+' || A.NetName == 'D-'")
+ (constraint track_width (min 0.127mm) (opt 0.135636mm) (max 0.145mm))
+ (constraint skew (opt 0mm) (max 1mm) (within_diff_pairs))
+ (constraint length (max 35mm))
+ (severity error)
+)
+
+
+# Bounded escape budget for the fixed 0.5mm-pitch USB contacts and discrete TVS pads.
+# These short branches are not claimed to be 90-ohm coupled microstrip.
+(rule "USB fixed-pitch escape geometry"
+ (condition "(A.NetName == 'D+' || A.NetName == 'D-') && !A.insideArea('USB controlled trunk')")
+ (constraint diff_pair_gap (min 0.127mm) (max 2.5mm))
+ (constraint diff_pair_uncoupled (max 10mm))
+ (severity error)
+)
+
+(rule "USB controlled trunk coupling"
+ (condition "(A.NetName == 'D+' || A.NetName == 'D-') && A.insideArea('USB controlled trunk')")
+ (constraint diff_pair_gap (min 0.14mm) (opt 0.1524mm) (max 0.17mm))
+ (constraint diff_pair_uncoupled (max 3mm))
+ (severity error)
+)
+
+# JP2 has no component body. Its solder pads intentionally join the JP1 terminals.
+# This exception covers only the shared pad courtyard; electrical clearances remain checked.
+(rule "JP2 solder pads at JP1 terminals"
+ (condition "(A.Reference == 'JP1' && B.Reference == 'JP2') || (A.Reference == 'JP2' && B.Reference == 'JP1')")
+ (constraint courtyard_clearance (min 0mm))
+ (severity ignore)
 )
