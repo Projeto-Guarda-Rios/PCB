@@ -318,7 +318,12 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "pin_to_pin|1244600|609600|eaa25786-c81f-4df1-b5a3-56165fce1e0e|c214b90e-771a-4930-9fbb-285a8db722ca|/2a888306-90d9-48e5-ba43-e08ba2da2ab6/03ee3bfa-6cfd-40af-8e8d-b3f671184011|/2a888306-90d9-48e5-ba43-e08ba2da2ab6/03ee3bfa-6cfd-40af-8e8d-b3f671184011|/2a888306-90d9-48e5-ba43-e08ba2da2ab6",
+        "TPS2121 ST pin 9 is intentionally connected to GND when its status output is unused, exactly as TI SLVSEA3F Rev F pin-functions table p4 and section 10.1 p20 specify. The power flag declares that ground net; this is not a supply output short. https://www.ti.com/lit/ds/symlink/tps2121.pdf"
+      ]
+    ],
     "meta": {
       "version": 0
     },
