@@ -25472,6 +25472,146 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "R_18_2"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_18_2_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_18_2_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(rectangle
 		(start 30.48 12.065)
@@ -25665,7 +25805,7 @@
 		)
 		(uuid "039c577e-8982-491d-a747-69123f4bc9ed")
 	)
-	(text "GPIO36 ADC: Vcell x270/1270; calibrate ADC, settle >=200 ms.\r\nGPIO39: filtered cell NTC. GPIO35: boost selected when high.\r\nGPIO33: lid switch / RTC wake. GPIO12 must stay low at boot."
+	(text "GPIO36 ADC: Vcell x270/1270; calibrate ADC, settle >=200 ms.\r\nGPIO39: filtered cell NTC. GPIO35: USB selected when high.\r\nGPIO33: lid switch / RTC wake. GPIO12 must stay low at boot."
 		(exclude_from_sim no)
 		(at 441.96 194.056 0)
 		(effects
@@ -26070,12 +26210,12 @@
 		)
 		(uuid "bbb19a39-30f6-48e6-a95c-5668d5b0c09d")
 	)
-	(text "Solar/battery boost has priority above ~4.12 V.\r\nUSB fallback <=0.49 A; modem bursts require battery/solar power."
+	(text "USB priority; 1 A circuit budget; use a suitable source, preferably 5 V / 2 A.\nR37 160R, 1%: limit ~1.5 A nominal. R38/R39 0.1%: fallback ~3.87 V.\nWorst fallback <4.22 V; U1 input DPM >=4.35 V reduces charging first.\nVerify startup, load steps and source handover on the prototype."
 		(exclude_from_sim no)
-		(at 301.244 320.04 0)
+		(at 301.244 318 0)
 		(effects
 			(font
-				(size 1.016 1.016)
+				(size 0.9 0.9)
 			)
 			(justify left)
 		)
@@ -26152,7 +26292,7 @@
 		)
 		(uuid "e8bc6db4-e3e9-45f8-b1bc-fedc5491fab6")
 	)
-	(text "SOLAR / USB CHARGER\nEN1=OUT, EN2=GND: input DPM enabled\n500 mA input ceiling; system load takes priority\nR1: 890 mA target, limited by available input\nR72: 68 mA termination; R30: 9.1 h nominal\nDPM / thermal regulation slows the safety timer"
+	(text "SOLAR / USB CHARGER\nEN1=OUT, EN2=GND: input DPM enabled\n500 mA charger-input ceiling; USB system bypasses U1\nUSB input DPM reduces charging if the shared supply droops\nR1: 890 mA target, limited by available input\nR72: 68 mA termination; R30: 9.1 h nominal\nDPM / thermal regulation slows the safety timer"
 		(exclude_from_sim no)
 		(at 430.53 67.31 0)
 		(effects
@@ -30636,10 +30776,9 @@
 			)
 		)
 	)
-	(global_label "USB_LIMIT"
+	(global_label "BOOST_5V"
 		(shape input)
 		(at 374.65 288.29 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -32110,10 +32249,9 @@
 			)
 		)
 	)
-	(global_label "BOOST_ACTIVE"
+	(global_label "USB_ACTIVE"
 		(shape input)
 		(at 232.41 146.05 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -32546,10 +32684,9 @@
 			)
 		)
 	)
-	(global_label "BOOST_PR"
+	(global_label "USB_PR"
 		(shape input)
 		(at 350.52 274.32 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -33140,10 +33277,9 @@
 			)
 		)
 	)
-	(global_label "BOOST_5V"
+	(global_label "USB_LIMIT"
 		(shape input)
 		(at 350.52 260.35 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -33232,10 +33368,9 @@
 			)
 		)
 	)
-	(global_label "BOOST_5V"
+	(global_label "USB_LIMIT"
 		(shape input)
 		(at 374.65 285.75 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -33277,10 +33412,9 @@
 			)
 		)
 	)
-	(global_label "BOOST_ACTIVE"
+	(global_label "USB_ACTIVE"
 		(shape input)
 		(at 232.41 146.05 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -34567,10 +34701,9 @@
 			)
 		)
 	)
-	(global_label "BOOST_ACTIVE"
+	(global_label "USB_ACTIVE"
 		(shape input)
 		(at 406.4 313.69 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -34637,10 +34770,9 @@
 			)
 		)
 	)
-	(global_label "BOOST_PR"
+	(global_label "USB_PR"
 		(shape input)
 		(at 374.65 280.67 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -34844,10 +34976,9 @@
 			)
 		)
 	)
-	(global_label "BOOST_ACTIVE"
+	(global_label "USB_ACTIVE"
 		(shape input)
 		(at 402.59 288.29 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -36083,10 +36214,9 @@
 			)
 		)
 	)
-	(global_label "BOOST_PR"
+	(global_label "USB_PR"
 		(shape input)
 		(at 361.95 298.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -36174,10 +36304,9 @@
 			)
 		)
 	)
-	(global_label "BOOST_5V"
+	(global_label "USB_LIMIT"
 		(shape input)
 		(at 374.65 278.13 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -37607,6 +37736,7 @@
 		)
 	)
 	(symbol
+		(lib_name "R_18_2")
 		(lib_id "PGR_Validated:R_18")
 		(at 350.52 267.97 0)
 		(unit 1)
@@ -37628,7 +37758,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "312kR"
+		(property "Value" "287kR"
 			(at 353.06 269.24 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -37681,6 +37811,18 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Power_rating" "0.1W minimum"
+			(at 350.52 267.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(pin "1"
@@ -38462,7 +38604,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "620R"
+		(property "Value" "160R"
 			(at 313.69 304.8 0)
 			(show_name no)
 			(do_not_autoplace yes)
@@ -38504,6 +38646,30 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 311.15 303.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Power_rating" "0.1W minimum"
+			(at 311.15 303.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(pin "1"
@@ -45442,7 +45608,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://components.omron.com/sg-en/products/switches/B3FS"
+		(property "Datasheet" "https://tech.alpsalpine.com/e/products/detail/SKRKAHE020/"
 			(at 90.17 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -45453,7 +45619,7 @@
 				)
 			)
 		)
-		(property "Description" "6x6mm SMT normally-open tactile pushbutton, 3.1mm high, 1.47N"
+		(property "Description" "3.9x2.9mm SMT normally-open tactile pushbutton, 2.0mm high, 0.98N; 50mA at 12VDC"
 			(at 90.17 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -45464,7 +45630,7 @@
 				)
 			)
 		)
-		(property "MPN" "B3FS-1002P"
+		(property "MPN" "SKRKAHE020"
 			(at 90.17 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -45475,7 +45641,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Omron"
+		(property "Manufacturer" "Alps Alpine"
 			(at 90.17 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -45486,7 +45652,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C87038"
+		(property "LCSC" "C202388"
 			(at 90.17 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -51125,7 +51291,7 @@
 		(dnp no)
 		(uuid "b7253e1a-0e2b-4dee-9e6d-3b5c95729881")
 		(property "Reference" "U7"
-			(at 388.62 273.05 0)
+			(at 388.62 271.78 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -51135,7 +51301,7 @@
 			)
 		)
 		(property "Value" "TPS2116"
-			(at 388.62 275.59 0)
+			(at 388.62 274.32 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -56921,6 +57087,18 @@
 				)
 			)
 		)
+		(property "Power_rating" "0.1W minimum"
+			(at 361.95 304.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(pin "1"
 			(uuid "5250a780-4637-42c8-b3a4-9ec8bb818e3c")
 		)
@@ -57942,7 +58120,7 @@
 				)
 			)
 		)
-		(property "Firmware_pin_contract" "RS485 RX4 TX5 DE22 /RE23; modem TX17 RX16 EN25 UART_OE27; AquaNode EN26 default ON; tamper RTC33; battery ADC36; NTC ADC39; boost selected35; solar /PGOOD34; CHG21; JTAG12/13/14/15. USB-only budget <=0.49A: keep modem off."
+		(property "Firmware_pin_contract" "RS485 RX4 TX5 DE22 /RE23; modem TX17 RX16 EN25 UART_OE27; AquaNode EN26 default ON; tamper RTC33; battery ADC36; NTC ADC39; USB selected35; solar /PGOOD34; CHG21; JTAG12/13/14/15. USB circuit budget 1 A with suitable source; USB_ACTIVE on GPIO35."
 			(at 217.17 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -58619,7 +58797,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://components.omron.com/sg-en/products/switches/B3FS"
+		(property "Datasheet" "https://tech.alpsalpine.com/e/products/detail/SKRKAHE020/"
 			(at 46.99 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -58630,7 +58808,7 @@
 				)
 			)
 		)
-		(property "Description" "6x6mm SMT normally-open tactile pushbutton, 3.1mm high, 1.47N"
+		(property "Description" "3.9x2.9mm SMT normally-open tactile pushbutton, 2.0mm high, 0.98N; 50mA at 12VDC"
 			(at 46.99 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -58641,7 +58819,7 @@
 				)
 			)
 		)
-		(property "MPN" "B3FS-1002P"
+		(property "MPN" "SKRKAHE020"
 			(at 46.99 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -58652,7 +58830,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Omron"
+		(property "Manufacturer" "Alps Alpine"
 			(at 46.99 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -58663,7 +58841,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C87038"
+		(property "LCSC" "C202388"
 			(at 46.99 176.53 0)
 			(hide yes)
 			(show_name no)
